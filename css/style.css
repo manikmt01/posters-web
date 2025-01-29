@@ -47,10 +47,6 @@ header {
   gap: 20px;
 }
 
-.logo {
-  width: 204px;
-}
-
 .nav-location {
   font-size: 20px;
   color: #222222;
@@ -4040,10 +4036,6 @@ header {
 @media (max-width: 1280px) {
   .header-left {
     gap: 0;
-  }
-
-  .logo {
-    width: 182px;
   }
 
   .nav-location img {
