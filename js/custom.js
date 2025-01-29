@@ -17,22 +17,16 @@ fileInput.addEventListener('change', function () {
     };
     reader.readAsDataURL(file);
 
-   
     noPhotoText.style.display = 'none';
     deleteIcon.style.background = '#fff';
   }
 });
 
-
 deleteIcon.addEventListener('click', function () {
-
   photoPreview.style.backgroundImage = 'none';
-
 
   noPhotoText.style.display = 'block';
   deleteIcon.style.background = 'transparent';
 
   fileInput.value = '';
 });
-
-

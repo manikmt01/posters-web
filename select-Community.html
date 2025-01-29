@@ -63,7 +63,7 @@
                         </div>
 
                         <!-- comunity boxes  -->
-                        <div class="comunity-boxes">
+                        <div class="comunity-boxes thin-scrollbar">
                             <!-- single item  -->
                             <div class="single-com-box">
                                 <label class="custom-checkbox">
@@ -104,7 +104,7 @@
                                 </label>
                             </div>
                             <!-- single item  -->
-                            <div class="single-com-box">
+                            <div class="single-com-box hidden">
                                 <label class="custom-checkbox">
                                     <input type="checkbox" class="checkbox-input">
                                     <span class="com-img"><img src="./img/Diet.png"
@@ -117,7 +117,7 @@
                                 </label>
                             </div>
                             <!-- single item  -->
-                            <div class="single-com-box">
+                            <div class="single-com-box hidden">
                                 <label class="custom-checkbox">
                                     <input type="checkbox" class="checkbox-input">
                                     <span class="com-img"><img src="./img/Electricians.png"
@@ -130,7 +130,7 @@
                                 </label>
                             </div>
                             <!-- single item  -->
-                            <div class="single-com-box">
+                            <div class="single-com-box hidden">
                                 <label class="custom-checkbox">
                                     <input type="checkbox" class="checkbox-input">
                                     <span class="com-img"><img src="./img/Food.png"
@@ -143,6 +143,12 @@
                                 </label>
                             </div>
                             
+                        </div>
+                        <div class="seeMore">
+                            <button class="saveBtn" id="seeMoreBtn">
+                                <span class="saveBtnTxt">See More</span>
+                                <span class="saveBtnImg"><img src="./img/forward.png" class="img-fluid w-100" alt=""></span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -295,6 +301,15 @@
                 preview.style.display = "none"; // Hide the preview
                 previewImage.src = ""; // Clear the preview image
             });
+        });
+    </script>
+    <!-- see more  -->
+     <script>
+        document.getElementById("seeMoreBtn").addEventListener("click", function () {
+            document.querySelectorAll(".single-com-box.hidden").forEach(function (item) {
+                item.classList.remove("hidden");
+            });
+            document.querySelector(".seeMore").style.display = "none"; // Hide the button
         });
     </script>
 </body>

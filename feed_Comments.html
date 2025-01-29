@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="feed-header">
         <div class="destop-nav d-none d-lg-flex justify-content-between align-items-center">
             <div class="header-left">
                 <div class="logo">
@@ -61,7 +61,7 @@
                     <button class="profile-btn" id="profileOptions" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="./img/avatar.png" class="img-fluid" alt="Profile">
                     </button>
-                    <ul class="dropdown-menu" aria-labelledby="profileOptions">
+                    <ul class="dropdown-menu thin-scrollbar" aria-labelledby="profileOptions">
                         <!-- item 1 -->
                         <li>
                             <a class="dropdown-item profile-single" href="#">
@@ -252,99 +252,95 @@
                 <div class="row" id="dashboard-row">
                     <!-- user profile  -->
                     <div class="col-xl-3">
-                        <div class="user-profile">
-                            <!-- profile card  -->
-                            <div class="profile-card">
-                                <div class="profile-img">
-                                    </span> <img src="./img/seirra.png" class="img-fluid" alt="">
-                                    <div class="edit-icon">
-                                        <img src="./img/edit.png" alt="">
+                        <div class="sideBar-wraper hide-scrollbar">
+                            <div class="user-profile">
+                                <!-- profile card  -->
+                                <div class="profile-card">
+                                    <div class="profile-img">
+                                        </span> <img src="./img/seirra.png" class="img-fluid" alt="">
+                                        <div class="edit-icon">
+                                            <img src="./img/edit.png" alt="">
+                                        </div>
                                     </div>
+                                    <!-- profile details -->
+                                    <h2>Sierra Ferguson</h2>
+                                    <p>@sierraferguson</p>
+                                    <a href="#" class="profile-link">
+                                        <img src="./img/link.png" alt="">
+                                    </a>
                                 </div>
-                                <!-- profile details -->
-                                <h2>Sierra Ferguson</h2>
-                                <p>@sierraferguson</p>
-                                <a href="#" class="profile-link">
-                                    <img src="./img/link.png" alt="">
-                                </a>
-                            </div>
 
-                            <!-- profile-stats  -->
-                            <div class="profile-stats">
-                                <!-- single box  -->
-                                <div class="left-stats-box right-border">
-                                    <div class="stats-number">
-                                        <h3>11</h3>
+                                <!-- profile-stats  -->
+                                <div class="profile-stats">
+                                    <div class="left-stats-box">
+                                        <p>Connections</p>
+                                        <h3>270</h3>
                                     </div>
-                                    <div class="stats-info">
-                                        <img src="./img/camera.png" alt="">
-                                        <span>Posts</span>
-                                    </div>
-                                </div>
-                                <span class="vr-bar"></span>
-                                <!-- single box  -->
-                                <div class="right-stats-box right-border">
-                                    <div class="stats-number">
-                                        <h3>18</h3>
-                                    </div>
-                                    <div class="stats-info">
-                                        <img src="./img/connect.png" alt="">
-                                        <span>Connects In</span>
+                                    <div class="right-stats-box">
+                                        <div class="stats-info">
+                                            <img src="./img/connect-right.png" alt="">
+                                            <span class="connect-num">8</span>
+                                        </div>
+                                        <div class="stats-info">
+                                            <img src="./img/connect.png" alt="">
+                                            <span class="connect-num">8</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <!-- single box  -->
-                                <div class="right-stats-box">
-                                    <div class="stats-number">
-                                        <h3>18</h3>
-                                    </div>
-                                    <div class="stats-info">
-                                        <img src="./img/connect.png" alt="">
-                                        <span>Connects In</span>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <!-- button group -->
-                            <div class="btn-grp">
-                                <!-- single button  -->
-                                <button class="cs-btn">
-                                    <img src="./img/camera-blue.png" alt="">
-                                    <span>Post Something</span>
-                                </button>
-                                <!-- single button  -->
-                                <button class="cs-btn">
-                                    <img src="./img/doc.png" alt="">
-                                    <span>I'm Looking For</span>
-                                </button>
-                                <!-- single button  -->
-                                <button class="cs-btn">
-                                    <img src="./img/ad.png" alt="">
-                                    <span>Create Ad</span>
-                                </button>
-                            </div>
-                            <div class="btn-grp-bar"></div>
-                            <!-- profile-bottom-links -->
-                            <ul class="profile-bottom-links">
-                                <li>
-                                    <a href="#">About</a>
-                                </li>
-                                <li>
-                                    <a href="#">Help Center</a>
-                                </li>
-                                <li>
-                                    <a href="#">Terms & Conditions</a>
-                                </li>
-                                <li>
-                                    <a href="#">Privacy Policies</a>
-                                </li>
-                                <li>
-                                    <a href="#">FAQS</a>
-                                </li>
-                            </ul>
-                            <!-- profile-footer  -->
-                            <div class="pf-footer">
-                                <img src="./img/logo.png" alt="">
-                                <span>All Right Reserved 2023</span>
+                                <!-- post logos group -->
+                                <div class="post-logos-group">
+                                    <div class="post-logos-title">
+                                        <img src="./img/Post.png" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="post-buttons-container">
+                                        <div class="post-buttons">
+                                            <button class="camera-button post-button">
+                                                <img src="./img/camera-1x.png" class="img-fluid" alt="">
+                                            </button>
+                                            <button class="doc-button post-button">
+                                                <img src="./img/doc-1x.png" class="img-fluid" alt="">
+                                            </button>
+                                            <button class="deal-button post-button">
+                                                <img src="./img/deal-1x.png" class="img-fluid" alt="">
+                                            </button>
+                                            <button class="ad-button post-button">
+                                                <img src="./img/ad-1x.png" class="img-fluid" alt="">
+                                            </button>
+                                        </div>
+                                        <p class="post-description">
+                                            Create a Post about your business.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- video player  -->
+                                <div class="video-player-container">
+                                    <img src="./img/vidimg.png" class="img-fluid w-100" alt="">
+                                    <img src="./img/play.png" class="play-icon" alt="">
+                                </div>
+                                <!-- profile-bottom-links -->
+                                <ul class="profile-bottom-links">
+                                    <li>
+                                        <a href="#">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Help Center</a>
+                                    </li>
+                                    <li>
+                                        <a href="/terms-Conditions.html">Terms & Conditions</a>
+                                    </li>
+                                    <li>
+                                        <a href="/privacy-Policies.html">Privacy Policies</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">FAQS</a>
+                                    </li>
+                                </ul>
+                                <!-- profile-footer  -->
+                                <div class="pf-footer">
+                                    <img src="./img/logo.png" alt="">
+                                    <span>All Right Reserved 2023</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -360,9 +356,15 @@
                                             aria-controls="pills-posts" aria-selected="true">Posts</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="pills-requests-tab" data-bs-toggle="pill"
-                                            data-bs-target="#pills-requests" type="button" role="tab"
-                                            aria-controls="pills-requests" aria-selected="false">Requests</button>
+                                        <button class="nav-link" id="pills-listing-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-listing" type="button" role="tab"
+                                            aria-controls="pills-listing" aria-selected="false">Listing</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-deals-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-deals" type="button" role="tab"
+                                            aria-controls="pills-deals" aria-selected="false">Deals <span
+                                                class="deals-num">8</span></button>
                                     </li>
                                 </ul>
                                 <!-- tab content  -->
@@ -373,37 +375,44 @@
                                         <div class="post-cards">
                                             <!-- single post card  -->
                                             <div class="post-card">
-                                                <h5>Claimed Post</h5>
                                                 <!-- author  -->
                                                 <div class="post-author">
                                                     <div class="author-img">
-                                                        <img src="./img/avatar1.png" class="img-fluid w-100" alt="">
+                                                        <img src="./img/mail.png" class="mail-img" alt="">
+                                                        <img src="./img/mail-avatar.png" class="mail-avatar" alt="">
                                                     </div>
                                                     <div class="author-info">
-                                                        <h3>Sierra Ferguson</h3>
+                                                        <h3><span>Mail On Broadway</span><span><img
+                                                                    src="./img/checkwhiteblue.png" alt=""></span></h3>
                                                         <div class="author-loc">
                                                             <img src="./img/ion_location.png" alt="">
-                                                            <span>New York, NY . 1 hours ago</span>
+                                                            <span>New York, NY <span class="post-time">1hr</span></span>
                                                         </div>
+                                                        <ul class="posted-by">
+                                                            <li>Posted by: <span>Oscar Novelli</span></li>
+                                                            <li>Claimed by: <span>Owner</span></li>
+                                                        </ul>
+                                                        <p class="post-text">Quality from Start to Finish... American
+                                                            Windows and Glass</p>
                                                     </div>
                                                 </div>
-                                                <p class="post-text">
-                                                    Bethany was running in a half marathon when she began.... a half
-                                                    marathon when she began ...
-                                                    <a href="#">Read more</a>
-                                                </p>
+
                                                 <!-- post img  -->
                                                 <div class="post-img">
-                                                    <img src="./img/post-img.png" class="img-fluid w-100" alt="">
+                                                    <img src="./img/p1.png" class="img-fluid mx-auto" alt="">
                                                     <div class="ribbon">
-                                                        For Sale
+                                                        Home Improvement
                                                     </div>
                                                 </div>
                                                 <!-- post footer  -->
                                                 <div class="post-footer">
                                                     <!-- Post Tags -->
                                                     <div class="post-tags hide-scrollbar">
-                                                        <span>Event Planning</span>
+                                                        <span>Window Replacement</span>
+                                                        <span>Glass Repair</span>
+                                                        <span>Home Improvement</span>
+                                                        <span>Window Install</span>
+                                                        <span>Glazing</span>
                                                     </div>
                                                     <!-- Post Interactions -->
                                                     <div class="post-interactions">
@@ -421,20 +430,29 @@
                                                             </div>
                                                         </div>
                                                         <div class="post-actions-right">
-                                                            <button class="btn-create-ad">Create Ad</button>
+                                                            <button class="btn-bookmarkFill">
+                                                                <img src="./img/bookmarkfill.png" class="img-fluid"
+                                                                    alt="">
+                                                            </button>
                                                         </div>
+                                                    </div>
+                                                    <!-- post play  -->
+                                                    <div class="postplay">
+                                                        <img src="./img/playfill.png" alt="">
                                                     </div>
                                                 </div>
                                                 <!-- Post Actions -->
                                                 <div
-                                                    class="post-actions d-flex align-items-center justify-content-between">
+                                                    class="post-actions d-flex align-items-start justify-content-between">
                                                     <!-- View Action -->
                                                     <div class="action-item">
                                                         <img src="./img/eye.png" alt="View">
+                                                        <span class="action-item-count">641</span>
                                                     </div>
                                                     <!-- Like Action -->
                                                     <div class="action-item">
                                                         <img src="./img/like.png" alt="Like">
+                                                        <span class="action-item-count">35</span>
                                                     </div>
                                                     <!-- More Options Dropdown -->
                                                     <div class="dropdown action-item">
@@ -443,14 +461,18 @@
                                                             aria-expanded="false">
                                                             <img src="./img/dots.png" alt="More Options">
                                                         </button>
+                                                        </button>
                                                         <ul class="dropdown-menu"
                                                             aria-labelledby="postActionsDropdown1">
                                                             <li><a class="dropdown-item" href="#">Connect</a></li>
                                                             <li><a class="dropdown-item" href="#">Claim This Post</a>
                                                             </li>
-                                                            <li><a class="dropdown-item" href="#">Rate User</a></li>
-                                                            <li><a class="dropdown-item text-reprt" href="#">Report
-                                                                    Post</a></li>
+                                                            <li>
+                                                                <p class="dropdown-item" data-bs-toggle="offcanvas"
+                                                                    data-bs-target="#createComunityOffcanvas"
+                                                                    aria-controls="createComunityOffcanvas">Report Post
+                                                                </p>
+                                                            </li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -459,19 +481,12 @@
                                                     <hr class="notification-bar">
                                                     <div class="cmnt-stats">
                                                         <h2>Comments (100)</h2>
-                                                        <div class="dropdown">
-                                                            <button class="relevant-btn p-0 dropdown-toggle"
-                                                                type="button" id="postActionsDropdown1"
-                                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                                Most Relevant
-                                                            </button>
-                                                            <ul class="dropdown-menu"
-                                                                aria-labelledby="postActionsDropdown1">
-                                                                <li><a class="dropdown-item" href="#">Most Relevant</a>
-                                                                </li>
-                                                                <li><a class="dropdown-item" href="#">Trending</a></li>
-                                                                <li><a class="dropdown-item" href="#">Latest</a></li>
-                                                            </ul>
+                                                        <div class="dropdown-wraper">
+                                                            <select class="form-input" name="reason-type" id="reason-type">
+                                                                <option value="" selected>Most Relevant</option>
+                                                                <option value="spam">Tending</option>
+                                                                <option value="inappropriate">Latest</option>
+                                                            </select>
                                                         </div>
                                                     </div>
                                                     <!-- cmnt box  -->
@@ -480,8 +495,7 @@
                                                         <div class="comment-box">
                                                             <div class="comment-author">
                                                                 <div class="cmnt-author-img">
-                                                                    <img src="./img/avatar1.png" class="img-fluid w-100"
-                                                                        alt="">
+                                                                    <img src="./img/avatar1.png" class="img-fluid w-100" alt="">
                                                                 </div>
                                                                 <div class="cmnt-author-details">
                                                                     <h4>Sierra Ferguson</h4>
@@ -491,75 +505,76 @@
                                                             <div class="cmnt-action">
                                                                 <p>4 hrs ago</p>
                                                                 <div class="dropdown action-item cmnt-action">
-                                                                    <button class="btn btn-link p-0 dropdown-toggle"
-                                                                        type="button" id="postActionsDropdown1"
+                                                                    <button class="btn btn-link p-0 dropdown-toggle" type="button" id="postActionsDropdown1"
                                                                         data-bs-toggle="dropdown" aria-expanded="false">
                                                                         <img src="./img/dots.png" alt="More Options">
                                                                     </button>
-                                                                    <ul class="dropdown-menu"
-                                                                        aria-labelledby="postActionsDropdown1">
-                                                                        <li><a class="dropdown-item" href="#">Edit</a>
+                                                                    <ul class="dropdown-menu" aria-labelledby="postActionsDropdown1">
+                                                                        <li><a class="dropdown-item" href="#">Connect</a>
                                                                         </li>
-                                                                        <li><a class="dropdown-item text-reprt"
-                                                                                href="#">Delete</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Report Comment</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-
-
-                                                </div>
-                                                <!-- cmnt form  -->
-                                                <div>
-                                                    <!-- cmnt suggestion -->
-                                                    <div class="post-tags hide-scrollbar">
-                                                        <span>Interesting!</span>
-                                                        <span>I Need It!</span>
-                                                        <span>Nice</span>
+                                                    <!-- cmnt form  -->
+                                                    <div>
+                                                        <!-- cmnt suggestion -->
+                                                        <div class="cmnt-tags">
+                                                            <span>Interesting!</span>
+                                                            <span>I Need It!</span>
+                                                            <span>Nice</span>
+                                                        </div>
+                                                        <form action="" class="cmnt-form">
+                                                            <input type="text" class="form-control" placeholder="Comment here..." name="" id="">
+                                                            <button type="submit" class="cmnt-submit">
+                                                                <img src="./img/carbon_send-filled.png" alt="">
+                                                            </button>
+                                                        </form>
                                                     </div>
-                                                    <form action="" class="cmnt-form">
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Comment here..." name="" id="">
-                                                        <button type="submit" class="cmnt-submit">
-                                                            <img src="./img/carbon_send-filled.png" alt="">
-                                                        </button>
-                                                    </form>
+                                                
                                                 </div>
-
                                             </div>
                                             <!-- single post card  -->
                                             <div class="post-card">
-                                                <h5>Sponsored Post</h5>
                                                 <!-- author  -->
                                                 <div class="post-author">
-
+                                                    <div class="author-img">
+                                                        <img src="./img/mail.png" class="mail-img" alt="">
+                                                        <img src="./img/mail-avatar.png" class="mail-avatar" alt="">
+                                                    </div>
                                                     <div class="author-info">
-                                                        <h3>Company Name</h3>
+                                                        <h3><span>Mail On Broadway</span><span><img
+                                                                    src="./img/checkwhiteblue.png" alt=""></span></h3>
                                                         <div class="author-loc">
                                                             <img src="./img/ion_location.png" alt="">
-                                                            <span>New York, NY . 1 hours ago</span>
+                                                            <span>New York, NY <span class="post-time">1hr</span></span>
                                                         </div>
+                                                        <ul class="posted-by">
+                                                            <li>Posted by: <span>Oscar Novelli</span></li>
+                                                            <li>Claimed by: <span>Owner</span></li>
+                                                        </ul>
+                                                        <p class="post-text">Protect your greatest Investment. Your Home
+                                                        </p>
                                                     </div>
                                                 </div>
-                                                <h2 class="post-title">Advertisement title here.</h2>
-                                                <p class="post-text">
-                                                    Bethany was running in a half marathon when she began.... a half
-                                                    marathon when she began ...
-                                                    <a href="#">Read more</a>
-                                                </p>
+
                                                 <!-- post img  -->
                                                 <div class="post-img">
-                                                    <img src="./img/post-img.png" class="img-fluid w-100" alt="">
+                                                    <img src="./img/protect.png" class="img-fluid mx-auto" alt="">
                                                     <div class="ribbon">
-                                                        For Sale
+                                                        Home Improvement
                                                     </div>
                                                 </div>
                                                 <!-- post footer  -->
                                                 <div class="post-footer">
                                                     <!-- Post Tags -->
                                                     <div class="post-tags hide-scrollbar">
-                                                        <span>Event Planning</span>
+                                                        <span>Window Replacement</span>
+                                                        <span>Glass Repair</span>
+                                                        <span>Home Improvement</span>
+                                                        <span>Window Install</span>
                                                     </div>
                                                     <!-- Post Interactions -->
                                                     <div class="post-interactions">
@@ -577,312 +592,788 @@
                                                             </div>
                                                         </div>
                                                         <div class="post-actions-right">
-                                                            <button class="btn-create-ad">Create Ad</button>
+                                                            <button class="btn-bookmarkFill">
+                                                                <img src="./img/bookmarkfill.png" class="img-fluid"
+                                                                    alt="">
+                                                            </button>
                                                         </div>
+                                                    </div>
+                                                    <!-- post play  -->
+                                                    <div class="postplay">
+                                                        <img src="./img/playfill.png" alt="">
                                                     </div>
                                                 </div>
                                                 <!-- Post Actions -->
                                                 <div
-                                                    class="post-actions d-flex align-items-center justify-content-between">
+                                                    class="post-actions d-flex align-items-start justify-content-between">
                                                     <!-- View Action -->
                                                     <div class="action-item">
                                                         <img src="./img/eye.png" alt="View">
+                                                        <span class="action-item-count">641</span>
                                                     </div>
                                                     <!-- Like Action -->
                                                     <div class="action-item">
                                                         <img src="./img/like.png" alt="Like">
+                                                        <span class="action-item-count">35</span>
                                                     </div>
                                                     <!-- More Options Dropdown -->
                                                     <div class="dropdown action-item">
                                                         <button class="btn btn-link p-0 dropdown-toggle" type="button"
-                                                            id="postActionsDropdown2" data-bs-toggle="dropdown"
+                                                            id="postActionsDropdown1" data-bs-toggle="dropdown"
                                                             aria-expanded="false">
                                                             <img src="./img/dots.png" alt="More Options">
                                                         </button>
+                                                        </button>
                                                         <ul class="dropdown-menu"
-                                                            aria-labelledby="postActionsDropdown2">
+                                                            aria-labelledby="postActionsDropdown1">
                                                             <li><a class="dropdown-item" href="#">Connect</a></li>
                                                             <li><a class="dropdown-item" href="#">Claim This Post</a>
                                                             </li>
-                                                            <li><a class="dropdown-item" href="#">Rate User</a></li>
-                                                            <li><a class="dropdown-item text-reprt" href="#">Report
-                                                                    Post</a></li>
+                                                            <li>
+                                                                <p class="dropdown-item" data-bs-toggle="offcanvas"
+                                                                    data-bs-target="#createComunityOffcanvas"
+                                                                    aria-controls="createComunityOffcanvas">Report Post
+                                                                </p>
+                                                            </li>
                                                         </ul>
                                                     </div>
                                                 </div>
-
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Request tab content  -->
-                                    <div class="tab-pane fade" id="pills-requests" role="tabpanel"
-                                        aria-labelledby="pills-requests-tab">
+                                    <!-- Listing tab content  -->
+                                    <div class="tab-pane fade" id="pills-listing" role="tabpanel"
+                                        aria-labelledby="pills-listing-tab">
                                         <div class="post-cards">
-                                            <!-- single post card  -->
-                                            <div class="post-card">
-                                                <!-- author  -->
-                                                <div class="post-author">
-                                                    <div class="author-img">
-                                                        <img src="./img/avatar1.png" class="img-fluid w-100" alt="">
-                                                    </div>
-                                                    <div class="author-info">
-                                                        <h3>Sierra Ferguson</h3>
-                                                        <div class="author-loc">
-                                                            <span>1 hours ago</span>
+                                            <!-- single list item  -->
+                                            <div class="sale-list">
+                                                <div class="sale-content">
+                                                    <div class="sale-author">
+                                                        <div class="sale-author-img">
+                                                            <img src="./img/avatar1.png" class="img-fluid" alt="">
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <p class="post-text">
-                                                    Bethany was running in a half marathon when she began.... a half
-                                                    marathon when she began ...
-                                                    <a href="#">Read more</a>
-                                                </p>
-                                                <!-- post footer  -->
-                                                <div class="post-footer">
-                                                    <!-- Post Tags -->
-                                                    <div class="post-tags hide-scrollbar">
-                                                        <span>Conference</span>
-                                                        <span>Network Engineer</span>
-                                                        <span>Product Launch</span>
-                                                    </div>
-                                                    <!-- Post Interactions -->
-                                                    <div class="post-interactions">
-                                                        <div class="post-actions-left">
-                                                            <div class="interaction-item">
-                                                                <img src="./img/love.png" alt="Like">
-                                                                <span>100</span>
-                                                            </div>
-                                                            <div class="interaction-item">
-                                                                <img src="./img/cmnt.png" alt="Comment">
-                                                                <span>100</span>
-                                                            </div>
-                                                            <div class="interaction-item">
-                                                                <img src="./img/share.png" alt="Share">
-                                                            </div>
-                                                        </div>
-                                                        <div class="post-actions-right">
-                                                            <button class="btn-create-ad d-none d-lg-block">Send
-                                                                Message</button>
-                                                            <div
-                                                                class="d-flex align-items-center justify-content-end d-lg-none msg-btn-mobile">
-                                                                <div class="interaction-item">
-                                                                    <img src="./img/chat.png" alt="Share">
-                                                                </div>
-                                                                <div class="interaction-item">
-                                                                    <img src="./img/bookmark.png" alt="Share">
-                                                                </div>
+                                                        <div class="sale-author-info">
+                                                            <h3><span>Sierrrra Ferguson</span><span><img
+                                                                        src="./img/chat1.png" alt=""></span></h3>
+                                                            <div class="author-loc">
+                                                                <img src="./img/sale-loc.png" alt="">
+                                                                <span>Brooklyn, NY</span>
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <!-- sale details  -->
+                                                    <div class="sale-details">
+                                                        <h2>Luxury Homes <span>8 m</span></h2>
+                                                        <p>Beautiful 5 bedroom luxury home for sale, with private
+                                                            swimming pool in Hollywood Fl. ... <a href="#">Read more</a>
+                                                        </p>
+                                                    </div>
+                                                    <!-- sale tag  -->
+                                                    <div class="sale-tags">
+                                                        <span>Real Estate</span>
+                                                        <span>Home for Sale</span>
+                                                        <span>Florida Homes</span>
+                                                        <span>Luxury Homes</span>
+                                                    </div>
+                                                    <!-- sale interactions  -->
+                                                    <div class="sale-interactions">
+                                                        <div class="single-sale-interaction">
+                                                            <img src="./img/commentfill.png" alt="">
+                                                            <span>100</span>
+                                                        </div>
+                                                        <div class="single-sale-interaction">
+                                                            <img src="./img/lovefill.png" alt="">
+                                                            <span>7</span>
+                                                        </div>
+                                                        <div class="single-sale-interaction">
+                                                            <img src="./img/viewfill.png" alt="">
+                                                            <span>8</span>
+                                                        </div>
+                                                        <div class="single-sale-interaction">
+                                                            <img src="./img/send.png" alt="">
+                                                            <span>34</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <!-- Post Actions -->
-                                                <div
-                                                    class="post-actions d-flex align-items-center justify-content-between">
-                                                    <!-- View Action -->
-                                                    <div class="action-item">
-                                                        <img src="./img/eye.png" alt="View">
-                                                    </div>
-                                                    <!-- Like Action -->
-                                                    <div class="action-item">
-                                                        <img src="./img/like.png" alt="Like">
-                                                    </div>
-                                                    <!-- More Options Dropdown -->
-                                                    <div class="dropdown action-item">
-                                                        <button class="btn btn-link p-0 dropdown-toggle" type="button"
-                                                            id="postActionsDropdown3" data-bs-toggle="dropdown"
-                                                            aria-expanded="false">
-                                                            <img src="./img/dots.png" alt="More Options">
-                                                        </button>
-                                                        <ul class="dropdown-menu"
-                                                            aria-labelledby="postActionsDropdown3">
-                                                            <li><a class="dropdown-item" href="#">Connect</a></li>
-                                                            <li><a class="dropdown-item" href="#">Claim This Post</a>
-                                                            </li>
-                                                            <li><a class="dropdown-item" href="#">Rate User</a></li>
-                                                            <li><a class="dropdown-item text-reprt" href="#">Report
-                                                                    Post</a></li>
-                                                        </ul>
+                                                <!-- img carousel  -->
+                                                <div class="sale-img-carousel">
+                                                    <div id="carouselExampleIndicators" class="carousel slide"
+                                                        data-bs-ride="carousel">
+                                                        <div class="carousel-indicators">
+                                                            <button type="button"
+                                                                data-bs-target="#carouselExampleIndicators"
+                                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                                aria-label="Slide 1"></button>
+                                                            <button type="button"
+                                                                data-bs-target="#carouselExampleIndicators"
+                                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                            <button type="button"
+                                                                data-bs-target="#carouselExampleIndicators"
+                                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                        </div>
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="./img/car.png" class="img-fluid" alt="...">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="./img/car2.png" class="img-fluid" alt="...">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="./img/car3.png" class="img-fluid" alt="...">
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-
                                             </div>
-                                            <!-- single post card  -->
-                                            <div class="post-card">
-                                                <!-- author  -->
-                                                <div class="post-author">
-                                                    <div class="author-img">
-                                                        <img src="./img/avatar1.png" class="img-fluid w-100" alt="">
-                                                    </div>
-                                                    <div class="author-info">
-                                                        <h3>Sierra Ferguson</h3>
-                                                        <div class="author-loc">
-                                                            <span>1 hours ago</span>
+                                            <!-- single list item  -->
+                                            <div class="sale-list">
+                                                <div class="sale-content">
+                                                    <div class="sale-author">
+                                                        <div class="sale-author-img">
+                                                            <img src="./img/avatar1.png" class="img-fluid" alt="">
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <p class="post-text">
-                                                    Bethany was running in a half marathon when she began.... a half
-                                                    marathon when she began ...
-                                                    <a href="#">Read more</a>
-                                                </p>
-                                                <!-- post footer  -->
-                                                <div class="post-footer">
-                                                    <!-- Post Tags -->
-                                                    <div class="post-tags hide-scrollbar">
-                                                        <span>Conference</span>
-                                                        <span>Network Engineer</span>
-                                                        <span>Product Launch</span>
-                                                    </div>
-                                                    <!-- Post Interactions -->
-                                                    <div class="post-interactions">
-                                                        <div class="post-actions-left">
-                                                            <div class="interaction-item">
-                                                                <img src="./img/love.png" alt="Like">
-                                                                <span>100</span>
-                                                            </div>
-                                                            <div class="interaction-item">
-                                                                <img src="./img/cmnt.png" alt="Comment">
-                                                                <span>100</span>
-                                                            </div>
-                                                            <div class="interaction-item">
-                                                                <img src="./img/share.png" alt="Share">
-                                                            </div>
-                                                        </div>
-                                                        <div class="post-actions-right">
-                                                            <button class="btn-create-ad d-none d-lg-block">Send
-                                                                Message</button>
-                                                            <div
-                                                                class="d-flex align-items-center justify-content-end d-lg-none msg-btn-mobile">
-                                                                <div class="interaction-item">
-                                                                    <img src="./img/chat.png" alt="Share">
-                                                                </div>
-                                                                <div class="interaction-item">
-                                                                    <img src="./img/bookmark.png" alt="Share">
-                                                                </div>
+                                                        <div class="sale-author-info">
+                                                            <h3><span>John S. Merric</span><span><img
+                                                                        src="./img/chat1.png" alt=""></span></h3>
+                                                            <div class="author-loc">
+                                                                <img src="./img/sale-loc.png" alt="">
+                                                                <span>Long Branch, NJ</span>
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <!-- sale details  -->
+                                                    <div class="sale-details">
+                                                        <h2>Side by Side / UTV <span>2 h</span></h2>
+                                                        <p>PRICED TO SELL!!!!! 570FS - $9,999 (Send Message Here, or
+                                                            Call 845.325.3266). ...<a href="#">Read more</a></p>
+                                                    </div>
+                                                    <!-- sale tag  -->
+                                                    <div class="sale-tags">
+                                                        <span>Dirt Bike</span>
+                                                        <span>Side by Side</span>
+                                                        <span>Terrain Vehicles</span>
+                                                        <span>Utility Vehicles</span>
+                                                    </div>
+                                                    <!-- sale interactions  -->
+                                                    <div class="sale-interactions">
+                                                        <div class="single-sale-interaction">
+                                                            <img src="./img/commentfill.png" alt="">
+                                                            <span>100</span>
+                                                        </div>
+                                                        <div class="single-sale-interaction">
+                                                            <img src="./img/lovefill.png" alt="">
+                                                            <span>7</span>
+                                                        </div>
+                                                        <div class="single-sale-interaction">
+                                                            <img src="./img/viewfill.png" alt="">
+                                                            <span>8</span>
+                                                        </div>
+                                                        <div class="single-sale-interaction">
+                                                            <img src="./img/send.png" alt="">
+                                                            <span>34</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <!-- Post Actions -->
-                                                <div
-                                                    class="post-actions d-flex align-items-center justify-content-between">
-                                                    <!-- View Action -->
-                                                    <div class="action-item">
-                                                        <img src="./img/eye.png" alt="View">
+                                                <!-- img carousel  -->
+                                                <div class="sale-img-carousel">
+                                                    <div id="carouselExampleIndicators" class="carousel slide"
+                                                        data-bs-ride="carousel">
+                                                        <div class="carousel-indicators">
+                                                            <button type="button"
+                                                                data-bs-target="#carouselExampleIndicators"
+                                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                                aria-label="Slide 1"></button>
+                                                            <button type="button"
+                                                                data-bs-target="#carouselExampleIndicators"
+                                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                            <button type="button"
+                                                                data-bs-target="#carouselExampleIndicators"
+                                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                        </div>
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="./img/car2.png" class="img-fluid" alt="...">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="./img/car.png" class="img-fluid" alt="...">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="./img/car3.png" class="img-fluid" alt="...">
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <!-- Like Action -->
-                                                    <div class="action-item">
-                                                        <img src="./img/like.png" alt="Like">
-                                                    </div>
-                                                    <!-- More Options Dropdown -->
-                                                    <div class="dropdown action-item">
-                                                        <button class="btn btn-link p-0 dropdown-toggle" type="button"
-                                                            id="postActionsDropdown4" data-bs-toggle="dropdown"
-                                                            aria-expanded="false">
-                                                            <img src="./img/dots.png" alt="More Options">
-                                                        </button>
-                                                        <ul class="dropdown-menu"
-                                                            aria-labelledby="postActionsDropdown4">
-                                                            <li><a class="dropdown-item" href="#">Connect</a></li>
-                                                            <li><a class="dropdown-item" href="#">Claim This Post</a>
-                                                            </li>
-                                                            <li><a class="dropdown-item" href="#">Rate User</a></li>
-                                                            <li><a class="dropdown-item text-reprt" href="#">Report
-                                                                    Post</a></li>
-                                                        </ul>
-                                                    </div>
+                                                    <p class="sale-ribbon">For Sale</p>
+                                                    <div class="sale-bookmark"> <img src="./img/book.png"
+                                                            class="img-fluid" alt=""></div>
                                                 </div>
-
                                             </div>
-                                            <!-- single post card  -->
-                                            <div class="post-card">
-                                                <!-- author  -->
-                                                <div class="post-author">
-                                                    <div class="author-img">
-                                                        <img src="./img/avatar1.png" class="img-fluid w-100" alt="">
+                                            <!-- single list item  -->
+                                            <div class="sale-list">
+                                                <div class="sale-content">
+                                                    <div class="sale-author">
+                                                        <div class="sale-author-img">
+                                                            <img src="./img/avatar1.png" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="sale-author-info">
+                                                            <h3><span>John S. Merric</span><span><img
+                                                                        src="./img/chat1.png" alt=""></span></h3>
+                                                            <div class="author-loc">
+                                                                <img src="./img/sale-loc.png" alt="">
+                                                                <span>Monroe, NY</span>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="author-info">
-                                                        <h3>Sierra Ferguson</h3>
-                                                        <div class="author-loc">
-                                                            <span>1 hours ago</span>
+                                                    <!-- sale details  -->
+                                                    <div class="sale-details">
+                                                        <h2>Gorgeous Italian Buffet and Mirror. <span>8 m</span></h2>
+                                                        <p>Gorgeous Italian Dining Buffet and Mirror, a stunning
+                                                            ensemble that effortlessly blends sophistication ...<a
+                                                                href="#">Read more</a></p>
+                                                    </div>
+                                                    <!-- sale tag  -->
+                                                    <div class="sale-tags">
+                                                        <span>Dining Room</span>
+                                                        <span>Italian Furniture</span>
+                                                        <span>Buffet and Mirror</span>=
+                                                    </div>
+                                                    <!-- sale interactions  -->
+                                                    <div class="sale-interactions">
+                                                        <div class="single-sale-interaction">
+                                                            <img src="./img/commentfill.png" alt="">
+                                                            <span>100</span>
+                                                        </div>
+                                                        <div class="single-sale-interaction">
+                                                            <img src="./img/lovefill.png" alt="">
+                                                            <span>7</span>
+                                                        </div>
+                                                        <div class="single-sale-interaction">
+                                                            <img src="./img/viewfill.png" alt="">
+                                                            <span>8</span>
+                                                        </div>
+                                                        <div class="single-sale-interaction">
+                                                            <img src="./img/send.png" alt="">
+                                                            <span>34</span>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <p class="post-text">
-                                                    Bethany was running in a half marathon when she began.... a half
-                                                    marathon when she began ...
-                                                    <a href="#">Read more</a>
-                                                </p>
-                                                <!-- post footer  -->
-                                                <div class="post-footer">
-                                                    <!-- Post Tags -->
-                                                    <div class="post-tags hide-scrollbar">
-                                                        <span>Conference</span>
-                                                        <span>Network Engineer</span>
-                                                        <span>Product Launch</span>
+                                                <!-- img carousel  -->
+                                                <div class="sale-img-carousel">
+                                                    <div id="carouselExampleIndicators" class="carousel slide"
+                                                        data-bs-ride="carousel">
+                                                        <div class="carousel-indicators">
+                                                            <button type="button"
+                                                                data-bs-target="#carouselExampleIndicators"
+                                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                                aria-label="Slide 1"></button>
+                                                            <button type="button"
+                                                                data-bs-target="#carouselExampleIndicators"
+                                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                            <button type="button"
+                                                                data-bs-target="#carouselExampleIndicators"
+                                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                        </div>
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="./img/car3.png" class="img-fluid" alt="...">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="./img/car2.png" class="img-fluid" alt="...">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="./img/car.png" class="img-fluid" alt="...">
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <!-- Post Interactions -->
-                                                    <div class="post-interactions">
-                                                        <div class="post-actions-left">
-                                                            <div class="interaction-item">
-                                                                <img src="./img/love.png" alt="Like">
+                                                </div>
+                                            </div>
+                                            <!-- single list item  -->
+                                            <div class="sale-list">
+                                                <div class="job-content">
+                                                    <div class="sale-author">
+                                                        <div class="sale-author-img">
+                                                            <img src="./img/avatar1.png" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="sale-author-info">
+                                                            <h3><span>Dave Samuels</span><span><img
+                                                                        src="./img/chat1.png" alt=""></span></h3>
+                                                            <div class="author-loc">
+                                                                <img src="./img/sam.png" alt="">
+                                                                <span>Brooklyn, NY</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- sale details  -->
+                                                    <div class="sale-details">
+                                                        <h2>Candle Company Seeks Production Post <span>2 h</span></h2>
+                                                        <p>We seek Post-Production Assistants for Monday-Friday,
+                                                            9am-5pm. Duties include cleaning, labeling, packing candles,
+                                                            and
+                                                            shipping orders. Must handle manual labor, lift 50 lbs, and
+                                                            stand 8 hours. Attention to detail required. Apply with
+                                                            "Candle Production." <a href="#">Read
+                                                                more</a></p>
+                                                    </div>
+                                                    <!-- sale tag  -->
+                                                    <div class="sale-tags">
+                                                        <span>Dining Room</span>
+                                                        <span>Italian Furniture</span>
+                                                        <span>Buffet and Mirror</span>
+                                                    </div>
+                                                    <div class="job-card-footer">
+                                                        <!-- sale interactions  -->
+                                                        <div class="sale-interactions job-card-left">
+                                                            <div class="single-sale-interaction">
+                                                                <img src="./img/commentfill.png" alt="">
                                                                 <span>100</span>
                                                             </div>
-                                                            <div class="interaction-item">
-                                                                <img src="./img/cmnt.png" alt="Comment">
-                                                                <span>100</span>
+                                                            <div class="single-sale-interaction">
+                                                                <img src="./img/lovefill.png" alt="">
+                                                                <span>7</span>
                                                             </div>
-                                                            <div class="interaction-item">
-                                                                <img src="./img/share.png" alt="Share">
+                                                            <div class="single-sale-interaction">
+                                                                <img src="./img/viewfill.png" alt="">
+                                                                <span>8</span>
                                                             </div>
-                                                        </div>
-                                                        <div class="post-actions-right">
-                                                            <button class="btn-create-ad d-none d-lg-block">Send
-                                                                Message</button>
-                                                            <div
-                                                                class="d-flex align-items-center justify-content-end d-lg-none msg-btn-mobile">
-                                                                <div class="interaction-item">
-                                                                    <img src="./img/chat.png" alt="Share">
-                                                                </div>
-                                                                <div class="interaction-item">
-                                                                    <img src="./img/bookmark.png" alt="Share">
-                                                                </div>
+                                                            <div class="single-sale-interaction">
+                                                                <img src="./img/send.png" alt="">
+                                                                <span>34</span>
                                                             </div>
                                                         </div>
+                                                        <div class="job-bookmark">
+                                                            <img src="./img/bookmarkBlack.png" alt="">
+                                                        </div>
                                                     </div>
+                                                    <!-- ribon  -->
+                                                    <p class="sale-ribbon">Job Opportunity</p>
                                                 </div>
-                                                <!-- Post Actions -->
-                                                <div
-                                                    class="post-actions d-flex align-items-center justify-content-between">
-                                                    <!-- View Action -->
-                                                    <div class="action-item">
-                                                        <img src="./img/eye.png" alt="View">
-                                                    </div>
-                                                    <!-- Like Action -->
-                                                    <div class="action-item">
-                                                        <img src="./img/like.png" alt="Like">
-                                                    </div>
-                                                    <!-- More Options Dropdown -->
-                                                    <div class="dropdown action-item">
-                                                        <button class="btn btn-link p-0 dropdown-toggle" type="button"
-                                                            id="postActionsDropdown5" data-bs-toggle="dropdown"
-                                                            aria-expanded="false">
-                                                            <img src="./img/dots.png" alt="More Options">
-                                                        </button>
-                                                        <ul class="dropdown-menu"
-                                                            aria-labelledby="postActionsDropdown5">
-                                                            <li><a class="dropdown-item" href="#">Connect</a></li>
-                                                            <li><a class="dropdown-item" href="#">Claim This Post</a>
-                                                            </li>
-                                                            <li><a class="dropdown-item" href="#">Rate User</a></li>
-                                                            <li><a class="dropdown-item text-reprt" href="#">Report
-                                                                    Post</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-
                                             </div>
                                         </div>
+                                    </div>
+                                    <!-- deals tab content  -->
+                                    <div class="tab-pane fade" id="pills-deals" role="tabpanel"
+                                        aria-labelledby="pills-deals-tab">
+                                        <div class="deals-content">
+                                            <div class="sort-by">
+                                                <label for="sort-options">Sort By:</label>
+                                                <select name="sort-options" id="sort-options" class="">
+                                                    <option value="new">New</option>
+                                                    <option value="popular" selected>Popular</option>
+                                                    <option value="price-low-high">Price - Low to High</option>
+                                                    <option value="price-high-low">Price - High to Low</option>
+                                                    <option value="avg-reviews">Avg. Customer Reviews</option>
+                                                    <option value="deals-top">Deals on Top</option>
+                                                    <option value="deal-share-top">Deal Share on Top</option>
+                                                </select>
+                                            </div>
+                                            <div class="product-list">
+                                                <!-- single product  -->
+                                                <div class="product-container">
+                                                    <div class="product-image">
+                                                        <img src="./img/pro1.png" alt="">
+                                                        <div class="product-share">
+                                                            <img src="./img/share.png" alt="">
+                                                            <span>100</span>
+                                                        </div>
+                                                        <div class="product-bookmark">
+                                                            <img src="./img/bookmarkBlack.png" class="img-fluid" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-details">
+                                                        <div class="product-description">
+                                                            <p class="username">@sierrafur121 <span
+                                                                    class="time-posted">1h</span></p>
+                                                            <h2 class="product-title">Fisher-Price</h2>
+                                                            <p class="product-summary">
+                                                                Magnetic Drawing Board for Kids, Toddler Magnet Doodle
+                                                                Board with Toys,
+                                                                Airplane Car Travel Activities (Blue Cat)
+                                                            </p>
+                                                        </div>
+                                                        <div class="product-pricing">
+                                                            <div class="pricing">
+                                                                <h3 class="reg-price">Reg Price <span>$29.99</span></h3>
+                                                                <h2 class="discount-price">Only <span>$18.99</span></h2>
+                                                            </div>
+                                                            <div class="buy-button">
+                                                                <button>Buy</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single product  -->
+                                                <div class="product-container">
+                                                    <div class="product-image">
+                                                        <img src="./img/pro2.png" alt="">
+                                                        <div class="product-share">
+                                                            <img src="./img/share.png" alt="">
+                                                            <span>100</span>
+                                                        </div>
+                                                        <div class="product-bookmark">
+                                                            <img src="./img/bookmarkBlack.png" class="img-fluid" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-details">
+                                                        <div class="product-description">
+                                                            <p class="username">@sierrafur121 <span
+                                                                    class="time-posted">1h</span></p>
+                                                            <h2 class="product-title">Fisher-Price</h2>
+                                                            <p class="product-summary">
+                                                                Magnetic Drawing Board for Kids, Toddler Magnet Doodle
+                                                                Board with Toys,
+                                                                Airplane Car Travel Activities (Blue Cat)
+                                                            </p>
+                                                        </div>
+                                                        <div class="product-pricing">
+                                                            <div class="pricing">
+                                                                <h3 class="reg-price">Reg Price <span>$29.99</span></h3>
+                                                                <h2 class="discount-price">Only <span>$18.99</span></h2>
+                                                            </div>
+                                                            <div class="buy-button">
+                                                                <button>Buy</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single product  -->
+                                                <div class="product-container">
+                                                    <div class="product-image">
+                                                        <img src="./img/pro3.png" alt="">
+                                                        <div class="product-share">
+                                                            <img src="./img/share.png" alt="">
+                                                            <span>100</span>
+                                                        </div>
+                                                        <div class="product-bookmark">
+                                                            <img src="./img/bookmarkBlack.png" class="img-fluid" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-details">
+                                                        <div class="product-description">
+                                                            <p class="username">@sierrafur121 <span
+                                                                    class="time-posted">1h</span></p>
+                                                            <h2 class="product-title">Best Buy</h2>
+                                                            <p class="product-summary">
+                                                                Apple - 10.2-Inch iPad (9th Generation) with Wi-Fi -
+                                                                256GB - Space Gray
+                                                            </p>
+                                                        </div>
+                                                        <div class="product-pricing">
+                                                            <div class="pricing">
+                                                                <h3 class="reg-price">Reg Price <span>$29.99</span></h3>
+                                                                <h2 class="discount-price">Only <span>$18.99</span></h2>
+                                                            </div>
+                                                            <div class="buy-button">
+                                                                <button>Buy</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single product  -->
+                                                <div class="product-container">
+                                                    <div class="product-loc-wraper">
+                                                        <h3>Home Depot</h3>
+                                                        <div class="product-loc">
+                                                            <img src="./img/sale-loc.png" alt="">
+                                                            <span>Long Branch, NJ</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-image">
+                                                        <img src="./img/pro4.png" alt="">
+                                                        <div class="product-share">
+                                                            <img src="./img/share.png" alt="">
+                                                            <span>100</span>
+                                                        </div>
+                                                        <div class="product-bookmark">
+                                                            <img src="./img/bookmarkBlack.png" class="img-fluid" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-details">
+                                                        <div class="product-description">
+                                                            <p class="username">@sierrafur121 <span
+                                                                    class="time-posted">1h</span></p>
+                                                            <h2 class="product-title">Best Buy</h2>
+                                                            <p class="product-summary">
+                                                                Apple - 10.2-Inch iPad (9th Generation) with Wi-Fi -
+                                                                256GB - Space Gray
+                                                            </p>
+                                                        </div>
+                                                        <div class="product-pricing">
+                                                            <div class="pricing">
+                                                                <h3 class="reg-price">Reg Price <span>$29.99</span></h3>
+                                                                <h2 class="discount-price">Only <span>$18.99</span></h2>
+                                                            </div>
+                                                            <div class="buy-button">
+                                                                <button>Buy</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single product  -->
+                                                <div class="product-container">
+                                                    <div class="product-image product-img-large">
+                                                        <img src="./img/pro5.png" alt="">
+                                                        <div class="product-share">
+                                                            <img src="./img/share.png" alt="">
+                                                            <span>100</span>
+                                                        </div>
+                                                        <div class="product-bookmark">
+                                                            <img src="./img/bookmarkBlack.png" class="img-fluid" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-details">
+                                                        <div class="product-description">
+                                                            <p class="username">@sierrafur121 <span
+                                                                    class="time-posted">1h</span></p>
+                                                            <h2 class="product-title">Fisher-Price</h2>
+                                                            <p class="product-summary">
+                                                                Magnetic Drawing Board for Kids, Toddler Magnet Doodle
+                                                                Board with Toys,
+                                                                Airplane Car Travel Activities (Blue Cat)
+                                                            </p>
+                                                        </div>
+                                                        <div class="product-pricing">
+                                                            <div class="pricing">
+                                                                <h3 class="reg-price">Reg Price <span>$29.99</span></h3>
+                                                                <h2 class="discount-price">Only <span>$18.99</span></h2>
+                                                            </div>
+                                                            <div class="buy-button">
+                                                                <button>Buy</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single product hover -->
+                                                <div class="product-hover-container">
+                                                    <div class="product-hover-image">
+                                                        <img src="./img/pro-hover.png" alt="">
+                                                        <div class="hover-product-title">
+                                                            Amazing Deal at the Home Depot in Montville, NC
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-hover-interactions">
+                                                        <div class="product-hover-share">
+                                                            <img src="./img/share.png" alt="">
+                                                            <span>100</span>
+                                                        </div>
+                                                        <div class="product-hover-share">
+                                                            <img src="./img/bookmarkBlack.png" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="product-hover-share">
+                                                            <img src="./img/cmnt.png" alt="">
+                                                            <span>100</span>
+                                                        </div>
+                                                        <div class="product-hover-share">
+                                                            <img src="./img/lovefill.png" alt="">
+                                                            <span>100</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single product  -->
+                                                <div class="product-container">
+                                                    <div class="product-image">
+                                                        <img src="./img/pro7.png" alt="">
+                                                        <div class="product-share">
+                                                            <img src="./img/share.png" alt="">
+                                                            <span>100</span>
+                                                        </div>
+                                                        <div class="product-bookmark">
+                                                            <img src="./img/bookmarkBlack.png" class="img-fluid" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-details">
+                                                        <div class="product-description">
+                                                            <p class="username">@sierrafur121 <span
+                                                                    class="time-posted">1h</span></p>
+                                                            <h2 class="product-title">Fisher-Price</h2>
+                                                            <p class="product-summary">
+                                                                Magnetic Drawing Board for Kids, Toddler Magnet Doodle
+                                                                Board with Toys,
+                                                                Airplane Car Travel Activities (Blue Cat)
+                                                            </p>
+                                                        </div>
+                                                        <div class="product-pricing">
+                                                            <div class="pricing">
+                                                                <h3 class="reg-price">Reg Price <span>$29.99</span></h3>
+                                                                <h2 class="discount-price">Only <span>$18.99</span></h2>
+                                                            </div>
+                                                            <div class="buy-button">
+                                                                <button>Buy</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single product  -->
+                                                <div class="product-container">
+                                                    <div class="product-image">
+                                                        <img src="./img/pro2.png" alt="">
+                                                        <div class="product-share">
+                                                            <img src="./img/share.png" alt="">
+                                                            <span>100</span>
+                                                        </div>
+                                                        <div class="product-bookmark">
+                                                            <img src="./img/bookmarkBlack.png" class="img-fluid" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-details">
+                                                        <div class="product-description">
+                                                            <p class="username">@sierrafur121 <span
+                                                                    class="time-posted">1h</span></p>
+                                                            <h2 class="product-title">Fisher-Price</h2>
+                                                            <p class="product-summary">
+                                                                Magnetic Drawing Board for Kids, Toddler Magnet Doodle
+                                                                Board with Toys,
+                                                                Airplane Car Travel Activities (Blue Cat)
+                                                            </p>
+                                                        </div>
+                                                        <div class="product-pricing">
+                                                            <div class="pricing">
+                                                                <h3 class="reg-price">Reg Price <span>$29.99</span></h3>
+                                                                <h2 class="discount-price">Only <span>$18.99</span></h2>
+                                                            </div>
+                                                            <div class="buy-button">
+                                                                <button>Buy</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single product  -->
+                                                <div class="product-container">
+                                                    <div class="product-image">
+                                                        <img src="./img/pro3.png" alt="">
+                                                        <div class="product-share">
+                                                            <img src="./img/share.png" alt="">
+                                                            <span>100</span>
+                                                        </div>
+                                                        <div class="product-bookmark">
+                                                            <img src="./img/bookmarkBlack.png" class="img-fluid" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-details">
+                                                        <div class="product-description">
+                                                            <p class="username">@sierrafur121 <span
+                                                                    class="time-posted">1h</span></p>
+                                                            <h2 class="product-title">Fisher-Price</h2>
+                                                            <p class="product-summary">
+                                                                Magnetic Drawing Board for Kids, Toddler Magnet Doodle
+                                                                Board with Toys,
+                                                                Airplane Car Travel Activities (Blue Cat)
+                                                            </p>
+                                                        </div>
+                                                        <div class="product-pricing">
+                                                            <div class="pricing">
+                                                                <h3 class="reg-price">Reg Price <span>$29.99</span></h3>
+                                                                <h2 class="discount-price">Only <span>$18.99</span></h2>
+                                                            </div>
+                                                            <div class="buy-button">
+                                                                <button>Buy</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single product  -->
+                                                <div class="product-container">
+                                                    <div class="product-image">
+                                                        <img src="./img/pro4.png" alt="">
+                                                        <div class="product-share">
+                                                            <img src="./img/share.png" alt="">
+                                                            <span>100</span>
+                                                        </div>
+                                                        <div class="product-bookmark">
+                                                            <img src="./img/bookmarkBlack.png" class="img-fluid" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-details">
+                                                        <div class="product-description">
+                                                            <p class="username">@sierrafur121 <span
+                                                                    class="time-posted">1h</span></p>
+                                                            <h2 class="product-title">Fisher-Price</h2>
+                                                            <p class="product-summary">
+                                                                Magnetic Drawing Board for Kids, Toddler Magnet Doodle
+                                                                Board with Toys,
+                                                                Airplane Car Travel Activities (Blue Cat)
+                                                            </p>
+                                                        </div>
+                                                        <div class="product-pricing">
+                                                            <div class="pricing">
+                                                                <h3 class="reg-price">Reg Price <span>$29.99</span></h3>
+                                                                <h2 class="discount-price">Only <span>$18.99</span></h2>
+                                                            </div>
+                                                            <div class="buy-button">
+                                                                <button>Buy</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single product  -->
+                                                <div class="product-container">
+                                                    <div class="product-image">
+                                                        <img src="./img/pro2.png" alt="">
+                                                        <div class="product-share">
+                                                            <img src="./img/share.png" alt="">
+                                                            <span>100</span>
+                                                        </div>
+                                                        <div class="product-bookmark">
+                                                            <img src="./img/bookmarkBlack.png" class="img-fluid" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-details">
+                                                        <div class="product-description">
+                                                            <p class="username">@sierrafur121 <span
+                                                                    class="time-posted">1h</span></p>
+                                                            <h2 class="product-title">Fisher-Price</h2>
+                                                            <p class="product-summary">
+                                                                Magnetic Drawing Board for Kids, Toddler Magnet Doodle
+                                                                Board with Toys,
+                                                                Airplane Car Travel Activities (Blue Cat)
+                                                            </p>
+                                                        </div>
+                                                        <div class="product-pricing">
+                                                            <div class="pricing">
+                                                                <h3 class="reg-price">Reg Price <span>$29.99</span></h3>
+                                                                <h2 class="discount-price">Only <span>$18.99</span></h2>
+                                                            </div>
+                                                            <div class="buy-button">
+                                                                <button>Buy</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single product  -->
+                                                <div class="product-container">
+                                                    <div class="product-image">
+                                                        <img src="./img/pro1.png" alt="">
+                                                        <div class="product-share">
+                                                            <img src="./img/share.png" alt="">
+                                                            <span>100</span>
+                                                        </div>
+                                                        <div class="product-bookmark">
+                                                            <img src="./img/bookmarkBlack.png" class="img-fluid" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-details">
+                                                        <div class="product-description">
+                                                            <p class="username">@sierrafur121 <span
+                                                                    class="time-posted">1h</span></p>
+                                                            <h2 class="product-title">Fisher-Price</h2>
+                                                            <p class="product-summary">
+                                                                Magnetic Drawing Board for Kids, Toddler Magnet Doodle
+                                                                Board with Toys,
+                                                                Airplane Car Travel Activities (Blue Cat)
+                                                            </p>
+                                                        </div>
+                                                        <div class="product-pricing">
+                                                            <div class="pricing">
+                                                                <h3 class="reg-price">Reg Price <span>$29.99</span></h3>
+                                                                <h2 class="discount-price">Only <span>$18.99</span></h2>
+                                                            </div>
+                                                            <div class="buy-button">
+                                                                <button>Buy</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -891,86 +1382,97 @@
 
                     <!-- Sponsored Posts Section -->
                     <div class="col-xl-3">
-                        <div class="sponsored-posts">
-                            <h4>Sponsored Posts</h4>
+                        <div class="sideBar-wraper hide-scrollbar">
                             <div class="ads-lists">
                                 <!-- single ad card  -->
                                 <div class="ad-card">
-                                    <p>Sponsored Post</p>
-                                    <div class="ad-card-content">
-                                        <div class="ad-left">
-                                            <img src="./img/ad-img.png" class="img-fluid" alt="">
+                                    <div class="ad-card-img">
+                                        <img src="./img/s1.png" class="" alt="">
+                                    </div>
+                                    <div class="ad-card-logos">
+                                        <div class="interaction-item">
+                                            <img src="./img/view.png" alt="Like">
+                                            <span>100</span>
                                         </div>
-                                        <div class="ad-right">
-                                            <h3>Company Name</h3>
-                                            <div class="ad-location">
-                                                <img src="./img/ad-loc.png" alt="">
-                                                <span>New York, NY .</span>
-                                            </div>
-                                            <p>Advertisement title here.</p>
-                                            <div class="ad-link">
-                                                <img src="./img/link.png" alt="">
-                                            </div>
+                                        <div class="interaction-item">
+                                            <img src="./img/lovefill.png" alt="Like">
+                                            <span>100</span>
+                                        </div>
+                                        <div class="interaction-item">
+                                            <img src="./img/cmnt.png" alt="Comment">
+                                            <span>100</span>
+                                        </div>
+                                        <div class="interaction-item">
+                                            <img src="./img/share.png" alt="Share">
                                         </div>
                                     </div>
                                 </div>
                                 <!-- single ad card  -->
                                 <div class="ad-card">
-                                    <p>Sponsored Post</p>
-                                    <div class="ad-card-content">
-                                        <div class="ad-left">
-                                            <img src="./img/ad-img.png" class="img-fluid" alt="">
+                                    <div class="ad-card-img">
+                                        <img src="./img/s2.png" class="" alt="">
+                                    </div>
+                                    <div class="ad-card-logos">
+                                        <div class="interaction-item">
+                                            <img src="./img/view.png" alt="Like">
+                                            <span>100</span>
                                         </div>
-                                        <div class="ad-right">
-                                            <h3>Company Name</h3>
-                                            <div class="ad-location">
-                                                <img src="./img/ad-loc.png" alt="">
-                                                <span>New York, NY .</span>
-                                            </div>
-                                            <p>Advertisement title here.</p>
-                                            <div class="ad-link">
-                                                <img src="./img/link.png" alt="">
-                                            </div>
+                                        <div class="interaction-item">
+                                            <img src="./img/lovefill.png" alt="Like">
+                                            <span>100</span>
+                                        </div>
+                                        <div class="interaction-item">
+                                            <img src="./img/cmnt.png" alt="Comment">
+                                            <span>100</span>
+                                        </div>
+                                        <div class="interaction-item">
+                                            <img src="./img/share.png" alt="Share">
                                         </div>
                                     </div>
                                 </div>
                                 <!-- single ad card  -->
                                 <div class="ad-card">
-                                    <p>Sponsored Post</p>
-                                    <div class="ad-card-content">
-                                        <div class="ad-left">
-                                            <img src="./img/ad-img.png" class="img-fluid" alt="">
+                                    <div class="ad-card-img">
+                                        <img src="./img/s3.png" class="" alt="">
+                                    </div>
+                                    <div class="ad-card-logos">
+                                        <div class="interaction-item">
+                                            <img src="./img/view.png" alt="Like">
+                                            <span>100</span>
                                         </div>
-                                        <div class="ad-right">
-                                            <h3>Company Name</h3>
-                                            <div class="ad-location">
-                                                <img src="./img/ad-loc.png" alt="">
-                                                <span>New York, NY .</span>
-                                            </div>
-                                            <p>Advertisement title here.</p>
-                                            <div class="ad-link">
-                                                <img src="./img/link.png" alt="">
-                                            </div>
+                                        <div class="interaction-item">
+                                            <img src="./img/lovefill.png" alt="Like">
+                                            <span>100</span>
+                                        </div>
+                                        <div class="interaction-item">
+                                            <img src="./img/cmnt.png" alt="Comment">
+                                            <span>100</span>
+                                        </div>
+                                        <div class="interaction-item">
+                                            <img src="./img/share.png" alt="Share">
                                         </div>
                                     </div>
                                 </div>
                                 <!-- single ad card  -->
                                 <div class="ad-card">
-                                    <p>Sponsored Post</p>
-                                    <div class="ad-card-content">
-                                        <div class="ad-left">
-                                            <img src="./img/ad-img.png" class="img-fluid" alt="">
+                                    <div class="ad-card-img">
+                                        <img src="./img/s1.png" class="" alt="">
+                                    </div>
+                                    <div class="ad-card-logos">
+                                        <div class="interaction-item">
+                                            <img src="./img/view.png" alt="Like">
+                                            <span>100</span>
                                         </div>
-                                        <div class="ad-right">
-                                            <h3>Company Name</h3>
-                                            <div class="ad-location">
-                                                <img src="./img/ad-loc.png" alt="">
-                                                <span>New York, NY .</span>
-                                            </div>
-                                            <p>Advertisement title here.</p>
-                                            <div class="ad-link">
-                                                <img src="./img/link.png" alt="">
-                                            </div>
+                                        <div class="interaction-item">
+                                            <img src="./img/lovefill.png" alt="Like">
+                                            <span>100</span>
+                                        </div>
+                                        <div class="interaction-item">
+                                            <img src="./img/cmnt.png" alt="Comment">
+                                            <span>100</span>
+                                        </div>
+                                        <div class="interaction-item">
+                                            <img src="./img/share.png" alt="Share">
                                         </div>
                                     </div>
                                 </div>
@@ -987,30 +1489,12 @@
 
 
 
-    <!-- float menu for mobile  -->
-    <section class="float-menu d-flex d-lg-none align-items-center">
-        <a href="/feed-sponser-post.html" class="active-btn">
-            <img src="./img/home.png" class="img-fluid" alt="">
-        </a>
-        <a href="#">
-            <img src="./img/dashboard.png" class="img-fluid" alt="">
-        </a>
-        <a href="#">
-            <img src="./img/plus.png" class="img-fluid" alt="">
-        </a>
-        <a href="#">
-            <img src="./img/notification-fill.png" class="img-fluid" alt="">
-        </a>
-        <a href="#">
-            <img src="./img/profile-circle.png" class="img-fluid" alt="">
-        </a>
-    </section>
 
     <!-- offcanvas notification  -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="notificationOffcanvas"
         aria-labelledby="notificationOffcanvasLabel">
         <div class="offcanvas-header">
-            <h5 id="notificationOffcanvasLabel">Notifications</h5>
+            <h5 id="notificationOffcanvasLabel">Notifications <span>2 New</span></h5>
             <button type="button" class="modal-close" data-bs-dismiss="offcanvas" aria-label="Close">
                 <img src="./img/cross.png" alt="">
             </button>
@@ -1029,13 +1513,30 @@
                                 <img src="./img/noti-avatar.png" class="img-fluid w-100" alt="">
                             </div>
                             <div class="notification-content">
-                                <h3>Zusia</h3>
-                                <p>Liked your service.</p>
+                                <h3>Connection request from John Doe <span class="notification-date">Now</span></h3>
+                                <div class="notification-btns">
+                                    <button class="cancel-btn">Reject</button>
+                                    <button class="accept-btn">Accept</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="notification-date">
-                        <p>2 days ago</p>
+                </div>
+                <!-- single item  -->
+                <div class="notification-box">
+                    <div class="notification-left">
+                        <div class="unread-notification">
+                            <img src="./img/unred.png" class="w-100 img-fluid" alt="">
+                        </div>
+                        <div class="notification-imgBox">
+                            <div class="notification-img">
+                                <img src="./img/noti-avatar.png" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="notification-content">
+                                <h3>New message from Sierra <span class="notification-date">Now</span></h3>
+                                <p>Bethany was running in a half marathon when she began .</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- single item  -->
@@ -1048,15 +1549,55 @@
                                 <img src="./img/noti-avatar.png" class="img-fluid w-100" alt="">
                             </div>
                             <div class="notification-content">
-                                <h3>Zusia</h3>
-                                <p>Liked your service.</p>
+                                <h3 class="read-title">New post from Sierra Ferguson <span
+                                        class="notification-date">1h</span></h3>
+                                <p class="read-msg">Bethany was running in a half marathon when she began .</p>
                             </div>
                         </div>
                     </div>
-                    <div class="notification-date">
-                        <p>2 days ago</p>
-                    </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- offcanvas report  -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="createComunityOffcanvas"
+        aria-labelledby="createComunityLabel">
+        <div class="offcanvas-header createComunityoffcanvas-header">
+            <div class="createComunityLabel">
+                <h5>Report</h5>
+                <p style="font-style: italic;">Why you want to report this?</p>
+            </div>
+            <button type="button" class="modal-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                <img src="./img/cross.png" alt="">
+            </button>
+        </div>
+        <div class="offcanvas-body addComunityOffcanvas-body">
+            <div class="createComunityForm">
+                <div class="notification-bar"></div>
+                <form action="">
+
+                    <!-- pick an option -->
+                    <div class="description-input-wrapper">
+                        <select class="form-input" name="reason-type" id="reason-type">
+                            <option value="" disabled selected>Pick an Option</option>
+                            <option value="spam">It's spam</option>
+                            <option value="inappropriate">It's inappropriate</option>
+                        </select>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="description-input-wrapper">
+                        <textarea name="" id="" placeholder="Please describe you reason." class="form-input"></textarea>
+                    </div>
+                    <!-- submit  -->
+                    <div class="mt-3">
+                        <button class="register-submit" type="submit">
+                            <span class="saveBtnTxt">Save</span>
+                            <span class="saveBtnImg"><img src="./img/forward.png" class="img-fluid w-100" alt=""></span>
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
