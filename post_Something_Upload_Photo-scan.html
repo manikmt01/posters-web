@@ -51,18 +51,21 @@
                     <p>Upload primary post image to scan and capture the post details.</p>
                 </div>
                 <div class="comunity-image-upload-wrapper">
-                    <label for="imageUploadInput" class="comunity-image-upload-label">
+                    <label for="imageUploadInput" class="comunity-image-upload-label" style="display: none;">
                         <span class="uploadIconComunity">
                             <img src="./img/tabler_upload.png" class="img-fluid" alt="Upload Icon">
                         </span>
                         <span class="uploadTextcomunity">Upload Image</span>
                     </label>
+                
                     <input type="file" id="imageUploadInput" class="comunity-image-upload-input" style="display: none;">
-                    <div class="comunity-image-upload-preview" style="display: none;">
+                
+                    <!-- Preview Image is Visible Initially -->
+                    <div class="comunity-image-upload-preview" style="display: flex;">
                         <div class="remove-img">
                             <img src="./img/cross1.png" class="img-fluid" alt="Remove">
                         </div>
-                        <img id="previewImage" src="" class="img-fluid" alt="Preview Image">
+                        <img id="previewImage" src="./img/uploadImg.png" class="img-fluid" alt="Preview Image">
                     </div>
                 </div>
             </div>
@@ -70,6 +73,19 @@
     </main>
 
 
+    <!-- Modal -->
+    <div class="modal fade" id="UploadScanModal" tabindex="-1" aria-labelledby="UploadScanModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="UploadScanmodal-body-content">
+                        <img src="./img/sanpost.png" alt="">
+                        <p>Scanning post details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -113,6 +129,13 @@
                 preview.style.display = "none"; // Hide the preview
                 previewImage.src = ""; // Clear the preview image
             });
+        });
+    </script>
+    <!-- initially show modal  -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const postModal = new bootstrap.Modal(document.getElementById('UploadScanModal'));
+            postModal.show();
         });
     </script>
 </body>

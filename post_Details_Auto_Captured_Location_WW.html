@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon  -->
+    <link rel="icon" href="./img/favicon.png">
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Feed Sponser Post</title>
+</head>
+
+<body>
+    <header>
+        <div class="destop-nav d-flex justify-content-between align-items-center post-upload">
+            <div class="header-left">
+                <div class="back-arr">
+                    <img src="./img/left-arr.png" alt="">
+                </div>
+                <h3>Post Details</h3>
+            </div>
+            <div class="steps">
+                <div class="single-step step-active">
+                    <h3><span><img src="./img/iconamoon_check-bold.png" alt=""></span></h3>
+                    <p>Upload Photo/Videos</p>
+                </div>
+                <div class="single-step">
+                    <h3><span>2</span></h3>
+                    <p>Enter Post Details</p>
+                </div>
+                <div class="step-bar">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="postDetailsBody">
+            <div class="postUpload-container autocapture-container">
+                <div class="postUpload-title">
+                    <h2>Upload Photo</h2>
+                    <p>Upload primary post image to scan and capture the post details.</p>
+                </div>
+                <div class="comunity-image-upload-wrapper">
+                    <label for="imageUploadInput" class="comunity-image-upload-label" style="display: none;">
+                        <span class="uploadIconComunity">
+                            <img src="./img/tabler_upload.png" class="img-fluid" alt="Upload Icon">
+                        </span>
+                        <span class="uploadTextcomunity">Upload Image</span>
+                    </label>
+
+                    <input type="file" id="imageUploadInput" class="comunity-image-upload-input" style="display: none;">
+
+                    <!-- Preview Image is Visible Initially -->
+                    <div class="comunity-image-upload-preview" style="display: flex;">
+                        <div class="remove-img">
+                            <img src="./img/cross1.png" class="img-fluid" alt="Remove">
+                        </div>
+                        <img id="previewImage" src="./img/uploadImg.png" class="img-fluid" alt="Preview Image">
+                    </div>
+                </div>
+            </div>
+            <div class="company-section">
+                <!-- company name  -->
+                <div class="post-something-form-group">
+                    <label for="company-input" class="post-something-form-label input-left">Company Name</label>
+                    <div class="input-wrapper input-right">
+                        <input type="text" placeholder="Company Name" id="company-input" class="form-input">
+                        <label for="company-input" class="input-icon">
+                            <img src="./img/bi_building-fill.png" alt="company Icon">
+                        </label>
+                        <label for="company-input" class="postdetails-form-bar">
+                        </label>
+                    </div>
+                </div>
+                <!-- Phone number  -->
+                <div class="post-something-form-group location-group">
+                    <div class="input-left">
+                        <label for="phone-input" class="post-something-form-label">Phone No.</label>
+                    </div>
+                    <div class="input-right location-wraper">
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="Phone Number" id="phone-input" class="form-input">
+                            <label for="phone-input" class="input-icon">
+                                <img src="./img/call-calling.png" alt="Location Icon">
+                            </label>
+                            <label for="phone-input" class="postdetails-form-bar">
+                            </label>
+                        </div>
+                        <div class="addPhone-button-wrapper">
+                            <button type="button"><img src="./img/plusblue.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="company-section">
+                <!-- location -->
+                <div class="location-group">
+                    <h2>Locations(s)</h2>
+                    <div class="checkbox-grp">
+                        <!-- location check box  -->
+                        <div class="private-check-wraper">
+                            <label class="private-custom-checkbox" for="mobile-checkbox">
+                                <span class="private-custom-checkbox-text">Mobile Business</span>
+                                <input type="checkbox" class="private-checkbox-input" id="mobile-checkbox">
+                                <span class="private-checkbox-custom"></span>
+
+                            </label>
+                            <button class="tooltipBtnLoc" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Tooltip on top">
+                                <img src="./img/tooltip.png" class="img-fluid" alt="">
+                            </button>
+                        </div>
+                        <!-- location check box  -->
+                        <div class="private-check-wraper">
+                            <label class="private-custom-checkbox" for="worldwide-checkbox">
+                                <span class="private-custom-checkbox-text">Worldwide</span>
+                                <input type="checkbox" class="private-checkbox-input" checked id="worldwide-checkbox">
+                                <span class="private-checkbox-custom"></span>
+
+                            </label>
+                            <button class="tooltipBtnLoc" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Tooltip on top">
+                                <img src="./img/tooltip.png" class="img-fluid" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Address  -->
+                <div class="post-something-form-group location-group">
+                    <div class="input-left">
+                        <label for="address-input" class="post-something-form-label">Address</label>
+                    </div>
+                    <div class="input-right location-wraper">
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="5124 Broadway, New Hyde Park, NY 12334" id="address-input"
+                                class="form-input">
+                            <label for="address-input" class="input-icon">
+                                <img src="./img/locationform.png" alt="Location Icon">
+                            </label>
+                            <label for="address-input" class="postdetails-form-bar">
+                            </label>
+                        </div>
+                        <div class="addPhone-button-wrapper">
+                            <button type="button"><img src="./img/plusblue.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="not-find">
+                <button class="saveBtn">
+                    <span class="saveBtnTxt">Save</span>
+                    <span class="saveBtnImg"><img src="./img/forward.png" class="img-fluid w-100" alt=""></span>
+                </button>
+                <button class="cancelbtn">Cancel</button>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- custom js  -->
+    <!-- file upload  -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const input = document.getElementById("imageUploadInput");
+            const label = document.querySelector(".comunity-image-upload-label");
+            const preview = document.querySelector(".comunity-image-upload-preview");
+            const removeBtn = document.querySelector(".remove-img");
+            const previewImage = document.getElementById("previewImage");
+
+            // Handle file input change
+            input.addEventListener("change", function () {
+                const file = input.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        previewImage.src = e.target.result; // Set the preview image source
+                        label.style.display = "none"; // Hide the label
+                        preview.style.display = "flex"; // Show the preview
+                    };
+                    reader.readAsDataURL(file);
+                    console.log(file);
+                }
+            });
+
+            // Handle remove button click
+            removeBtn.addEventListener("click", function () {
+                input.value = ""; // Clear the input value
+                label.style.display = "flex"; // Show the label
+                preview.style.display = "none"; // Hide the preview
+                previewImage.src = ""; // Clear the preview image
+            });
+        });
+    </script>
+    <!-- tooltip  -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        });
+    </script>
+</body>
+
+</html>
