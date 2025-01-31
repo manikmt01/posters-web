@@ -418,7 +418,9 @@ header {
 .pf-footer img {
   width: 83px;
 }
-
+.postAsOffcanvas-header {
+  justify-content: space-between;
+}
 .pf-footer span {
   color: #4a17cb;
   font-weight: 500;
@@ -1092,8 +1094,11 @@ header {
   flex-grow: 1;
 }
 
+.post-upload .steps {
+  width: 450px;
+}
+
 .steps {
-  /* width: 656px; */
   margin-left: auto;
   display: flex;
   justify-content: space-between;
@@ -1174,10 +1179,14 @@ header {
   background: #f1f5f9;
 }
 
+.post-upload .step-bar {
+  width: 66%;
+}
+
 .postDetailsBody {
   background: #e3ebf4;
   min-height: calc(100vh - 117px);
-  padding: 80px 20px;
+  padding: 40px 20px;
 }
 
 .comunity-container {
@@ -1545,7 +1554,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 30px auto 0;
+  margin: 20px auto 0;
   border: none;
   border-radius: 10px;
   gap: 8px;
@@ -1591,12 +1600,10 @@ header {
 }
 
 .postUpload-container {
-  max-width: 1264px;
+  max-width: 1000px;
   background: #f1f5f9;
   margin: 0 auto;
-  padding: 50px 132px 72px;
-  border-radius: 10px;
-  box-shadow: 6px 6px 12px #d4e0eb, -6px -6px 12px #fff;
+  padding: 50px 132px;
 }
 
 .postUpload-title h2 {
@@ -1606,83 +1613,13 @@ header {
   text-align: center;
 }
 
-.file-upload-container {
-  display: flex;
-  gap: 20px;
-  margin-top: 40px;
-}
-
-.file-input-wrapper {
-  flex-grow: 1;
-  border: 1px dashed #5a5a5a;
-}
-
-.uploaded-photo-container {
-  height: 217px;
-  position: relative;
-  width: 32%;
-}
-
-.uploaded-photo-preview {
-  background: #e3ebf4;
-  height: 100%;
-}
-
-.uploaded-nophoto-text {
-  position: absolute;
-  bottom: 12px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #000;
-  font-weight: 600;
-  font-size: 14px;
-  width: 175px;
-}
-
-.delete-photo-icon {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  cursor: pointer;
-}
-
-.file-input {
-  display: none;
-}
-
-.file-input-upload {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.postUpload-title p {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
   text-align: center;
-  height: 450px;
-  width: 100%;
-  cursor: pointer;
-}
-
-.upload-icon {
-  display: block;
-  max-width: 246px;
-}
-
-.upload-instructions {
-  display: block;
-  color: #000;
-  font-size: 18px;
-}
-
-.upload-instructions a {
-  color: #000;
-  text-decoration: underline;
-}
-
-.upload-requirements {
-  display: block;
-  color: #979797;
-  font-size: 12px;
-  max-width: 343px;
-  margin-top: 4px;
+  max-width: 342px;
+  margin: 10px auto 30px;
 }
 
 .cancelbtn {
@@ -1697,7 +1634,6 @@ header {
 .cancelbtn:hover {
   color: #110333;
 }
-
 /* post_Something_Enter_Details_1 */
 .postdetails-form {
   max-width: 776px;
@@ -4469,7 +4405,7 @@ header {
   }
 
   .saveBtn {
-    padding: 14px 105px;
+    padding: 14px 45px;
   }
 
   .comunity-image-upload-label {
