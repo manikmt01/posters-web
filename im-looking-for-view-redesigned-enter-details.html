@@ -1,516 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Im Looking For_View Redesigned_Enter Details</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="" />
-    <!-- font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      crossorigin="anonymous"
-    />
-    <!-- custom css -->
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <link rel="icon" href="./img/favicon.ico" />
-  </head>
 
-  <body class="flow-body">
-    <!-- header start -->
-    <header id="headerFlowNew" class="shadow-sm">
-      <div class="container-fluid">
-        <div class="row header-flow-row align-items-center">
-          <div class="col ps-0 ps-xl-auto">
-            <div class="header-flow-left">
-              <div class="header-flow-left-inner">
-                <button class="header-flow-left-inner-button">
-                  <img src="./img/left-arrow.svg" alt="left-arrow" />
-                </button>
-                <span class="mx-auto d-xl-none d-block">I’m Looking For</span>
-                <span class="me-auto d-xl-block d-none">I’m Looking For</span>
-              </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon  -->
+  <link rel="icon" href="./img/favicon.png">
+  <!-- google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- bootstrap css  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- custom css  -->
+  <link rel="stylesheet" href="./css/style.css" />
+  
+  <title>Feed Sponser Post</title>
+</head>
+
+<body class="flow-body">
+  <!-- header start -->
+  <header id="headerFlowNew" class="shadow-sm">
+    <div class="container-fluid">
+      <div class="row header-flow-row align-items-center">
+        <div class="col ps-0 ps-xl-auto">
+          <div class="header-flow-left">
+            <div class="header-flow-left-inner">
+              <button class="header-flow-left-inner-button">
+                <img src="./img/left-arrow.svg" alt="left-arrow" />
+              </button>
+              <span class="mx-auto d-xl-none d-block">I’m Looking For</span>
+              <span class="me-auto d-xl-block d-none">I’m Looking For</span>
             </div>
           </div>
-          <div class="col d-xl-block d-none">
-            <div class="header-flow-right"></div>
+        </div>
+        <div class="col d-xl-block d-none">
+          <div class="header-flow-right"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+  <!-- main start -->
+  <main>
+    <!-- title start -->
+    <section class="flow detailss" id="titleDetails">
+      <div class="upload-container">
+        <div class="details-communities">
+          <div class="row flow-row">
+            <div class="col-12">
+              <div class="d-flex justify-content-center">
+                <h2 class="flow-location-title details-title-space">
+                  I’m Looking For
+                </h2>
+              </div>
+              <form class="create-wrapper mx-auto">
+                <!-- What you are looking for -->
+                <div class="lookingFor-input-wraper mb-3">
+                  <div class="boots-input-title">
+                    <label for="whats">What you are looking for</label>
+                  </div>
+                  <div class="input-group boots-input">
+                    <input type="text" class="form-control" id="whats" placeholder="What are you looking for" />
+                    <div class="form-tooltip">
+                      <div class="form-tooltip-inner">
+                        <img src="./img/tooltip.png" alt="">
+                        <div class="form-tooltip-container">
+                          <p>Enter naturally!</p>
+                          <ul>
+                            <li>"I am looking for a 3 bedroom apartment"</li>
+                            <li>“I want to sell my car”</li>
+                            <li>"I am looking for a job as Graphics Designer"</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- info -->
+                 <div class="lookingFor-input-wraper">
+                    <div class="boots-input-title">
+                      <label for="infos-textarea">Info</label>
+                    </div>
+                    <div class="textarea-senario">
+                      <textarea placeholder="Enter more details" id="infos-textarea" class="form-textarea" rows="4"></textarea>
+                    </div>
+                 </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </header>
-    <!-- header end -->
-    <!-- main start -->
-    <main>
-      <!-- title start -->
-      <section class="flow detailss" id="titleDetails">
-        <div class="upload-container">
-          <div class="details-communities">
-            <div class="row flow-row">
-              <div class="col-12">
-                <div class="d-flex justify-content-center">
-                  <h2 class="flow-location-title details-title-space">
-                    I’m Looking For
+    </section>
+
+    <!-- runads start -->
+    <section class="flow detailssTwo" id="runads">
+      <div class="upload-container">
+        <div class="details-communities">
+          <div class="row communities-row">
+            <div class="col-12">
+              <div class="accordion details-accordion" id="boostAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button flow-title" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                      <div class="accordian-title-main">
+                        <span>Area </span>
+                      </div>
+                    </button>
                   </h2>
-                </div>
-                <form class="create-wrapper mx-auto">
-                  <div class="row">
-                    <!-- Date Input -->
-                    <div class="col-12 d-md-block d-none">
-                      <div class="boots-input-title">
-                        <label for="whats">What you are looking for</label>
-                      </div>
-                    </div>
-                    <div class="col-3 d-md-block d-none">
-                      <div class="boots-input-title"></div>
-                    </div>
-                    <div class="col-12 col-md-9">
-                      <div class="input-group boots-input w-full">
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="whats"
-                          placeholder="What are you looking for"
-                        />
-                      </div>
-                    </div>
-                    <!-- info -->
-                    <div class="col-3 mt-3">
-                      <div class="boots-input-title">
-                        <label for="infos-textarea">Info</label>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-9 mt-3">
-                      <div class="textarea-senario">
-                        <textarea
-                          placeholder="Enter more details"
-                          id="infos-textarea"
-                          class="form-textarea"
-                          rows="4"
-                        ></textarea>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Communities start -->
-      <section class="flow detailssTwo" id="communitiess">
-        <div class="upload-container">
-          <div class="details-communities">
-            <div class="row communities-row">
-              <div class="col-12">
-                <div class="communites-contentss">
-                  <div class="row justify-content-between align-items-start">
-                    <div class="col-8">
-                      <div class="communites-contentss-title-left">
-                        <h3>Communities</h3>
-                        <p>Only user from same community will see this post</p>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="communites-contentss-title-right text-end">
-                        <p>Selected <span>2</span></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="communites-contentsx">
-                  <button
-                    class="communites-contentsx-item d-flex align-items-center justify-content-center"
-                  >
-                    <span>My Community</span>
-                  </button>
-                  <button
-                    class="communites-contentsx-item d-flex align-items-center justify-content-center"
-                  >
-                    <span>All Communities</span>
-                  </button>
-                  <button
-                    class="communites-contentsx-item d-flex align-items-center justify-content-center"
-                  >
-                    <span>Choose Communities</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- runads start -->
-      <section class="flow detailssTwo" id="runads">
-        <div class="upload-container">
-          <div class="details-communities">
-            <div class="row communities-row">
-              <div class="col-12">
-                <div class="accordion details-accordion" id="boostAccordion">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button
-                        class="accordion-button flow-title"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo"
-                        aria-expanded="true"
-                        aria-controls="collapseTwo"
-                      >
-                        <div class="accordian-title-main">
-                          <span>Area </span>
-                        </div>
-                      </button>
-                    </h2>
 
-                    <div
-                      id="collapseTwo"
-                      class="accordion-collapse collapse show"
-                      aria-labelledby="headingTwo"
-                      data-bs-parent="#boostAccordion"
-                    >
-                      <div class="accordion-body">
-                        <form class="">
-                          <div class="row">
-                            <!-- lcoation -->
-                            <div class="col-3 mt-3">
-                              <div class="boots-input-title">
-                                <label for="loaction">Location</label>
-                              </div>
-                            </div>
-                            <div class="col-6 mt-3">
-                              <div class="input-group boots-input w-full">
-                                <span class="input-group-icon">
-                                  <img
-                                    src="./img/location-new.svg"
-                                    alt="calendar icon"
-                                  />
-                                </span>
-                                <div class="divider-input"></div>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="loaction"
-                                  placeholder="Location"
-                                />
-                              </div>
-                            </div>
-                            <div class="col-3 mt-3 d-md-block d-none">
-                              <div class="dropdown">
-                                <button
-                                  class="btn btn-secondary dropdown-toggle boots-select"
-                                  type="button"
-                                  id="dropdownMenuButton"
-                                  data-bs-toggle="dropdown"
-                                  aria-expanded="false"
-                                >
-                                  5 MI
-                                </button>
-                                <ul
-                                  class="boots-dropdown-menu dropdown-menu"
-                                  aria-labelledby="dropdownMenuButton"
-                                >
-                                  <li>
-                                    <a class="dropdown-item" href="#">5 MI</a>
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#">10 MI</a>
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#">15 MI</a>
-                                  </li>
-                                </ul>
-                              </div>
+                  <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                    data-bs-parent="#boostAccordion">
+                    <div class="accordion-body">
+                      <form class="">
+                        <div class="row">
+                          <!-- lcoation -->
+                          <div class="col-3 mt-3">
+                            <div class="boots-input-title">
+                              <label for="loaction">Location</label>
                             </div>
                           </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Images start -->
-      <section class="flow detailssTwo" id="runads">
-        <div class="upload-container">
-          <div class="details-communities">
-            <div class="row communities-row">
-              <div class="col-12">
-                <div class="accordion details-accordion" id="boostAccordion">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button
-                        class="accordion-button flow-title"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo"
-                        aria-expanded="true"
-                        aria-controls="collapseTwo"
-                      >
-                        <div class="accordian-title-main">
-                          <span>Add Images</span>
-                        </div>
-                      </button>
-                    </h2>
-
-                    <div
-                      id="collapseTwo"
-                      class="accordion-collapse collapse show"
-                      aria-labelledby="headingTwo"
-                      data-bs-parent="#boostAccordion"
-                    >
-                      <div class="accordion-body">
-                        <form class="">
-                          <div class="row">
-                            <!-- lcoation -->
-                            <div class="col-12">
-                              <div class="upload-wrapper">
-                                <!-- Secondary Images -->
-                                <div class="row secondary-images">
-                                  <div class="col-md-4 px-2">
-                                    <div
-                                      class="upload-secondary-new d-flex justify-content-center align-items-center flex-column"
-                                      id="imageUpload1"
-                                    >
-                                      <input
-                                        type="file"
-                                        id="imageInput1"
-                                        accept="image/*"
-                                        class="d-none"
-                                      />
-                                      <div class="upload-img">
-                                        <img
-                                          src="./img/tabler_upload.svg"
-                                          alt="upload"
-                                          class="img-fluid"
-                                        />
-                                      </div>
-                                      <p class="text-center upload-area-text">
-                                        Post Image
-                                      </p>
-                                      <span
-                                        class="file-name"
-                                        id="imageFileName1"
-                                      ></span>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-4 px-2">
-                                    <div
-                                      class="upload-secondary-new d-flex justify-content-center align-items-center flex-column"
-                                      id="imageUpload2"
-                                    >
-                                      <input
-                                        type="file"
-                                        id="imageInput2"
-                                        accept="image/*"
-                                        class="d-none"
-                                      />
-                                      <div class="upload-img">
-                                        <img
-                                          src="./img/tabler_upload.svg"
-                                          alt="upload"
-                                          class="img-fluid"
-                                        />
-                                      </div>
-                                      <p class="text-center upload-area-text">
-                                        Post Image
-                                      </p>
-                                      <span
-                                        class="file-name"
-                                        id="imageFileName2"
-                                      ></span>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-4 px-2">
-                                    <div
-                                      class="upload-secondary-new d-flex justify-content-center align-items-center flex-column"
-                                      id="imageUpload2"
-                                    >
-                                      <input
-                                        type="file"
-                                        id="imageInput2"
-                                        accept="image/*"
-                                        class="d-none"
-                                      />
-                                      <div class="upload-img">
-                                        <img
-                                          src="./img/tabler_upload.svg"
-                                          alt="upload"
-                                          class="img-fluid"
-                                        />
-                                      </div>
-                                      <p class="text-center upload-area-text">
-                                        Post Image
-                                      </p>
-                                      <span
-                                        class="file-name"
-                                        id="imageFileName2"
-                                      ></span>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+                          <div class="col-6 mt-3">
+                            <div class="input-group boots-input w-full">
+                              <span class="input-group-icon">
+                                <img src="./img/location-new.svg" alt="calendar icon" />
+                              </span>
+                              <div class="divider-input"></div>
+                              <input type="text" class="form-control" id="loaction" placeholder="Location" />
                             </div>
                           </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- keyword start -->
-      <section class="flow detailssTwo detailssTwo-keyword" id="communitiess">
-        <div class="upload-container">
-          <div class="details-communities">
-            <div class="row communities-row">
-              <div class="col-12">
-                <div class="communites-contentss">
-                  <div
-                    class="row justify-content-between align-items-start communities-row"
-                  >
-                    <div class="col-12">
-                      <div class="communites-contentss-title-left">
-                        <h3>Keywords</h3>
-                        <p>Only user from same community will see this post</p>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <form class="demofrom">
-                        <div class="input-group flow-input">
-                          <label class="input-group-icon-search"
-                            ><img src="./img/search-line.svg" alt="search"
-                          /></label>
-                          <input
-                            type="search"
-                            class="form-control"
-                            placeholder="Search Member"
-                            aria-label="search"
-                            aria-describedby="basic-addon1"
-                          />
+                          <div class="col-3 mt-3 d-md-block d-none">
+                            <div class="dropdown">
+                              <button class="btn btn-secondary dropdown-toggle boots-select" type="button"
+                                id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                5 MI
+                              </button>
+                              <ul class="boots-dropdown-menu dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li>
+                                  <a class="dropdown-item" href="#">5 MI</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">10 MI</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">15 MI</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
                       </form>
                     </div>
-                    <div class="col-12">
-                      <p class="mb-0 small-text-form">
-                        Only user from same community will see this post
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="communites-contentsx-tag mt-4">
-                  <div
-                    class="communites-contentsx-tag-item d-flex align-items-center justify-content-center"
-                  >
-                    <span>Air Conditioners</span>
-                    <button
-                      class="communites-contentsx-tag-item-close d-flex align-items-center justify-content-center"
-                    >
-                      <img src="./img/delete-tags.svg" alt="" />
-                    </button>
-                  </div>
-                  <div
-                    class="communites-contentsx-tag-item d-flex align-items-center justify-content-center"
-                  >
-                    <span>Package Discounts</span>
-                    <button
-                      class="communites-contentsx-tag-item-close d-flex align-items-center justify-content-center"
-                    >
-                      <img src="./img/delete-tags.svg" alt="" />
-                    </button>
-                  </div>
-                  <div
-                    class="communites-contentsx-tag-item d-flex align-items-center justify-content-center"
-                  >
-                    <span>GE Ovens</span>
-                    <button
-                      class="communites-contentsx-tag-item-close d-flex align-items-center justify-content-center"
-                    >
-                      <img src="./img/delete-tags.svg" alt="" />
-                    </button>
-                  </div>
-                  <div
-                    class="communites-contentsx-tag-item d-flex align-items-center justify-content-center"
-                  >
-                    <span>Electric Ovens</span>
-                    <button
-                      class="communites-contentsx-tag-item-close d-flex align-items-center justify-content-center"
-                    >
-                      <img src="./img/delete-tags.svg" alt="" />
-                    </button>
-                  </div>
-                  <div
-                    class="communites-contentsx-tag-item d-flex align-items-center justify-content-center"
-                  >
-                    <span>Electric Ovens</span>
-                    <button
-                      class="communites-contentsx-tag-item-close d-flex align-items-center justify-content-center"
-                    >
-                      <img src="./img/delete-tags.svg" alt="" />
-                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="button-location-container button-upload-container">
-          <div
-            class="upload-button-wrapper d-flex justify-content-center flex-column"
-          >
-            <button class="upload-buttom-top sk-gradint-button-one">
-              Save & Next <img src="./img/Arrow Forward.svg" alt="Arrow" />
-            </button>
-            <button class="upload-buttom-bottom">Cancel</button>
+      </div>
+    </section>
+    <!-- Images start -->
+    <section class="flow detailssTwo" id="runads">
+      <div class="upload-container">
+        <div class="details-communities">
+          <div class="row communities-row">
+            <div class="col-12">
+              <div class="accordion details-accordion" id="boostAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button flow-title" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                      <div class="accordian-title-main">
+                        <span>Add Images</span>
+                      </div>
+                    </button>
+                  </h2>
+
+                  <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                    data-bs-parent="#boostAccordion">
+                    <div class="accordion-body">
+                      <form class="">
+                        <div class="add-img-wraper">
+                          <!-- single item  -->
+                          <div class="comunity-image-upload-wrapper">
+                            <label for="imageUploadInput" class="comunity-image-upload-label" style="display: none;">
+                              <span class="uploadIconComunity">
+                                <img src="./img/tabler_upload.png" class="img-fluid" alt="Upload Icon">
+                              </span>
+                              <span class="uploadTextcomunity">Upload Image</span>
+                            </label>
+
+                            <input type="file" id="imageUploadInput" class="comunity-image-upload-input" style="display: none;">
+
+                            <!-- Preview Image is Visible Initially -->
+                            <div class="comunity-image-upload-preview" style="display: flex;">
+                              <div class="remove-img">
+                                <img src="./img/cross1.png" class="img-fluid" alt="Remove">
+                              </div>
+                              <img id="previewImage" src="./img/uploadimg1.png" class="img-fluid" alt="Preview Image">
+                            </div>
+                          </div>
+                          <!-- single item  -->
+                          <div class="comunity-image-upload-wrapper">
+                            <label for="imageUploadInput" class="comunity-image-upload-label">
+                              <span class="uploadIconComunity">
+                                <img src="./img/tabler_upload.png" class="img-fluid" alt="Upload Icon">
+                              </span>
+                              <span class="uploadTextcomunity">Upload Image</span>
+                            </label>
+                            <input type="file" id="imageUploadInput" class="comunity-image-upload-input" style="display: none;">
+                            <div class="comunity-image-upload-preview" style="display: none;">
+                              <div class="remove-img">
+                                <img src="./img/cross1.png" class="img-fluid" alt="Remove">
+                              </div>
+                              <img id="previewImage" src="" class="img-fluid" alt="Preview Image">
+                            </div>
+                          </div>
+                          <!-- single item  -->
+                          <div class="comunity-image-upload-wrapper">
+                            <label for="imageUploadInput" class="comunity-image-upload-label">
+                              <span class="uploadIconComunity">
+                                <img src="./img/tabler_upload.png" class="img-fluid" alt="Upload Icon">
+                              </span>
+                              <span class="uploadTextcomunity">Upload Image</span>
+                            </label>
+                            <input type="file" id="imageUploadInput" class="comunity-image-upload-input" style="display: none;">
+                            <div class="comunity-image-upload-preview" style="display: none;">
+                              <div class="remove-img">
+                                <img src="./img/cross1.png" class="img-fluid" alt="Remove">
+                              </div>
+                              <img id="previewImage" src="" class="img-fluid" alt="Preview Image">
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-    </main>
-    <!-- main end -->
-    <!-- javascript -->
-    <!-- javascript -->
-    <script>
-      const dateInput = document.getElementById("datepicker");
+      </div>
+    </section>
+    <!-- Communities start -->
+    <section class="flow detailssTwo" id="communitiess">
+      <div class="upload-container">
+        <div class="details-communities">
+          <div class="row communities-row">
+            <div class="col-12">
+              <div class="communites-contentss">
+                <div class="row justify-content-between align-items-start">
+                  <div class="col-8">
+                    <div class="communites-contentss-title-left">
+                      <h3>Communities</h3>
+                      <p>Only user from same community will see this post</p>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="communites-contentss-title-right text-end">
+                      <p>Selected <span>2</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="communites-contentsx">
+                <button class="communites-contentsx-item d-flex align-items-center justify-content-center">
+                  <span>My Community</span>
+                </button>
+                <button class="communites-contentsx-item d-flex align-items-center justify-content-center">
+                  <span>All Communities</span>
+                </button>
+                <button class="communites-contentsx-item d-flex align-items-center justify-content-center">
+                  <span>Choose Communities</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="not-find">
+        <button class="saveBtn">
+          <span class="saveBtnTxt">Save &amp; Login</span>
+          <span class="saveBtnImg"><img src="./img/forward.png" class="img-fluid w-100" alt=""></span>
+        </button>
+        <button class="skipBtn">Skip</button>
+      </div>
+    </section>
+  </main>
+  <!-- main end -->
 
-      dateInput.addEventListener("input", function () {
-        if (this.value) {
-          this.style.color = "#5a5a5a"; // Selected text color
-        } else {
-          this.style.color = "#999"; // Placeholder color
+
+  <!-- javascript -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <!-- file upload  -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const input = document.getElementById("imageUploadInput");
+      const label = document.querySelector(".comunity-image-upload-label");
+      const preview = document.querySelector(".comunity-image-upload-preview");
+      const removeBtn = document.querySelector(".remove-img");
+      const previewImage = document.getElementById("previewImage");
+
+      // Handle file input change
+      input.addEventListener("change", function () {
+        const file = input.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            previewImage.src = e.target.result; // Set the preview image source
+            label.style.display = "none"; // Hide the label
+            preview.style.display = "flex"; // Show the preview
+          };
+          reader.readAsDataURL(file);
+          console.log(file);
         }
       });
 
-      dateInput.addEventListener("focus", function () {
-        this.setAttribute("placeholder", "");
+      // Handle remove button click
+      removeBtn.addEventListener("click", function () {
+        input.value = ""; // Clear the input value
+        label.style.display = "flex"; // Show the label
+        preview.style.display = "none"; // Hide the preview
+        previewImage.src = ""; // Clear the preview image
       });
+    });
+  </script>
+</body>
 
-      dateInput.addEventListener("blur", function () {
-        if (!this.value) {
-          this.setAttribute("placeholder", "Select a date");
-        }
-      });
-    </script>
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>

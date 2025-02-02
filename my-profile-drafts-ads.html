@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon  -->
+    <link rel="icon" href="./img/favicon.png">
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>My Profile_Drafts_Ads</title>
+</head>
+
+<body class="flow-body">
+    <header class="feed-header">
+        <div class="destop-nav d-none d-lg-flex justify-content-between align-items-center">
+            <div class="header-left">
+                <div class="logo">
+                    <img src="./img/logo.png" class="img-fluid" alt="Logo">
+                </div>
+                <div class="nav-location">
+                    <img src="./img/location.png" class="img-fluid" alt="Menu">
+                    <span>New York, NY</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="seach">
+                    <form action="" class="navSearch">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <button type="submit" class="search-icon"><img src="./img/search.png" class="img-fluid"
+                                alt="Search"></button>
+                    </form>
+                </div>
+                <div>
+                    <button class="nav-btn active-btn">
+                        <img src="./img/home.png" class="img-fluid" alt="Home">
+                    </button>
+                </div>
+                <div>
+                    <button class="nav-btn dashboard-btn">
+                        <img src="./img/dashboard.png" class="img-fluid" alt="Dashboard">
+                    </button>
+                </div>
+                <div>
+                    <button class="nav-btn notification-btn" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#notificationOffcanvas" aria-controls="notificationOffcanvas">
+                        <img src="./img/notification-fill.png" class="img-fluid" alt="notification">
+                    </button>
+                </div>
+                <!-- nav profile img  -->
+                <div class="nav-profile">
+                    <button class="profile-btn" id="profileOptions" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./img/avatar.png" class="img-fluid" alt="Profile">
+                    </button>
+                    <ul class="dropdown-menu thin-scrollbar" aria-labelledby="profileOptions">
+                        <!-- item 1 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/clarity_building-line.png" alt="">
+                                    <span>Setup Company Profile</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 2 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i2.png" alt="">
+                                    <span>My Ads</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 3 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i3.png" alt="">
+                                    <span>My Communities</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 4 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i4.png" alt="">
+                                    <span>Services</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 5 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i5.png" alt="">
+                                    <span>Chats</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 6 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i6.png" alt="">
+                                    <span>Wallet <span class="text-blue">$89.00</span></span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 7 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i7.png" alt="">
+                                    <span>Invite Friends</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 8 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i8.png" alt="">
+                                    <span>Faqs</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 9 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i9.png" alt="">
+                                    <span>Privacy Policy</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 10 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i10.png" alt="">
+                                    <span>Terms & Condition</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 11 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i11.png" alt="">
+                                    <span>Contact Us</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 12 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i12.png" alt="">
+                                    <span>Rate Us</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 13 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i13.png" alt="">
+                                    <span>Logout</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 14 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i14.png" alt="">
+                                    <span class="text-reprt">Delete Account</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li></span></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-nav d-flex d-lg-none justify-content-between align-items-center">
+            <a href="index.html" class="d-block mobile-logo">
+                <img src="./img/favicon.png" alt="logo" class="img-fluid">
+            </a>
+            <a href="index.html" class="d-block mobile-logo2">
+                <img src="./img/m-logo-2.png" alt="logo" class="img-fluid">
+            </a>
+            <button class="d-block mobile-search">
+                <img src="./img/search2.png" alt="search" class="img-fluid">
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="header-profile-sponsor">
+            <div class="container">
+                <div class="row header-flow-row align-items-center">
+                    <div class="col ps-0 ps-xl-auto">
+                        <div class="header-flow-left ps-3">
+                            <div class="header-flow-left-inner">
+                                <button class="header-flow-left-inner-button">
+                                    <img src="./img/left-arrow.svg" alt="left-arrow" />
+                                </button>
+                                <span class="mx-auto d-xl-none d-block">User Profile</span>
+                                <span class="me-auto d-xl-block d-none">User Profile</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-xl-block d-none">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="dashboardx">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="dashboard-cover">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row dashboardx-tabs align-items-center">
+                    <div class="col-xl-4">
+                        <div class="d-flex align-items-center justify-content-end">
+                             <div class="profile-img profile-img-new z-10">
+                                        </span> <img src="./img/updated-profice-image.svg" class="img-fluid" alt="">
+                            </div>
+                            <button class="edit-btns morphisum-inner">
+                                <img src="./img/Edit.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xl-8">
+                        <!-- tab button  -->
+                        <ul class="nav nav-pillsx" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-linkx " id="pills-myposts-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-myposts" type="button" role="tab" aria-controls="pills-myposts"
+                                    aria-selected="false">My Posts</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-linkx " id="pills-saved-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-saved" type="button" role="tab"
+                                    aria-controls="pills-saved" aria-selected="false">Saved</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-linkx active" id="pills-drafts-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-drafts" type="button" role="tab" aria-controls="pills-drafts"
+                                    aria-selected="true">Drafts</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-linkx" id="pills-recommends-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-recommends" type="button" role="tab" aria-controls="pills-recommends"
+                                    aria-selected="false">Recommends</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" id="dashboard-row">
+                    <!-- user profile  -->
+                    <div class="col-xl-4">
+                        <div class="sideBar-wrapers hide-scrollbar">
+                            <div class="user-profile">
+                                <!-- profile card  -->
+                                <div class="profile-card profile-cardx">
+                                   
+                                    <!-- profile details -->
+                                    <h2>Sierra Ferguson</h2>
+                                    <p>@sierraferguson</p>
+                                </div>
+                                <div class="profile-divider"></div>
+                                <div class="profile-stats-community">
+                                    <div class="profile-stats-names d-flex align-items-center">
+                                        <h3 class="profile-stats-names-h3">Community</h3>
+                                        <span>2</span>
+                                    </div>
+                                    <div class="refferance-tagss">
+                                        <button>Conference</button>
+                                        <button>Network Engineer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content tab  -->
+                    <div class="col-xl-6">
+                        <div class="main-content sideBar-wraper hide-scrollbar main-content-new">
+                            <div class="posts-feedx">
+                                
+                                <!-- tab content  -->
+                                <div class="tab-content" id="pills-tabContent">
+                                    <!-- My post tab content  -->
+                                    <div class="tab-pane fade show active" id="pills-myposts" role="tabpanel"
+                                        aria-labelledby="pills-myposts-tab">
+                                          <div class="post-cards">
+                                            <div>
+                                                <!-- post list  -->
+                                                <div class="post-card-litss d-flex align-items-center">
+                                                    <button class="post-card-litss-buttons-active">
+                                                        Posts (1)
+                                                    </button>
+                                                    <button class="post-card-litss-buttons">
+                                                        Ads (1)
+                                                    </button>
+                                                    <button class="post-card-litss-buttons">
+                                                      Listing (2)
+                                                    </button>
+                                                    <button class="post-card-litss-buttons">
+                                                      Deals (2)
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- single post card  -->
+                                            <div class="post-card">
+                                                <!-- author  -->
+                                                <div class="post-author">
+                                                    <div class="author-img">
+                                                        <img src="./img/mail.png"  class="mail-img" alt="">
+                                                        <img src="./img/mail-avatar.png" class="mail-avatar" alt="">
+                                                    </div>
+                                                    <div class="author-info">
+                                                        <h3><span>Mail On Broadway</span><span><img src="./img/checkwhiteblue.png" alt=""></span></h3>
+                                                        <div class="author-loc">
+                                                            <img src="./img/ion_location.png" alt="">
+                                                            <span>New York, NY <span class="post-time">1hr</span></span>
+                                                        </div>
+                                                        <ul class="posted-by">
+                                                            <li>Posted by: <span>Oscar Novelli</span></li>
+                                                            <li>Claimed by: <span>Owner</span></li>
+                                                        </ul>
+                                                        <p class="post-text">Quality from Start to Finish... American Windows and Glass</p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- post img  -->
+                                                <div class="post-img">
+                                                    <img src="./img/p1.png" class="img-fluid mx-auto" alt="">
+                                                    <div class="ribbon">
+                                                        For Sale                                                    </div>
+                                                </div>
+                                                <!-- post footer  -->
+                                                <div class="post-footer">
+                                                    <!-- Post Tags -->
+                                                    <div class="post-tags hide-scrollbar">
+                                                        <span>Window Replacement</span>
+                                                        <span>Glass Repair</span>
+                                                        <span>Home Improvement</span>
+                                                        <span>Window Install</span>
+                                                        <span>Glazing</span>
+                                                    </div>
+                                                    <!-- Post Interactions -->
+                                                    <div class="post-interactions">
+                                                        <div class="post-actions-left">
+                                                            <div class="interaction-item">
+                                                                <img src="./img/love.png" alt="Like">
+                                                                <span>100</span>
+                                                            </div>
+                                                            <div class="interaction-item">
+                                                                <img src="./img/cmnt.png" alt="Comment">
+                                                                <span>100</span>
+                                                            </div>
+                                                            <div class="interaction-item">
+                                                                <img src="./img/share.png" alt="Share">
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-actions-right">
+                                                        <button
+                                  href="#"
+                                  class="ads-radio-bottom-btn-email radio-btn-clr-one"
+                                >
+   
+                                  <span>Boost</span>
+                                </button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- post play  -->
+                                                    <div class=" postplay-new-feed-color">
+                                                        <div class="postplay-count-wraper">
+                                                            <img src="./img/added-circle.svg" alt="">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Post Actions -->
+                                                <div class="post-actions d-flex align-items-start justify-content-between">
+                                                    <!-- View Action -->
+                                                    <div class="action-item">
+                                                        <img src="./img/eye.png" alt="View">
+                                                        <span class="action-item-count">641</span>
+                                                    </div>
+                                                    <!-- Like Action -->
+                                                    <div class="action-item">
+                                                        <img src="./img/like.png" alt="Like">
+                                                        <span class="action-item-count">35</span>
+                                                    </div>
+                                                    <!-- More Options Dropdown -->
+                                                    <div class="dropdown action-item">
+                                                        <button class="btn btn-link p-0 dropdown-toggle" type="button" id="postActionsDropdown1"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <img src="./img/dots.png" alt="More Options">
+                                                        </button>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="postActionsDropdown1">
+                                                            <li><a class="dropdown-item" href="#">Connect</a></li>
+                                                            <li><a class="dropdown-item" href="#">Claim This Post</a></li>
+                                                            <li><p class="dropdown-item" data-bs-toggle="offcanvas"
+                                                            data-bs-target="#createComunityOffcanvas" aria-controls="createComunityOffcanvas">Report Post</p></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- single post card  -->
+                                            <div class="post-card">
+                                                <!-- author  -->
+                                                <div class="post-author">
+                                                    <div class="author-img">
+                                                        <img src="./img/mail.png"  class="mail-img" alt="">
+                                                        <img src="./img/mail-avatar.png" class="mail-avatar" alt="">
+                                                    </div>
+                                                    <div class="author-info">
+                                                        <h3><span>Mail On Broadway</span><span><img src="./img/checkwhiteblue.png" alt=""></span></h3>
+                                                        <div class="author-loc">
+                                                            <img src="./img/ion_location.png" alt="">
+                                                            <span>New York, NY <span class="post-time">1hr</span></span>
+                                                        </div>
+                                                        <ul class="posted-by">
+                                                            <li>Posted by: <span>Oscar Novelli</span></li>
+                                                            <li>Claimed by: <span>Owner</span></li>
+                                                        </ul>
+                                                        <p class="post-text">Protect your greatest Investment. Your Home</p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- post img  -->
+                                                <div class="post-img">
+                                                    <img src="./img/protect.png" class="img-fluid mx-auto" alt="">
+                                                    <div class="ribbon">
+                                                        For Sale                                                    </div>
+                                                </div>
+                                                <!-- post footer  -->
+                                                <div class="post-footer">
+                                                    <!-- Post Tags -->
+                                                    <div class="post-tags hide-scrollbar">
+                                                        <span>Window Replacement</span>
+                                                        <span>Glass Repair</span>
+                                                        <span>Home Improvement</span>
+                                                        <span>Window Install</span>
+                                                        <span>Glazing</span>
+                                                    </div>
+                                                    <!-- Post Interactions -->
+                                                    <div class="post-interactions">
+                                                        <div class="post-actions-left">
+                                                            <div class="interaction-item">
+                                                                <img src="./img/love.png" alt="Like">
+                                                                <span>100</span>
+                                                            </div>
+                                                            <div class="interaction-item">
+                                                                <img src="./img/cmnt.png" alt="Comment">
+                                                                <span>100</span>
+                                                            </div>
+                                                            <div class="interaction-item">
+                                                                <img src="./img/share.png" alt="Share">
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-actions-right">
+                                                          <button
+                                  href="#"
+                                  class="ads-radio-bottom-btn-email radio-btn-clr-one"
+                                >
+   
+                                  <span>Boost</span>
+                                </button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- post play  -->
+                                                    <div class=" postplay-new-feed-color">
+                                                        <div class="postplay-count-wraper">
+                                                            <img src="./img/added-circle.svg" alt="">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Post Actions -->
+                                                <div class="post-actions d-flex align-items-start justify-content-between">
+                                                    <!-- View Action -->
+                                                    <div class="action-item">
+                                                        <img src="./img/eye.png" alt="View">
+                                                        <span class="action-item-count">641</span>
+                                                    </div>
+                                                    <!-- Like Action -->
+                                                    <div class="action-item">
+                                                        <img src="./img/like.png" alt="Like">
+                                                        <span class="action-item-count">35</span>
+                                                    </div>
+                                                    <!-- More Options Dropdown -->
+                                                    <div class="dropdown action-item">
+                                                        <button class="btn btn-link p-0 dropdown-toggle" type="button" id="postActionsDropdown1"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <img src="./img/dots.png" alt="More Options">
+                                                        </button>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="postActionsDropdown1">
+                                                            <li><a class="dropdown-item" href="#">Connect</a></li>
+                                                            <li><a class="dropdown-item" href="#">Claim This Post</a></li>
+                                                            <li><p class="dropdown-item" data-bs-toggle="offcanvas"
+                                                            data-bs-target="#createComunityOffcanvas" aria-controls="createComunityOffcanvas">Report Post</p></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Saved tab content  -->
+                                    <div class="tab-pane fade" id="pills-saved" role="tabpanel"
+                                        aria-labelledby="pills-saved-tab">
+                                       <div class="post-cards">
+                                            <div>
+                                                <!-- post list  -->
+                                                <div class="post-card-litss d-flex align-items-center">
+                                                    <button class="post-card-litss-buttons-active">
+                                                        Posts (1)
+                                                    </button>
+                                                    <button class="post-card-litss-buttons">
+                                                        Companies (1)
+                                                    </button>
+                                                    <button class="post-card-litss-buttons">
+                                                      Listing (2)
+                                                    </button>
+                                                    <button class="post-card-litss-buttons">
+                                                      Deals (2)
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- single post card  -->
+                                            <div class="post-card">
+                                                <!-- author  -->
+                                                <div class="post-author">
+                                                    <div class="author-img">
+                                                        <img src="./img/mail.png"  class="mail-img" alt="">
+                                                        <img src="./img/mail-avatar.png" class="mail-avatar" alt="">
+                                                    </div>
+                                                    <div class="author-info">
+                                                        <h3><span>Mail On Broadway</span><span><img src="./img/checkwhiteblue.png" alt=""></span></h3>
+                                                        <div class="author-loc">
+                                                            <img src="./img/ion_location.png" alt="">
+                                                            <span>New York, NY <span class="post-time">1hr</span></span>
+                                                        </div>
+                                                        <ul class="posted-by">
+                                                            <li>Posted by: <span>Oscar Novelli</span></li>
+                                                            <li>Claimed by: <span>Owner</span></li>
+                                                        </ul>
+                                                        <p class="post-text">Quality from Start to Finish... American Windows and Glass</p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- post img  -->
+                                                <div class="post-img">
+                                                    <img src="./img/p1.png" class="img-fluid mx-auto" alt="">
+                                                    <div class="ribbon">
+                                                        For Sale                                                    </div>
+                                                </div>
+                                                <!-- post footer  -->
+                                                <div class="post-footer">
+                                                    <!-- Post Tags -->
+                                                    <div class="post-tags hide-scrollbar">
+                                                        <span>Window Replacement</span>
+                                                        <span>Glass Repair</span>
+                                                        <span>Home Improvement</span>
+                                                        <span>Window Install</span>
+                                                        <span>Glazing</span>
+                                                    </div>
+                                                    <!-- Post Interactions -->
+                                                    <div class="post-interactions">
+                                                        <div class="post-actions-left">
+                                                            <div class="interaction-item">
+                                                                <img src="./img/love.png" alt="Like">
+                                                                <span>100</span>
+                                                            </div>
+                                                            <div class="interaction-item">
+                                                                <img src="./img/cmnt.png" alt="Comment">
+                                                                <span>100</span>
+                                                            </div>
+                                                            <div class="interaction-item">
+                                                                <img src="./img/share.png" alt="Share">
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-actions-right">
+                                                        <button
+                                  href="#"
+                                  class="ads-radio-bottom-btn-email radio-btn-clr-one"
+                                >
+   
+                                  <span>Boost</span>
+                                </button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- post play  -->
+                                                    <div class=" postplay-new-feed-color">
+                                                        <div class="postplay-count-wraper">
+                                                            <img src="./img/added-circle.svg" alt="">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Post Actions -->
+                                                <div class="post-actions d-flex align-items-start justify-content-between">
+                                                    <!-- View Action -->
+                                                    <div class="action-item">
+                                                        <img src="./img/eye.png" alt="View">
+                                                        <span class="action-item-count">641</span>
+                                                    </div>
+                                                    <!-- Like Action -->
+                                                    <div class="action-item">
+                                                        <img src="./img/like.png" alt="Like">
+                                                        <span class="action-item-count">35</span>
+                                                    </div>
+                                                    <!-- More Options Dropdown -->
+                                                    <div class="dropdown action-item">
+                                                        <button class="btn btn-link p-0 dropdown-toggle" type="button" id="postActionsDropdown1"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <img src="./img/dots.png" alt="More Options">
+                                                        </button>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="postActionsDropdown1">
+                                                            <li><a class="dropdown-item" href="#">Connect</a></li>
+                                                            <li><a class="dropdown-item" href="#">Claim This Post</a></li>
+                                                            <li><p class="dropdown-item" data-bs-toggle="offcanvas"
+                                                            data-bs-target="#createComunityOffcanvas" aria-controls="createComunityOffcanvas">Report Post</p></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- single post card  -->
+                                            <div class="post-card">
+                                                <!-- author  -->
+                                                <div class="post-author">
+                                                    <div class="author-img">
+                                                        <img src="./img/mail.png"  class="mail-img" alt="">
+                                                        <img src="./img/mail-avatar.png" class="mail-avatar" alt="">
+                                                    </div>
+                                                    <div class="author-info">
+                                                        <h3><span>Mail On Broadway</span><span><img src="./img/checkwhiteblue.png" alt=""></span></h3>
+                                                        <div class="author-loc">
+                                                            <img src="./img/ion_location.png" alt="">
+                                                            <span>New York, NY <span class="post-time">1hr</span></span>
+                                                        </div>
+                                                        <ul class="posted-by">
+                                                            <li>Posted by: <span>Oscar Novelli</span></li>
+                                                            <li>Claimed by: <span>Owner</span></li>
+                                                        </ul>
+                                                        <p class="post-text">Protect your greatest Investment. Your Home</p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- post img  -->
+                                                <div class="post-img">
+                                                    <img src="./img/protect.png" class="img-fluid mx-auto" alt="">
+                                                    <div class="ribbon">
+                                                        For Sale                                                    </div>
+                                                </div>
+                                                <!-- post footer  -->
+                                                <div class="post-footer">
+                                                    <!-- Post Tags -->
+                                                    <div class="post-tags hide-scrollbar">
+                                                        <span>Window Replacement</span>
+                                                        <span>Glass Repair</span>
+                                                        <span>Home Improvement</span>
+                                                        <span>Window Install</span>
+                                                        <span>Glazing</span>
+                                                    </div>
+                                                    <!-- Post Interactions -->
+                                                    <div class="post-interactions">
+                                                        <div class="post-actions-left">
+                                                            <div class="interaction-item">
+                                                                <img src="./img/love.png" alt="Like">
+                                                                <span>100</span>
+                                                            </div>
+                                                            <div class="interaction-item">
+                                                                <img src="./img/cmnt.png" alt="Comment">
+                                                                <span>100</span>
+                                                            </div>
+                                                            <div class="interaction-item">
+                                                                <img src="./img/share.png" alt="Share">
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-actions-right">
+                                                          <button
+                                  href="#"
+                                  class="ads-radio-bottom-btn-email radio-btn-clr-one"
+                                >
+   
+                                  <span>Boost</span>
+                                </button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- post play  -->
+                                                    <div class=" postplay-new-feed-color">
+                                                        <div class="postplay-count-wraper">
+                                                            <img src="./img/added-circle.svg" alt="">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Post Actions -->
+                                                <div class="post-actions d-flex align-items-start justify-content-between">
+                                                    <!-- View Action -->
+                                                    <div class="action-item">
+                                                        <img src="./img/eye.png" alt="View">
+                                                        <span class="action-item-count">641</span>
+                                                    </div>
+                                                    <!-- Like Action -->
+                                                    <div class="action-item">
+                                                        <img src="./img/like.png" alt="Like">
+                                                        <span class="action-item-count">35</span>
+                                                    </div>
+                                                    <!-- More Options Dropdown -->
+                                                    <div class="dropdown action-item">
+                                                        <button class="btn btn-link p-0 dropdown-toggle" type="button" id="postActionsDropdown1"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <img src="./img/dots.png" alt="More Options">
+                                                        </button>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="postActionsDropdown1">
+                                                            <li><a class="dropdown-item" href="#">Connect</a></li>
+                                                            <li><a class="dropdown-item" href="#">Claim This Post</a></li>
+                                                            <li><p class="dropdown-item" data-bs-toggle="offcanvas"
+                                                            data-bs-target="#createComunityOffcanvas" aria-controls="createComunityOffcanvas">Report Post</p></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Draft tab content  -->
+                                    <div class="tab-pane fade" id="pills-drafts" role="tabpanel"
+                                        aria-labelledby="pills-drafts-tab">
+                                      <div class="post-cards">
+                                            <div>
+                                                <!-- post list  -->
+                                                <div class="post-card-litss d-flex align-items-center">
+                                                    <button class="post-card-litss-buttons">
+                                                        Posts (1)
+                                                    </button>
+                                                    <button class="post-card-litss-buttons-active">
+                                                        Ads (1)
+                                                    </button>
+                                                    <button class="post-card-litss-buttons">
+                                                      Listing (2)
+                                                    </button>
+                                                    <button class="post-card-litss-buttons">
+                                                      Deals (2)
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- single post card  -->
+                                            <div class="post-card">
+                                                <!-- author  -->
+                                                <div class="post-author">
+                                                    <div class="author-img">
+                                                        <img src="./img/mail.png"  class="mail-img" alt="">
+                                                        <img src="./img/mail-avatar.png" class="mail-avatar" alt="">
+                                                    </div>
+                                                    <div class="author-info">
+                                                        <h3><span>Mail On Broadway</span><span><img src="./img/checkwhiteblue.png" alt=""></span></h3>
+                                                        <div class="author-loc">
+                                                            <img src="./img/ion_location.png" alt="">
+                                                            <span>New York, NY <span class="post-time">1hr</span></span>
+                                                        </div>
+                                                   
+                                                        <p class="post-text mt-2">Quality from Start to Finish... American Windows and Glass</p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- post img  -->
+                                                <div class="post-img">
+                                                    <img src="./img/p1.png" class="img-fluid mx-auto" alt="">
+                                                    <div class="ribbon">
+                                                        For Sale                                                    </div>
+                                                </div>
+                                                <!-- post footer  -->
+                                                <div class="post-footer">
+                                                    <!-- Post Interactions -->
+                                                    <div class="post-interactions">
+                                                     
+                                                        <div class=" d-flex justify-content-center align-items-center mx-auto continued-adds-create">
+                                                         <button class="upload-buttom-top sk-gradint-button-one">
+              Continue Creating Ad <img src="./img/Arrow Forward.svg" alt="Arrow" />
+            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Post Actions -->
+                                                <div class="post-actions d-flex align-items-start justify-content-end">
+                                                    <!-- View Action -->
+                                                    <div class="action-item action-item-new">
+                                                        <img src="./img/delete-trash-bin.svg" alt="View">
+                                                        
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <!-- single post card  -->
+                                            <div class="post-card">
+                                                <!-- author  -->
+                                                <div class="post-author">
+                                                    <div class="author-img">
+                                                        <img src="./img/mail.png"  class="mail-img" alt="">
+                                                        <img src="./img/mail-avatar.png" class="mail-avatar" alt="">
+                                                    </div>
+                                                    <div class="author-info">
+                                                        <h3><span>Mail On Broadway</span><span><img src="./img/checkwhiteblue.png" alt=""></span></h3>
+                                                        <div class="author-loc">
+                                                            <img src="./img/ion_location.png" alt="">
+                                                            <span>New York, NY <span class="post-time">1hr</span></span>
+                                                        </div>
+                                                      
+                                                        <p class="post-text mt-2">Protect your greatest Investment. Your Home</p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- post img  -->
+                                                <div class="post-img">
+                                                    <img src="./img/protect.png" class="img-fluid mx-auto" alt="">
+                                                    <div class="ribbon">
+                                                        For Sale                                                    </div>
+                                                </div>
+                                               <!-- post footer  -->
+                                                <div class="post-footer">
+                                                    <!-- Post Interactions -->
+                                                    <div class="post-interactions">
+                                                     
+                                                        <div class=" d-flex justify-content-center align-items-center mx-auto continued-adds-create">
+                                                         <button class="upload-buttom-top sk-gradint-button-one">
+              Continue Creating Ad <img src="./img/Arrow Forward.svg" alt="Arrow" />
+            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Post Actions -->
+                                                <div class="post-actions d-flex align-items-start justify-content-end">
+                                                    <!-- View Action -->
+                                                    <div class="action-item action-item-new">
+                                                        <img src="./img/delete-trash-bin.svg" alt="View">
+                                                        
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- recommends tab content  -->
+                                    <div class="tab-pane fade" id="pills-recommends" role="tabpanel"
+                                        aria-labelledby="pills-recommends-tab">
+                                        
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- offcanvas notification  -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="notificationOffcanvas"
+        aria-labelledby="notificationOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 id="notificationOffcanvasLabel">Notifications <span>2 New</span></h5>
+            <button type="button" class="modal-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                <img src="./img/cross.png" alt="">
+            </button>
+        </div>
+        <div class="notification-bar"></div>
+        <div class="offcanvas-body">
+            <div class="notification-lists">
+                <!-- single item  -->
+                <div class="notification-box">
+                    <div class="notification-left">
+                        <div class="unread-notification">
+                            <img src="./img/unred.png" class="w-100 img-fluid" alt="">
+                        </div>
+                        <div class="notification-imgBox">
+                            <div class="notification-img">
+                                <img src="./img/noti-avatar.png" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="notification-content">
+                                <h3>Connection request from John Doe <span class="notification-date">Now</span></h3>
+                                <div class="notification-btns">
+                                    <button class="cancel-btn">Reject</button>
+                                    <button class="accept-btn">Accept</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single item  -->
+                <div class="notification-box">
+                    <div class="notification-left">
+                        <div class="unread-notification">
+                            <img src="./img/unred.png" class="w-100 img-fluid" alt="">
+                        </div>
+                        <div class="notification-imgBox">
+                            <div class="notification-img">
+                                <img src="./img/noti-avatar.png" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="notification-content">
+                                <h3>New message from Sierra <span class="notification-date">Now</span></h3>
+                                <p>Bethany was running in a half marathon when she began .</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single item  -->
+                <div class="notification-box">
+                    <div class="notification-left">
+                        <div class="unread-notification">
+                        </div>
+                        <div class="notification-imgBox">
+                            <div class="notification-img">
+                                <img src="./img/noti-avatar.png" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="notification-content">
+                                <h3 class="read-title">New post from Sierra Ferguson <span
+                                        class="notification-date">1h</span></h3>
+                                <p class="read-msg">Bethany was running in a half marathon when she began .</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- offcanvas report  -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="createComunityOffcanvas"
+        aria-labelledby="createComunityLabel">
+        <div class="offcanvas-header createComunityoffcanvas-header">
+            <div class="createComunityLabel">
+                <h5>Report</h5>
+                <p style="font-style: italic;">Why you want to report this?</p>
+            </div>
+            <button type="button" class="modal-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                <img src="./img/cross.png" alt="">
+            </button>
+        </div>
+        <div class="offcanvas-body addComunityOffcanvas-body">
+            <div class="createComunityForm">
+                <div class="notification-bar"></div>
+                <form action="">
+
+                    <!-- pick an option -->
+                    <div class="description-input-wrapper">
+                        <select class="form-input" name="reason-type" id="reason-type">
+                            <option value="" disabled selected>Pick an Option</option>
+                            <option value="spam">It's spam</option>
+                            <option value="inappropriate">It's inappropriate</option>
+                        </select>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="description-input-wrapper">
+                        <textarea name="" id="" placeholder="Please describe you reason." class="form-input"></textarea>
+                    </div>
+                    <!-- submit  -->
+                    <div class="mt-3">
+                        <button class="register-submit" type="submit">
+                            <span class="saveBtnTxt">Save</span>
+                            <span class="saveBtnImg"><img src="./img/forward.png" class="img-fluid w-100" alt=""></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- custom js  -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        });
+    </script>
+</body>
+
+</html>
