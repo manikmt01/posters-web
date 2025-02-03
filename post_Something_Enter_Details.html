@@ -16,13 +16,13 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- custom css  -->
     <link rel="stylesheet" href="./css/style.css" />
-    
+
     <title>Feed Sponser Post</title>
 </head>
 
 <body>
-    <header>
-        <div class="destop-nav d-flex justify-content-between align-items-center post-upload">
+    <header class="post-upload-header">
+        <div class="post-upload">
             <div class="header-left">
                 <div class="back-arr">
                     <img src="./img/left-arr.png" alt="">
@@ -32,7 +32,7 @@
             <div class="steps">
                 <div class="single-step step-active">
                     <h3><span><img src="./img/iconamoon_check-bold.png" alt=""></span></h3>
-                    <p>Upload Photo/Videos</p>
+                    <p>Enter Company Details</p>
                 </div>
                 <div class="single-step step-active">
                     <h3><span>2</span></h3>
@@ -48,7 +48,7 @@
     <!-- main start -->
     <main>
         <!-- title start -->
-        <section class="flow detailss post-details" id="titleDetails">
+        <section class="flow detailss post-details px-3" id="titleDetails">
             <div class="upload-container">
                 <div class="details-communities">
                     <div class="row flow-row">
@@ -60,7 +60,8 @@
                             </div>
                             <!-- Post Title  -->
                             <div class="post-something-form-group">
-                                <label for="company-input" class="post-something-form-label input-left">Post Title</label>
+                                <label for="company-input" class="post-something-form-label input-left">Post
+                                    Title</label>
                                 <div class="input-wrapper input-right">
                                     <input type="text" placeholder="Post Title" id="company-input" class="form-input">
                                     <label for="company-input" class="input-icon">
@@ -77,7 +78,7 @@
             </div>
         </section>
         <!-- Communities start -->
-        <section class="flow detailssTwo post-details" id="communitiess">
+        <section class="flow detailssTwo post-details px-3" id="communitiess">
             <div class="upload-container">
                 <div class="details-communities">
                     <div class="row communities-row">
@@ -119,7 +120,7 @@
             </div>
         </section>
         <!-- Communities start -->
-        <section class="flow detailssTwo post-details" id="communitiess">
+        <section class="flow detailssTwo post-details px-3" id="communitiess">
             <div class="upload-container">
                 <div class="details-communities">
                     <div class="row communities-row">
@@ -143,7 +144,7 @@
                         <div class="col-12">
                             <div class="communites-contentsx">
                                 <button>
-                                My Community
+                                    My Community
                                 </button>
                                 <button>All Communities</button>
                                 <button class="active">Choose Communities</button>
@@ -153,32 +154,34 @@
                 </div>
             </div>
         </section>
-<!-- title start -->
-<section class="flow detailss post-details" id="titleDetails">
-    <div class="upload-container">
-        <div class="details-communities">
-            <div class="row flow-row">
-                <div class="col-12">
-                    <!-- Post Title  -->
-                    <div class="post-something-form-group">
-                        <label for="date-expire" class="post-something-form-label input-left">Post Expires</label>
-                        <div class="input-wrapper input-right">
-                            <input type="text" placeholder="Post Expiry Date" id="date-expire" class="form-input">
-                            <label for="date-expire" class="input-icon" id="custom-date-icon">
-                                <img src="./img/calender.png" alt="company Icon">
-                            </label>
-                            <label for="date-expire" class="postdetails-form-bar">
-                            </label>
+        <!-- title start -->
+        <section class="flow detailss post-details px-3" id="titleDetails">
+            <div class="upload-container">
+                <div class="details-communities">
+                    <div class="row flow-row">
+                        <div class="col-12">
+                            <!-- Post Title  -->
+                            <div class="post-something-form-group">
+                                <label for="date-expire" class="post-something-form-label input-left">Post
+                                    Expires</label>
+                                <div class="input-wrapper input-right">
+                                    <input type="text" placeholder="Post Expiry Date" id="date-expire"
+                                        class="form-input">
+                                    <label for="date-expire" class="input-icon" id="custom-date-icon">
+                                        <img src="./img/calender.png" alt="company Icon">
+                                    </label>
+                                    <label for="date-expire" class="postdetails-form-bar">
+                                    </label>
+                                </div>
+                                <p>Enter the date when post is no longer relevant i.e. Sale Ends</p>
+                            </div>
                         </div>
-                        <p>Enter the date when post is no longer relevant i.e. Sale Ends</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
         <!-- keyword start -->
-        <section class="flow detailssTwo detailssTwo-keyword" id="communitiess">
+        <section class="flow detailssTwo detailssTwo-keyword px-3" id="communitiess">
             <div class="button-location-container button-upload-container">
                 <div class="upload-button-wrapper d-flex justify-content-center flex-column">
                     <button class="upload-buttom-top">
@@ -191,22 +194,22 @@
     </main>
     <!-- main end -->
 
-    <!-- javascript --> 
+    <!-- javascript -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
-        <script>
-           document.getElementById("date-expire").addEventListener("focus", function () {
-                this.type = "datetime-local"; // Change to datetime-local on focus
-                this.showPicker(); // Open the date picker immediately
-            });
+    <script>
+        document.getElementById("date-expire").addEventListener("focus", function () {
+            this.type = "datetime-local"; // Change to datetime-local on focus
+            this.showPicker(); // Open the date picker immediately
+        });
 
-            document.getElementById("date-expire").addEventListener("blur", function () {
-                if (!this.value) {
-                    this.type = "text"; // Revert back to text if no date is selected
-                }
-            });
-        </script>
+        document.getElementById("date-expire").addEventListener("blur", function () {
+            if (!this.value) {
+                this.type = "text"; // Revert back to text if no date is selected
+            }
+        });
+    </script>
 </body>
 
 </html>

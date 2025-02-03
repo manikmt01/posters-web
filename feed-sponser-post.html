@@ -251,7 +251,7 @@
             <div class="container">
                 <div class="row" id="dashboard-row">
                     <!-- user profile  -->
-                    <div class="col-xl-3">
+                    <div class="col-lg-4 col-xl-3">
                         <div class="sideBar-wraper hide-scrollbar">
                             <div class="user-profile">
                                 <!-- profile card  -->
@@ -342,7 +342,7 @@
                         </div>
                     </div>
                     <!-- content tab  -->
-                    <div class="col-xl-6">
+                    <div class="col-lg-8 col-xl-6">
                         <div class="main-content">
                             <div class="posts-feed">
                                 <!-- tab button  -->
@@ -846,16 +846,23 @@
                                      <div class="tab-pane fade" id="pills-deals" role="tabpanel" aria-labelledby="pills-deals-tab">
                                         <div class="deals-content">
                                             <div class="sort-by">
-                                                <label for="sort-options">Sort By:</label>
-                                                <select name="sort-options" id="sort-options" class="">
-                                                    <option value="new">New</option>
-                                                    <option value="popular" selected>Popular</option>
-                                                    <option value="price-low-high">Price - Low to High</option>
-                                                    <option value="price-high-low">Price - High to Low</option>
-                                                    <option value="avg-reviews">Avg. Customer Reviews</option>
-                                                    <option value="deals-top">Deals on Top</option>
-                                                    <option value="deal-share-top">Deal Share on Top</option>
-                                                </select>
+                                                <p for="sort-options">Sort By:</p>
+                                                <div class="dropdownFilter">
+                                                    <button class="p-0 dropdown-toggle" type="button" id="postActionsFilter"
+                                                        data-bs-toggle="dropdown" aria-expanded="true">
+                                                        Popular
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="postActionsFilter"
+                                                        data-popper-placement="bottom-start">
+                                                        <li>New</li>
+                                                        <li class="active">Popular</li>
+                                                        <li>Price - Low to High</li>
+                                                        <li>Price - High to Low</li>
+                                                        <li>Avg. Customer Reviews</li>
+                                                        <li>Deals on Top</li>
+                                                        <li>Deal Share on Top</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                             <div class="product-list">
                                                 <!-- single product  -->
@@ -1479,6 +1486,27 @@
             });
         });
     </script>
+    <!-- select dopdown  -->
+   <script>
+     document.addEventListener("DOMContentLoaded", function () {
+            const dropdownButton = document.querySelector('.dropdownFilter button');
+            const dropdownItems = document.querySelectorAll('.dropdownFilter ul li');
+
+            dropdownItems.forEach(item => {
+                item.addEventListener('click', function () {
+                    // Remove 'active' class from all items
+                    dropdownItems.forEach(i => i.classList.remove('active'));
+
+                    // Add 'active' class to the clicked item
+                    this.classList.add('active');
+
+                    // Update button text to the selected item's text
+                    dropdownButton.textContent = this.textContent;
+                });
+            });
+        });
+   </script>
+
 </body>
 
 </html>

@@ -236,27 +236,19 @@
         </div>
       </section>
       <!-- runads start -->
-      <section class="flow detailssTwo" id="runads">
+             <section class="flow detailssTwo" id="runads">
         <div class="upload-container">
           <div class="details-communities">
             <div class="row communities-row">
               <div class="col-12">
-                <div class="accordion details-accordion" id="boostAccordion">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button
-                        class="accordion-button flow-title"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo"
-                        aria-expanded="true"
-                        aria-controls="collapseTwo"
-                      >
-                        <div class="accordian-title-main">
-                          <span
+                <div class="communites-contentss">
+                  <div class="row justify-content-between align-items-start">
+                    <div class="col-8">
+                      <div class="communites-contentss-title-left">
+                        <h3><span class=""
                             >Run Ad
                             <div
-                              class="tt-wrapper"
+                              class="tt-wrapper run-ads-gaps"
                               data-tt-pos="top"
                               id="price-tooltip"
                             >
@@ -265,27 +257,25 @@
                                 alt="fluent_info"
                               />
                               <div class="tt-content">
-                                <h5>Ad Cost</h5>
+                                <h5>Price</h5>
                                 $15.00/ day<br />
                                 $75.00/ week<br />
                                 $225.00/ month
                               </div>
-                            </div>
-                          </span>
-                        </div>
-                      </button>
-                    </h2>
-
-                    <div
-                      id="collapseTwo"
-                      class="accordion-collapse collapse show"
-                      aria-labelledby="headingTwo"
-                      data-bs-parent="#boostAccordion"
-                    >
-                      <div class="accordion-body">
-                        <form class="">
-                          <div class="row">
-                            <div class="col-4">
+                            </div></span</h3>
+                        
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                 <form class="">
+                           <div class="row">
+                            <div class="col-6 col-md-4">
                               <div class="input-group" style="max-width: 200px">
                                 <button
                                   class="btn btn-outline-secondary"
@@ -312,7 +302,7 @@
                                 </button>
                               </div>
                             </div>
-                            <div class="col-8">
+                            <div class="col-6 col-md-8">
                               <div class="dropdown">
                                 <button
                                   class="btn btn-secondary dropdown-toggle boots-select"
@@ -341,7 +331,7 @@
                             </div>
                             <!-- money -->
 
-                            <div class="col-7 mt-3">
+                            <div class="col-7 col-md-7 mt-3">
                               <div class="input-group boots-input w-full">
                                 <span class="input-group-icon">
                                   <img
@@ -359,13 +349,11 @@
                               </div>
                             </div>
                             <div
-                              class="col-1 mt-3 d-flex align-items-center justify-content-center"
+                              class="col-1 col-md-1 mt-3 d-flex align-items-center justify-content-center"
                             >
-                              <div class="boots-input-title-new">
-                                <img src="./img/equal-black.svg" alt="" />
-                              </div>
+                              <div class="boots-input-title-new">=</div>
                             </div>
-                            <div class="col-4 mt-3 d-md-block d-none">
+                            <div class="col-4 col-md-4 mt-3">
                               <div class="input-group boots-input w-full">
                                 <input
                                   type="number"
@@ -377,7 +365,7 @@
                             </div>
                             <!-- Date Input -->
                             <div class="col-12 mt-3">
-                              <div class="input-group boots-input">
+                              <div class="input-group input-wrapper boots-input">
                                 <span class="input-group-icon">
                                   <img
                                     src="./img/simple-line-icons_calender.svg"
@@ -395,10 +383,6 @@
                             </div>
                           </div>
                         </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -516,27 +500,59 @@
     <!-- main end -->
     <!-- javascript -->
     <!-- javascript -->
-    <script>
-      const dateInput = document.getElementById("datepicker");
 
-      dateInput.addEventListener("input", function () {
-        if (this.value) {
-          this.style.color = "#5a5a5a"; // Selected text color
-        } else {
-          this.style.color = "#999"; // Placeholder color
-        }
-      });
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const inputs = document.querySelectorAll(".boots-input input[placeholder]");
 
-      dateInput.addEventListener("focus", function () {
-        this.setAttribute("placeholder", "");
-      });
+    inputs.forEach(function (input) {
+      const placeholderText = input.getAttribute("placeholder");
+      input.removeAttribute("placeholder");
 
-      dateInput.addEventListener("blur", function () {
-        if (!this.value) {
-          this.setAttribute("placeholder", "Select a date");
-        }
-      });
-    </script>
+      const label = document.createElement("label");
+      label.classList.add("floating-placeholder");
+      label.textContent = placeholderText;
+      input.parentNode.insertBefore(label, input);
+
+      if (input.type === "date") {
+  const secondaryPlaceholder = "Begin On";
+  
+  // Set initial text content
+  label.textContent = input.value ? secondaryPlaceholder : placeholderText;
+  
+  // Add date input specific listeners
+  input.addEventListener("focus", () => {
+    label.textContent = secondaryPlaceholder;
+    label.classList.add("active");
+  });
+
+  input.addEventListener("blur", () => {
+    label.textContent = input.value ? secondaryPlaceholder : placeholderText;
+  });
+
+  input.addEventListener("change", () => {
+    label.textContent = input.value ? secondaryPlaceholder : placeholderText;
+    label.classList.toggle("active", !!input.value);
+  });
+
+
+      } else {
+        // Standard input handling
+        if (input.value) label.classList.add("active");
+
+        input.addEventListener("focus", () => label.classList.add("active"));
+        input.addEventListener("blur", () => {
+          if (!input.value) label.classList.remove("active");
+        });
+        input.addEventListener("input", () => {
+          label.classList.toggle("active", !!input.value);
+        });
+      }
+    });
+  });
+</script>
+
+
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       crossorigin="anonymous"
