@@ -6099,8 +6099,7 @@ header {
 
 .boots-input input[type="date"]::-webkit-inner-spin-button,
 .boots-input input[type="date"]::-webkit-calendar-picker-indicator {
-  display: none;
-  -webkit-appearance: none;
+display: none;
 }
 
 /* REMOVE THIS ENTIRE BLOCK */
@@ -6129,7 +6128,6 @@ header {
   line-height: 28px;
   letter-spacing: 0.35px;
 }
-
 
 select.boots-select {
   appearance: none;
@@ -6806,7 +6804,7 @@ select.boots-select {
 }
 
 .float-bottom-btn {
- position: relative; /* Changed from absolute */
+  position: relative; /* Changed from absolute */
   display: inline-flex; /* Ensures the button stays inline */
   vertical-align: middle; /* Aligns with text */
   bottom: auto; /* Removed absolute positioning */
@@ -6872,7 +6870,7 @@ select.boots-select {
   letter-spacing: 0.262px;
   margin-top: 6px;
   margin-bottom: 0;
-  display: inline-block;  
+  display: inline-block;
 }
 
 .flow-container {
@@ -8380,33 +8378,60 @@ select.boots-select {
 /* Style for the floating label */
 .floating-placeholder {
   position: absolute;
-  left: 70px; 
+  left: 70px;
   top: 30%;
   transform: translateY(-00%);
   pointer-events: none; /* allow clicks to go to the input */
   transition: all 0.2s ease-out;
   color: #aaa;
   font-size: 14px;
-  z-index: 99;
-  background-color: #F1F5F9;
-  width: 100px;
+    z-index: 2;
+  background-color: #f1f5f9;
+}
+.date-wrapper .floating-placeholder {
+  position: absolute;
+  left: 70px;
+  top: 30%;
+  transform: translateY(-00%);
+  min-width: 95px;
+}
+.search-wrapper .floating-placeholder {
+  position: absolute;
+  left: 55px;
+  top: 30%;
+  transform: translateY(-00%);
 }
 .year-placeholder {
   font-size: 0.8em;
   color: #888;
   transition: opacity 0.2s ease;
 }
+.input-wrapper .floating-placeholder {
+  position: absolute;
+  left: 86px;
+  top: 30%;
+  transform: translateY(-00%);
+  width: auto;
+}
+.lookingFor-input-wraper .floating-placeholder {
+  position: absolute;
+  left: 20px;
+  top: 30%;
+  transform: translateY(-00%);
+  width: auto;
+  font-size: 14px;
+}
 /* When active (input focused or filled), move the label up */
 .floating-placeholder.active {
   top: -8px;
   font-size: 11px;
   color: #333;
-  background-color: #F1F5F9;
+  background-color: #f1f5f9;
   font-weight: 500;
-    width: auto;
+  width: auto;
 }
 
-.run-ads-gaps{
+.run-ads-gaps {
   padding-left: 10px;
 }
 .single-step .steps-peras {
@@ -9170,24 +9195,23 @@ select.boots-select {
   }
 }
 @media (max-width: 1199px) {
-  .preview-box{
+  .preview-box {
     gap: 30px;
   }
-    .preview-boxtwo .horaizontl-line-separator{
+  .preview-boxtwo .horaizontl-line-separator {
     margin: 30px 0;
   }
 }
 @media (max-width: 991.99px) {
-  .preview-box{
+  .preview-box {
     gap: 30px;
   }
-    .preview-boxtwo .horaizontl-line-separator{
+  .preview-boxtwo .horaizontl-line-separator {
     margin: 30px 0;
   }
   .senario-preview {
     max-width: 100%;
-    
-}
+  }
 }
 @media (max-width: 767px) {
   .progress-wrapper {
@@ -9205,7 +9229,7 @@ select.boots-select {
     min-height: 40px;
     min-width: 40px;
   }
-  .preview-box{
+  .preview-box {
     width: 100%;
     padding: 30px 20px;
     display: flex;
@@ -9213,15 +9237,15 @@ select.boots-select {
   }
   .preview-boxtwo {
     width: 100%;
- padding: 30px 20px;
-}
+    padding: 30px 20px;
+  }
   .preview-box {
     gap: 30px;
   }
   .secondary-images {
     gap: 10px;
   }
-    .preview-boxtwo .horaizontl-line-separator{
+  .preview-boxtwo .horaizontl-line-separator {
     margin: 30px 0;
   }
 }
@@ -9281,24 +9305,24 @@ select.boots-select {
   .creadit-wrappers {
     width: 50%;
   }
-  .preview-boxtwo .horaizontl-line-separator{
+  .preview-boxtwo .horaizontl-line-separator {
     margin: 30px 0;
   }
   .ads-preview-top-inner .ads-preview-tag {
     display: flex;
     padding: 4px 8px;
     font-size: 10px;
-}
-.ads-preview-top-inner {
+  }
+  .ads-preview-top-inner {
     gap: 10px;
-}
+  }
   .communites-contentsx {
     gap: 10px;
-}
-.communites-contentsx-tag {
+  }
+  .communites-contentsx-tag {
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-}
+  }
 }
 @media (max-width: 389px) {
   .progress-wrapper {
@@ -9315,9 +9339,9 @@ select.boots-select {
   .communites-contentsx {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-}
-.communites-contentsx-tag {
+  }
+  .communites-contentsx-tag {
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-}
+  }
 }

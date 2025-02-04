@@ -362,7 +362,7 @@
                             </div>
                             <!-- Date Input -->
                             <div class="col-12 mt-3">
-                              <div class="input-group boots-input">
+                              <div class="input-group date-wrapper boots-input">
                                 <span class="input-group-icon">
                                   <img
                                     src="./img/simple-line-icons_calender.svg"
@@ -402,15 +402,15 @@
                       </div>
                     </div>
                     <div class="col-12">
-                      <form class="demofrom">
-                        <div class="input-group flow-input">
+                      <form class="">
+                        <div class="input-group search-wrapper flow-input">
                           <label class="input-group-icon-search"
                             ><img src="./img/search-line.svg" alt="search"
                           /></label>
                           <input
                             type="search"
                             class="form-control"
-                            placeholder="Search Member"
+                            placeholder="Search Tags"
                             aria-label="search"
                             aria-describedby="basic-addon1"
                           />
@@ -497,56 +497,67 @@
     <!-- main end -->
     <!-- javascript -->
     <!-- javascript -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const inputs = document.querySelectorAll(".boots-input input[placeholder]");
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const inputs = document.querySelectorAll("input[placeholder]");
 
-    inputs.forEach(function (input) {
-      const placeholderText = input.getAttribute("placeholder");
-      input.removeAttribute("placeholder");
+      inputs.forEach(function (input) {
+        // Store the placeholder text and then remove the attribute.
+        const placeholderText = input.getAttribute("placeholder");
+        input.removeAttribute("placeholder");
 
-      const label = document.createElement("label");
-      label.classList.add("floating-placeholder");
-      label.textContent = placeholderText;
-      input.parentNode.insertBefore(label, input);
+        // Create the floating label element.
+        const label = document.createElement("label");
+        label.classList.add("floating-placeholder");
+        label.textContent = placeholderText;
+        input.parentNode.insertBefore(label, input);
 
-      if (input.type === "date") {
-  const secondaryPlaceholder = "Begin On";
-  
-  // Set initial text content
-  label.textContent = input.value ? secondaryPlaceholder : placeholderText;
-  
-  // Add date input specific listeners
-  input.addEventListener("focus", () => {
-    label.textContent = secondaryPlaceholder;
-    label.classList.add("active");
-  });
+        if (input.type === "date") {
+          const secondaryPlaceholder = "Begin On";
+          
+          // Set the initial label text.
+          label.textContent = input.value ? secondaryPlaceholder : placeholderText;
+          
+          // Date input specific event listeners.
+          input.addEventListener("focus", () => {
+            label.textContent = secondaryPlaceholder;
+            label.classList.add("active");
+          });
 
-  input.addEventListener("blur", () => {
-    label.textContent = input.value ? secondaryPlaceholder : placeholderText;
-  });
+          input.addEventListener("blur", () => {
+            label.textContent = input.value ? secondaryPlaceholder : placeholderText;
+          });
 
-  input.addEventListener("change", () => {
-    label.textContent = input.value ? secondaryPlaceholder : placeholderText;
-    label.classList.toggle("active", !!input.value);
-  });
+          input.addEventListener("change", () => {
+            label.textContent = input.value ? secondaryPlaceholder : placeholderText;
+            label.classList.toggle("active", !!input.value);
+          });
 
+          // Add a click event to trigger the date picker popup.
+          input.addEventListener("click", () => {
+            // If the experimental showPicker() API is supported, use it.
+            if (typeof input.showPicker === "function") {
+              input.showPicker();
+            } else {
+              // Otherwise, focus the input so the native date picker may appear.
+              input.focus();
+            }
+          });
+        } else {
+          // Standard input handling for non-date inputs.
+          if (input.value) label.classList.add("active");
 
-      } else {
-        // Standard input handling
-        if (input.value) label.classList.add("active");
-
-        input.addEventListener("focus", () => label.classList.add("active"));
-        input.addEventListener("blur", () => {
-          if (!input.value) label.classList.remove("active");
-        });
-        input.addEventListener("input", () => {
-          label.classList.toggle("active", !!input.value);
-        });
-      }
+          input.addEventListener("focus", () => label.classList.add("active"));
+          input.addEventListener("blur", () => {
+            if (!input.value) label.classList.remove("active");
+          });
+          input.addEventListener("input", () => {
+            label.classList.toggle("active", !!input.value);
+          });
+        }
+      });
     });
-  });
-</script>
+  </script>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       crossorigin="anonymous"

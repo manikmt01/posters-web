@@ -256,6 +256,67 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
     <!-- calender icon handle  -->
+       <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const inputs = document.querySelectorAll("input[placeholder]");
+
+      inputs.forEach(function (input) {
+        // Store the placeholder text and then remove the attribute.
+        const placeholderText = input.getAttribute("placeholder");
+        input.removeAttribute("placeholder");
+
+        // Create the floating label element.
+        const label = document.createElement("label");
+        label.classList.add("floating-placeholder");
+        label.textContent = placeholderText;
+        input.parentNode.insertBefore(label, input);
+
+        if (input.type === "date") {
+          const secondaryPlaceholder = "Begin On";
+          
+          // Set the initial label text.
+          label.textContent = input.value ? secondaryPlaceholder : placeholderText;
+          
+          // Date input specific event listeners.
+          input.addEventListener("focus", () => {
+            label.textContent = secondaryPlaceholder;
+            label.classList.add("active");
+          });
+
+          input.addEventListener("blur", () => {
+            label.textContent = input.value ? secondaryPlaceholder : placeholderText;
+          });
+
+          input.addEventListener("change", () => {
+            label.textContent = input.value ? secondaryPlaceholder : placeholderText;
+            label.classList.toggle("active", !!input.value);
+          });
+
+          // Add a click event to trigger the date picker popup.
+          input.addEventListener("click", () => {
+            // If the experimental showPicker() API is supported, use it.
+            if (typeof input.showPicker === "function") {
+              input.showPicker();
+            } else {
+              // Otherwise, focus the input so the native date picker may appear.
+              input.focus();
+            }
+          });
+        } else {
+          // Standard input handling for non-date inputs.
+          if (input.value) label.classList.add("active");
+
+          input.addEventListener("focus", () => label.classList.add("active"));
+          input.addEventListener("blur", () => {
+            if (!input.value) label.classList.remove("active");
+          });
+          input.addEventListener("input", () => {
+            label.classList.toggle("active", !!input.value);
+          });
+        }
+      });
+    });
+  </script>
     <script>
         document.getElementById("date-expire").addEventListener("focus", function () {
             this.type = "datetime-local"; // Change to datetime-local on focus

@@ -173,7 +173,7 @@
                                 </label>
                             </div>
                             <div class="service-radius">
-                                <input type="text" placeholder="Miles" value="20 mi" name="" id="">
+                                <input type="text" value="20 mi" name="" id="">
                             </div>
                             <div class="addPhone-button-wrapper">
                                 <button type="button"><img src="./img/delete.png" alt=""></button>
@@ -196,7 +196,7 @@
                                 </label>
                             </div>
                             <div class="service-radius">
-                                <input type="text" placeholder="Miles" name="" id="">
+                                <input type="text"  name="" id="">
                             </div>
                             <div class="addPhone-button-wrapper">
                                 <button type="button"><img src="./img/plusblue.png" alt=""></button>
@@ -229,6 +229,45 @@
         crossorigin="anonymous"></script>
     <!-- custom js  -->
     <!-- file upload  -->
+       <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Select every input that has a placeholder attribute
+        const inputs = document.querySelectorAll("input[placeholder]");
+
+        inputs.forEach(function (input) {
+          // Get the placeholder text and remove it from the input
+          const placeholderText = input.getAttribute("placeholder");
+          input.removeAttribute("placeholder");
+
+          // Create a label element and add a custom class
+          const label = document.createElement("label");
+          label.classList.add("floating-placeholder");
+          label.innerText = placeholderText;
+
+          // Position the label relative to the input.
+          // Here we insert the label right after the input.
+          // You can adjust this depending on your HTML structure.
+          input.parentNode.insertBefore(label, input);
+
+          // If the input already has a value, mark the label as active
+          if (input.value.trim() !== "") {
+            label.classList.add("active");
+          }
+
+          // When the input gains focus, add the "active" class to the label
+          input.addEventListener("focus", function () {
+            label.classList.add("active");
+          });
+
+          // When the input loses focus, remove the "active" class if the input is empty
+          input.addEventListener("blur", function () {
+            if (input.value.trim() === "") {
+              label.classList.remove("active");
+            }
+          });
+        });
+      });
+    </script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const input = document.getElementById("imageUploadInput");

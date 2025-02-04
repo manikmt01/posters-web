@@ -257,7 +257,7 @@
                             </div>
                             <!-- Date Input -->
                             <div class="col-12 mt-3">
-                              <div class="input-group boots-input">
+                              <div class="input-group date-wrapper boots-input">
                                 <span class="input-group-icon">
                                   <img
                                     src="./img/simple-line-icons_calender.svg"
@@ -297,27 +297,67 @@
     </main>
     <!-- main end -->
     <!-- javascript -->
-    <script>
-      const dateInput = document.getElementById("datepicker");
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const inputs = document.querySelectorAll("input[placeholder]");
 
-      dateInput.addEventListener("input", function () {
-        if (this.value) {
-          this.style.color = "#5a5a5a"; // Selected text color
+      inputs.forEach(function (input) {
+        // Store the placeholder text and then remove the attribute.
+        const placeholderText = input.getAttribute("placeholder");
+        input.removeAttribute("placeholder");
+
+        // Create the floating label element.
+        const label = document.createElement("label");
+        label.classList.add("floating-placeholder");
+        label.textContent = placeholderText;
+        input.parentNode.insertBefore(label, input);
+
+        if (input.type === "date") {
+          const secondaryPlaceholder = "Begin On";
+          
+          // Set the initial label text.
+          label.textContent = input.value ? secondaryPlaceholder : placeholderText;
+          
+          // Date input specific event listeners.
+          input.addEventListener("focus", () => {
+            label.textContent = secondaryPlaceholder;
+            label.classList.add("active");
+          });
+
+          input.addEventListener("blur", () => {
+            label.textContent = input.value ? secondaryPlaceholder : placeholderText;
+          });
+
+          input.addEventListener("change", () => {
+            label.textContent = input.value ? secondaryPlaceholder : placeholderText;
+            label.classList.toggle("active", !!input.value);
+          });
+
+          // Add a click event to trigger the date picker popup.
+          input.addEventListener("click", () => {
+            // If the experimental showPicker() API is supported, use it.
+            if (typeof input.showPicker === "function") {
+              input.showPicker();
+            } else {
+              // Otherwise, focus the input so the native date picker may appear.
+              input.focus();
+            }
+          });
         } else {
-          this.style.color = "#999"; // Placeholder color
+          // Standard input handling for non-date inputs.
+          if (input.value) label.classList.add("active");
+
+          input.addEventListener("focus", () => label.classList.add("active"));
+          input.addEventListener("blur", () => {
+            if (!input.value) label.classList.remove("active");
+          });
+          input.addEventListener("input", () => {
+            label.classList.toggle("active", !!input.value);
+          });
         }
       });
-
-      dateInput.addEventListener("focus", function () {
-        this.setAttribute("placeholder", "");
-      });
-
-      dateInput.addEventListener("blur", function () {
-        if (!this.value) {
-          this.setAttribute("placeholder", "Select a date");
-        }
-      });
-    </script>
+    });
+  </script>
       <script>
       document.addEventListener("DOMContentLoaded", function () {
         // Select every input that has a placeholder attribute
