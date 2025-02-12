@@ -235,16 +235,24 @@
             </div>
         </div>
         <div class="mobile-nav d-flex d-lg-none justify-content-between align-items-center">
-            <a href="index.html" class="d-block mobile-logo">
-                <img src="./img/favicon.png" alt="logo" class="img-fluid">
-            </a>
-            <a href="index.html" class="d-block mobile-logo2">
-                <img src="./img/m-logo-2.png" alt="logo" class="img-fluid">
-            </a>
-            <button class="d-block mobile-search">
-                <img src="./img/search2.png" alt="search" class="img-fluid">
-            </button>
-        </div>
+    <a href="index.html" class="d-block mobile-logo">
+        <img src="./img/favicon.png" alt="logo" class="img-fluid">
+    </a>
+    <a href="index.html" class="d-block mobile-logo2">
+        <img src="./img/m-logo-2.png" alt="logo" class="img-fluid">
+    </a>
+
+    <!-- Search Button -->
+    <button class="d-block mobile-search" id="mobileSearchButton">
+        <img src="./img/search2.png" alt="search" class="img-fluid">
+    </button>
+
+    <!-- Search Box (Initially Hidden) -->
+    <div class="mobile-nav-search-box" id="mobileNavSearchBox">
+        <input type="text" class="mobile-nav-search-input" placeholder="Search...">
+    </div>
+</div>
+
     </header>
     <main>
         <section class="dashboard">
@@ -1596,6 +1604,20 @@
             const postModal = new bootstrap.Modal(document.getElementById('succesModal'));
             postModal.show();
         });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const searchButton = document.getElementById("mobileSearchButton");
+    const searchBox = document.getElementById("mobileNavSearchBox");
+
+    searchButton.addEventListener("click", function() {
+        if (searchBox.style.display === "none" || searchBox.style.display === "") {
+            searchBox.style.display = "block";
+        } else {
+            searchBox.style.display = "none";
+        }
+    });
+});
     </script>
 </body>
 

@@ -30,3 +30,52 @@ deleteIcon.addEventListener('click', function () {
 
   fileInput.value = '';
 });
+   // Self-contained component
+ (function () {
+   const container = document.querySelector(".stb-container");
+   const body = document.body;
+
+   // Adjust body padding
+   function adjustPadding() {
+     if (window.getComputedStyle(container).display !== "none") {
+       body.style.paddingBottom = `${container.offsetHeight}px`;
+     } else {
+       body.style.paddingBottom = "0";
+     }
+   }
+
+   // Offcanvas handling
+   const offcanvas = document.getElementById("stbOffcanvas");
+   const bsOffcanvas = new bootstrap.Offcanvas(offcanvas, {
+     backdrop: true,
+     scroll: false,
+   });
+
+   // Toggle offcanvas on button click
+   document
+     .querySelectorAll('[data-bs-target="#stbOffcanvas"]')
+     .forEach((btn) => {
+       btn.addEventListener("click", () => {
+         if (offcanvas.classList.contains("show")) {
+           bsOffcanvas.hide();
+         } else {
+           bsOffcanvas.show();
+         }
+       });
+     });
+
+   // Handle resize
+   let resizeTimer;
+   window.addEventListener("resize", () => {
+     clearTimeout(resizeTimer);
+     resizeTimer = setTimeout(() => {
+       adjustPadding();
+       if (window.innerWidth >= 768) bsOffcanvas.hide();
+     }, 100);
+   });
+
+   adjustPadding();
+ })();
+// mobile input
+
+
