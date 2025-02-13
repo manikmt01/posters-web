@@ -257,7 +257,10 @@
           <div
             class="upload-button-wrapper d-flex justify-content-center flex-column"
           >
-            <button class="upload-buttom-top">
+            <button
+              onclick="window.location.href='./create-ad-enter-details-new.html';"
+              class="upload-buttom-top"
+            >
               Save <img src="./img/Arrow Forward.svg" alt="Arrow" />
             </button>
             <button class="upload-buttom-bottom">Cancel</button>
@@ -267,84 +270,83 @@
     </main>
     <!-- main end -->
     <!-- javascript -->
-   
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  // List your upload container selectors
-  const uploadSelectors = [
-    "#mainUploadArea",
-    "#imageUpload1",
-    "#imageUpload2",
-    "#videoUpload1",
-    "#videoUpload2"
-  ];
 
-  uploadSelectors.forEach(selector => {
-    const container = document.querySelector(selector);
-    if (!container) return; // Skip if not found
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // List your upload container selectors
+        const uploadSelectors = [
+          "#mainUploadArea",
+          "#imageUpload1",
+          "#imageUpload2",
+          "#videoUpload1",
+          "#videoUpload2",
+        ];
 
-    // When the container is clicked (unless the click is on the remove button), trigger the hidden file input
-    container.addEventListener("click", function (e) {
-      // Prevent click if the remove button is clicked
-      if (e.target.classList.contains("remove-btn")) return;
-      
-      const fileInput = container.querySelector('input[type="file"]');
-      if (fileInput) {
-        fileInput.click();
-      }
-    });
+        uploadSelectors.forEach((selector) => {
+          const container = document.querySelector(selector);
+          if (!container) return; // Skip if not found
 
-    // Listen for file selection on the associated file input
-    const fileInput = container.querySelector('input[type="file"]');
-    if (fileInput) {
-      fileInput.addEventListener("change", function (e) {
-        const file = fileInput.files[0];
-        if (!file) return; // No file selected
+          // When the container is clicked (unless the click is on the remove button), trigger the hidden file input
+          container.addEventListener("click", function (e) {
+            // Prevent click if the remove button is clicked
+            if (e.target.classList.contains("remove-btn")) return;
 
-        // Remove any existing preview if present
-        const existingPreview = container.querySelector(".preview");
-        if (existingPreview) {
-          existingPreview.remove();
-        }
+            const fileInput = container.querySelector('input[type="file"]');
+            if (fileInput) {
+              fileInput.click();
+            }
+          });
 
-        // Create a new preview overlay
-        const previewDiv = document.createElement("div");
-        previewDiv.classList.add("preview");
+          // Listen for file selection on the associated file input
+          const fileInput = container.querySelector('input[type="file"]');
+          if (fileInput) {
+            fileInput.addEventListener("change", function (e) {
+              const file = fileInput.files[0];
+              if (!file) return; // No file selected
 
-        // Check the file type to decide if it's an image or video
-        if (file.type.startsWith("image/")) {
-          // For images, set as background image on the preview div
-          const imageURL = URL.createObjectURL(file);
-          previewDiv.style.backgroundImage = `url(${imageURL})`;
-        } else if (file.type.startsWith("video/")) {
-          // For videos, create a video element inside the preview div
-          const videoURL = URL.createObjectURL(file);
-          const videoEl = document.createElement("video");
-          videoEl.src = videoURL;
-          videoEl.controls = true;
-          previewDiv.appendChild(videoEl);
-        }
+              // Remove any existing preview if present
+              const existingPreview = container.querySelector(".preview");
+              if (existingPreview) {
+                existingPreview.remove();
+              }
 
-        // Create a remove button to clear the preview and reset the input
-        const removeBtn = document.createElement("button");
-        removeBtn.classList.add("remove-btn");
-        removeBtn.textContent = "✕";
-        removeBtn.addEventListener("click", function (e) {
-          e.stopPropagation(); // Prevent container click event
-          previewDiv.remove();
-          fileInput.value = ""; // Reset the file input so the same file can be reselected if desired
+              // Create a new preview overlay
+              const previewDiv = document.createElement("div");
+              previewDiv.classList.add("preview");
+
+              // Check the file type to decide if it's an image or video
+              if (file.type.startsWith("image/")) {
+                // For images, set as background image on the preview div
+                const imageURL = URL.createObjectURL(file);
+                previewDiv.style.backgroundImage = `url(${imageURL})`;
+              } else if (file.type.startsWith("video/")) {
+                // For videos, create a video element inside the preview div
+                const videoURL = URL.createObjectURL(file);
+                const videoEl = document.createElement("video");
+                videoEl.src = videoURL;
+                videoEl.controls = true;
+                previewDiv.appendChild(videoEl);
+              }
+
+              // Create a remove button to clear the preview and reset the input
+              const removeBtn = document.createElement("button");
+              removeBtn.classList.add("remove-btn");
+              removeBtn.textContent = "✕";
+              removeBtn.addEventListener("click", function (e) {
+                e.stopPropagation(); // Prevent container click event
+                previewDiv.remove();
+                fileInput.value = ""; // Reset the file input so the same file can be reselected if desired
+              });
+              previewDiv.appendChild(removeBtn);
+
+              // Append the preview overlay to the container
+              container.appendChild(previewDiv);
+            });
+          }
         });
-        previewDiv.appendChild(removeBtn);
-
-        // Append the preview overlay to the container
-        container.appendChild(previewDiv);
       });
-    }
-  });
-});
-</script>
+    </script>
 
-   
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       crossorigin="anonymous"

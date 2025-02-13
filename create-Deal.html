@@ -1,180 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- favicon  -->
-    <link rel="icon" href="./img/favicon.png">
+    <link rel="icon" href="./img/favicon.png" />
     <!-- google font  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- bootstrap css  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <!-- custom css  -->
     <link rel="stylesheet" href="./css/style.css" />
 
     <title>Feed Sponser Post</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="destop-nav d-flex justify-content-between align-items-center post-upload">
-            <div class="header-left">
-                <div class="back-arr">
-                    <img src="./img/left-arr.png" alt="">
-                </div>
-                <h3>Create Deal</h3>
-            </div>
+      <div
+        class="destop-nav d-flex justify-content-between align-items-center post-upload"
+      >
+        <div class="header-left">
+          <div class="back-arr">
+            <img src="./img/left-arr.png" alt="" />
+          </div>
+          <h3>Create Deal</h3>
         </div>
+      </div>
     </header>
     <main>
-        <form class="postDetailsBody">
-            <div class="postUpload-container">
-                <div class="postUpload-title">
-                    <h2>Upload Photo or Video</h2>
-                </div>
-                <div class="comunity-image-upload-wrapper mt-5">
-                    <label for="imageUploadInput" class="comunity-image-upload-label">
-                        <span class="uploadIconComunity">
-                            <img src="./img/tabler_upload.png" class="img-fluid" alt="Upload Icon">
-                        </span>
-                        <span class="uploadTextcomunity">Upload Image or Video</span>
-                    </label>
-                    <input type="file" id="imageUploadInput" class="comunity-image-upload-input" style="display: none;">
-                    <div class="comunity-image-upload-preview" style="display: none;">
-                        <div class="remove-img">
-                            <img src="./img/cross1.png" class="img-fluid" alt="Remove">
-                        </div>
-                        <img id="previewImage" src="" class="img-fluid" alt="Preview Image">
-                    </div>
-                </div>
+      <form class="postDetailsBody">
+        <div class="postUpload-container">
+          <div class="postUpload-title">
+            <h2>Upload Photo or Video</h2>
+          </div>
+          <div class="comunity-image-upload-wrapper mt-5">
+            <label for="imageUploadInput" class="comunity-image-upload-label">
+              <span class="uploadIconComunity">
+                <img
+                  src="./img/tabler_upload.png"
+                  class="img-fluid"
+                  alt="Upload Icon"
+                />
+              </span>
+              <span class="uploadTextcomunity">Upload Image or Video</span>
+            </label>
+            <input
+              type="file"
+              id="imageUploadInput"
+              class="comunity-image-upload-input"
+              style="display: none"
+            />
+            <div class="comunity-image-upload-preview" style="display: none">
+              <div class="remove-img">
+                <img src="./img/cross1.png" class="img-fluid" alt="Remove" />
+              </div>
+              <img
+                id="previewImage"
+                src=""
+                class="img-fluid"
+                alt="Preview Image"
+              />
             </div>
-            <div class="postUpload-container mt-3">
-                <div action="" class="form-container">
-                    <!-- Title -->
-                    <div class="post-something-form-group">
-                        <label for="title-input" class="post-something-form-label input-left">Deal Title</label>
-                        <div class="input-wrapper input-right">
-                            <input type="text" placeholder="Deal Title" id="title-input" class="form-input">
-                            <label for="title-input" class="input-icon">
-                                <img src="./img/deal-form.png" alt="Title Icon">
-                            </label>
-                            <label for="title-input" class="postdetails-form-bar">
-                            </label>
-                        </div>
-                    </div>
-                    <!-- Info -->
-                    <div class="textarea-group">
-                        <label for="info-textarea" class="input-left textarea-label">Info</label>
-                        <div class="textarea-wrapper input-right">
-                            <textarea placeholder="Your Description" id="info-textarea" class="form-textarea"
-                                rows="2"></textarea>
-                        </div>
-                    </div>
-                    <!-- Regular Price -->
-                    <div class="post-something-form-group">
-                        <label for="price-input" class="post-something-form-label input-left">Regular Price</label>
-                        <div class="input-wrapper input-right">
-                            <input type="text" placeholder=" Regular Price (Optional)" id="price-input"
-                                class="form-input">
-                            <label for="price-input" class="input-icon">
-                                <img src="./img/price.png" alt="Title Icon">
-                            </label>
-                            <label for="price-input" class="postdetails-form-bar">
-                            </label>
-                        </div>
-                    </div>
-                    <!-- Sale Price -->
-                    <div class="post-something-form-group">
-                        <label for="price-input2" class="post-something-form-label input-left">Sale Price</label>
-                        <div class="input-wrapper input-right">
-                            <input type="text" placeholder="Sale Price" id="price-input2" class="form-input">
-                            <label for="price-input2" class="input-icon">
-                                <img src="./img/price.png" alt="Title Icon">
-                            </label>
-                            <label for="price-input2" class="postdetails-form-bar">
-                            </label>
-                        </div>
-                    </div>
-                    <!-- Store Name -->
-                    <div class="post-something-form-group">
-                        <label for="price-input3" class="post-something-form-label input-left">Store Name</label>
-                        <div class="input-wrapper input-right">
-                            <input type="text" placeholder=" Store Name" id="price-input3" class="form-input">
-                            <label for="price-input3" class="input-icon">
-                                <img src="./img/price.png" alt="Title Icon">
-                            </label>
-                            <label for="price-input3" class="postdetails-form-bar">
-                            </label>
-                        </div>
-                    </div>
-                    <!-- Add Location -->
-                    <div class="post-something-form-group location-group">
-                        <div class="input-left">
-                            <label for="location-input" class="post-something-form-label">Add Location</label>
-                        </div>
-                        <div class="input-right location-wraper">
-                            <div class="input-wrapper">
-                                <input type="text" placeholder="Enter Location" id="location-input" class="form-input">
-                                <label for="location-input" class="input-icon">
-                                    <img src="./img/locationform.png" alt="Location Icon">
-                                </label>
-                                <label for="location-input" class="postdetails-form-bar">
-                                </label>
-                            </div>
-                            <div class="separator">
-                                <span>or</span>
-                            </div>
-                            <div class="anywhere-button-wrapper">
-                                <button type="button" class="anywhere-button">Anywhere</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Buy Link -->
-                    <div class="post-something-form-group">
-                        <label for="link-input" class="post-something-form-label input-left">Buy Link</label>
-                        <div class="input-wrapper input-right">
-                            <input type="url" placeholder=" Buy Link. https://www.google.com/test" id="link-input"
-                                class="form-input">
-                            <label for="link-input" class="input-icon">
-                                <img src="./img/linkform.png" alt="Title Icon">
-                            </label>
-                            <label for="link-input" class="postdetails-form-bar">
-                            </label>
-                        </div>
-                    </div>
-
+          </div>
+        </div>
+        <div class="postUpload-container mt-3">
+          <div action="" class="form-container">
+            <!-- Title -->
+            <div class="post-something-form-group">
+              <label
+                for="title-input"
+                class="post-something-form-label input-left"
+                >Deal Title</label
+              >
+              <div class="input-wrapper input-right">
+                <input
+                  type="text"
+                  placeholder="Deal Title"
+                  id="title-input"
+                  class="form-input"
+                />
+                <label for="title-input" class="input-icon">
+                  <img src="./img/deal-form.png" alt="Title Icon" />
+                </label>
+                <label for="title-input" class="postdetails-form-bar"> </label>
+              </div>
+            </div>
+            <!-- Info -->
+            <div class="textarea-group">
+              <label for="info-textarea" class="input-left textarea-label"
+                >Info</label
+              >
+              <div class="textarea-wrapper input-right">
+                <textarea
+                  placeholder="Your Description"
+                  id="info-textarea"
+                  class="form-textarea"
+                  rows="2"
+                ></textarea>
+              </div>
+            </div>
+            <!-- Regular Price -->
+            <div class="post-something-form-group">
+              <label
+                for="price-input"
+                class="post-something-form-label input-left"
+                >Regular Price</label
+              >
+              <div class="input-wrapper input-right">
+                <input
+                  type="text"
+                  placeholder=" Regular Price (Optional)"
+                  id="price-input"
+                  class="form-input"
+                />
+                <label for="price-input" class="input-icon">
+                  <img src="./img/price.png" alt="Title Icon" />
+                </label>
+                <label for="price-input" class="postdetails-form-bar"> </label>
+              </div>
+            </div>
+            <!-- Sale Price -->
+            <div class="post-something-form-group">
+              <label
+                for="price-input2"
+                class="post-something-form-label input-left"
+                >Sale Price</label
+              >
+              <div class="input-wrapper input-right">
+                <input
+                  type="text"
+                  placeholder="Sale Price"
+                  id="price-input2"
+                  class="form-input"
+                />
+                <label for="price-input2" class="input-icon">
+                  <img src="./img/price.png" alt="Title Icon" />
+                </label>
+                <label for="price-input2" class="postdetails-form-bar"> </label>
+              </div>
+            </div>
+            <!-- Store Name -->
+            <div class="post-something-form-group">
+              <label
+                for="price-input3"
+                class="post-something-form-label input-left"
+                >Store Name</label
+              >
+              <div class="input-wrapper input-right">
+                <input
+                  type="text"
+                  placeholder=" Store Name"
+                  id="price-input3"
+                  class="form-input"
+                />
+                <label for="price-input3" class="input-icon">
+                  <img src="./img/price.png" alt="Title Icon" />
+                </label>
+                <label for="price-input3" class="postdetails-form-bar"> </label>
+              </div>
+            </div>
+            <!-- Add Location -->
+            <div class="post-something-form-group location-group">
+              <div class="input-left">
+                <label for="location-input" class="post-something-form-label"
+                  >Add Location</label
+                >
+              </div>
+              <div class="input-right location-wraper">
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    placeholder="Enter Location"
+                    id="location-input"
+                    class="form-input"
+                  />
+                  <label for="location-input" class="input-icon">
+                    <img src="./img/locationform.png" alt="Location Icon" />
+                  </label>
+                  <label for="location-input" class="postdetails-form-bar">
+                  </label>
                 </div>
+                <div class="separator">
+                  <span>or</span>
+                </div>
+                <div class="anywhere-button-wrapper">
+                  <button type="button" class="anywhere-button">
+                    Anywhere
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="not-find">
-                <button class="saveBtn">
-                    <span class="saveBtnTxt">Save</span>
-                    <span class="saveBtnImg"><img src="./img/forward.png" class="img-fluid w-100" alt=""></span>
-                </button>
-                <button class="cancelbtn">Cancel</button>
+            <!-- Buy Link -->
+            <div class="post-something-form-group">
+              <label
+                for="link-input"
+                class="post-something-form-label input-left"
+                >Buy Link</label
+              >
+              <div class="input-wrapper input-right">
+                <input
+                  type="url"
+                  placeholder=" Buy Link. https://www.google.com/test"
+                  id="link-input"
+                  class="form-input"
+                />
+                <label for="link-input" class="input-icon">
+                  <img src="./img/linkform.png" alt="Title Icon" />
+                </label>
+                <label for="link-input" class="postdetails-form-bar"> </label>
+              </div>
             </div>
-        </form>
+          </div>
+        </div>
+        <div class="not-find">
+          <a href="./view-Deal-Details.html" class="saveBtn svs-btns"
+          >
+            <span class="saveBtnTxt">Save</span>
+            <span class="saveBtnImg"
+              ><img src="./img/forward.png" class="img-fluid w-100" alt=""
+            /></span>
+          </a>
+          <button class="cancelbtn">Cancel</button>
+        </div>
+      </form>
     </main>
 
-
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <!-- custom js  -->
     <!-- file upload  -->
-       <script>
+    <script>
       document.addEventListener("DOMContentLoaded", function () {
         // Select every input that has a placeholder attribute
         const inputs = document.querySelectorAll("input[placeholder]");
@@ -214,37 +283,38 @@
       });
     </script>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const input = document.getElementById("imageUploadInput");
-            const label = document.querySelector(".comunity-image-upload-label");
-            const preview = document.querySelector(".comunity-image-upload-preview");
-            const removeBtn = document.querySelector(".remove-img");
-            const previewImage = document.getElementById("previewImage");
+      document.addEventListener("DOMContentLoaded", function () {
+        const input = document.getElementById("imageUploadInput");
+        const label = document.querySelector(".comunity-image-upload-label");
+        const preview = document.querySelector(
+          ".comunity-image-upload-preview"
+        );
+        const removeBtn = document.querySelector(".remove-img");
+        const previewImage = document.getElementById("previewImage");
 
-            // Handle file input change
-            input.addEventListener("change", function () {
-                const file = input.files[0];
-                if (file) {
-                    const reader = new FileReader();
-                    reader.onload = function (e) {
-                        previewImage.src = e.target.result; // Set the preview image source
-                        label.style.display = "none"; // Hide the label
-                        preview.style.display = "flex"; // Show the preview
-                    };
-                    reader.readAsDataURL(file);
-                    console.log(file);
-                }
-            });
-
-            // Handle remove button click
-            removeBtn.addEventListener("click", function () {
-                input.value = ""; // Clear the input value
-                label.style.display = "flex"; // Show the label
-                preview.style.display = "none"; // Hide the preview
-                previewImage.src = ""; // Clear the preview image
-            });
+        // Handle file input change
+        input.addEventListener("change", function () {
+          const file = input.files[0];
+          if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+              previewImage.src = e.target.result; // Set the preview image source
+              label.style.display = "none"; // Hide the label
+              preview.style.display = "flex"; // Show the preview
+            };
+            reader.readAsDataURL(file);
+            console.log(file);
+          }
         });
-    </script>
-</body>
 
+        // Handle remove button click
+        removeBtn.addEventListener("click", function () {
+          input.value = ""; // Clear the input value
+          label.style.display = "flex"; // Show the label
+          preview.style.display = "none"; // Hide the preview
+          previewImage.src = ""; // Clear the preview image
+        });
+      });
+    </script>
+  </body>
 </html>

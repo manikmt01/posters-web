@@ -425,10 +425,7 @@
       </section>
       <section>
         <div class="not-find">
-          <button
-            onclick="window.location.href='./im-Looking-For_View-Redesigned_Enter-Details_select-comunity.html';"
-            class="saveBtn"
-          >
+          <button class="saveBtn">
             <span class="saveBtnTxt">Save &amp; Login</span>
             <span class="saveBtnImg"
               ><img src="./img/forward.png" class="img-fluid w-100" alt=""
@@ -440,6 +437,221 @@
     </main>
     <!-- main end -->
 
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="selecComunityDetailsModal"
+      tabindex="-1"
+      aria-labelledby="selecComunityDetailsModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <section class="select-community-container">
+              <div class="comunity-container">
+                <div class="comunity-title">
+                  <h2>Choose Communities</h2>
+                </div>
+                <!-- comunity select  -->
+                <div class="comunity-select">
+                  <div class="comunity-search">
+                    <div class="comunity-search-input">
+                      <input
+                        type="text"
+                        placeholder="Search Community"
+                        class="form-control"
+                      />
+                      <img src="./img/searchform.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="community-summary">
+                    <div class="community-stats">
+                      <div class="stat-item">
+                        <p>Communities</p>
+                        <h4>178</h4>
+                      </div>
+                      <div class="stat-item-2">
+                        <p>Selected</p>
+                        <h4>2</h4>
+                      </div>
+                    </div>
+                    <div class="community-action-buttons">
+                      <button class="btn-unselect-all">Unselect All</button>
+                    </div>
+                  </div>
+
+                  <!-- comunity boxes  -->
+                  <div class="comunity-boxes thin-scrollbar">
+                    <!-- single item  -->
+                    <div class="single-com-box">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="checkbox-input" />
+                        <span class="com-img"
+                          ><img src="./img/Builders.png" alt=""
+                        /></span>
+                        <span class="com-body">
+                          <span class="com-title">Builders</span>
+                          <span class="com-text"
+                            >Connect with other professionals
+                          </span>
+                          <span class="check-white"
+                            ><img
+                              src="./img/checkwhite.png"
+                              class="img-fluid"
+                              alt=""
+                          /></span>
+                        </span>
+                      </label>
+                    </div>
+                    <!-- single item  -->
+                    <div class="single-com-box">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="checkbox-input" />
+                        <span class="com-img"
+                          ><img src="./img/Cars.png" alt=""
+                        /></span>
+                        <span class="com-body">
+                          <span class="com-title">Cars</span>
+                          <span class="com-text"
+                            >Lease, rent, services, exchange</span
+                          >
+                          <span class="check-white"
+                            ><img
+                              src="./img/checkwhite.png"
+                              class="img-fluid"
+                              alt=""
+                          /></span>
+                        </span>
+                      </label>
+                    </div>
+                    <!-- single item  -->
+                    <div class="single-com-box">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="checkbox-input" />
+                        <span class="com-img"
+                          ><img src="./img/Chinuch.png" alt=""
+                        /></span>
+                        <span class="com-body">
+                          <span class="com-title">Chinuch</span>
+                          <span class="com-text"
+                            >Connect with other professionals</span
+                          >
+                          <span class="check-white"
+                            ><img
+                              src="./img/checkwhite.png"
+                              class="img-fluid"
+                              alt=""
+                          /></span>
+                        </span>
+                      </label>
+                    </div>
+                    <!-- single item  -->
+                    <div class="single-com-box hidden">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="checkbox-input" />
+                        <span class="com-img"
+                          ><img src="./img/Diet.png" alt=""
+                        /></span>
+                        <span class="com-body">
+                          <span class="com-title">Diet / Fitness</span>
+                          <span class="com-text"
+                            >Connect with other professionals
+                          </span>
+                          <span class="check-white"
+                            ><img
+                              src="./img/checkwhite.png"
+                              class="img-fluid"
+                              alt=""
+                          /></span>
+                        </span>
+                      </label>
+                    </div>
+                    <!-- single item  -->
+                    <div class="single-com-box hidden">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="checkbox-input" />
+                        <span class="com-img"
+                          ><img src="./img/Electricians.png" alt=""
+                        /></span>
+                        <span class="com-body">
+                          <span class="com-title">Electricians</span>
+                          <span class="com-text"
+                            >Connect with other professionals
+                          </span>
+                          <span class="check-white"
+                            ><img
+                              src="./img/checkwhite.png"
+                              class="img-fluid"
+                              alt=""
+                          /></span>
+                        </span>
+                      </label>
+                    </div>
+                    <!-- single item  -->
+                    <div class="single-com-box hidden">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="checkbox-input" />
+                        <span class="com-img"
+                          ><img src="./img/Food.png" alt=""
+                        /></span>
+                        <span class="com-body">
+                          <span class="com-title">Food Industry</span>
+                          <span class="com-text"
+                            >Connect with other professionals
+                          </span>
+                          <span class="check-white"
+                            ><img
+                              src="./img/checkwhite.png"
+                              class="img-fluid"
+                              alt=""
+                          /></span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="seeMore">
+                    <button class="saveBtn" id="seeMoreBtn">
+                      <span class="saveBtnTxt">See More</span>
+                      <span class="saveBtnImg"
+                        ><img
+                          src="./img/forward.png"
+                          class="img-fluid w-100"
+                          alt=""
+                      /></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="not-find">
+                <button
+                  onclick="window.location.href='./post-Successful.html';"
+                  class="saveBtn"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span class="saveBtnTxt">Save & Back to Post Details</span>
+                  <span class="saveBtnImg"
+                    ><img
+                      src="./img/forward.png"
+                      class="img-fluid w-100"
+                      alt=""
+                  /></span>
+                </button>
+              </div>
+              <button
+                class="comunityDetailsmodal-close-btn"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <img src="./img/cross.png" class="img-fluid" alt="" />
+              </button>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- javascript -->
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -450,6 +662,45 @@
       crossorigin="anonymous"
     ></script>
     <!-- file upload  -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Select every input that has a placeholder attribute
+        const inputs = document.querySelectorAll("input[placeholder]");
+
+        inputs.forEach(function (input) {
+          // Get the placeholder text and remove it from the input
+          const placeholderText = input.getAttribute("placeholder");
+          input.removeAttribute("placeholder");
+
+          // Create a label element and add a custom class
+          const label = document.createElement("label");
+          label.classList.add("floating-placeholder");
+          label.innerText = placeholderText;
+
+          // Position the label relative to the input.
+          // Here we insert the label right after the input.
+          // You can adjust this depending on your HTML structure.
+          input.parentNode.insertBefore(label, input);
+
+          // If the input already has a value, mark the label as active
+          if (input.value.trim() !== "") {
+            label.classList.add("active");
+          }
+
+          // When the input gains focus, add the "active" class to the label
+          input.addEventListener("focus", function () {
+            label.classList.add("active");
+          });
+
+          // When the input loses focus, remove the "active" class if the input is empty
+          input.addEventListener("blur", function () {
+            if (input.value.trim() === "") {
+              label.classList.remove("active");
+            }
+          });
+        });
+      });
+    </script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const input = document.getElementById("imageUploadInput");
@@ -483,6 +734,48 @@
           previewImage.src = ""; // Clear the preview image
         });
       });
+    </script>
+    <!-- initially show modal  -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const postModal = new bootstrap.Modal(
+          document.getElementById("selecComunityDetailsModal")
+        );
+        postModal.show();
+      });
+    </script>
+    <!-- check box -->
+    <script>
+      document.querySelectorAll(".checkbox-input").forEach((checkbox) => {
+        checkbox.addEventListener("change", function () {
+          const parentBox = this.closest(".single-com-box");
+          if (this.checked) {
+            parentBox.style.background =
+              "linear-gradient(90deg, rgba(70, 20, 202, 1) 0%, rgba(149, 77, 225, 1) 100%)";
+            parentBox.querySelector(".com-title").style.color = "#fff";
+            parentBox.querySelector(".com-text").style.color = "#fff";
+            parentBox.querySelector(".check-white").style.opacity = "1";
+          } else {
+            parentBox.style.background = "#f1f5f9";
+            parentBox.querySelector(".com-title").style.color = "#222";
+            parentBox.querySelector(".com-text").style.color = "#484848";
+            parentBox.querySelector(".check-white").style.opacity = "0";
+          }
+        });
+      });
+    </script>
+    <!-- see more  -->
+    <script>
+      document
+        .getElementById("seeMoreBtn")
+        .addEventListener("click", function () {
+          document
+            .querySelectorAll(".single-com-box.hidden")
+            .forEach(function (item) {
+              item.classList.remove("hidden");
+            });
+          document.querySelector(".seeMore").style.display = "none"; // Hide the button
+        });
     </script>
   </body>
 </html>

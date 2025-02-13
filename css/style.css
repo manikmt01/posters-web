@@ -1569,7 +1569,9 @@ header {
 .not-find h3 a:hover {
   color: #270875;
 }
-
+.svs-btns{
+  max-width: 400px;
+}
 .saveBtn {
   background: linear-gradient(
     90deg,
@@ -6713,8 +6715,8 @@ select.boots-select {
 
 .custom-radio-group .form-check-input {
   appearance: none;
-  width: 18px;
-  height: 18px;
+  min-width: 20px;
+  min-height: 20px;
   border: 2px solid gray;
   border-radius: 50%;
   display: flex;
@@ -6727,8 +6729,12 @@ select.boots-select {
 
 .custom-radio-group .form-check-input::before {
   content: "";
-  width: 10px;
-  height: 10px;
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: transparent;
   border-radius: 50%;
   transition: all 0.3s;
@@ -8257,6 +8263,7 @@ select.boots-select {
   border-radius: 10px;
   background: #e5f0f9;
   padding: 18px 30px;
+  gap: 20px;
   z-index: 1020;
   box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
 }
