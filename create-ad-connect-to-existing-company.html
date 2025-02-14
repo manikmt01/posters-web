@@ -30,9 +30,9 @@
           <div class="col-12 col-sm-5 col-lg-4">
             <div class="header-flow-left mx-auto mx-md-0">
               <div class="header-flow-left-inner">
-                <div class="back-arr">
+                <a href="#" class="back-arr">
                   <img src="./img/left-arr.png" alt="" />
-                </div>
+                </a>
                 <span class="me-auto">Create Ad</span>
               </div>
             </div>
@@ -125,7 +125,7 @@
                 </div>
                 <form class="create-wrapper mx-auto">
                   <div class="row">
-                   <!-- Date Input -->
+                    <!-- Date Input -->
                     <div class="col-3 d-md-block d-none">
                       <div class="boots-input-title">
                         <label for="titles">Ad Title</label>
@@ -151,14 +151,19 @@
                     <!-- Date Input -->
                     <div class="col-3 d-md-block d-none"></div>
                     <div class="col-12 col-md-9">
-                      <div class="form-check createform-check d-flex align-items-center">
+                      <div
+                        class="form-check createform-check d-flex align-items-center"
+                      >
                         <input
                           class="form-check-input create-checkbox"
                           type="checkbox"
                           value=""
                           id="flexCheckDefault"
                         />
-                        <label class="form-check-label create-check-label" for="flexCheckDefault">
+                        <label
+                          class="form-check-label create-check-label"
+                          for="flexCheckDefault"
+                        >
                           Default checkbox
                         </label>
                       </div>
@@ -183,7 +188,7 @@
     </main>
     <!-- main end -->
     <!-- javascript -->
-       <script>
+    <script>
       document.addEventListener("DOMContentLoaded", function () {
         // Select every input that has a placeholder attribute
         const inputs = document.querySelectorAll("input[placeholder]");

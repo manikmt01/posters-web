@@ -74,7 +74,7 @@
                         id="whats"
                         placeholder="What are you looking for"
                       />
-                      <div class="form-tooltip">
+                      <div class="form-tooltip"  id="hiddenDiv">
                         <div class="form-tooltip-inner">
                           <img src="./img/tooltip.png" alt="" />
                           <div class="form-tooltip-container">
@@ -776,6 +776,12 @@
             });
           document.querySelector(".seeMore").style.display = "none"; // Hide the button
         });
+    </script>
+    <!-- hidden item  -->
+    <script>
+      $("#whats").on("click", function () {
+        $("#hiddenDiv").addClass("d-none");
+      });
     </script>
   </body>
 </html>
