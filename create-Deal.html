@@ -230,10 +230,30 @@
               ><img src="./img/forward.png" class="img-fluid w-100" alt=""
             /></span>
           </a>
-          <button class="cancelbtn">Cancel</button>
+          <button type="button" class="cancelbtn" data-bs-toggle="modal" data-bs-target="#draftModal">Cancel</button>
         </div>
       </form>
     </main>
+
+      <!-- Draft Modal  -->
+      <div class="modal fade draft-modal" id="draftModal" tabindex="-1" aria-labelledby="draftModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered draft-modal-dialog">
+          <div class="modal-content draft-modal-content">
+            <div class="modal-body draft-modal-body">
+              <div class="draft-modal-header">
+                <h3 class="draft-modal-title">Save this post as draft?</h3>
+                <p class="draft-modal-text">If you discard now, you'll lose this post.</p>
+              </div>
+              <div class="draft-modal-buttons">
+                <button class="draft-save-btn">Save Draft</button>
+                <button class="draft-discard-btn" data-bs-dismiss="modal" aria-label="Close">Discard</button>
+                <button class="draft-save-btn">Keep Editing</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

@@ -221,7 +221,7 @@
                   >
                     <span>All Communities</span>
                   </button>
-                  <button
+                  <button data-bs-toggle="modal" data-bs-target="#selecComunityDetailsModal"
                     class="communites-contentsx-item d-flex align-items-center justify-content-center"
                   >
                     <span>Choose Communities</span>
@@ -486,7 +486,7 @@
           <div
             class="upload-button-wrapper d-flex justify-content-center flex-column"
           >
-            <button onclick="window.location.href='./create-ad_enter-details_If-service-provider_select-community.html';"
+            <button onclick="window.location.href='./Create-ad-more-2-2-scenario-one.html';"
  class="upload-buttom-top sk-gradint-button-one">
               Save & Next <img src="./img/Arrow Forward.svg" alt="Arrow" />
             </button>
@@ -496,6 +496,226 @@
       </section>
     </main>
     <!-- main end -->
+
+
+    <!-- choose comunity Modal -->
+    <div class="modal fade" id="selecComunityDetailsModal" tabindex="-1" aria-labelledby="selecComunityDetailsModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <section class="select-community-container">
+              <div class="comunity-container">
+                <div class="comunity-title">
+                  <h2>Choose Communities</h2>
+                </div>
+                <!-- comunity select  -->
+                <div class="comunity-select">
+                  <div class="comunity-search">
+                    <div class="comunity-search-input">
+                      <input type="text" placeholder="Search Community" class="form-control" />
+                      <img src="./img/searchform.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="community-summary">
+                    <div class="community-stats">
+                      <div class="stat-item">
+                        <p>Communities</p>
+                        <h4>178</h4>
+                      </div>
+                      <div class="stat-item-2">
+                        <p>Selected</p>
+                        <h4>2</h4>
+                      </div>
+                    </div>
+                    <div class="community-action-buttons">
+                      <button class="btn-unselect-all">Unselect All</button>
+                    </div>
+                  </div>
+    
+                  <!-- comunity boxes  -->
+                  <div class="comunity-boxes thin-scrollbar">
+                    <!-- single item  -->
+                    <div class="single-com-box">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="checkbox-input" />
+                        <span class="com-img"><img src="./img/Builders.png" alt="" /></span>
+                        <span class="com-body">
+                          <span class="com-title">Builders</span>
+                          <span class="com-text">Connect with other professionals
+                          </span>
+                          <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
+                        </span>
+                      </label>
+                    </div>
+                    <!-- single item  -->
+                    <div class="single-com-box">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="checkbox-input" />
+                        <span class="com-img"><img src="./img/Cars.png" alt="" /></span>
+                        <span class="com-body">
+                          <span class="com-title">Cars</span>
+                          <span class="com-text">Lease, rent, services, exchange</span>
+                          <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
+                        </span>
+                      </label>
+                    </div>
+                    <!-- single item  -->
+                    <div class="single-com-box">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="checkbox-input" />
+                        <span class="com-img"><img src="./img/Chinuch.png" alt="" /></span>
+                        <span class="com-body">
+                          <span class="com-title">Chinuch</span>
+                          <span class="com-text">Connect with other professionals</span>
+                          <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
+                        </span>
+                      </label>
+                    </div>
+                    <!-- single item  -->
+                    <div class="single-com-box hidden">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="checkbox-input" />
+                        <span class="com-img"><img src="./img/Diet.png" alt="" /></span>
+                        <span class="com-body">
+                          <span class="com-title">Diet / Fitness</span>
+                          <span class="com-text">Connect with other professionals
+                          </span>
+                          <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
+                        </span>
+                      </label>
+                    </div>
+                    <!-- single item  -->
+                    <div class="single-com-box hidden">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="checkbox-input" />
+                        <span class="com-img"><img src="./img/Electricians.png" alt="" /></span>
+                        <span class="com-body">
+                          <span class="com-title">Electricians</span>
+                          <span class="com-text">Connect with other professionals
+                          </span>
+                          <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
+                        </span>
+                      </label>
+                    </div>
+                    <!-- single item  -->
+                    <div class="single-com-box hidden">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="checkbox-input" />
+                        <span class="com-img"><img src="./img/Food.png" alt="" /></span>
+                        <span class="com-body">
+                          <span class="com-title">Food Industry</span>
+                          <span class="com-text">Connect with other professionals
+                          </span>
+                          <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
+                        </span>
+                      </label>
+                    </div>
+                    <!-- single item  -->
+                    <div class="single-com-box hidden">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="checkbox-input" />
+                        <span class="com-img"><img src="./img/Diet.png" alt="" /></span>
+                        <span class="com-body">
+                          <span class="com-title">Diet / Fitness</span>
+                          <span class="com-text">Connect with other professionals
+                          </span>
+                          <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
+                        </span>
+                      </label>
+                    </div>
+                    <!-- single item  -->
+                    <div class="single-com-box hidden">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="checkbox-input" />
+                        <span class="com-img"><img src="./img/Electricians.png" alt="" /></span>
+                        <span class="com-body">
+                          <span class="com-title">Electricians</span>
+                          <span class="com-text">Connect with other professionals
+                          </span>
+                          <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
+                        </span>
+                      </label>
+                    </div>
+                    <!-- single item  -->
+                    <div class="single-com-box hidden">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="checkbox-input" />
+                        <span class="com-img"><img src="./img/Food.png" alt="" /></span>
+                        <span class="com-body">
+                          <span class="com-title">Food Industry</span>
+                          <span class="com-text">Connect with other professionals
+                          </span>
+                          <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
+                        </span>
+                      </label>
+                    </div>
+                    <!-- single item  -->
+                    <div class="single-com-box hidden">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="checkbox-input" />
+                        <span class="com-img"><img src="./img/Diet.png" alt="" /></span>
+                        <span class="com-body">
+                          <span class="com-title">Diet / Fitness</span>
+                          <span class="com-text">Connect with other professionals
+                          </span>
+                          <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
+                        </span>
+                      </label>
+                    </div>
+                    <!-- single item  -->
+                    <div class="single-com-box hidden">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="checkbox-input" />
+                        <span class="com-img"><img src="./img/Electricians.png" alt="" /></span>
+                        <span class="com-body">
+                          <span class="com-title">Electricians</span>
+                          <span class="com-text">Connect with other professionals
+                          </span>
+                          <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
+                        </span>
+                      </label>
+                    </div>
+                    <!-- single item  -->
+                    <div class="single-com-box hidden">
+                      <label class="custom-checkbox">
+                        <input type="checkbox" class="checkbox-input" />
+                        <span class="com-img"><img src="./img/Food.png" alt="" /></span>
+                        <span class="com-body">
+                          <span class="com-title">Food Industry</span>
+                          <span class="com-text">Connect with other professionals
+                          </span>
+                          <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="seeMore">
+                    <button class="saveBtn" id="seeMoreBtn">
+                      <span class="saveBtnTxt">See More</span>
+                      <span class="saveBtnImg"><img src="./img/forward.png" class="img-fluid w-100" alt="" /></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="not-find">
+                <button onclick="window.location.href='./Create-ad-more-2-2-scenario-one.html';" class="saveBtn"
+                  data-bs-dismiss="modal" aria-label="Close">
+                  <span class="saveBtnTxt">Save & Back to Post Details</span>
+                  <span class="saveBtnImg"><img src="./img/forward.png" class="img-fluid w-100" alt="" /></span>
+                </button>
+              </div>
+              <button class="comunityDetailsmodal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                <img src="./img/cross.png" class="img-fluid" alt="" />
+              </button>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
     <!-- javascript -->
     <!-- javascript -->
   <script>

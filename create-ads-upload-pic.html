@@ -30,7 +30,7 @@
           <div class="col-12 col-sm-5 col-lg-4">
             <div class="header-flow-left mx-auto mx-md-0">
               <div class="header-flow-left-inner">
-                <a href="#" class="back-arr">
+                <a href="./feed-sponser-post.html" class="back-arr">
                   <img src="./img/left-arr.png" alt="" />
                 </a>
                 <span class="me-auto">Create Ad</span>
@@ -258,17 +258,41 @@
             class="upload-button-wrapper d-flex justify-content-center flex-column"
           >
             <button
-              onclick="window.location.href='./create-ad-enter-details-new.html';"
+              onclick="window.location.href='./create-ad-connect-to-existing-company.html';"
               class="upload-buttom-top"
             >
               Save <img src="./img/Arrow Forward.svg" alt="Arrow" />
             </button>
-            <button class="upload-buttom-bottom">Cancel</button>
+            <button class="upload-buttom-bottom" data-bs-toggle="modal" data-bs-target="#draftModal">Cancel</button>
           </div>
         </div>
       </section>
     </main>
     <!-- main end -->
+
+
+    <!-- Draft Modal  -->
+    <div class="modal fade draft-modal" id="draftModal" tabindex="-1" aria-labelledby="draftModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered draft-modal-dialog">
+        <div class="modal-content draft-modal-content">
+          <div class="modal-body draft-modal-body">
+            <div class="draft-modal-header">
+              <h3 class="draft-modal-title">Save this post as draft?</h3>
+              <p class="draft-modal-text">If you discard now, you'll lose this post.</p>
+            </div>
+            <div class="draft-modal-buttons">
+              <button class="draft-save-btn">Save Draft</button>
+              <button class="draft-discard-btn" data-bs-dismiss="modal" aria-label="Close">Discard</button>
+              <button class="draft-save-btn">Keep Editing</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
     <!-- javascript -->
 
     <script>

@@ -29,7 +29,7 @@
     <header class="post-upload-header">
       <div class="post-upload">
         <div class="header-left">
-          <a href="#" class="back-arr">
+          <a href="./feed-sponser-post.html" class="back-arr">
             <img src="./img/left-arr.png" alt="" />
           </a>
           <h3>Post Details</h3>
@@ -119,7 +119,10 @@
               preview.style.display = "flex"; // Show the preview
             };
             reader.readAsDataURL(file);
-            console.log(file);
+             // Redirect to the new page after a short delay (1.5 sec)
+            setTimeout(() => {
+              window.location.href = "post-details-auto-captured.html";
+            }, 800);
           }
         });
 
