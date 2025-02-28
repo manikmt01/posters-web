@@ -1,0 +1,2343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon  -->
+    <link rel="icon" href="./img/favicon.png" />
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap css  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Compnay Profile Info</title>
+  </head>
+
+  <body class="flow-body">
+    <header class="feed-header">
+      <div
+        class="destop-nav d-none d-lg-flex justify-content-between align-items-center"
+      >
+        <div class="header-left">
+          <div class="logo">
+            <img src="./img/logo.png" class="img-fluid" alt="Logo" />
+          </div>
+          <a href="#" class="nav-location">
+            <img src="./img/location.png" class="img-fluid" alt="Menu" />
+            <span>New York, NY</span>
+          </a>
+        </div>
+        <div class="header-right">
+          <div class="seach">
+            <form action="" class="navSearch">
+              <input type="text" class="form-control" placeholder="Search" />
+              <button type="submit" class="search-icon">
+                <img src="./img/search.png" class="img-fluid" alt="Search" />
+              </button>
+            </form>
+          </div>
+          <div>
+            <button class="nav-btn active-btn">
+              <img src="./img/home.png" class="img-fluid" alt="Home" />
+            </button>
+          </div>
+          <div>
+            <button
+              onclick="window.location.href='./project_Feed_Page_Companies.html';"
+              class="nav-btn dashboard-btn"
+            >
+              <img
+                src="./img/dashboard.png"
+                class="img-fluid"
+                alt="Dashboard"
+              />
+            </button>
+          </div>
+          <div>
+            <button
+              class="nav-btn notification-btn"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#notificationOffcanvas"
+              aria-controls="notificationOffcanvas"
+            >
+              <img
+                src="./img/notification-fill.png"
+                class="img-fluid"
+                alt="notification"
+              />
+            </button>
+          </div>
+          <!-- nav profile img  -->
+          <div class="nav-profile">
+            <button
+              class="profile-btn"
+              id="profileOptions"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="./img/avatar.png" class="img-fluid" alt="Profile" />
+            </button>
+            <ul
+              class="dropdown-menu thin-scrollbar"
+              aria-labelledby="profileOptions"
+            >
+              <!-- item 1 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/clarity_building-line.png" alt="" />
+                    <span>Setup Company Profile</span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+              <!-- item 2 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/i2.png" alt="" />
+                    <span>My Ads</span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+              <!-- item 3 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/i3.png" alt="" />
+                    <span>My Communities</span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+              <!-- item 4 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/i4.png" alt="" />
+                    <span>Services</span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+              <!-- item 5 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/i5.png" alt="" />
+                    <span>Chats</span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+              <!-- item 6 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/i6.png" alt="" />
+                    <span>Wallet <span class="text-blue">$89.00</span></span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+              <!-- item 7 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/i7.png" alt="" />
+                    <span>Invite Friends</span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+              <!-- item 8 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/i8.png" alt="" />
+                    <span>Faqs</span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+              <!-- item 9 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/i9.png" alt="" />
+                    <span>Privacy Policy</span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+              <!-- item 10 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/i10.png" alt="" />
+                    <span>Terms & Condition</span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+              <!-- item 11 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/i11.png" alt="" />
+                    <span>Contact Us</span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+              <!-- item 12 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/i12.png" alt="" />
+                    <span>Rate Us</span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+              <!-- item 13 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/i13.png" alt="" />
+                    <span>Logout</span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+              <!-- item 14 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/i14.png" alt="" />
+                    <span class="text-reprt">Delete Account</span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mobile-nav d-flex d-lg-none justify-content-between align-items-center"
+      >
+        <a href="index.html" class="d-block mobile-logo">
+          <img src="./img/favicon.png" alt="logo" class="img-fluid" />
+        </a>
+        <a href="index.html" class="d-block mobile-logo2">
+          <img src="./img/m-logo-2.png" alt="logo" class="img-fluid" />
+        </a>
+
+        <!-- Search Button -->
+        <button class="d-block mobile-search" id="mobileSearchButton">
+          <img src="./img/search2.png" alt="search" class="img-fluid" />
+        </button>
+
+        <!-- Search Box (Initially Hidden) -->
+        <div class="mobile-nav-search-box" id="mobileNavSearchBox">
+          <input
+            type="text"
+            class="mobile-nav-search-input"
+            placeholder="Search..."
+          />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="header-profile-sponsor">
+        <div class="container-xlx">
+          <div class="row header-flow-row align-items-center">
+            <div class="col ps-0 ps-xl-auto ps-lg-4">
+              <div class="header-flow-left">
+                <div class="header-flow-left-inner">
+                  <button class="header-flow-left-inner-button">
+                    <img src="./img/left-arrow.svg" alt="left-arrow" />
+                  </button>
+                  <span class="mx-auto d-xl-none d-block">Company Profile</span>
+                  <span class="me-auto d-xl-block d-none">Company Profile</span>
+                </div>
+              </div>
+            </div>
+            <div class="col d-xl-block d-none"></div>
+          </div>
+        </div>
+      </section>
+      <section class="dashboardx">
+        <div class="container-xlx">
+          <div class="row">
+            <div class="col">
+              <div class="dashboard-cover new-dashboard-cover"></div>
+            </div>
+          </div>
+          <div
+            class="row dashboardx-tabs new-dashboardx-tabs align-items-center"
+          >
+            <div class="col-xl-3">
+              <div class="d-flex align-items-center justify-content-end">
+                <div class="profile-img profile-img-new new-profile-com z-10">
+                  <img
+                    src="./img/cn-profile-avater.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <button class="edit-btns morphisum-inner">
+                  <img src="./img/Edit.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="col-xl-9">
+              <!-- tab button  -->
+
+              <div class="new-members-com com-new-members-com">
+                <!-- 1 -->
+                <button
+                  class="nav-linkx-com d-flex justify-content-center align-items-center"
+                >
+                  <div class="nav-linkx-svg">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"
+                      />
+                    </svg>
+                  </div>
+                  Showcase
+                </button>
+                <!-- 2 -->
+                <button
+                  class="nav-linkx-com d-flex justify-content-center align-items-center"
+                >
+                  <div class="nav-linkx-svg">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z"
+                      />
+                    </svg>
+                  </div>
+                  Posts
+                </button>
+                <!-- 3 -->
+                <button
+                  class="nav-linkx-com d-flex justify-content-center align-items-center"
+                >
+                  <div class="nav-linkx-svg">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+                      />
+                    </svg>
+                  </div>
+                  Team
+                </button>
+                <!-- 4 -->
+                <button
+                  class="nav-linkx-com d-flex justify-content-center align-items-center"
+                >
+                  <div class="nav-linkx-svg">
+                    <svg
+                      class="icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M13 2C11.5823 2.00322 10.1988 2.43928 9.03184 3.25072C7.86487 4.06216 6.96919 5.21092 6.4628 6.54561C5.95642 7.88031 5.86309 9.33833 6.19512 10.7275C6.52715 12.1168 7.26896 13.372 8.3228 14.3279V24L13 20.8571L17.6772 24V14.3279C18.731 13.372 19.4728 12.1168 19.8049 10.7275C20.1369 9.33833 20.0436 7.88031 19.5372 6.54561C19.0308 5.21092 18.1351 4.06216 16.9682 3.25072C15.8012 2.43928 14.4177 2.00322 13 2ZM16.1181 21.0614L13.8653 19.5529L13 18.9714L12.1347 19.5529L9.88187 21.0614V15.3964C10.8489 15.8882 11.9169 16.1444 13 16.1444C14.0831 16.1444 15.1511 15.8882 16.1181 15.3964V21.0614ZM16.8119 13C15.9104 13.8871 14.7321 14.4325 13.477 14.5435C12.2218 14.6545 10.9673 14.3243 9.92628 13.6089C8.88526 12.8936 8.1219 11.8372 7.76578 10.6191C7.40966 9.40095 7.48274 8.09614 7.97259 6.92613C8.46245 5.75613 9.33891 4.79303 10.4532 4.20032C11.5675 3.60761 12.8509 3.42182 14.0856 3.67448C15.3204 3.92713 16.4303 4.60267 17.2271 5.58642C18.0239 6.57017 18.4583 7.80151 18.4567 9.07143C18.4558 9.80364 18.3099 10.5283 18.0274 11.2029C17.745 11.8775 17.3317 12.4885 16.8119 13Z"
+                      />
+                    </svg>
+                  </div>
+                  Recommends
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="dashboard-row">
+            <!-- user profile  -->
+            <div class="col-xl-3">
+              <div class="sideBar-wrapers hide-scrollbar">
+                <div class="user-profile">
+                  <!-- profile card  -->
+                  <div class="profile-card profile-cardx new-profile-cardx">
+                    <!-- profile details -->
+                    <h2>
+                      Sharp Security Systems
+                      <span class=""
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="18"
+                          height="18"
+                          viewBox="0 0 18 18"
+                          fill="none"
+                        >
+                          <path
+                            d="M8.50007 15.5006C7.40452 15.5006 6.32427 15.2434 5.34623 14.7498C4.36818 14.2562 3.51965 13.5399 2.86888 12.6586C2.2181 11.7773 1.78327 10.7555 1.59935 9.67551C1.41543 8.59551 1.48756 7.48742 1.80994 6.44038C2.13232 5.39334 2.69595 4.43657 3.45548 3.64706C4.21502 2.85754 5.14925 2.25732 6.18304 1.89466C7.21682 1.53201 8.32129 1.41705 9.4076 1.55905C10.4939 1.70104 11.5317 2.09601 12.4376 2.71219C12.561 2.79648 12.6459 2.92635 12.6736 3.07325C12.7013 3.22014 12.6695 3.37202 12.5852 3.49547C12.5009 3.61892 12.3711 3.70383 12.2242 3.73152C12.0773 3.75921 11.9254 3.72741 11.8019 3.64313C10.7172 2.9052 9.41669 2.55156 8.10764 2.63856C6.79858 2.72556 5.55631 3.24819 4.57877 4.12318C3.60123 4.99817 2.94466 6.17517 2.7137 7.46662C2.48274 8.75807 2.69067 10.0897 3.30436 11.2492C3.91805 12.4088 4.90218 13.3296 6.09994 13.8649C7.29771 14.4002 8.64017 14.5192 9.91343 14.203C11.1867 13.8868 12.3175 13.1535 13.1256 12.12C13.9337 11.0865 14.3727 9.81226 14.3726 8.50031C14.371 7.8684 14.2685 7.24079 14.0688 6.64125C14.0421 6.57047 14.0299 6.49502 14.033 6.41942C14.0361 6.34382 14.0544 6.26962 14.0868 6.20127C14.1193 6.13291 14.1652 6.0718 14.2218 6.0216C14.2784 5.97139 14.3445 5.93312 14.4163 5.90908C14.488 5.88504 14.5639 5.87572 14.6393 5.88168C14.7147 5.88764 14.7882 5.90876 14.8553 5.94377C14.9224 5.97878 14.9817 6.02696 15.0297 6.08543C15.0777 6.1439 15.1135 6.21146 15.1348 6.28406C15.4839 7.33597 15.5786 8.45568 15.4111 9.55128C15.2435 10.6469 14.8186 11.6871 14.171 12.5866C13.5235 13.4861 12.6719 14.2193 11.6861 14.7258C10.7003 15.2324 9.6084 15.4979 8.50007 15.5006Z"
+                            fill="#1F458A"
+                          />
+                          <path
+                            d="M7.68385 12.25C7.61067 12.2499 7.53843 12.2307 7.47247 12.1936C7.40651 12.1565 7.34852 12.1025 7.30278 12.0357L4.85996 8.45833C4.79759 8.34017 4.77414 8.1995 4.79398 8.0626C4.81382 7.92569 4.8756 7.80192 4.96777 7.71441C5.05995 7.6269 5.17621 7.58164 5.29483 7.58709C5.41345 7.59253 5.52632 7.64831 5.61235 7.74399L7.62767 10.6785C8.49487 9.09837 10.8595 5.33812 14.6141 3.29228C14.7302 3.23692 14.8601 3.23589 14.9768 3.28939C15.0935 3.3429 15.1882 3.44684 15.2412 3.57972C15.2943 3.7126 15.3016 3.86424 15.2617 4.00327C15.2218 4.1423 15.1378 4.25807 15.027 4.32663C10.5908 6.74964 8.13578 11.9014 8.11135 11.9528C8.07178 12.0336 8.01594 12.1019 7.94867 12.1517C7.8814 12.2015 7.80475 12.2313 7.72538 12.2386L7.68385 12.25Z"
+                            fill="#1F458A"
+                          /></svg
+                      ></span>
+                    </h2>
+                    <p>@sharpsecuritysystems</p>
+                  </div>
+                  <div class="user-connet-ratingnew-wrapper">
+                    <div class="user-connet-rating-left">
+                      <p>Connections <span>0</span></p>
+                    </div>
+                    <div class="user-connet-rating-right">
+                      <p>0.0</p>
+                      <span
+                        ><img src="./img/star-svgrepo-com.svg" alt="" /><img
+                          src="./img/star-svgrepo-com.svg"
+                          alt="" /><img
+                          src="./img/star-svgrepo-com.svg"
+                          alt="" /><img
+                          src="./img/star-svgrepo-com.svg"
+                          alt="" /><img src="./img/star-svgrepo-com.svg" alt=""
+                      /></span>
+                    </div>
+                  </div>
+                  <div class="profile-divider"></div>
+                  <!-- switch button -->
+
+                  <div class="connect-switch-button-wrapper">
+                    <button
+                      class="connect-switch-button connect-switch-button-active"
+                    >
+                      Company Info
+                    </button>
+                    <button class="connect-switch-button">Contacts</button>
+                  </div>
+                  <div
+                    class="profile-stats-community com-profile-stats-community new-profile-stats-community"
+                  >
+                    <!-- switch tab -->
+                    <div class="connect-switch-tab-wrapper">
+                      <div class="connect-switch-tab-company">
+                        <div class="">
+                          <div class="new-builder-com">
+                            <p>Owner Name</p>
+                            <span>Private</span>
+                          </div>
+                          <div class="new-builder-com new-builder-com-two">
+                            <p>Company Type</p>
+                            <span>Interior Design</span>
+                          </div>
+                          <div class="new-builder-com new-builder-com-two">
+                            <p>Category & Sub-Category</p>
+                            <span>Contractor </span>
+                            <div>
+                              <div class="new-builder-com-icon-two-wrapper">
+                                <div class="new-builder-com-icon-two">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="15"
+                                    height="16"
+                                    viewBox="0 0 15 16"
+                                    fill="none"
+                                  >
+                                    <path
+                                      d="M1 12H0.5V12.5H1V12ZM14.3536 12.3536C14.5488 12.1583 14.5488 11.8417 14.3536 11.6464L11.1716 8.46447C10.9763 8.2692 10.6597 8.2692 10.4645 8.46447C10.2692 8.65973 10.2692 8.97631 10.4645 9.17157L13.2929 12L10.4645 14.8284C10.2692 15.0237 10.2692 15.3403 10.4645 15.5355C10.6597 15.7308 10.9763 15.7308 11.1716 15.5355L14.3536 12.3536ZM0.5 0V12H1.5V0L0.5 0ZM1 12.5H14V11.5H1V12.5Z"
+                                      fill="#5A5A5A"
+                                    />
+                                  </svg>
+                                </div>
+                                <span>Paint & Fishing</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="new-builder-com new-builder-com-two">
+                            <p>Product/Service</p>
+                            <div class="new-builder-com-two-options">
+                              <button>Interior</button>
+                              <button>Painting</button>
+                              <button>Finishing</button>
+                            </div>
+                          </div>
+                          <div class="new-builder-com new-builder-com-two">
+                            <p>Tags</p>
+                            <div class="new-builder-com-two-options">
+                              <button>Interior</button>
+                              <button>Painting</button>
+                              <button>Finishing</button>
+                            </div>
+                          </div>
+                          <div class="new-builder-com new-builder-com-two">
+                            <p>Description</p>
+                            <span
+                              >Massa mauris integer massa diam purus blandit
+                              quis et sit.
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="connect-switch-tab-contact">
+                        <div class="">
+                          <div class="new-builder-com">
+                            <p>Email</p>
+                            <span
+                              ><a
+                                class="user-comm-link"
+                                href="mailto:abc@email.com"
+                                >abc@email.com</a
+                              >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="22"
+                                height="22"
+                                viewBox="0 0 22 22"
+                                fill="none"
+                              >
+                                <path
+                                  d="M18.333 3.66797H3.66634C2.65801 3.66797 1.84217 4.49297 1.84217 5.5013L1.83301 16.5013C1.83301 17.5096 2.65801 18.3346 3.66634 18.3346H18.333C19.3413 18.3346 20.1663 17.5096 20.1663 16.5013V5.5013C20.1663 4.49297 19.3413 3.66797 18.333 3.66797ZM18.333 7.33464L10.9997 11.918L3.66634 7.33464V5.5013L10.9997 10.0846L18.333 5.5013V7.33464Z"
+                                  fill="#5A5A5A"
+                                /></svg
+                            ></span>
+                          </div>
+                          <div class="new-builder-com new-builder-com-two">
+                            <span>Location Name (Primary) </span>
+                            <span class="user-comm-link-two"
+                              >55 W Broadway, Easytown, NJ 07055</span
+                            >
+                            <span>
+                              <a
+                                href="tel:8884544500"
+                                class="user-comm-link-two"
+                                >888.454.4500
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="18"
+                                  height="18"
+                                  viewBox="0 0 18 18"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M4.33333 2C3.71449 2 3.121 2.24583 2.68342 2.68342C2.24583 3.121 2 3.71449 2 4.33333L2 6.2C2 11.6124 6.3876 16 11.8 16H13.6667C14.2855 16 14.879 15.7542 15.3166 15.3166C15.7542 14.879 16 14.2855 16 13.6667V12.3768C16 12.1167 15.9275 11.8617 15.7907 11.6404C15.6538 11.4192 15.4581 11.2405 15.2253 11.1243L12.9713 9.9968C12.7919 9.90708 12.5952 9.85699 12.3947 9.8499C12.1942 9.84282 11.9945 9.87891 11.8092 9.95574C11.6239 10.0326 11.4572 10.1483 11.3205 10.2952C11.1838 10.442 11.0803 10.6166 11.0169 10.8069L10.7388 11.6404C10.6876 11.7934 10.5824 11.9224 10.4429 12.0033C10.3034 12.0842 10.1391 12.1115 9.98093 12.08C8.97892 11.8796 8.05864 11.3871 7.33599 10.6646C6.61334 9.94214 6.12066 9.02196 5.92 8.02C5.88849 7.86182 5.91576 7.69757 5.99668 7.55805C6.07761 7.41853 6.20665 7.31332 6.3596 7.26213L7.39467 6.9168C7.72917 6.8051 8.00919 6.57128 8.17876 6.26206C8.34833 5.95285 8.39497 5.59104 8.30933 5.24893L7.7624 3.0612C7.68687 2.75835 7.51229 2.48943 7.26642 2.29716C7.02054 2.10489 6.71746 2.00029 6.40533 2H4.33333Z"
+                                    fill="#5A5A5A"
+                                  /></svg
+                              ></a>
+                            </span>
+                          </div>
+                          <div class="new-builder-com new-builder-com-two">
+                            <span>Location Name 2</span>
+                            <br />
+                            <span class="user-comm-link-two"
+                              >Easytown, NJ 07055</span
+                            >
+                            <br />
+                            <span>
+                              <a
+                                href="tel:8884544500"
+                                class="user-comm-link-two"
+                                >888.454.4500
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="18"
+                                  height="18"
+                                  viewBox="0 0 18 18"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M4.33333 2C3.71449 2 3.121 2.24583 2.68342 2.68342C2.24583 3.121 2 3.71449 2 4.33333L2 6.2C2 11.6124 6.3876 16 11.8 16H13.6667C14.2855 16 14.879 15.7542 15.3166 15.3166C15.7542 14.879 16 14.2855 16 13.6667V12.3768C16 12.1167 15.9275 11.8617 15.7907 11.6404C15.6538 11.4192 15.4581 11.2405 15.2253 11.1243L12.9713 9.9968C12.7919 9.90708 12.5952 9.85699 12.3947 9.8499C12.1942 9.84282 11.9945 9.87891 11.8092 9.95574C11.6239 10.0326 11.4572 10.1483 11.3205 10.2952C11.1838 10.442 11.0803 10.6166 11.0169 10.8069L10.7388 11.6404C10.6876 11.7934 10.5824 11.9224 10.4429 12.0033C10.3034 12.0842 10.1391 12.1115 9.98093 12.08C8.97892 11.8796 8.05864 11.3871 7.33599 10.6646C6.61334 9.94214 6.12066 9.02196 5.92 8.02C5.88849 7.86182 5.91576 7.69757 5.99668 7.55805C6.07761 7.41853 6.20665 7.31332 6.3596 7.26213L7.39467 6.9168C7.72917 6.8051 8.00919 6.57128 8.17876 6.26206C8.34833 5.95285 8.39497 5.59104 8.30933 5.24893L7.7624 3.0612C7.68687 2.75835 7.51229 2.48943 7.26642 2.29716C7.02054 2.10489 6.71746 2.00029 6.40533 2H4.33333Z"
+                                    fill="#5A5A5A"
+                                  /></svg
+                              ></a>
+                            </span>
+                            <br />
+                            <span>
+                              <a
+                                href="tel:8884544500"
+                                class="user-comm-link-two"
+                                >888.454.4500
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="18"
+                                  height="18"
+                                  viewBox="0 0 18 18"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M4.33333 2C3.71449 2 3.121 2.24583 2.68342 2.68342C2.24583 3.121 2 3.71449 2 4.33333L2 6.2C2 11.6124 6.3876 16 11.8 16H13.6667C14.2855 16 14.879 15.7542 15.3166 15.3166C15.7542 14.879 16 14.2855 16 13.6667V12.3768C16 12.1167 15.9275 11.8617 15.7907 11.6404C15.6538 11.4192 15.4581 11.2405 15.2253 11.1243L12.9713 9.9968C12.7919 9.90708 12.5952 9.85699 12.3947 9.8499C12.1942 9.84282 11.9945 9.87891 11.8092 9.95574C11.6239 10.0326 11.4572 10.1483 11.3205 10.2952C11.1838 10.442 11.0803 10.6166 11.0169 10.8069L10.7388 11.6404C10.6876 11.7934 10.5824 11.9224 10.4429 12.0033C10.3034 12.0842 10.1391 12.1115 9.98093 12.08C8.97892 11.8796 8.05864 11.3871 7.33599 10.6646C6.61334 9.94214 6.12066 9.02196 5.92 8.02C5.88849 7.86182 5.91576 7.69757 5.99668 7.55805C6.07761 7.41853 6.20665 7.31332 6.3596 7.26213L7.39467 6.9168C7.72917 6.8051 8.00919 6.57128 8.17876 6.26206C8.34833 5.95285 8.39497 5.59104 8.30933 5.24893L7.7624 3.0612C7.68687 2.75835 7.51229 2.48943 7.26642 2.29716C7.02054 2.10489 6.71746 2.00029 6.40533 2H4.33333Z"
+                                    fill="#5A5A5A"
+                                  /></svg
+                              ></a>
+                            </span>
+                            <span>
+                              <a
+                                href="tel:8884544500"
+                                class="user-comm-link-two"
+                                >888.454.4500
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="18"
+                                  height="18"
+                                  viewBox="0 0 18 18"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M4.33333 2C3.71449 2 3.121 2.24583 2.68342 2.68342C2.24583 3.121 2 3.71449 2 4.33333L2 6.2C2 11.6124 6.3876 16 11.8 16H13.6667C14.2855 16 14.879 15.7542 15.3166 15.3166C15.7542 14.879 16 14.2855 16 13.6667V12.3768C16 12.1167 15.9275 11.8617 15.7907 11.6404C15.6538 11.4192 15.4581 11.2405 15.2253 11.1243L12.9713 9.9968C12.7919 9.90708 12.5952 9.85699 12.3947 9.8499C12.1942 9.84282 11.9945 9.87891 11.8092 9.95574C11.6239 10.0326 11.4572 10.1483 11.3205 10.2952C11.1838 10.442 11.0803 10.6166 11.0169 10.8069L10.7388 11.6404C10.6876 11.7934 10.5824 11.9224 10.4429 12.0033C10.3034 12.0842 10.1391 12.1115 9.98093 12.08C8.97892 11.8796 8.05864 11.3871 7.33599 10.6646C6.61334 9.94214 6.12066 9.02196 5.92 8.02C5.88849 7.86182 5.91576 7.69757 5.99668 7.55805C6.07761 7.41853 6.20665 7.31332 6.3596 7.26213L7.39467 6.9168C7.72917 6.8051 8.00919 6.57128 8.17876 6.26206C8.34833 5.95285 8.39497 5.59104 8.30933 5.24893L7.7624 3.0612C7.68687 2.75835 7.51229 2.48943 7.26642 2.29716C7.02054 2.10489 6.71746 2.00029 6.40533 2H4.33333Z"
+                                    fill="#5A5A5A"
+                                  /></svg
+                              ></a>
+                            </span>
+                          </div>
+                          <div class="new-builder-com new-builder-com-two">
+                            <span>Location Name 3</span>
+                            <br />
+                            <span class="user-comm-link-two">Brooklyn, NY</span>
+                            <br />
+                            <span>
+                              <a
+                                href="tel:8884544500"
+                                class="user-comm-link-two"
+                                >888.454.4500
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="18"
+                                  height="18"
+                                  viewBox="0 0 18 18"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M4.33333 2C3.71449 2 3.121 2.24583 2.68342 2.68342C2.24583 3.121 2 3.71449 2 4.33333L2 6.2C2 11.6124 6.3876 16 11.8 16H13.6667C14.2855 16 14.879 15.7542 15.3166 15.3166C15.7542 14.879 16 14.2855 16 13.6667V12.3768C16 12.1167 15.9275 11.8617 15.7907 11.6404C15.6538 11.4192 15.4581 11.2405 15.2253 11.1243L12.9713 9.9968C12.7919 9.90708 12.5952 9.85699 12.3947 9.8499C12.1942 9.84282 11.9945 9.87891 11.8092 9.95574C11.6239 10.0326 11.4572 10.1483 11.3205 10.2952C11.1838 10.442 11.0803 10.6166 11.0169 10.8069L10.7388 11.6404C10.6876 11.7934 10.5824 11.9224 10.4429 12.0033C10.3034 12.0842 10.1391 12.1115 9.98093 12.08C8.97892 11.8796 8.05864 11.3871 7.33599 10.6646C6.61334 9.94214 6.12066 9.02196 5.92 8.02C5.88849 7.86182 5.91576 7.69757 5.99668 7.55805C6.07761 7.41853 6.20665 7.31332 6.3596 7.26213L7.39467 6.9168C7.72917 6.8051 8.00919 6.57128 8.17876 6.26206C8.34833 5.95285 8.39497 5.59104 8.30933 5.24893L7.7624 3.0612C7.68687 2.75835 7.51229 2.48943 7.26642 2.29716C7.02054 2.10489 6.71746 2.00029 6.40533 2H4.33333Z"
+                                    fill="#5A5A5A"
+                                  /></svg
+                              ></a>
+                            </span>
+                            <br />
+                            <span>
+                              <a
+                                href="tel:8884544500"
+                                class="user-comm-link-two"
+                                >888.454.4500
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="18"
+                                  height="18"
+                                  viewBox="0 0 18 18"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M4.33333 2C3.71449 2 3.121 2.24583 2.68342 2.68342C2.24583 3.121 2 3.71449 2 4.33333L2 6.2C2 11.6124 6.3876 16 11.8 16H13.6667C14.2855 16 14.879 15.7542 15.3166 15.3166C15.7542 14.879 16 14.2855 16 13.6667V12.3768C16 12.1167 15.9275 11.8617 15.7907 11.6404C15.6538 11.4192 15.4581 11.2405 15.2253 11.1243L12.9713 9.9968C12.7919 9.90708 12.5952 9.85699 12.3947 9.8499C12.1942 9.84282 11.9945 9.87891 11.8092 9.95574C11.6239 10.0326 11.4572 10.1483 11.3205 10.2952C11.1838 10.442 11.0803 10.6166 11.0169 10.8069L10.7388 11.6404C10.6876 11.7934 10.5824 11.9224 10.4429 12.0033C10.3034 12.0842 10.1391 12.1115 9.98093 12.08C8.97892 11.8796 8.05864 11.3871 7.33599 10.6646C6.61334 9.94214 6.12066 9.02196 5.92 8.02C5.88849 7.86182 5.91576 7.69757 5.99668 7.55805C6.07761 7.41853 6.20665 7.31332 6.3596 7.26213L7.39467 6.9168C7.72917 6.8051 8.00919 6.57128 8.17876 6.26206C8.34833 5.95285 8.39497 5.59104 8.30933 5.24893L7.7624 3.0612C7.68687 2.75835 7.51229 2.48943 7.26642 2.29716C7.02054 2.10489 6.71746 2.00029 6.40533 2H4.33333Z"
+                                    fill="#5A5A5A"
+                                  /></svg
+                              ></a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- content tab  -->
+            <div class="col-lg-8 col-xl-9">
+              <div
+                class="main-content sideBar-wraper hide-scrollbar main-content-new"
+              >
+                <div class="posts-feedx">
+                  <!-- tab content  -->
+                  <div class="tab-content" id="pills-tabContent">
+                    <!-- My post tab content  -->
+                    <div>
+                      <!-- tab 1 -->
+                      <div class="nav-linkx-com-tab-one">
+                        <!-- inner--infos -->
+                        <div class="inner-infos-coms inner-py-40">
+                          <div class="inner-info-coms-left">
+                            <p class="inner-info-coms-left-p">
+                              Catalogue Items: <span>4</span>
+                            </p>
+                          </div>
+                          <div
+                            class="inner-info-coms-right d-flex align-items-center justify-content-end"
+                          >
+                            <button class="saveBtn">
+                              <span class="saveBtnTxt"
+                                >Add New Item/Service</span
+                              >
+                              <span class="saveBtnImg"
+                                ><img
+                                  src="./img/forward.png"
+                                  class="img-fluid w-100"
+                                  alt=""
+                              /></span>
+                            </button>
+                          </div>
+                        </div>
+                        <!-- info part -->
+                        <div class="com-inner-part-one">
+                          <div class="com-inner-part-one-single">
+                            <h3>Category 1</h3>
+                            <div class="inner-items-wrappers-com">
+                              <div class="">
+                                <div class="inner-item-boxes">
+                                  <img
+                                    src="./img/inner-catagory-item.png"
+                                    alt=""
+                                    class="img-fluid w-100"
+                                  />
+                                  <div class="inner-item-boxes-top">
+                                    <a href="#">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                      >
+                                        <path
+                                          fill-rule="evenodd"
+                                          clip-rule="evenodd"
+                                          d="M20.7505 20.4395C21.1645 20.4395 21.5005 20.7755 21.5005 21.1895C21.5005 21.6035 21.1645 21.9395 20.7505 21.9395H13.4975C13.0835 21.9395 12.7475 21.6035 12.7475 21.1895C12.7475 20.7755 13.0835 20.4395 13.4975 20.4395H20.7505ZM16.1163 3.65364C16.1663 3.69264 17.8393 4.99264 17.8393 4.99264C18.4473 5.35464 18.9223 6.00164 19.1023 6.76764C19.2813 7.52564 19.1513 8.30764 18.7343 8.96864C18.7315 8.97305 18.7287 8.97741 18.7191 8.99037L18.7115 9.00038C18.6438 9.08958 18.3496 9.46164 16.8646 11.3222C16.8508 11.3466 16.8351 11.3695 16.8181 11.3916C16.793 11.4244 16.7658 11.4544 16.7367 11.4818C16.6354 11.6093 16.5284 11.7433 16.4159 11.8842L16.188 12.1697C15.7177 12.7587 15.1599 13.4571 14.4981 14.2855L14.1584 14.7106C12.8807 16.3097 11.2444 18.3572 9.14827 20.9796C8.68927 21.5516 8.00127 21.8846 7.26227 21.8936L3.62327 21.9396H3.61327C3.26627 21.9396 2.96427 21.7016 2.88327 21.3626L2.06427 17.8916C1.89527 17.1726 2.06327 16.4306 2.52427 15.8546L11.9443 4.07264C11.9483 4.06864 11.9513 4.06364 11.9553 4.05964C12.9883 2.82464 14.8563 2.64264 16.1163 3.65364ZM10.894 7.787L3.69527 16.7916C3.52427 17.0056 3.46127 17.2816 3.52427 17.5466L4.20527 20.4316L7.24427 20.3936C7.53327 20.3906 7.80027 20.2616 7.97727 20.0416C8.88876 18.9012 10.0343 17.4679 11.2121 15.994L11.6288 15.4726L12.0462 14.9502C13.1508 13.5679 14.2421 12.2021 15.1551 11.0589L10.894 7.787ZM13.1103 5.01664L11.831 6.615L16.0918 9.88593C16.9119 8.8587 17.4514 8.18214 17.5013 8.11764C17.6653 7.85164 17.7293 7.47564 17.6433 7.11364C17.5553 6.74264 17.3243 6.42764 16.9913 6.22664C16.9203 6.17764 15.2353 4.86964 15.1833 4.82864C14.5493 4.32064 13.6243 4.40864 13.1103 5.01664Z"
+                                          fill="white"
+                                        />
+                                      </svg>
+                                    </a>
+                                  </div>
+                                  <div class="inner-item-boxes-bottom">
+                                    <h4>Item 1</h4>
+                                    <p>
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="14"
+                                        height="15"
+                                        viewBox="0 0 14 15"
+                                        fill="none"
+                                      >
+                                        <path
+                                          d="M10 2.23242L8 12.2324M6 2.23242L4 12.2324M3 5.23242H12M2 9.23242H11"
+                                          stroke="white"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                        />
+                                      </svg>
+                                      0001
+                                    </p>
+                                  </div>
+                                  <div class="inner-item-boxes-overlay"></div>
+                                </div>
+                              </div>
+                              <div class="">
+                                <div class="inner-item-boxes">
+                                  <img
+                                    src="./img/inner-catagory-item.png"
+                                    alt=""
+                                    class="img-fluid w-100"
+                                  />
+                                  <div class="inner-item-boxes-top">
+                                    <a href="#">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                      >
+                                        <path
+                                          fill-rule="evenodd"
+                                          clip-rule="evenodd"
+                                          d="M20.7505 20.4395C21.1645 20.4395 21.5005 20.7755 21.5005 21.1895C21.5005 21.6035 21.1645 21.9395 20.7505 21.9395H13.4975C13.0835 21.9395 12.7475 21.6035 12.7475 21.1895C12.7475 20.7755 13.0835 20.4395 13.4975 20.4395H20.7505ZM16.1163 3.65364C16.1663 3.69264 17.8393 4.99264 17.8393 4.99264C18.4473 5.35464 18.9223 6.00164 19.1023 6.76764C19.2813 7.52564 19.1513 8.30764 18.7343 8.96864C18.7315 8.97305 18.7287 8.97741 18.7191 8.99037L18.7115 9.00038C18.6438 9.08958 18.3496 9.46164 16.8646 11.3222C16.8508 11.3466 16.8351 11.3695 16.8181 11.3916C16.793 11.4244 16.7658 11.4544 16.7367 11.4818C16.6354 11.6093 16.5284 11.7433 16.4159 11.8842L16.188 12.1697C15.7177 12.7587 15.1599 13.4571 14.4981 14.2855L14.1584 14.7106C12.8807 16.3097 11.2444 18.3572 9.14827 20.9796C8.68927 21.5516 8.00127 21.8846 7.26227 21.8936L3.62327 21.9396H3.61327C3.26627 21.9396 2.96427 21.7016 2.88327 21.3626L2.06427 17.8916C1.89527 17.1726 2.06327 16.4306 2.52427 15.8546L11.9443 4.07264C11.9483 4.06864 11.9513 4.06364 11.9553 4.05964C12.9883 2.82464 14.8563 2.64264 16.1163 3.65364ZM10.894 7.787L3.69527 16.7916C3.52427 17.0056 3.46127 17.2816 3.52427 17.5466L4.20527 20.4316L7.24427 20.3936C7.53327 20.3906 7.80027 20.2616 7.97727 20.0416C8.88876 18.9012 10.0343 17.4679 11.2121 15.994L11.6288 15.4726L12.0462 14.9502C13.1508 13.5679 14.2421 12.2021 15.1551 11.0589L10.894 7.787ZM13.1103 5.01664L11.831 6.615L16.0918 9.88593C16.9119 8.8587 17.4514 8.18214 17.5013 8.11764C17.6653 7.85164 17.7293 7.47564 17.6433 7.11364C17.5553 6.74264 17.3243 6.42764 16.9913 6.22664C16.9203 6.17764 15.2353 4.86964 15.1833 4.82864C14.5493 4.32064 13.6243 4.40864 13.1103 5.01664Z"
+                                          fill="white"
+                                        />
+                                      </svg>
+                                    </a>
+                                  </div>
+                                  <div class="inner-item-boxes-bottom">
+                                    <h4>Item 2</h4>
+                                    <p>
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="14"
+                                        height="15"
+                                        viewBox="0 0 14 15"
+                                        fill="none"
+                                      >
+                                        <path
+                                          d="M10 2.23242L8 12.2324M6 2.23242L4 12.2324M3 5.23242H12M2 9.23242H11"
+                                          stroke="white"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                        />
+                                      </svg>
+                                      0001
+                                    </p>
+                                  </div>
+                                  <div class="inner-item-boxes-overlay"></div>
+                                </div>
+                              </div>
+                              <div class="">
+                                <div class="inner-item-boxes">
+                                  <img
+                                    src="./img/inner-catagory-item.png"
+                                    alt=""
+                                    class="img-fluid w-100"
+                                  />
+                                  <div class="inner-item-boxes-top">
+                                    <a href="#">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                      >
+                                        <path
+                                          fill-rule="evenodd"
+                                          clip-rule="evenodd"
+                                          d="M20.7505 20.4395C21.1645 20.4395 21.5005 20.7755 21.5005 21.1895C21.5005 21.6035 21.1645 21.9395 20.7505 21.9395H13.4975C13.0835 21.9395 12.7475 21.6035 12.7475 21.1895C12.7475 20.7755 13.0835 20.4395 13.4975 20.4395H20.7505ZM16.1163 3.65364C16.1663 3.69264 17.8393 4.99264 17.8393 4.99264C18.4473 5.35464 18.9223 6.00164 19.1023 6.76764C19.2813 7.52564 19.1513 8.30764 18.7343 8.96864C18.7315 8.97305 18.7287 8.97741 18.7191 8.99037L18.7115 9.00038C18.6438 9.08958 18.3496 9.46164 16.8646 11.3222C16.8508 11.3466 16.8351 11.3695 16.8181 11.3916C16.793 11.4244 16.7658 11.4544 16.7367 11.4818C16.6354 11.6093 16.5284 11.7433 16.4159 11.8842L16.188 12.1697C15.7177 12.7587 15.1599 13.4571 14.4981 14.2855L14.1584 14.7106C12.8807 16.3097 11.2444 18.3572 9.14827 20.9796C8.68927 21.5516 8.00127 21.8846 7.26227 21.8936L3.62327 21.9396H3.61327C3.26627 21.9396 2.96427 21.7016 2.88327 21.3626L2.06427 17.8916C1.89527 17.1726 2.06327 16.4306 2.52427 15.8546L11.9443 4.07264C11.9483 4.06864 11.9513 4.06364 11.9553 4.05964C12.9883 2.82464 14.8563 2.64264 16.1163 3.65364ZM10.894 7.787L3.69527 16.7916C3.52427 17.0056 3.46127 17.2816 3.52427 17.5466L4.20527 20.4316L7.24427 20.3936C7.53327 20.3906 7.80027 20.2616 7.97727 20.0416C8.88876 18.9012 10.0343 17.4679 11.2121 15.994L11.6288 15.4726L12.0462 14.9502C13.1508 13.5679 14.2421 12.2021 15.1551 11.0589L10.894 7.787ZM13.1103 5.01664L11.831 6.615L16.0918 9.88593C16.9119 8.8587 17.4514 8.18214 17.5013 8.11764C17.6653 7.85164 17.7293 7.47564 17.6433 7.11364C17.5553 6.74264 17.3243 6.42764 16.9913 6.22664C16.9203 6.17764 15.2353 4.86964 15.1833 4.82864C14.5493 4.32064 13.6243 4.40864 13.1103 5.01664Z"
+                                          fill="white"
+                                        />
+                                      </svg>
+                                    </a>
+                                  </div>
+                                  <div class="inner-item-boxes-bottom">
+                                    <h4>Item 3</h4>
+                                    <p>
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="14"
+                                        height="15"
+                                        viewBox="0 0 14 15"
+                                        fill="none"
+                                      >
+                                        <path
+                                          d="M10 2.23242L8 12.2324M6 2.23242L4 12.2324M3 5.23242H12M2 9.23242H11"
+                                          stroke="white"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                        />
+                                      </svg>
+                                      0001
+                                    </p>
+                                  </div>
+                                  <div class="inner-item-boxes-overlay"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="com-inner-part-one-single">
+                            <h3>Category 2</h3>
+                            <div class="inner-items-wrappers-com">
+                              <div class="">
+                                <div class="inner-item-boxes">
+                                  <img
+                                    src="./img/inner-catagory-item.png"
+                                    alt=""
+                                    class="img-fluid w-100"
+                                  />
+                                  <div class="inner-item-boxes-top">
+                                    <a href="#">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                      >
+                                        <path
+                                          fill-rule="evenodd"
+                                          clip-rule="evenodd"
+                                          d="M20.7505 20.4395C21.1645 20.4395 21.5005 20.7755 21.5005 21.1895C21.5005 21.6035 21.1645 21.9395 20.7505 21.9395H13.4975C13.0835 21.9395 12.7475 21.6035 12.7475 21.1895C12.7475 20.7755 13.0835 20.4395 13.4975 20.4395H20.7505ZM16.1163 3.65364C16.1663 3.69264 17.8393 4.99264 17.8393 4.99264C18.4473 5.35464 18.9223 6.00164 19.1023 6.76764C19.2813 7.52564 19.1513 8.30764 18.7343 8.96864C18.7315 8.97305 18.7287 8.97741 18.7191 8.99037L18.7115 9.00038C18.6438 9.08958 18.3496 9.46164 16.8646 11.3222C16.8508 11.3466 16.8351 11.3695 16.8181 11.3916C16.793 11.4244 16.7658 11.4544 16.7367 11.4818C16.6354 11.6093 16.5284 11.7433 16.4159 11.8842L16.188 12.1697C15.7177 12.7587 15.1599 13.4571 14.4981 14.2855L14.1584 14.7106C12.8807 16.3097 11.2444 18.3572 9.14827 20.9796C8.68927 21.5516 8.00127 21.8846 7.26227 21.8936L3.62327 21.9396H3.61327C3.26627 21.9396 2.96427 21.7016 2.88327 21.3626L2.06427 17.8916C1.89527 17.1726 2.06327 16.4306 2.52427 15.8546L11.9443 4.07264C11.9483 4.06864 11.9513 4.06364 11.9553 4.05964C12.9883 2.82464 14.8563 2.64264 16.1163 3.65364ZM10.894 7.787L3.69527 16.7916C3.52427 17.0056 3.46127 17.2816 3.52427 17.5466L4.20527 20.4316L7.24427 20.3936C7.53327 20.3906 7.80027 20.2616 7.97727 20.0416C8.88876 18.9012 10.0343 17.4679 11.2121 15.994L11.6288 15.4726L12.0462 14.9502C13.1508 13.5679 14.2421 12.2021 15.1551 11.0589L10.894 7.787ZM13.1103 5.01664L11.831 6.615L16.0918 9.88593C16.9119 8.8587 17.4514 8.18214 17.5013 8.11764C17.6653 7.85164 17.7293 7.47564 17.6433 7.11364C17.5553 6.74264 17.3243 6.42764 16.9913 6.22664C16.9203 6.17764 15.2353 4.86964 15.1833 4.82864C14.5493 4.32064 13.6243 4.40864 13.1103 5.01664Z"
+                                          fill="white"
+                                        />
+                                      </svg>
+                                    </a>
+                                  </div>
+                                  <div class="inner-item-boxes-bottom">
+                                    <h4>Item 4</h4>
+                                    <p>
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="14"
+                                        height="15"
+                                        viewBox="0 0 14 15"
+                                        fill="none"
+                                      >
+                                        <path
+                                          d="M10 2.23242L8 12.2324M6 2.23242L4 12.2324M3 5.23242H12M2 9.23242H11"
+                                          stroke="white"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                        />
+                                      </svg>
+                                      0001
+                                    </p>
+                                  </div>
+                                  <div class="inner-item-boxes-overlay"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- tab 2 -->
+                      <div class="nav-linkx-com-tab-two">
+                        <!-- inner--infos -->
+                        <div class="inner-infos-coms inner-py-40">
+                          <div class="inner-info-coms-left">
+                            <p class="inner-info-coms-left-p">
+                              Posts: <span>4</span>
+                            </p>
+                          </div>
+                          <div
+                            class="inner-info-coms-right d-flex align-items-center justify-content-end"
+                          >
+                            <button class="saveBtn">
+                              <span class="saveBtnTxt">Create Post</span>
+                              <span class="saveBtnImg"
+                                ><img
+                                  src="./img/forward.png"
+                                  class="img-fluid w-100"
+                                  alt=""
+                              /></span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- tab 3 -->
+                      <div class="nav-linkx-com-tab-three">
+                        <!-- inner--infos -->
+                        <div class="inner-infos-coms inner-py-40-20">
+                          <div class="inner-info-coms-left">
+                            <div class="inner-info-coms-left-three-pill">
+                              <p>
+                                Incoming chats will be answered by
+                                <a href="#">Joseph</a>
+                              </p>
+                              <button>
+                                <img src="./img/msg-items-pill.svg" alt="" />
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            class="inner-info-coms-right d-flex align-items-center justify-content-end"
+                          >
+                            <button class="saveBtn">
+                              <span class="saveBtnTxt">Invite Members</span>
+                              <span class="saveBtnImg"
+                                ><img
+                                  src="./img/forward.png"
+                                  class="img-fluid w-100"
+                                  alt=""
+                              /></span>
+                            </button>
+                          </div>
+                        </div>
+                        <!-- inner part -->
+                        <div class="com-inner-part">
+                          <div class="tab-content" id="pills-tabContent">
+                            <!-- My post tab content  -->
+                            <div
+                              class="tab-pane fade show active"
+                              id="pills-myposts"
+                              role="tabpanel"
+                              aria-labelledby="pills-myposts-tab"
+                            >
+                              <div class="post-cards">
+                                <div>
+                                  <!-- post list  -->
+                                  <div
+                                    class="post-card-litss d-flex align-items-center"
+                                  >
+                                    <button
+                                      class="post-card-litss-buttons-active tab-com-button"
+                                    >
+                                      Active (0)
+                                    </button>
+                                    <button
+                                      class="post-card-litss-buttons tab-com-button"
+                                    >
+                                      Request (0)
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="first-com">
+                            <!-- single item -->
+                            <div class="single-com">
+                              <div
+                                class="notification-imgBox new-notification-imgBox"
+                              >
+                                <div class="new-notification-img">
+                                  <img
+                                    src="./img/noti-avatar.png"
+                                    class="img-fluid w-100"
+                                    alt=""
+                                  />
+                                </div>
+                                <div
+                                  class="notification-content new-notification-content"
+                                >
+                                  <h3 class="new-read-title">
+                                    Zusia
+                                    <img
+                                      src="./img/mdi_approve-check.svg"
+                                      alt=""
+                                    />
+                                  </h3>
+                                  <p class="new-read-msg">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="18"
+                                      height="18"
+                                      viewBox="0 0 18 18"
+                                      fill="none"
+                                    >
+                                      <path
+                                        d="M9 0.75L2.25 3.75V8.25C2.25 12.4125 5.13 16.305 9 17.25C12.87 16.305 15.75 12.4125 15.75 8.25V3.75L9 0.75ZM9 3.675C9.44501 3.675 9.88002 3.80696 10.25 4.05419C10.62 4.30143 10.9084 4.65283 11.0787 5.06396C11.249 5.4751 11.2936 5.9275 11.2068 6.36395C11.12 6.80041 10.9057 7.20132 10.591 7.51599C10.2763 7.83066 9.87541 8.04495 9.43895 8.13177C9.0025 8.21858 8.5501 8.17403 8.13896 8.00373C7.72783 7.83343 7.37643 7.54504 7.12919 7.17503C6.88196 6.80502 6.75 6.37001 6.75 5.925C6.75 5.32826 6.98705 4.75597 7.40901 4.33401C7.83097 3.91205 8.40326 3.675 9 3.675ZM9 9.6C10.5 9.6 13.5 10.4175 13.5 11.91C13.0074 12.6526 12.3387 13.2617 11.5535 13.6831C10.7684 14.1045 9.89111 14.325 9 14.325C8.10889 14.325 7.23163 14.1045 6.44645 13.6831C5.66127 13.2617 4.99258 12.6526 4.5 11.91C4.5 10.4175 7.5 9.6 9 9.6Z"
+                                        fill="#979797"
+                                      />
+                                    </svg>
+                                    Owner (Me)
+                                  </p>
+                                </div>
+                              </div>
+                              <div
+                                class="notification-btns new-notification-btns"
+                              >
+                                <button class="cancel-btn com-hidden">
+                                  Reject
+                                </button>
+                                <button class="accept-btn com-hidden">
+                                  Accept
+                                </button>
+                              </div>
+                            </div>
+                            <!-- single item -->
+                            <div class="single-com new-single-com">
+                              <div
+                                class="notification-imgBox new-notification-imgBox"
+                              >
+                                <div class="new-notification-img">
+                                  <img
+                                    src="./img/noti-avatar.png"
+                                    class="img-fluid w-100"
+                                    alt=""
+                                  />
+                                </div>
+                                <div
+                                  class="notification-content new-notification-content"
+                                >
+                                  <h3 class="new-read-title">
+                                    Zusia
+                                    <img
+                                      src="./img/mdi_approve-check.svg"
+                                      alt=""
+                                    />
+                                  </h3>
+                                  <p class="new-read-msg">Partner</p>
+                                </div>
+                              </div>
+                              <div
+                                class="notification-btns new-notification-btns d-flex flex-column align-items-end"
+                              >
+                                <button class="cancel-btn">Remove</button>
+                                <button class="accept-btn">Make Admin</button>
+                              </div>
+                            </div>
+                            <!-- single item -->
+                            <div class="single-com new-single-com">
+                              <div
+                                class="notification-imgBox new-notification-imgBox"
+                              >
+                                <div class="new-notification-img">
+                                  <img
+                                    src="./img/noti-avatar.png"
+                                    class="img-fluid w-100"
+                                    alt=""
+                                  />
+                                </div>
+                                <div
+                                  class="notification-content new-notification-content"
+                                >
+                                  <h3 class="new-read-title">
+                                    Zusia
+                                    <img
+                                      src="./img/mdi_approve-check.svg"
+                                      alt=""
+                                    />
+                                  </h3>
+                                  <p class="new-read-msg">Employee</p>
+                                </div>
+                              </div>
+                              <div
+                                class="notification-btns new-notification-btns d-flex flex-column align-items-end"
+                              >
+                                <button class="cancel-btn">Remove</button>
+                                <button class="accept-btn">Make Admin</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="second-com">
+                            <!-- single item -->
+                            <div class="single-com">
+                              <div
+                                class="notification-imgBox new-notification-imgBox"
+                              >
+                                <div class="new-notification-img">
+                                  <img
+                                    src="./img/noti-avatar.png"
+                                    class="img-fluid w-100"
+                                    alt=""
+                                  />
+                                </div>
+                                <div
+                                  class="notification-content new-notification-content"
+                                >
+                                  <h3 class="new-read-title">
+                                    Zusia
+                                    <img
+                                      src="./img/mdi_approve-check.svg"
+                                      alt=""
+                                    />
+                                  </h3>
+                                  <p class="new-read-msg">@zusia</p>
+                                </div>
+                              </div>
+                              <div
+                                class="notification-btns new-notification-btns"
+                              >
+                                <button class="cancel-btn">Reject</button>
+                                <button
+                                  class="accept-btn"
+                                  data-bs-toggle="offcanvas"
+                                  data-bs-target="#offcanvasRightBoost"
+                                  aria-controls="offcanvasRightBoost"
+                                >
+                                  Accept
+                                </button>
+                              </div>
+                            </div>
+                            <!-- single item -->
+                            <div class="single-com">
+                              <div
+                                class="notification-imgBox new-notification-imgBox"
+                              >
+                                <div class="new-notification-img">
+                                  <img
+                                    src="./img/noti-avatar.png"
+                                    class="img-fluid w-100"
+                                    alt=""
+                                  />
+                                </div>
+                                <div
+                                  class="notification-content new-notification-content"
+                                >
+                                  <h3 class="new-read-title">
+                                    Zusia
+                                    <img
+                                      src="./img/mdi_approve-check.svg"
+                                      alt=""
+                                    />
+                                  </h3>
+                                  <p class="new-read-msg">@zusia</p>
+                                </div>
+                              </div>
+                              <div
+                                class="notification-btns new-notification-btns"
+                              >
+                                <button class="cancel-btn">Reject</button>
+                                <button
+                                  class="accept-btn"
+                                  data-bs-toggle="offcanvas"
+                                  data-bs-target="#offcanvasRightBoost"
+                                  aria-controls="offcanvasRightBoost"
+                                >
+                                  Accept
+                                </button>
+                              </div>
+                            </div>
+                            <!-- single item -->
+                            <div class="single-com">
+                              <div
+                                class="notification-imgBox new-notification-imgBox"
+                              >
+                                <div class="new-notification-img">
+                                  <img
+                                    src="./img/noti-avatar.png"
+                                    class="img-fluid w-100"
+                                    alt=""
+                                  />
+                                </div>
+                                <div
+                                  class="notification-content new-notification-content"
+                                >
+                                  <h3 class="new-read-title">
+                                    Zusia
+                                    <img
+                                      src="./img/mdi_approve-check.svg"
+                                      alt=""
+                                    />
+                                  </h3>
+                                  <p class="new-read-msg">@zusia</p>
+                                </div>
+                              </div>
+                              <div
+                                class="notification-btns new-notification-btns"
+                              >
+                                <button class="cancel-btn">Reject</button>
+                                <button
+                                  class="accept-btn"
+                                  data-bs-toggle="offcanvas"
+                                  data-bs-target="#offcanvasRightBoost"
+                                  aria-controls="offcanvasRightBoost"
+                                >
+                                  Accept
+                                </button>
+                              </div>
+                            </div>
+                            <!-- single item -->
+                            <div class="single-com">
+                              <div
+                                class="notification-imgBox new-notification-imgBox"
+                              >
+                                <div class="new-notification-img">
+                                  <img
+                                    src="./img/noti-avatar.png"
+                                    class="img-fluid w-100"
+                                    alt=""
+                                  />
+                                </div>
+                                <div
+                                  class="notification-content new-notification-content"
+                                >
+                                  <h3 class="new-read-title">
+                                    Zusia
+                                    <img
+                                      src="./img/mdi_approve-check.svg"
+                                      alt=""
+                                    />
+                                  </h3>
+                                  <p class="new-read-msg">@zusia</p>
+                                </div>
+                              </div>
+                              <div
+                                class="notification-btns new-notification-btns"
+                              >
+                                <button class="cancel-btn">Reject</button>
+                                <button
+                                  class="accept-btn"
+                                  data-bs-toggle="offcanvas"
+                                  data-bs-target="#offcanvasRightBoost"
+                                  aria-controls="offcanvasRightBoost"
+                                >
+                                  Accept
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- tab 4 -->
+                      <div class="nav-linkx-com-tab-four">
+                        <!-- inner--infos -->
+                        <div class="inner-infos-coms inner-py-40">
+                          <div class="inner-info-coms-left"></div>
+                          <div
+                            class="inner-info-coms-right d-flex align-items-center justify-content-end"
+                          >
+                            <button class="saveBtn">
+                              <span class="saveBtnTxt"
+                                >Ask Recommendations</span
+                              >
+                              <span class="saveBtnImg"
+                                ><img
+                                  src="./img/forward.png"
+                                  class="img-fluid w-100"
+                                  alt=""
+                              /></span>
+                            </button>
+                          </div>
+                        </div>
+                        <!-- info part -->
+                        <div class="com-inner-part">
+                          <div class="tab-content" id="pills-tabContent">
+                            <!-- My post tab content  -->
+                            <div
+                              class="tab-pane fade show active"
+                              id="pills-myposts"
+                              role="tabpanel"
+                              aria-labelledby="pills-myposts-tab"
+                            >
+                              <div class="post-cards">
+                                <div>
+                                  <!-- post list  -->
+                                  <div
+                                    class="post-card-litss d-flex align-items-center"
+                                  >
+                                    <button
+                                      class="post-card-litss-buttons-active tab-com-button"
+                                    >
+                                      Active (0)
+                                    </button>
+                                    <button
+                                      class="post-card-litss-buttons tab-com-button"
+                                    >
+                                      Request (0)
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="first-com">
+                            <!-- single item -->
+                            <div class="single-com">
+                              <div
+                                class="notification-imgBox new-notification-imgBox"
+                              >
+                                <div class="new-notification-img">
+                                  <img
+                                    src="./img/noti-avatar.png"
+                                    class="img-fluid w-100"
+                                    alt=""
+                                  />
+                                </div>
+                                <div
+                                  class="notification-content new-notification-content"
+                                >
+                                  <h3 class="new-read-title">
+                                    Zusia
+                                    <img
+                                      src="./img/mdi_approve-check.svg"
+                                      alt=""
+                                    />
+                                  </h3>
+                                  <p class="new-read-msg">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="18"
+                                      height="18"
+                                      viewBox="0 0 18 18"
+                                      fill="none"
+                                    >
+                                      <path
+                                        d="M9 0.75L2.25 3.75V8.25C2.25 12.4125 5.13 16.305 9 17.25C12.87 16.305 15.75 12.4125 15.75 8.25V3.75L9 0.75ZM9 3.675C9.44501 3.675 9.88002 3.80696 10.25 4.05419C10.62 4.30143 10.9084 4.65283 11.0787 5.06396C11.249 5.4751 11.2936 5.9275 11.2068 6.36395C11.12 6.80041 10.9057 7.20132 10.591 7.51599C10.2763 7.83066 9.87541 8.04495 9.43895 8.13177C9.0025 8.21858 8.5501 8.17403 8.13896 8.00373C7.72783 7.83343 7.37643 7.54504 7.12919 7.17503C6.88196 6.80502 6.75 6.37001 6.75 5.925C6.75 5.32826 6.98705 4.75597 7.40901 4.33401C7.83097 3.91205 8.40326 3.675 9 3.675ZM9 9.6C10.5 9.6 13.5 10.4175 13.5 11.91C13.0074 12.6526 12.3387 13.2617 11.5535 13.6831C10.7684 14.1045 9.89111 14.325 9 14.325C8.10889 14.325 7.23163 14.1045 6.44645 13.6831C5.66127 13.2617 4.99258 12.6526 4.5 11.91C4.5 10.4175 7.5 9.6 9 9.6Z"
+                                        fill="#979797"
+                                      />
+                                    </svg>
+                                    Owner (Me)
+                                  </p>
+                                </div>
+                              </div>
+                              <div
+                                class="notification-btns new-notification-btns"
+                              >
+                                <button class="cancel-btn com-hidden">
+                                  Reject
+                                </button>
+                                <button class="accept-btn com-hidden">
+                                  Accept
+                                </button>
+                              </div>
+                            </div>
+                            <!-- single item -->
+                            <div class="single-com new-single-com">
+                              <div
+                                class="notification-imgBox new-notification-imgBox"
+                              >
+                                <div class="new-notification-img">
+                                  <img
+                                    src="./img/noti-avatar.png"
+                                    class="img-fluid w-100"
+                                    alt=""
+                                  />
+                                </div>
+                                <div
+                                  class="notification-content new-notification-content"
+                                >
+                                  <h3 class="new-read-title">
+                                    Zusia
+                                    <img
+                                      src="./img/mdi_approve-check.svg"
+                                      alt=""
+                                    />
+                                  </h3>
+                                  <p class="new-read-msg">Partner</p>
+                                </div>
+                              </div>
+                              <div
+                                class="notification-btns new-notification-btns d-flex flex-column align-items-end"
+                              >
+                                <button class="cancel-btn">Remove</button>
+                                <button class="accept-btn">Make Admin</button>
+                              </div>
+                            </div>
+                            <!-- single item -->
+                            <div class="single-com new-single-com">
+                              <div
+                                class="notification-imgBox new-notification-imgBox"
+                              >
+                                <div class="new-notification-img">
+                                  <img
+                                    src="./img/noti-avatar.png"
+                                    class="img-fluid w-100"
+                                    alt=""
+                                  />
+                                </div>
+                                <div
+                                  class="notification-content new-notification-content"
+                                >
+                                  <h3 class="new-read-title">
+                                    Zusia
+                                    <img
+                                      src="./img/mdi_approve-check.svg"
+                                      alt=""
+                                    />
+                                  </h3>
+                                  <p class="new-read-msg">Employee</p>
+                                </div>
+                              </div>
+                              <div
+                                class="notification-btns new-notification-btns d-flex flex-column align-items-end"
+                              >
+                                <button class="cancel-btn">Remove</button>
+                                <button class="accept-btn">Make Admin</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="second-com">
+                            <!-- single item -->
+                            <div class="single-com">
+                              <div
+                                class="notification-imgBox new-notification-imgBox"
+                              >
+                                <div class="new-notification-img">
+                                  <img
+                                    src="./img/noti-avatar.png"
+                                    class="img-fluid w-100"
+                                    alt=""
+                                  />
+                                </div>
+                                <div
+                                  class="notification-content new-notification-content"
+                                >
+                                  <h3 class="new-read-title">
+                                    Zusia
+                                    <img
+                                      src="./img/mdi_approve-check.svg"
+                                      alt=""
+                                    />
+                                  </h3>
+                                  <p class="new-read-msg">@zusia</p>
+                                </div>
+                              </div>
+                              <div
+                                class="notification-btns new-notification-btns"
+                              >
+                                <button class="cancel-btn">Reject</button>
+                                <button
+                                  class="accept-btn"
+                                  data-bs-toggle="offcanvas"
+                                  data-bs-target="#offcanvasRightBoost"
+                                  aria-controls="offcanvasRightBoost"
+                                >
+                                  Accept
+                                </button>
+                              </div>
+                            </div>
+                            <!-- single item -->
+                            <div class="single-com">
+                              <div
+                                class="notification-imgBox new-notification-imgBox"
+                              >
+                                <div class="new-notification-img">
+                                  <img
+                                    src="./img/noti-avatar.png"
+                                    class="img-fluid w-100"
+                                    alt=""
+                                  />
+                                </div>
+                                <div
+                                  class="notification-content new-notification-content"
+                                >
+                                  <h3 class="new-read-title">
+                                    Zusia
+                                    <img
+                                      src="./img/mdi_approve-check.svg"
+                                      alt=""
+                                    />
+                                  </h3>
+                                  <p class="new-read-msg">@zusia</p>
+                                </div>
+                              </div>
+                              <div
+                                class="notification-btns new-notification-btns"
+                              >
+                                <button class="cancel-btn">Reject</button>
+                                <button
+                                  class="accept-btn"
+                                  data-bs-toggle="offcanvas"
+                                  data-bs-target="#offcanvasRightBoost"
+                                  aria-controls="offcanvasRightBoost"
+                                >
+                                  Accept
+                                </button>
+                              </div>
+                            </div>
+                            <!-- single item -->
+                            <div class="single-com">
+                              <div
+                                class="notification-imgBox new-notification-imgBox"
+                              >
+                                <div class="new-notification-img">
+                                  <img
+                                    src="./img/noti-avatar.png"
+                                    class="img-fluid w-100"
+                                    alt=""
+                                  />
+                                </div>
+                                <div
+                                  class="notification-content new-notification-content"
+                                >
+                                  <h3 class="new-read-title">
+                                    Zusia
+                                    <img
+                                      src="./img/mdi_approve-check.svg"
+                                      alt=""
+                                    />
+                                  </h3>
+                                  <p class="new-read-msg">@zusia</p>
+                                </div>
+                              </div>
+                              <div
+                                class="notification-btns new-notification-btns"
+                              >
+                                <button class="cancel-btn">Reject</button>
+                                <button
+                                  class="accept-btn"
+                                  data-bs-toggle="offcanvas"
+                                  data-bs-target="#offcanvasRightBoost"
+                                  aria-controls="offcanvasRightBoost"
+                                >
+                                  Accept
+                                </button>
+                              </div>
+                            </div>
+                            <!-- single item -->
+                            <div class="single-com">
+                              <div
+                                class="notification-imgBox new-notification-imgBox"
+                              >
+                                <div class="new-notification-img">
+                                  <img
+                                    src="./img/noti-avatar.png"
+                                    class="img-fluid w-100"
+                                    alt=""
+                                  />
+                                </div>
+                                <div
+                                  class="notification-content new-notification-content"
+                                >
+                                  <h3 class="new-read-title">
+                                    Zusia
+                                    <img
+                                      src="./img/mdi_approve-check.svg"
+                                      alt=""
+                                    />
+                                  </h3>
+                                  <p class="new-read-msg">@zusia</p>
+                                </div>
+                              </div>
+                              <div
+                                class="notification-btns new-notification-btns"
+                              >
+                                <button class="cancel-btn">Reject</button>
+                                <button
+                                  class="accept-btn"
+                                  data-bs-toggle="offcanvas"
+                                  data-bs-target="#offcanvasRightBoost"
+                                  aria-controls="offcanvasRightBoost"
+                                >
+                                  Accept
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Offcanvas boost (Right) -->
+    <div
+      class="offcanvas offcanvas-end offcanvas-custom new-offcanvas-custom"
+      tabindex="-1"
+      id="offcanvasRightBoost"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div
+        class="offcanvas-header ads-type-top d-flex justify-content-between align-items-start"
+      >
+        <div class="offcanvas-title" id="offcanvasRightLabel">
+          <h4>Boost Type</h4>
+        </div>
+        <button
+          class="off-button-close btn-close"
+          type="button"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <img
+            class="img-fluid"
+            src="./img/iconamoon_close-light-two.svg"
+            alt="close"
+          />
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="ads-horizontal-divider"></div>
+        <div class="choose-ads-type-bottom">
+          <div class="boosttype-card-item-wrapper">
+            <button
+              class="boosttype-card-item"
+              data-url="./boost-post-create-ad-details-new.html"
+            >
+              <h5 class="float-start">Boost Post</h5>
+              <p class="boosttype-card-item-pera float-start">
+                Boosted Posts will be visible on top for the duration of boost.
+              </p>
+              <span class="float-end">*charges apply</span>
+            </button>
+
+            <button
+              class="boosttype-card-item"
+              data-url="./create-ads-upload-pic.html"
+            >
+              <h5 class="float-start">Convert to AD</h5>
+              <p class="boosttype-card-item-pera float-start">
+                Full featured Ad for your company, Ads are bold and attract more
+                users.
+              </p>
+              <span class="float-end">*charges apply</span>
+            </button>
+          </div>
+
+          <div class="choose-ads-type-bottom-button-off hidden">
+            <button>
+              Confirm & Create
+              <img
+                src="./img/Arrow Forward.svg"
+                alt="arrow"
+                class="img-fluid"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- offcanvas notification  -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="notificationOffcanvas"
+      aria-labelledby="notificationOffcanvasLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 id="notificationOffcanvasLabel">
+          Notifications <span>2 New</span>
+        </h5>
+        <button
+          type="button"
+          class="modal-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <img src="./img/cross.png" alt="" />
+        </button>
+      </div>
+      <div class="notification-bar"></div>
+      <div class="offcanvas-body">
+        <div class="notification-lists">
+          <!-- single item  -->
+          <div class="notification-box">
+            <div class="notification-left">
+              <div class="unread-notification">
+                <img src="./img/unred.png" class="w-100 img-fluid" alt="" />
+              </div>
+              <div class="notification-imgBox">
+                <div class="notification-img">
+                  <img
+                    src="./img/noti-avatar.png"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                </div>
+                <div class="notification-content">
+                  <h3>
+                    Connection request from John Doe
+                    <span class="notification-date">Now</span>
+                  </h3>
+                  <div class="notification-btns">
+                    <button class="cancel-btn">Reject</button>
+                    <button class="accept-btn">Accept</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single item  -->
+          <div class="notification-box">
+            <div class="notification-left">
+              <div class="unread-notification">
+                <img src="./img/unred.png" class="w-100 img-fluid" alt="" />
+              </div>
+              <div class="notification-imgBox">
+                <div class="notification-img">
+                  <img
+                    src="./img/noti-avatar.png"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                </div>
+                <div class="notification-content">
+                  <h3>
+                    New message from Sierra
+                    <span class="notification-date">Now</span>
+                  </h3>
+                  <p>Bethany was running in a half marathon when she began .</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single item  -->
+          <div class="notification-box">
+            <div class="notification-left">
+              <div class="unread-notification"></div>
+              <div class="notification-imgBox">
+                <div class="notification-img">
+                  <img
+                    src="./img/noti-avatar.png"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                </div>
+                <div class="notification-content">
+                  <h3 class="read-title">
+                    New post from Sierra Ferguson
+                    <span class="notification-date">1h</span>
+                  </h3>
+                  <p class="read-msg">
+                    Bethany was running in a half marathon when she began .
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- offcanvas report  -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="createComunityOffcanvas"
+      aria-labelledby="createComunityLabel"
+    >
+      <div class="offcanvas-header createComunityoffcanvas-header">
+        <div class="createComunityLabel">
+          <h5>Report</h5>
+          <p style="font-style: italic">Why you want to report this?</p>
+        </div>
+        <button
+          type="button"
+          class="modal-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <img src="./img/cross.png" alt="" />
+        </button>
+      </div>
+      <div class="offcanvas-body addComunityOffcanvas-body">
+        <div class="createComunityForm">
+          <div class="notification-bar"></div>
+          <form action="">
+            <!-- pick an option -->
+            <div class="description-input-wrapper">
+              <select class="form-input" name="reason-type" id="reason-type">
+                <option value="" disabled selected>Pick an Option</option>
+                <option value="spam">It's spam</option>
+                <option value="inappropriate">It's inappropriate</option>
+              </select>
+            </div>
+
+            <!-- Description -->
+            <div class="description-input-wrapper">
+              <textarea
+                name=""
+                id=""
+                placeholder="Please describe you reason."
+                class="form-input"
+              ></textarea>
+            </div>
+            <!-- submit  -->
+            <div class="mt-3">
+              <button class="register-submit" type="submit">
+                <span class="saveBtnTxt">Save</span>
+                <span class="saveBtnImg"
+                  ><img src="./img/forward.png" class="img-fluid w-100" alt=""
+                /></span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Sticky Bottom Bar -->
+    <div class="stb-container stb-bar fixed-bottom">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <button
+            class="btn cst-mobile-menus-active"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#stbOffcanvas"
+          >
+            <img
+              src="./img/home-mobile.svg"
+              alt="Home"
+              class="cst-mobile-menus-img"
+            />
+          </button>
+          <button
+            class="btn cst-mobile-menus"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#stbOffcanvas"
+          >
+            <img
+              src="./img/dashboard-mobile.svg"
+              alt="Dashboard"
+              class="cst-mobile-menus-img"
+            />
+          </button>
+          <button
+            class="btn cst-mobile-menus"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#stbOffcanvas"
+          >
+            <img
+              src="./img/added-mobile.svg"
+              alt="Added"
+              class="cst-mobile-menus-img"
+            />
+          </button>
+          <button
+            class="btn cst-mobile-menus"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#stbOffcanvas"
+          >
+            <img
+              src="./img/notification-mobile.svg"
+              alt="Notification"
+              class="cst-mobile-menus-img"
+            />
+          </button>
+          <button
+            class="btn cst-mobile-menus"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#stbOffcanvas"
+          >
+            <img
+              src="./img/profile-circle-mobile.svg"
+              alt="Profile"
+              class="cst-mobile-menus-img"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom Offcanvas -->
+    <div
+      class="offcanvas offcanvas-bottom stb-offcanvas"
+      tabindex="-1"
+      id="stbOffcanvas"
+      aria-labelledby="stbOffcanvasLabel"
+    >
+      <div class="offcanvas-header justify-content-end align-items-end">
+        <button
+          type="button"
+          class="btn-closex"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <img src="./img/iconamoon_close-light.svg" alt="" />
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <!-- Scrollable Menu List -->
+          <ul
+            class="dropdown-menux thin-scrollbar"
+            aria-labelledby="profileOptions"
+          >
+            <!-- item 1 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/clarity_building-line.png" alt="" />
+                  <span>Setup Company Profile</span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+            <!-- item 2 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/i2.png" alt="" />
+                  <span>My Ads</span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+            <!-- item 3 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/i3.png" alt="" />
+                  <span>My Communities</span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+            <!-- item 4 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/i4.png" alt="" />
+                  <span>Services</span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+            <!-- item 5 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/i5.png" alt="" />
+                  <span>Chats</span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+            <!-- item 6 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/i6.png" alt="" />
+                  <span>Wallet <span class="text-blue">$89.00</span></span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+            <!-- item 7 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/i7.png" alt="" />
+                  <span>Invite Friends</span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+            <!-- item 8 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/i8.png" alt="" />
+                  <span>Faqs</span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+            <!-- item 9 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/i9.png" alt="" />
+                  <span>Privacy Policy</span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+            <!-- item 10 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/i10.png" alt="" />
+                  <span>Terms & Condition</span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+            <!-- item 11 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/i11.png" alt="" />
+                  <span>Contact Us</span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+            <!-- item 12 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/i12.png" alt="" />
+                  <span>Rate Us</span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+            <!-- item 13 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/i13.png" alt="" />
+                  <span>Logout</span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+            <!-- item 14 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/i14.png" alt="" />
+                  <span class="text-reprt">Delete Account</span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade web-two-modal"
+      id="deleteModal"
+      tabindex="-1"
+      aria-labelledby="succesModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="post-log-wraper">
+              <p>Do you really want to delete Community 1?</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <button
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  class="modal-button close-button"
+                >
+                  No
+                </button>
+                <button
+                  onclick="window.location.href='./login.html'"
+                  class="modal-button logout-button"
+                >
+                  Delete
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom js  -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var tooltipTriggerList = [].slice.call(
+          document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        );
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const searchButton = document.getElementById("mobileSearchButton");
+        const searchBox = document.getElementById("mobileNavSearchBox");
+
+        searchButton.addEventListener("click", function () {
+          if (
+            searchBox.style.display === "none" ||
+            searchBox.style.display === ""
+          ) {
+            searchBox.style.display = "block";
+          } else {
+            searchBox.style.display = "none";
+          }
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabButtons = document.querySelectorAll(".tab-com-button");
+        const sections = [
+          document.querySelector(".first-com"),
+          document.querySelector(".second-com"),
+          document.querySelector(".third-com"),
+        ];
+
+        tabButtons.forEach((tabButton, index) => {
+          tabButton.addEventListener("click", function () {
+            // Remove active class from all buttons & add default class back
+            tabButtons.forEach((btn) => {
+              btn.classList.remove("post-card-litss-buttons-active");
+              btn.classList.add("post-card-litss-buttons");
+            });
+
+            // Add active class to the clicked button & remove default class
+            this.classList.add("post-card-litss-buttons-active");
+            this.classList.remove("post-card-litss-buttons");
+
+            // Hide all sections
+            sections.forEach((section) => {
+              section.style.display = "none";
+            });
+
+            // Show the selected section
+            sections[index].style.display = "block";
+          });
+        });
+
+        // Set default state on page load
+        tabButtons[0].classList.add("post-card-litss-buttons-active");
+        sections[0].style.display = "block";
+      });
+    </script>
+    <!-- redirect off canvus -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const boostButtons = document.querySelectorAll(".boosttype-card-item");
+        const confirmButtonDiv = document.querySelector(
+          ".choose-ads-type-bottom-button-off"
+        );
+        const confirmButton = confirmButtonDiv.querySelector("button");
+        let selectedUrl = ""; // Store selected button URL
+
+        boostButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            // Remove active class from all buttons
+            boostButtons.forEach((btn) =>
+              btn.classList.remove("boosttype-card-item-active")
+            );
+
+            // Add active class to the clicked button
+            this.classList.add("boosttype-card-item-active");
+
+            // Show confirm button
+            confirmButtonDiv.classList.remove("hidden");
+
+            // Store the selected URL
+            selectedUrl = this.getAttribute("data-url");
+          });
+        });
+
+        // Handle confirm button click
+        confirmButton.addEventListener("click", function () {
+          if (selectedUrl) {
+            window.location.href = selectedUrl; // Redirect to selected URL
+          }
+        });
+      });
+    </script>
+    <!-- main tab -->
+    <script>
+      // Select all buttons and tab content divs for this specific tab system
+      const navButtons = document.querySelectorAll(".nav-linkx-com");
+      const navTabs = [
+        document.querySelector(".nav-linkx-com-tab-one"),
+        document.querySelector(".nav-linkx-com-tab-two"),
+        document.querySelector(".nav-linkx-com-tab-three"),
+        document.querySelector(".nav-linkx-com-tab-four"),
+      ];
+
+      // Function to switch tabs
+      const switchNavTab = (index) => {
+        // Remove active class from all buttons
+        navButtons.forEach((btn) =>
+          btn.classList.remove("nav-linkx-com-active")
+        );
+
+        // Add active class to the clicked button
+        navButtons[index].classList.add("nav-linkx-com-active");
+
+        // Hide all tabs
+        navTabs.forEach((tab) => (tab.style.display = "none"));
+
+        // Show the corresponding tab
+        navTabs[index].style.display = "block";
+      };
+
+      // Add event listeners to all buttons
+      navButtons.forEach((button, index) => {
+        button.addEventListener("click", () => switchNavTab(index));
+      });
+
+      // Set initial active state
+      switchNavTab(0);
+    </script>
+    <!-- switch -->
+    <script>
+      // Select elements
+      const buttons = document.querySelectorAll(".connect-switch-button");
+      const [companyTab, contactTab] = document.querySelectorAll(
+        ".connect-switch-tab-wrapper > div"
+      );
+
+      // Function to handle tab switching
+      const switchTab = (index) => {
+        buttons.forEach((btn) =>
+          btn.classList.remove("connect-switch-button-active")
+        );
+        buttons[index].classList.add("connect-switch-button-active");
+
+        companyTab.style.display = index === 0 ? "block" : "none";
+        contactTab.style.display = index === 1 ? "block" : "none";
+      };
+
+      // Add event listeners using forEach
+      buttons.forEach((button, index) =>
+        button.addEventListener("click", () => switchTab(index))
+      );
+
+      // Set initial active state
+      switchTab(0);
+    </script>
+    <script></script>
+  </body>
+</html>
