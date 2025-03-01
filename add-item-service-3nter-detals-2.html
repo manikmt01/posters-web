@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon  -->
+    <link rel="icon" href="./img/favicon.png" />
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.g2static.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap css  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Add Item/Service_Upload Pic</title>
+  </head>
+
+  <body>
+    <!-- header start -->
+    <header id="headerFlow" class="shadow-sm sticky-top">
+      <div class="container-fluid">
+        <div
+          class="row header-flow-row align-items-center justify-content-between gap-3 gap-sm-0"
+        >
+          <div class="col-12 col-sm-5 col-lg-4">
+            <div class="header-flow-left mx-auto mx-md-0">
+              <div class="header-flow-left-inner">
+                <a href="./feed-sponser-post.html" class="back-arr">
+                  <img src="./img/left-arr.png" alt="" />
+                </a>
+                <span class="me-auto">Add Item</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-8">
+            <div class="header-flow-right mx-auto">
+              <div
+                class="progress-wrapper d-flex justify-content-between align-items-center"
+              >
+                <!-- step - 1 -->
+                <div
+                  class="steps d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div
+                    class="step-circle d-flex justify-content-center align-items-center"
+                  >
+                    <div
+                      class="step-circle-inner-active d-flex justify-content-center align-items-center"
+                    >
+                      <span class="actives">1</span>
+                    </div>
+                  </div>
+                  <div class="step-title">
+                    <span class="active">Upload Photo</span>
+                  </div>
+                </div>
+                <!-- step - 2 -->
+                <div
+                  class="steps d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div
+                    class="step-circle d-flex justify-content-center align-items-center"
+                  >
+                    <div
+                      class="step-circle-inner-active d-flex justify-content-center align-items-center"
+                    >
+                      <span class="actives">2</span>
+                    </div>
+                  </div>
+                  <div class="step-title">
+                    <span class="active">Enter Details</span>
+                  </div>
+                </div>
+                <!-- step - 3 -->
+                <div
+                  class="steps d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div
+                    class="step-circle d-flex justify-content-center align-items-center"
+                  >
+                    <div
+                      class="step-circle-inner d-flex justify-content-center align-items-center"
+                    >
+                      <span>3</span>
+                    </div>
+                  </div>
+                  <div class="step-title">
+                    <span>Preview & Save</span>
+                  </div>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 50%"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="postDetailsBody">
+        <div class="postUpload-container autocapture-container">
+          <div class="company-details-profile">
+            <!-- company name  -->
+            <div class="post-something-form-group pb-4">
+              <div><h2 class="flow-location-title-new">Item Details</h2></div>
+              <div
+                class="input-wrapper new-input-wrapper input-right d-flex justify-content-end"
+              >
+                <button class="add-serice-com-new">+ Product</button>
+                <button class="add-serice-com-new ms-3">+ Service</button>
+              </div>
+            </div>
+            <!-- service / product add   -->
+            <div class="post-something-form-group">
+              <label
+                for="company-input"
+                class="post-something-form-label input-left"
+                >Category</label
+              >
+              <div class="input-wrapper new-input-wrapper input-right">
+                <input type="text" id="company-input" class="form-input" placeholder="Category"/>
+                <svg
+                  class="new-input-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="76"
+                  height="76"
+                  viewBox="0 0 76 76"
+                  fill="none"
+                >
+                  <g filter="url(#filter0_dd_11224_36733)">
+                    <rect
+                      x="18"
+                      y="18"
+                      width="40"
+                      height="40"
+                      rx="10"
+                      fill="#F1F5F9"
+                    />
+                  </g>
+                  <path
+                    d="M33 33L43 43M33 43L43 33"
+                    stroke="#222222"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <defs>
+                    <filter
+                      id="filter0_dd_11224_36733"
+                      x="0"
+                      y="0"
+                      width="76"
+                      height="76"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dx="-6" dy="-6" />
+                      <feGaussianBlur stdDeviation="6" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_11224_36733"
+                      />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dx="6" dy="6" />
+                      <feGaussianBlur stdDeviation="6" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.831373 0 0 0 0 0.878431 0 0 0 0 0.921569 0 0 0 0.8 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="effect1_dropShadow_11224_36733"
+                        result="effect2_dropShadow_11224_36733"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect2_dropShadow_11224_36733"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <!-- company name  -->
+            <div class="post-something-form-group">
+              <label
+                for="company-input"
+                class="post-something-form-label input-left"
+                >Title</label
+              >
+              <div class="input-wrapper new-input-wrapper input-right">
+                <input type="text" id="company-input" class="form-input" placeholder="Item Name" />
+              </div>
+            </div>
+            <!-- Email  -->
+            <div class="post-something-form-group">
+              <label
+                for="company-email"
+                class="post-something-form-label input-left"
+                >Item Price</label
+              >
+              <div class="input-wrapper new-input-wrapper input-right">
+                <input type="text" id="company-email" class="form-input" placeholder="Price" />
+              </div>
+            </div>
+            <!-- Website  -->
+            <div class="post-something-form-group">
+              <label
+                for="company-url"
+                class="post-something-form-label input-left"
+                >Item Code</label
+              >
+              <div class="input-wrapper new-input-wrapper input-right">
+                <input type="text" id="company-url" class="form-input" placeholder="Item Code" />
+              </div>
+            </div>
+            <!-- Website  -->
+            <div class="post-something-form-group">
+              <label
+                for="company-url"
+                class="post-something-form-label input-left"
+                >Info (Optional)</label
+              >
+              <div class="input-wrapper new-input-wrapper input-right">
+                <textarea
+                  type="textarea"
+                  id="company-url"
+                  class="form-input text-area-new"
+                  rows="4"
+                  placeholder="Your Description"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="not-find">
+                <button onclick="window.location.href='./company-Details.html';" class="saveBtn">
+                    <span class="saveBtnTxt">Save & Next</span>
+                    <span class="saveBtnImg"><img src="./img/forward.png" class="img-fluid w-100" alt=""></span>
+                </button>
+                <button class="cancelbtn" data-bs-toggle="modal" data-bs-target="#draftModal">Cancel</button>
+            </div>
+      </section>
+    </main>
+
+    <!-- Draft Modal  -->
+    <div
+      class="modal fade draft-modal"
+      id="draftModal"
+      tabindex="-1"
+      aria-labelledby="draftModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered draft-modal-dialog">
+        <div class="modal-content draft-modal-content">
+          <div class="modal-body draft-modal-body">
+            <div class="draft-modal-header">
+              <h3 class="draft-modal-title">Save this post as draft?</h3>
+              <p class="draft-modal-text">
+                If you discard now, you'll lose this post.
+              </p>
+            </div>
+            <div class="draft-modal-buttons">
+              <button class="draft-save-btn">Save Draft</button>
+              <button
+                class="draft-discard-btn"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                Discard
+              </button>
+              <button class="draft-save-btn">Keep Editing</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom js  -->
+    <!-- file upload  -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .querySelectorAll(".comunity-image-upload-wrapper")
+          .forEach((wrapper) => {
+            const input = wrapper.querySelector(".comunity-image-upload-input");
+            const label = wrapper.querySelector(".comunity-image-upload-label");
+            const preview = wrapper.querySelector(
+              ".comunity-image-upload-preview"
+            );
+            const removeBtn = wrapper.querySelector(".remove-img");
+            const previewImage = wrapper.querySelector(".previewImage");
+
+            // Handle file input change
+            input.addEventListener("change", function () {
+              const file = input.files[0];
+              if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                  previewImage.src = e.target.result; // Set the preview image source
+                  label.style.display = "none"; // Hide the label
+                  preview.style.display = "flex"; // Show the preview
+                };
+                reader.readAsDataURL(file);
+              }
+            });
+
+            // Handle remove button click
+            removeBtn.addEventListener("click", function () {
+              input.value = ""; // Clear the input value
+              label.style.display = "flex"; // Show the label
+              preview.style.display = "none"; // Hide the preview
+              previewImage.src = ""; // Clear the preview image
+            });
+          });
+      });
+    </script>
+  </body>
+</html>

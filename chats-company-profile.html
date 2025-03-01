@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon  -->
+    <link rel="icon" href="./img/favicon.png" />
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap css  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Chats_Direct</title>
+  </head>
+
+  <body class="flow-body">
+    <header class="feed-header">
+      <div
+        class="destop-nav d-none d-lg-flex justify-content-between align-items-center"
+      >
+        <div class="header-left">
+          <div class="logo">
+            <img src="./img/logo.png" class="img-fluid" alt="Logo" />
+          </div>
+          <a href="#" class="nav-location">
+            <img src="./img/location.png" class="img-fluid" alt="Menu" />
+            <span>New York, NY</span>
+          </a>
+        </div>
+        <div class="header-right">
+          <div class="seach">
+            <form action="" class="navSearch">
+              <input type="text" class="form-control" placeholder="Search" />
+              <button type="submit" class="search-icon">
+                <img src="./img/search.png" class="img-fluid" alt="Search" />
+              </button>
+            </form>
+          </div>
+          <div>
+            <button class="nav-btn active-btn">
+              <img src="./img/home.png" class="img-fluid" alt="Home" />
+            </button>
+          </div>
+          <div>
+            <button
+              onclick="window.location.href='./project_Feed_Page_Companies.html';"
+              class="nav-btn dashboard-btn"
+            >
+              <img
+                src="./img/dashboard.png"
+                class="img-fluid"
+                alt="Dashboard"
+              />
+            </button>
+          </div>
+          <div>
+            <button
+              class="nav-btn notification-btn"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#notificationOffcanvas"
+              aria-controls="notificationOffcanvas"
+            >
+              <img
+                src="./img/notification-fill.png"
+                class="img-fluid"
+                alt="notification"
+              />
+            </button>
+          </div>
+          <!-- nav profile img  -->
+          <div class="nav-profile">
+            <button
+              class="profile-btn"
+              id="profileOptions"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="./img/avatar.png" class="img-fluid" alt="Profile" />
+            </button>
+            <ul
+              class="dropdown-menu thin-scrollbar"
+              aria-labelledby="profileOptions"
+            >
+              <!-- item 1 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/clarity_building-line.png" alt="" />
+                    <span>Setup Company Profile</span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+              <!-- item 2 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/i2.png" alt="" />
+                    <span>My Ads</span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+              <!-- item 3 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/i3.png" alt="" />
+                    <span>Community Profile</span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+              <!-- item 4 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/i4.png" alt="" />
+                    <span>Services</span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+              <!-- item 5 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/i5.png" alt="" />
+                    <span>Chats</span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+              <!-- item 6 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/i6.png" alt="" />
+                    <span>Wallet <span class="text-blue">$89.00</span></span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+              <!-- item 7 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/i7.png" alt="" />
+                    <span>Invite Friends</span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+              <!-- item 8 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/i8.png" alt="" />
+                    <span>Faqs</span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+              <!-- item 9 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/i9.png" alt="" />
+                    <span>Privacy Policy</span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+              <!-- item 10 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/i10.png" alt="" />
+                    <span>Terms & Condition</span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+              <!-- item 11 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/i11.png" alt="" />
+                    <span>Contact Us</span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+              <!-- item 12 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/i12.png" alt="" />
+                    <span>Rate Us</span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+              <!-- item 13 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/i13.png" alt="" />
+                    <span>Logout</span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+              <!-- item 14 -->
+              <li>
+                <a class="dropdown-item profile-single" href="#">
+                  <span class="profile-single-left">
+                    <img src="./img/i14.png" alt="" />
+                    <span class="text-reprt">Delete Account</span>
+                  </span>
+                  <span class="profile-single-right">
+                    <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mobile-nav d-flex d-lg-none justify-content-between align-items-center"
+      >
+        <a href="index.html" class="d-block mobile-logo">
+          <img src="./img/favicon.png" alt="logo" class="img-fluid" />
+        </a>
+        <a href="index.html" class="d-block mobile-logo2">
+          <img src="./img/m-logo-2.png" alt="logo" class="img-fluid" />
+        </a>
+
+        <!-- Search Button -->
+        <button class="d-block mobile-search" id="mobileSearchButton">
+          <img src="./img/search2.png" alt="search" class="img-fluid" />
+        </button>
+
+        <!-- Search Box (Initially Hidden) -->
+        <div class="mobile-nav-search-box" id="mobileNavSearchBox">
+          <input
+            type="text"
+            class="mobile-nav-search-input"
+            placeholder="Search..."
+          />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="header-profile-sponsor">
+        <div class="container">
+          <div class="row header-flow-row align-items-center">
+            <div class="col ps-0 ps-xl-auto">
+              <div class="header-flow-left ps-3">
+                <div class="header-flow-left-inner">
+                  <button class="header-flow-left-inner-button">
+                    <img src="./img/left-arrow.svg" alt="left-arrow" />
+                  </button>
+                  <span class="mx-auto d-xl-none d-block">Chats 3</span>
+                  <span class="me-auto d-xl-block d-none">Chats 3</span>
+                </div>
+              </div>
+            </div>
+            <div class="col d-xl-block d-none"></div>
+          </div>
+        </div>
+      </section>
+      <section class="dashboardx mb-lg-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-4">
+              <div class="chatss-left">
+                <!-- single chat profile -->
+                <a href="#" class="single-chat-profile">
+                  <div class="single-chat-profile-img">
+                    <img src="./img/profile-chat-01.png" alt="" />
+                  </div>
+                  <div class="single-chat-profile-content">
+                    <h4>Sharp Security Systems</h4>
+                    <p>
+                      Yes, we do have many option, we can meet tomorrow at the
+                      job site, let me know if .....
+                    </p>
+                  </div>
+                  <div class="single-chat-profile-info">
+                    <span class="single-chat-profile-time">2:10 pm</span>
+                    <span class="single-chat-profile-notifiy">1</span>
+                  </div>
+                </a>
+                <!-- single chat profile -->
+                <a href="#" class="single-chat-profile">
+                  <div class="single-chat-profile-img">
+                    <img src="./img/profile-chat-02.png" alt="" />
+                  </div>
+                  <div class="single-chat-profile-content">
+                    <h4>Sharp Security Systems</h4>
+                    <p>
+                      Yes, we do have many option, we can meet tomorrow at the
+                      job site, let me know if .....
+                    </p>
+                  </div>
+                  <div class="single-chat-profile-info">
+                    <span class="single-chat-profile-time">2:10 pm</span>
+                    <span class="single-chat-profile-notifiy">1</span>
+                  </div>
+                </a>
+                <!-- single chat profile -->
+                <a href="#" class="single-chat-profile">
+                  <div class="single-chat-profile-img">
+                    <img src="./img/profile-chat-03.png" alt="" />
+                  </div>
+                  <div class="single-chat-profile-content">
+                    <h4>Sharp Security Systems</h4>
+                    <p>
+                      Yes, we do have many option, we can meet tomorrow at the
+                      job site, let me know if .....
+                    </p>
+                  </div>
+                  <div class="single-chat-profile-info">
+                    <span class="single-chat-profile-time">2:10 pm</span>
+                    <span class="single-chat-profile-notifiy">1</span>
+                  </div>
+                </a>
+                <!-- single chat profile -->
+                <a href="#" class="single-chat-profile-actives">
+                  <div class="single-chat-profile-img">
+                    <img src="./img/profile-chat-04.png" alt="" />
+                  </div>
+                  <div class="single-chat-profile-content">
+                    <h4>Sierra Ferguson</h4>
+                    <p>
+                      Yes, we do have many option, we can meet tomorrow at the
+                      job site, let me know if .....
+                    </p>
+                  </div>
+                  <div class="single-chat-profile-info">
+                    <span class="single-chat-profile-time">2:10 pm</span>
+                    <span class="single-chat-profile-notifiy">1</span>
+                  </div>
+                </a>
+                <!-- single chat profile -->
+                <a href="#" class="single-chat-profile">
+                  <div class="single-chat-profile-img">
+                    <img src="./img/profile-chat-05.png" alt="" />
+                  </div>
+                  <div class="single-chat-profile-content">
+                    <h4>Sharp Security Systems</h4>
+                    <p>
+                      Yes, we do have many option, we can meet tomorrow at the
+                      job site, let me know if .....
+                    </p>
+                  </div>
+                  <div class="single-chat-profile-info">
+                    <span class="single-chat-profile-time">2:10 pm</span>
+                    <span class="single-chat-profile-notifiy">1</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-8">
+              <div class="chatss-right">
+                <div class="chatss-right-top">
+                  <div class="company-item new-company-item-ss">
+                    <!-- Company Image Carousel -->
+                    <div class="company-carousel">
+                      <div
+                        id="companyCarouselIndicators"
+                        class="carousel slide"
+                        data-bs-ride="carousel"
+                      >
+                        <!-- Carousel Indicators -->
+                        <div class="carousel-indicators">
+                          <button
+                            type="button"
+                            data-bs-target="#companyCarouselIndicators"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-label="Slide 1"
+                            aria-current="true"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#companyCarouselIndicators"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"
+                            class=""
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#companyCarouselIndicators"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"
+                            class=""
+                          ></button>
+                        </div>
+                        <!-- Carousel Inner Content -->
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img
+                              src="./img/company1.png"
+                              class="img-fluid"
+                              alt="Company Image 1"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="./img/company1.png"
+                              class="img-fluid"
+                              alt="Company Image 2"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="./img/company1.png"
+                              class="img-fluid"
+                              alt="Company Image 3"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Company Details -->
+                    <div class="company-details">
+                      <!-- Company Logo -->
+                      <div class="company-logo">
+                        <img
+                          src="./img/podcast.png"
+                          alt="Company Logo"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <!-- Company Info Section -->
+                      <div class="company-info">
+                        <!-- Company Title -->
+                        <h3 class="company-title">
+                          <a href="">Sharp Security Systems</a>
+                          <a href="#"><img src="./img/chat1.png" alt="" /></a>
+                        </h3>
+
+                        <!-- Company Rating -->
+                        <div class="company-rating">
+                          <p>0.0</p>
+                          <img src="./img/star.png" alt="Rating Stars" />
+                        </div>
+
+                        <!-- Company Location -->
+                        <div class="company-location">
+                          <img src="./img/sale-loc.png" alt="Location Icon" />
+                          <span class="loc-name">Brooklyn, NY</span>
+                          <span
+                            class="other-loc"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="true"
+                            >+2 Locations</span
+                          >
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="postActionsFilter"
+                            data-popper-placement="bottom-start"
+                          >
+                            <li>New York, NY</li>
+                            <li>Long Branch, NJ</li>
+                          </ul>
+                        </div>
+
+                        <!-- Company Category -->
+                        <div class="company-category">
+                          <h4>Contractor</h4>
+                          <p>Paint &amp; Finishing</p>
+                          <img src="./img/arr-com.png" alt="" />
+                        </div>
+
+                        <!-- Company Stats -->
+                        <div class="company-stats">
+                          <div class="company-posts">
+                            <p>Posts</p>
+                            <h3>65</h3>
+                            <!-- Switched: Number is now h3, title is now p -->
+                          </div>
+                          <div class="company-posts">
+                            <p>Connections</p>
+                            <h3>65</h3>
+                            <!-- Switched -->
+                          </div>
+                          <div class="company-posts">
+                            <p>Showcase</p>
+                            <h3>32</h3>
+                            <!-- Switched -->
+                          </div>
+                          <div class="company-posts">
+                            <p>Recommends</p>
+                            <h3>03</h3>
+                            <!-- Switched -->
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Company Share Icons -->
+                      <div class="company-share-icons">
+                        <!-- Like Button -->
+                        <button class="share-item share-like">
+                          <img src="./img/like.png" alt="Like Icon" />
+                          <span class="like-count">874</span>
+                        </button>
+                        <!-- Share Button -->
+                        <button class="share-item share-button">
+                          <img src="./img/share.png" alt="Share Icon" />
+                        </button>
+                        <!-- Bookmark Button -->
+                        <button class="share-item share-bookmark">
+                          <img
+                            src="./img/bookmarkBlack.png"
+                            alt="Bookmark Icon"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <!-- ribbone  -->
+                    <p class="company-ribbon">Wholesale</p>
+                  </div>
+                </div>
+                <div class="chatss-right-bottom">
+                  <!-- date -->
+                  <span class="chatss-right-bottom-dates">Yesterday</span>
+                  <!-- user chat -->
+                  <div class="chatss-right-bottom-users chat-user-color">
+                    <div class="chatss-right-bottom-users-img">
+                      <img src="./img/user-ss.png" alt="" />
+                    </div>
+                    <div class="chatss-right-bottom-users-text">
+                      <h4>@Sunilsharma</h4>
+                      <p>Hi would like to see the Apartment</p>
+                      <!-- extra -->
+                      <div></div>
+                    </div>
+                    <div class="chatss-right-bottom-users-infoss-top">
+                      <span>2:10 pm</span>
+                    </div>
+                    <div class="chatss-right-bottom-users-infoss-bottom">
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            opacity="0.5"
+                            d="M2.6665 8.6L4.76184 11L9.99984 5"
+                            stroke="#4A17CB"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M13.333 5.04297L7.61901 11.043L7.33301 10.6676"
+                            stroke="#4A17CB"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- client chat -->
+                  <div class="chatss-right-bottom-users client-user-color">
+                    <div class="chatss-right-bottom-users-img">
+                      <img src="./img/user-client.png" alt="" />
+                    </div>
+                    <div class="chatss-right-bottom-users-text">
+                      <h4>@sierragerguson</h4>
+                      <p>Sure, let me arrange it, I will let u know soon</p>
+                      <!-- extra -->
+                      <div></div>
+                    </div>
+                    <div class="chatss-right-bottom-users-infoss-top">
+                      <span>2:10 pm</span>
+                    </div>
+                    <div
+                      class="chatss-right-bottom-users-infoss-bottom com-hidden"
+                    >
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            opacity="0.5"
+                            d="M2.6665 8.6L4.76184 11L9.99984 5"
+                            stroke="#4A17CB"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M13.333 5.04297L7.61901 11.043L7.33301 10.6676"
+                            stroke="#4A17CB"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- date -->
+                  <span class="chatss-right-bottom-dates">Today</span>
+                  <!-- user chat -->
+                  <div class="chatss-right-bottom-users chat-user-color">
+                    <div class="chatss-right-bottom-users-img">
+                      <img src="./img/user-ss.png" alt="" />
+                    </div>
+                    <div class="chatss-right-bottom-users-text">
+                      <h4>@Sunilsharma</h4>
+                      <p>Hi would like to see the Apartment</p>
+                      <!-- extra -->
+                      <div></div>
+                    </div>
+                    <div class="chatss-right-bottom-users-infoss-top">
+                      <span>2:10 pm</span>
+                    </div>
+                    <div class="chatss-right-bottom-users-infoss-bottom">
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            opacity="0.5"
+                            d="M2.6665 8.6L4.76184 11L9.99984 5"
+                            stroke="#4A17CB"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M13.333 5.04297L7.61901 11.043L7.33301 10.6676"
+                            stroke="#4A17CB"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- client chat -->
+                  <div class="chatss-right-bottom-users client-user-color">
+                    <div class="chatss-right-bottom-users-img">
+                      <img src="./img/user-client.png" alt="" />
+                    </div>
+                    <div class="chatss-right-bottom-users-text">
+                      <h4>@sierragerguson</h4>
+                      <p>Sure, let me arrange it, I will let u know soon</p>
+                      <!-- extra -->
+                      <div></div>
+                    </div>
+                    <div class="chatss-right-bottom-users-infoss-top">
+                      <span>2:10 pm</span>
+                    </div>
+                    <div
+                      class="chatss-right-bottom-users-infoss-bottom com-hidden"
+                    >
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            opacity="0.5"
+                            d="M2.6665 8.6L4.76184 11L9.99984 5"
+                            stroke="#4A17CB"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M13.333 5.04297L7.61901 11.043L7.33301 10.6676"
+                            stroke="#4A17CB"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                   <!-- user chat -->
+                  <div class="chatss-right-bottom-users chat-user-color">
+                    <div class="chatss-right-bottom-users-img">
+                      <img src="./img/user-ss.png" alt="" />
+                    </div>
+                    <div class="chatss-right-bottom-users-text">
+                      <h4>@Sunilsharma</h4>
+                      <p>Hi would like to see the Apartment</p>
+                      <!-- extra -->
+                      <div class="chatss-right-bottom-users-play d-flex justify-content-between align-items-center">
+                        <a href="#"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="17"
+                            height="20"
+                            viewBox="0 0 17 20"
+                            fill="none"
+                          >
+                            <path
+                              d="M16.5 10.0005C16.5006 10.2551 16.4353 10.5056 16.3105 10.7275C16.1856 10.9495 16.0055 11.1353 15.7875 11.267L2.28 19.5302C2.05227 19.6696 1.79144 19.7457 1.52445 19.7507C1.25746 19.7556 0.993989 19.6892 0.76125 19.5583C0.530728 19.4294 0.338696 19.2414 0.204904 19.0137C0.0711107 18.786 0.000385179 18.5268 0 18.2627V1.73828C0.000385179 1.47417 0.0711107 1.21493 0.204904 0.987222C0.338696 0.759511 0.530728 0.571545 0.76125 0.442655C0.993989 0.311732 1.25746 0.245313 1.52445 0.250257C1.79144 0.255201 2.05227 0.33133 2.28 0.470781L15.7875 8.7339C16.0055 8.8656 16.1856 9.05145 16.3105 9.2734C16.4353 9.49534 16.5006 9.74582 16.5 10.0005Z"
+                              fill="#954DE1"
+                            /></svg
+                        ></a>
+                            <input type="range" class="custom-range " min="0" max="100" value="0">
+                        <div class="playback-time">1:15</div>
+                      </div>
+                    </div>
+                    <div class="chatss-right-bottom-users-infoss-top">
+                      <span>2:10 pm</span>
+                    </div>
+                    <div class="chatss-right-bottom-users-infoss-bottom">
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            opacity="0.5"
+                            d="M2.6665 8.6L4.76184 11L9.99984 5"
+                            stroke="#4A17CB"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M13.333 5.04297L7.61901 11.043L7.33301 10.6676"
+                            stroke="#4A17CB"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- user chat -->
+                  <div class="chatss-right-bottom-users chat-user-color">
+                    <div class="chatss-right-bottom-users-img">
+                      <img src="./img/user-ss.png" alt="" />
+                    </div>
+                    <div class="chatss-right-bottom-users-text">
+                      <h4>@Sunilsharma</h4>
+                      <!-- extra -->
+                      <div class="chatss-right-bottom-users-play d-flex justify-content-between align-items-center">
+                        <a href="#"
+                          ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M9 4.5H7.5C7.10218 4.5 6.72064 4.65804 6.43934 4.93934C6.15804 5.22064 6 5.60218 6 6V18C6 18.3978 6.15804 18.7794 6.43934 19.0607C6.72064 19.342 7.10218 19.5 7.5 19.5H9C9.39782 19.5 9.77936 19.342 10.0607 19.0607C10.342 18.7794 10.5 18.3978 10.5 18V6C10.5 5.60218 10.342 5.22064 10.0607 4.93934C9.77936 4.65804 9.39782 4.5 9 4.5ZM16.5 4.5H15C14.6022 4.5 14.2206 4.65804 13.9393 4.93934C13.658 5.22064 13.5 5.60218 13.5 6V18C13.5 18.3978 13.658 18.7794 13.9393 19.0607C14.2206 19.342 14.6022 19.5 15 19.5H16.5C16.8978 19.5 17.2794 19.342 17.5607 19.0607C17.842 18.7794 18 18.3978 18 18V6C18 5.60218 17.842 5.22064 17.5607 4.93934C17.2794 4.65804 16.8978 4.5 16.5 4.5Z" fill="#954DE1"/>
+</svg></a>
+                            <input type="range" class="custom-range" min="0" max="100" value="50">
+                        <div class="playback-time">1:15</div>
+                      </div>
+                    </div>
+                    <div class="chatss-right-bottom-users-infoss-top">
+                      <span>2:10 pm</span>
+                    </div>
+                    <div class="chatss-right-bottom-users-infoss-bottom">
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            opacity="0.5"
+                            d="M2.6665 8.6L4.76184 11L9.99984 5"
+                            stroke="#4A17CB"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M13.333 5.04297L7.61901 11.043L7.33301 10.6676"
+                            stroke="#4A17CB"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chatss-right-input">
+                  <div class="input-right location-wraper new-location-wraper">
+                    <div class="input-wrapper input-wrapper-chat">
+                      <input
+                        type="text"
+                        id="phone-input"
+                        class="form-input form-input-chat"
+                        placeholder="Write message"
+                      />
+                    <label for="chat-input" class="input-icon">
+                       <a href="#">
+                         <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22Z"
+                            stroke="#5A5A5A"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M16.5 14.5C16.5 14.5 15 16.5 12 16.5C9 16.5 7.5 14.5 7.5 14.5"
+                            stroke="#5A5A5A"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M15.5 9C15.3674 9 15.2402 8.94732 15.1464 8.85355C15.0527 8.75979 15 8.63261 15 8.5C15 8.36739 15.0527 8.24021 15.1464 8.14645C15.2402 8.05268 15.3674 8 15.5 8C15.6326 8 15.7598 8.05268 15.8536 8.14645C15.9473 8.24021 16 8.36739 16 8.5C16 8.63261 15.9473 8.75979 15.8536 8.85355C15.7598 8.94732 15.6326 9 15.5 9ZM8.5 9C8.36739 9 8.24021 8.94732 8.14645 8.85355C8.05268 8.75979 8 8.63261 8 8.5C8 8.36739 8.05268 8.24021 8.14645 8.14645C8.24021 8.05268 8.36739 8 8.5 8C8.63261 8 8.75979 8.05268 8.85355 8.14645C8.94732 8.24021 9 8.36739 9 8.5C9 8.63261 8.94732 8.75979 8.85355 8.85355C8.75979 8.94732 8.63261 9 8.5 9Z"
+                            fill="#5A5A5A"
+                            stroke="#5A5A5A"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                       </a>
+                      </label>
+                      <input
+                        type="file"
+                        id="file-upload"
+                        class="hidden-file-input-ss"
+                      />
+                      <label for="chat-input" class="input-icon-chat">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="24"
+                          viewBox="0 0 25 24"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M8.098 4.487C8.365 3.177 9.531 2.25 10.866 2.25H14.134C15.469 2.25 16.634 3.177 16.902 4.487C16.9315 4.63125 17.0088 4.76137 17.1212 4.85642C17.2337 4.95147 17.3748 5.00591 17.522 5.011H17.555C18.958 5.073 20.036 5.245 20.936 5.836C21.503 6.208 21.991 6.686 22.371 7.245C22.844 7.939 23.052 8.737 23.152 9.701C23.25 10.644 23.25 11.825 23.25 13.321V13.406C23.25 14.902 23.25 16.084 23.152 17.026C23.052 17.99 22.844 18.788 22.371 19.483C21.9898 20.0423 21.5022 20.5211 20.936 20.892C20.233 21.353 19.426 21.557 18.448 21.654C17.49 21.75 16.289 21.75 14.763 21.75H10.237C8.711 21.75 7.51 21.75 6.552 21.654C5.574 21.557 4.767 21.354 4.064 20.892C3.49771 20.5208 3.01009 20.0417 2.629 19.482C2.156 18.788 1.948 17.99 1.848 17.026C1.75 16.084 1.75 14.902 1.75 13.406V13.321C1.75 11.825 1.75 10.644 1.848 9.701C1.948 8.737 2.156 7.939 2.629 7.245C3.01009 6.68532 3.49771 6.2062 4.064 5.835C4.964 5.245 6.042 5.073 7.445 5.012L7.462 5.011H7.478C7.62516 5.00591 7.76632 4.95147 7.87879 4.85642C7.99125 4.76137 8.06846 4.63125 8.098 4.487ZM10.866 3.75C10.226 3.75 9.689 4.193 9.568 4.786C9.373 5.746 8.521 6.502 7.496 6.511C6.148 6.571 5.426 6.736 4.886 7.09C4.48488 7.35322 4.13934 7.69264 3.869 8.089C3.593 8.494 3.427 9.013 3.339 9.856C3.251 10.712 3.25 11.816 3.25 13.364C3.25 14.912 3.25 16.015 3.34 16.871C3.427 17.714 3.593 18.233 3.87 18.639C4.138 19.033 4.483 19.373 4.887 19.637C5.304 19.911 5.838 20.076 6.701 20.162C7.575 20.249 8.701 20.25 10.278 20.25H14.722C16.298 20.25 17.424 20.25 18.299 20.162C19.162 20.076 19.696 19.912 20.113 19.638C20.517 19.373 20.863 19.033 21.131 18.638C21.407 18.233 21.573 17.714 21.661 16.871C21.749 16.015 21.75 14.911 21.75 13.364C21.75 11.816 21.75 10.712 21.66 9.856C21.573 9.013 21.407 8.494 21.13 8.089C20.86 7.69212 20.5144 7.35231 20.113 7.089C19.575 6.736 18.853 6.571 17.503 6.511C16.479 6.501 15.627 5.747 15.432 4.786C15.368 4.49027 15.2039 4.22569 14.9674 4.03694C14.7309 3.84819 14.4366 3.74684 14.134 3.75H10.866ZM12.5 10.75C11.9033 10.75 11.331 10.9871 10.909 11.409C10.4871 11.831 10.25 12.4033 10.25 13C10.25 13.5967 10.4871 14.169 10.909 14.591C11.331 15.0129 11.9033 15.25 12.5 15.25C13.0967 15.25 13.669 15.0129 14.091 14.591C14.5129 14.169 14.75 13.5967 14.75 13C14.75 12.4033 14.5129 11.831 14.091 11.409C13.669 10.9871 13.0967 10.75 12.5 10.75ZM8.75 13C8.75 12.0054 9.14509 11.0516 9.84835 10.3483C10.5516 9.64509 11.5054 9.25 12.5 9.25C13.4946 9.25 14.4484 9.64509 15.1517 10.3483C15.8549 11.0516 16.25 12.0054 16.25 13C16.25 13.9946 15.8549 14.9484 15.1517 15.6517C14.4484 16.3549 13.4946 16.75 12.5 16.75C11.5054 16.75 10.5516 16.3549 9.84835 15.6517C9.14509 14.9484 8.75 13.9946 8.75 13ZM17.75 10C17.75 9.80109 17.829 9.61032 17.9697 9.46967C18.1103 9.32902 18.3011 9.25 18.5 9.25H19.5C19.6989 9.25 19.8897 9.32902 20.0303 9.46967C20.171 9.61032 20.25 9.80109 20.25 10C20.25 10.1989 20.171 10.3897 20.0303 10.5303C19.8897 10.671 19.6989 10.75 19.5 10.75H18.5C18.3011 10.75 18.1103 10.671 17.9697 10.5303C17.829 10.3897 17.75 10.1989 17.75 10Z"
+                            fill="#4A17CB"
+                          />
+                        </svg>
+                      </label>
+                    </div>
+                    <div
+                      class="addPhone-button-wrapper new-addPhone-button-wrapper"
+                    >
+                      <div class="voice-container">
+                        <!-- Voice Button -->
+                        <button type="button" id="voice-recorder">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="28"
+                            height="28"
+                            viewBox="0 0 28 28"
+                            fill="none"
+                          >
+                            <path
+                              d="M14 16.334C13.0278 16.334 12.2014 15.9937 11.5209 15.3132C10.8403 14.6326 10.5 13.8062 10.5 12.834V5.83398C10.5 4.86176 10.8403 4.03537 11.5209 3.35482C12.2014 2.67426 13.0278 2.33398 14 2.33398C14.9723 2.33398 15.7986 2.67426 16.4792 3.35482C17.1598 4.03537 17.5 4.86176 17.5 5.83398V12.834C17.5 13.8062 17.1598 14.6326 16.4792 15.3132C15.7986 15.9937 14.9723 16.334 14 16.334ZM12.8334 24.5007V20.9132C10.8112 20.6409 9.13893 19.7368 7.81671 18.2007C6.49448 16.6645 5.83337 14.8757 5.83337 12.834H8.16671C8.16671 14.4479 8.73565 15.8238 9.87354 16.9617C11.0114 18.0995 12.3869 18.6681 14 18.6673C15.6131 18.6665 16.989 18.0976 18.1277 16.9605C19.2664 15.8234 19.8349 14.4479 19.8334 12.834H22.1667C22.1667 14.8757 21.5056 16.6645 20.1834 18.2007C18.8611 19.7368 17.1889 20.6409 15.1667 20.9132V24.5007H12.8334Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+
+                        <!-- Dropdown (Initially Hidden) -->
+                        <div class="voice-dropdown" id="voice-dropdown">
+                          <div
+                            class="d-flex justify-content-between align-items-center voice-dropdown-top"
+                          >
+                            <p>Recording Started</p>
+                            <button class="close-voice">
+                              <img src="./img/clsoe-x-close.png" alt="" />
+                            </button>
+                          </div>
+                          <div class="voice-dropdown-image">
+                            <div>
+                              <img src="./img/voice-recoard.png" alt="" />
+                            </div>
+                            <div>
+                              <p><span>01:15</span> Recording...</p>
+                            </div>
+                          </div>
+                          <div class="voice-dropdown-body">
+                            <p>
+                              Hi would like to see the Apartment, I would love
+                              to see it in the afternoons, please let me know if
+                              this is possible, otherwise, I will try to work my
+                              schedule around yours.
+                            </p>
+                          </div>
+                          <div class="voice-dropdown-buttons">
+                            <button>Send Voice Note</button>
+                            <button>Send Text Only</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- offcanvas notification  -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="notificationOffcanvas"
+      aria-labelledby="notificationOffcanvasLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 id="notificationOffcanvasLabel">
+          Notifications <span>2 New</span>
+        </h5>
+        <button
+          type="button"
+          class="modal-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <img src="./img/cross.png" alt="" />
+        </button>
+      </div>
+      <div class="notification-bar"></div>
+      <div class="offcanvas-body">
+        <div class="notification-lists">
+          <!-- single item  -->
+          <div class="notification-box">
+            <div class="notification-left">
+              <div class="unread-notification">
+                <img src="./img/unred.png" class="w-100 img-fluid" alt="" />
+              </div>
+              <div class="notification-imgBox">
+                <div class="notification-img">
+                  <img
+                    src="./img/noti-avatar.png"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                </div>
+                <div class="notification-content">
+                  <h3>
+                    Connection request from John Doe
+                    <span class="notification-date">Now</span>
+                  </h3>
+                  <div class="notification-btns">
+                    <button class="cancel-btn">Reject</button>
+                    <button class="accept-btn">Accept</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single item  -->
+          <div class="notification-box">
+            <div class="notification-left">
+              <div class="unread-notification">
+                <img src="./img/unred.png" class="w-100 img-fluid" alt="" />
+              </div>
+              <div class="notification-imgBox">
+                <div class="notification-img">
+                  <img
+                    src="./img/noti-avatar.png"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                </div>
+                <div class="notification-content">
+                  <h3>
+                    New message from Sierra
+                    <span class="notification-date">Now</span>
+                  </h3>
+                  <p>Bethany was running in a half marathon when she began .</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single item  -->
+          <div class="notification-box">
+            <div class="notification-left">
+              <div class="unread-notification"></div>
+              <div class="notification-imgBox">
+                <div class="notification-img">
+                  <img
+                    src="./img/noti-avatar.png"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                </div>
+                <div class="notification-content">
+                  <h3 class="read-title">
+                    New post from Sierra Ferguson
+                    <span class="notification-date">1h</span>
+                  </h3>
+                  <p class="read-msg">
+                    Bethany was running in a half marathon when she began .
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- offcanvas report  -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="createComunityOffcanvas"
+      aria-labelledby="createComunityLabel"
+    >
+      <div class="offcanvas-header createComunityoffcanvas-header">
+        <div class="createComunityLabel">
+          <h5>Report</h5>
+          <p style="font-style: italic">Why you want to report this?</p>
+        </div>
+        <button
+          type="button"
+          class="modal-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <img src="./img/cross.png" alt="" />
+        </button>
+      </div>
+      <div class="offcanvas-body addComunityOffcanvas-body">
+        <div class="createComunityForm">
+          <div class="notification-bar"></div>
+          <form action="">
+            <!-- pick an option -->
+            <div class="description-input-wrapper">
+              <select class="form-input" name="reason-type" id="reason-type">
+                <option value="" disabled selected>Pick an Option</option>
+                <option value="spam">It's spam</option>
+                <option value="inappropriate">It's inappropriate</option>
+              </select>
+            </div>
+
+            <!-- Description -->
+            <div class="description-input-wrapper">
+              <textarea
+                name=""
+                id=""
+                placeholder="Please describe you reason."
+                class="form-input"
+              ></textarea>
+            </div>
+            <!-- submit  -->
+            <div class="mt-3">
+              <button class="register-submit" type="submit">
+                <span class="saveBtnTxt">Save</span>
+                <span class="saveBtnImg"
+                  ><img src="./img/forward.png" class="img-fluid w-100" alt=""
+                /></span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Sticky Bottom Bar -->
+    <div class="stb-container stb-bar fixed-bottom">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <button
+            class="btn cst-mobile-menus-active"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#stbOffcanvas"
+          >
+            <img
+              src="./img/home-mobile.svg"
+              alt="Home"
+              class="cst-mobile-menus-img"
+            />
+          </button>
+          <button
+            class="btn cst-mobile-menus"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#stbOffcanvas"
+          >
+            <img
+              src="./img/dashboard-mobile.svg"
+              alt="Dashboard"
+              class="cst-mobile-menus-img"
+            />
+          </button>
+          <button
+            class="btn cst-mobile-menus"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#stbOffcanvas"
+          >
+            <img
+              src="./img/added-mobile.svg"
+              alt="Added"
+              class="cst-mobile-menus-img"
+            />
+          </button>
+          <button
+            class="btn cst-mobile-menus"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#stbOffcanvas"
+          >
+            <img
+              src="./img/notification-mobile.svg"
+              alt="Notification"
+              class="cst-mobile-menus-img"
+            />
+          </button>
+          <button
+            class="btn cst-mobile-menus"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#stbOffcanvas"
+          >
+            <img
+              src="./img/profile-circle-mobile.svg"
+              alt="Profile"
+              class="cst-mobile-menus-img"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom Offcanvas -->
+    <div
+      class="offcanvas offcanvas-bottom stb-offcanvas"
+      tabindex="-1"
+      id="stbOffcanvas"
+      aria-labelledby="stbOffcanvasLabel"
+    >
+      <div class="offcanvas-header justify-content-end align-items-end">
+        <button
+          type="button"
+          class="btn-closex"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <img src="./img/iconamoon_close-light.svg" alt="" />
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <!-- Scrollable Menu List -->
+          <ul
+            class="dropdown-menux thin-scrollbar"
+            aria-labelledby="profileOptions"
+          >
+            <!-- item 1 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/clarity_building-line.png" alt="" />
+                  <span>Setup Company Profile</span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+            <!-- item 2 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/i2.png" alt="" />
+                  <span>My Ads</span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+            <!-- item 3 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/i3.png" alt="" />
+                  <span>My Communities</span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+            <!-- item 4 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/i4.png" alt="" />
+                  <span>Services</span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+            <!-- item 5 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/i5.png" alt="" />
+                  <span>Chats</span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+            <!-- item 6 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/i6.png" alt="" />
+                  <span>Wallet <span class="text-blue">$89.00</span></span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+            <!-- item 7 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/i7.png" alt="" />
+                  <span>Invite Friends</span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+            <!-- item 8 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/i8.png" alt="" />
+                  <span>Faqs</span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+            <!-- item 9 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/i9.png" alt="" />
+                  <span>Privacy Policy</span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+            <!-- item 10 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/i10.png" alt="" />
+                  <span>Terms & Condition</span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+            <!-- item 11 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/i11.png" alt="" />
+                  <span>Contact Us</span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+            <!-- item 12 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/i12.png" alt="" />
+                  <span>Rate Us</span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+            <!-- item 13 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/i13.png" alt="" />
+                  <span>Logout</span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+            <!-- item 14 -->
+            <li>
+              <a class="dropdown-item profile-single" href="#">
+                <span class="profile-single-left">
+                  <img src="./img/i14.png" alt="" />
+                  <span class="text-reprt">Delete Account</span>
+                </span>
+                <span class="profile-single-right">
+                  <img src="./img/right-arr.png" class="img-fluid" alt="" />
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade web-two-modal"
+      id="deleteModal"
+      tabindex="-1"
+      aria-labelledby="succesModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="post-log-wraper">
+              <p>Do you really want to Leave Community?</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <button
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  class="modal-button close-button"
+                >
+                  No
+                </button>
+                <button
+                  onclick="window.location.href='./login.html'"
+                  class="modal-button logout-button"
+                >
+                  Leave
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom js  -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var tooltipTriggerList = [].slice.call(
+          document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        );
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const searchButton = document.getElementById("mobileSearchButton");
+        const searchBox = document.getElementById("mobileNavSearchBox");
+
+        searchButton.addEventListener("click", function () {
+          if (
+            searchBox.style.display === "none" ||
+            searchBox.style.display === ""
+          ) {
+            searchBox.style.display = "block";
+          } else {
+            searchBox.style.display = "none";
+          }
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabButtons = document.querySelectorAll(".tab-com-button");
+        const firstCom = document.querySelector(".first-com");
+        const secondCom = document.querySelector(".second-com");
+
+        tabButtons.forEach((tabButton, index) => {
+          tabButton.addEventListener("click", function () {
+            // Remove active class from all buttons & add default class back
+            tabButtons.forEach((btn) => {
+              btn.classList.remove("post-card-litss-buttons-active");
+              btn.classList.add("post-card-litss-buttons"); // Add default class
+            });
+
+            // Add active class to the clicked button & remove default class
+            this.classList.add("post-card-litss-buttons-active");
+            this.classList.remove("post-card-litss-buttons");
+
+            // Toggle divs based on active button
+            if (index === 0) {
+              firstCom.style.display = "block";
+              secondCom.style.display = "none";
+            } else if (index === 1) {
+              firstCom.style.display = "none";
+              secondCom.style.display = "block";
+            }
+          });
+        });
+
+        // Set default state on page load
+        tabButtons[0].classList.add("post-card-litss-buttons-active");
+        tabButtons[1].classList.add("post-card-litss-buttons");
+        firstCom.style.display = "block";
+        secondCom.style.display = "none";
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const inputs = document.querySelectorAll("input[placeholder]");
+
+        inputs.forEach(function (input) {
+          // Store the placeholder text and then remove the attribute.
+          const placeholderText = input.getAttribute("placeholder");
+          input.removeAttribute("placeholder");
+
+          // Create the floating label element.
+          const label = document.createElement("label");
+          label.classList.add("floating-placeholder");
+          label.textContent = placeholderText;
+          input.parentNode.insertBefore(label, input);
+
+          if (input.type === "date") {
+            const secondaryPlaceholder = "Begin On";
+
+            // Set the initial label text.
+            label.textContent = input.value
+              ? secondaryPlaceholder
+              : placeholderText;
+
+            // Date input specific event listeners.
+            input.addEventListener("focus", () => {
+              label.textContent = secondaryPlaceholder;
+              label.classList.add("active");
+            });
+
+            input.addEventListener("blur", () => {
+              label.textContent = input.value
+                ? secondaryPlaceholder
+                : placeholderText;
+            });
+
+            input.addEventListener("change", () => {
+              label.textContent = input.value
+                ? secondaryPlaceholder
+                : placeholderText;
+              label.classList.toggle("active", !!input.value);
+            });
+
+            // Add a click event to trigger the date picker popup.
+            input.addEventListener("click", () => {
+              // If the experimental showPicker() API is supported, use it.
+              if (typeof input.showPicker === "function") {
+                input.showPicker();
+              } else {
+                // Otherwise, focus the input so the native date picker may appear.
+                input.focus();
+              }
+            });
+          } else {
+            // Standard input handling for non-date inputs.
+            if (input.value) label.classList.add("active");
+
+            input.addEventListener("focus", () =>
+              label.classList.add("active")
+            );
+            input.addEventListener("blur", () => {
+              if (!input.value) label.classList.remove("active");
+            });
+            input.addEventListener("input", () => {
+              label.classList.toggle("active", !!input.value);
+            });
+          }
+        });
+      });
+    </script>
+    <script>
+      document
+        .querySelector(".input-icon-chat")
+        .addEventListener("click", function () {
+          document.getElementById("file-upload").click(); // Open file dialog
+        });
+    </script>
+    <script>
+      const voiceButton = document.getElementById("voice-recorder");
+      const dropdown = document.getElementById("voice-dropdown");
+      const closeVoiceButton = document.querySelector(".close-voice");
+
+      // Toggle dropdown when clicking the voice button
+      voiceButton.addEventListener("click", function () {
+        dropdown.classList.toggle("show");
+      });
+
+      // Close dropdown when clicking the close button inside it
+      closeVoiceButton.addEventListener("click", function () {
+        dropdown.classList.remove("show");
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener("click", function (event) {
+        if (
+          !dropdown.contains(event.target) &&
+          !voiceButton.contains(event.target)
+        ) {
+          dropdown.classList.remove("show");
+        }
+      });
+    </script>
+  </body>
+</html>
