@@ -13675,7 +13675,6 @@ background-color: #954de1;
     margin: 30px 0;
   }
 }
-
 @media (max-width: 575px) {
   .single-com {
     padding: 12px 10px;
@@ -13684,13 +13683,12 @@ background-color: #954de1;
   .single-com.new-single-com {
     padding: 12px 10px !important;
   }
-  .tab-content .post-cards {
+  .com-inner-part .tab-content .post-cards {
     display: block;
   }
   .overflow-player-wrappers {
     padding: 10px 20px 20px 20px;
   }
-
   .progress-wrapper {
     width: 100%;
     min-width: 300px;
@@ -13707,25 +13705,20 @@ background-color: #954de1;
     transform: translateX(-50%);
     top: 20%;
   }
-
   #headerFlow {
     padding: 18px 10px 18px 10px;
     background-color: #f1f5f9;
   }
-
   .back-arr {
     min-height: 40px;
     min-width: 40px;
   }
-
   .back-arr img {
     width: 18px;
   }
-
   .header-flow-left-inner span {
     font-size: 16px;
   }
-
   .header-flow-left-inner {
     gap: 20px;
   }
