@@ -344,7 +344,7 @@
             <div class="col-lg-8">
               <!-- tab button  -->
 
-              <div class="new-members-com com-new-members-com d-none d-md-flex">
+              <div class="new-members-com com-new-members-com d-none d-lg-flex">
                 <!-- 1 -->
                 <button
                   class="nav-linkx-com d-flex justify-content-center align-items-center"
@@ -728,7 +728,7 @@
                 <!-- posts feed button mobile -->
                 <div class="posts-feed-button-mobile">
                   <div
-                    class="new-members-com com-new-members-com d-flex d-md-none"
+                    class="new-members-com com-new-members-com d-flex d-lg-none"
                   >
                     <!-- 1 -->
                     <button
@@ -841,7 +841,7 @@
                           <div
                             class="inner-info-coms-right d-flex align-items-center justify-content-end"
                           >
-                            <button class="saveBtn">
+                            <button class="saveBtn com-hidden">
                               <span class="saveBtnTxt"
                                 >Add New Item/Service</span
                               >
@@ -1072,7 +1072,7 @@
                           <div
                             class="inner-info-coms-right d-flex align-items-center justify-content-end"
                           >
-                            <button class="saveBtn">
+                            <button class="saveBtn com-hidden">
                               <span class="saveBtnTxt">Create Post</span>
                               <span class="saveBtnImg"
                                 ><img
@@ -1444,7 +1444,7 @@
                           <div
                             class="inner-info-coms-right d-flex align-items-center justify-content-end"
                           >
-                            <button class="saveBtn">
+                            <button class="saveBtn com-hidden">
                               <span class="saveBtnTxt"
                                 >Ask Recommendations</span
                               >
@@ -2444,40 +2444,62 @@
       });
     </script>
     <!-- main tab -->
-    <script>
-      // Select all buttons and tab content divs for this specific tab system
-      const navButtons = document.querySelectorAll(".nav-linkx-com");
-      const navTabs = [
-        document.querySelector(".nav-linkx-com-tab-one"),
-        document.querySelector(".nav-linkx-com-tab-two"),
-        document.querySelector(".nav-linkx-com-tab-three"),
-        document.querySelector(".nav-linkx-com-tab-four"),
-      ];
+       <script>
+      document.addEventListener("DOMContentLoaded", function () {
+  // Select all buttons
+  const navButtons = document.querySelectorAll(".nav-linkx-com");
+  
+  // Array of selectors for each tab panel
+  const tabSelectors = [
+    ".nav-linkx-com-tab-one",
+    ".nav-linkx-com-tab-two",
+    ".nav-linkx-com-tab-three",
+    ".nav-linkx-com-tab-four"
+  ];
+  
+  // Get tab panel elements based on the selectors
+  const navTabs = tabSelectors.map(selector => document.querySelector(selector));
+  
+  // Function to switch tabs based on clicked button index.
+  function switchNavTab(clickedIndex) {
+    // Calculate pair index:
+    // If a desktop button is clicked (indexes 0-3), pairIndex equals clickedIndex.
+    // If a mobile button is clicked (indexes 4-7), pairIndex equals clickedIndex - 4.
+    const pairIndex = clickedIndex < 4 ? clickedIndex : clickedIndex - 4;
+    
+    // Remove the active class from all buttons
+    navButtons.forEach(btn => btn.classList.remove("nav-linkx-com-active"));
+    
+    // Add active class to both buttons in the pair:
+    if (navButtons[pairIndex]) {
+      navButtons[pairIndex].classList.add("nav-linkx-com-active");
+    }
+    if (navButtons[pairIndex + 4]) {
+      navButtons[pairIndex + 4].classList.add("nav-linkx-com-active");
+    }
+    
+    // Hide all tab panels
+    navTabs.forEach(tab => {
+      if (tab) {
+        tab.style.display = "none";
+      }
+    });
+    
+    // Show the corresponding tab panel based on the pair index
+    if (navTabs[pairIndex]) {
+      navTabs[pairIndex].style.display = "block";
+    }
+  }
+  
+  // Attach click event listeners to all buttons
+  navButtons.forEach((button, index) => {
+    button.addEventListener("click", () => switchNavTab(index));
+  });
+  
+  // Set default active state for the first pair (buttons 0 and 4) and show the first tab panel.
+  switchNavTab(0);
+});
 
-      // Function to switch tabs
-      const switchNavTab = (index) => {
-        // Remove active class from all buttons
-        navButtons.forEach((btn) =>
-          btn.classList.remove("nav-linkx-com-active")
-        );
-
-        // Add active class to the clicked button
-        navButtons[index].classList.add("nav-linkx-com-active");
-
-        // Hide all tabs
-        navTabs.forEach((tab) => (tab.style.display = "none"));
-
-        // Show the corresponding tab
-        navTabs[index].style.display = "block";
-      };
-
-      // Add event listeners to all buttons
-      navButtons.forEach((button, index) => {
-        button.addEventListener("click", () => switchNavTab(index));
-      });
-
-      // Set initial active state
-      switchNavTab(0);
     </script>
     <!-- switch -->
     <script>
