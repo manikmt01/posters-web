@@ -6609,9 +6609,9 @@ header {
   top: 30px;
 }
 
-.product-list {
+/* .product-list {
   grid-template-columns: repeat(2, 1fr);
-}
+} */
 
 .company-item {
   flex-direction: row;
