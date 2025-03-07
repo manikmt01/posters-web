@@ -5036,6 +5036,7 @@ header {
   justify-content: space-between;
   height: 100%;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .noCompanyMessage {
@@ -6567,7 +6568,7 @@ header {
     padding: 12px 16px;
   }
   .postUpload-title h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .comunity-boxes,
   .sell-btn-grp {
@@ -9990,17 +9991,6 @@ select.boots-select {
   padding: 30px 0;
 }
 
-.dashboard-cover {
-  width: 100%;
-  background-image: url('../img/profile-covers.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 250px;
-  position: relative;
-  overflow: hidden;
-}
-
 .dashboardx-tabs {
   margin: 0 0px;
   min-height: 98px;
@@ -12264,7 +12254,7 @@ background-color: #954de1;
 }
 
 .chatss-right {
-  min-height: 900px;
+  min-height: 660px;
   border-radius: 10px;
   background: #f1f5f9;
   box-shadow: 6px 6px 12px 0px rgba(212, 224, 235, 0.8) inset,
@@ -12791,7 +12781,7 @@ background-color: #954de1;
     display: none;
   }
   .new-members-com.com-new-members-com {
-    gap: 20px !important;
+    gap: 40px !important;
   }
   .profile-img.profile-img-new.new-profile-com {
     max-width: 180px !important;
@@ -12899,7 +12889,7 @@ background-color: #954de1;
     gap: 20px;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .dashboard-cover.new-dashboard-cover {
@@ -12952,6 +12942,7 @@ background-color: #954de1;
   }
   .new-members-com.com-new-members-com {
     gap: 20px !important;
+    justify-content: space-between !important;
   }
   .new-members-com button {
     font-size: 16px;
@@ -13001,6 +12992,123 @@ background-color: #954de1;
 }
 
 /* ==== Sakib new 5 code end ==== */
+/* ==== Sakib new 6 code start ==== */
+.looking-btn-new {
+  display: flex;
+  width: 100%;
+  height: 44.25px;
+  padding: 16px 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #4614ca 4.12%, #954de1 89.95%);
+  box-shadow: -4px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  border: none;
+  outline: none;
+  margin: 0 auto;
+}
+.deal-iaco-products .product-container .product-hover-share {
+  position: absolute;
+  right: 15px;
+}
+.product-hover-container-neww .product-hover-share {
+  width: 24px;
+  position: absolute;
+  right: 15px;
+}
+.deal-iaco-products .product-container {
+  position: relative;
+}
+.product-hover-container-neww .new-icao-products {
+  position: static;
+}
+.hover-product-title-neww {
+  position: absolute;
+  font-size: 10px;
+  font-weight: 700;
+  color: #484848;
+  background: #ffffff;
+  box-shadow: 2px 2px 5px 0 #954de1;
+  padding: 2px 3px;
+  left: 0;
+  bottom: 70px;
+  width: 75%;
+}
+.icao-product-hover-image {
+  min-height: 275px;
+}
+.deal-iaco-products {
+  max-width: 490px;
+  padding-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.icao-products {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.new-icao-products {
+  position: relative;
+}
+.user-cinso-icao {
+  position: absolute;
+  bottom: 120px;
+  left: -40px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.user-cinso-icao img {
+  width: 20px;
+  height: 23px;
+}
+.user-cinso-icao p {
+  color: #f5f5f5;
+  font-family: Arial;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 3px;
+}
+.product-hover-container-neww {
+  background: #fff;
+  display: flex;
+  max-width: 240px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 11px 10px 16px;
+  gap: 6px;
+  position: relative;
+}
+
+@media (max-width: 575px) {
+  .deal-iaco-products {
+    width: 100%;
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .product-hover-container-neww {
+    max-width: 100%;
+  }
+}
+/* ==== Sakib new 6 code end ==== */
 
 .dashboardx {
   padding: 0px !important;
@@ -13932,6 +14040,10 @@ background-color: #954de1;
     gap: 5px !important;
     margin-left: 0px;
     padding-top: 20px;
+    justify-content: center;
+  }
+  .dashboard-cover {
+    height: 150px;
   }
   .nav-pillsx .nav-linkx.active,
   .posts-feedx .nav-linkx:hover {
@@ -13959,6 +14071,98 @@ background-color: #954de1;
 }
 /* 575px */
 @media (max-width: 575px) {
+  .company-logo-upload {
+    width: 100%;
+  }
+  .company-cover-upload {
+    width: 100%;
+  }
+  .suggestion-item {
+    padding: 4px;
+  }
+  .search-suggestions {
+    padding: 10px 14px;
+  }
+  .select-location-container {
+    padding: 16px;
+  }
+  .location-search-section {
+    padding-bottom: 110px;
+  }
+  .map-title h2 {
+    font-size: 22px;
+  }
+  .map-title p {
+    color: #000;
+    font-size: 16px;
+  }
+
+  #createCompanyProfileView .offcanvas-body {
+    margin-bottom: 30px;
+  }
+  .offcanvas-post-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #UploadScanModal .UploadScanmodal-body-content img {
+    max-width: 140px;
+  }
+  .post-actions-right {
+    justify-content: center;
+    display: flex;
+  }
+  .post-actions-left {
+    justify-content: center;
+  }
+  .post-interactions {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  .cmnt-submit {
+    padding: 8px 15px;
+  }
+  .cmnt-form input {
+    padding: 8px 20px;
+  }
+
+  .offcanvas.offcanvas-custom {
+    width: 100%;
+  }
+  .color-wraper-image button {
+    width: 20px;
+    height: 20px;
+  }
+  .input-wrapper-chats-image .form-input-chat {
+    font-size: 14px;
+  }
+  .sale-author-info h3 {
+    font-size: 16px;
+    gap: 10px;
+  }
+  .chatss-right-top h2 {
+    font-size: 16px;
+  }
+  .sale-author-info h3 img {
+    width: 16px;
+  }
+  .single-sale-interaction img {
+    width: auto;
+    height: 20px;
+  }
+  .sale-details p {
+    font-size: 12px;
+  }
+  .plumbing-title {
+    font-size: 13px;
+  }
+  .select-all-btn-plumbing {
+    font-size: 11px;
+  }
+  .postUpload-container .uploadTextcomunity,
+  .postUpload-title p {
+    font-size: 14px;
+  }
   .profile-stats-community {
     min-height: auto;
   }
@@ -14385,6 +14589,10 @@ background-color: #954de1;
     max-width: 615px;
     margin-left: auto;
   }
+  .preview-boxtwo {
+    flex-direction: column !important;
+    gap: 50px;
+  }
 }
 @media (max-width: 1600px) and (min-width: 1400px) {
   .profile-img.profile-img-new.new-profile-com {
@@ -14419,6 +14627,44 @@ background-color: #954de1;
   }
 }
 @media (max-width: 1399px) and (min-width: 1000px) {
+  .profile-menu li a,
+  .nav-profile ul li a {
+    padding: 16px 20px;
+  }
+  .nav-pillsx {
+    margin-left: 30px;
+  }
+  .dashboard-cover {
+    height: 180px;
+  }
+  .flow-location-title {
+    font-size: 20px;
+  }
+  .post-something-form-label,
+  .textarea-label,
+  .anywhere-button-wrapper button {
+    font-size: 15px;
+  }
+  .postdetails-form h3 {
+    font-size: 20px;
+  }
+  .service-select-title button {
+    font-size: 16px;
+  }
+  .slect-total h4 {
+    font-size: 16px;
+  }
+  .slect-total button {
+    font-size: 14px;
+  }
+  .comunity-btns button {
+    padding: 15px;
+    font-size: 16px;
+  }
+  .post-details .communites-contentsx button {
+    font-size: 16px;
+    padding: 12px 30px;
+  }
   .comment-box {
     padding: 12px 20px;
   }
@@ -14603,7 +14849,7 @@ background-color: #954de1;
     height: 180px;
   }
   .dashboard-cover.new-dashboard-cover {
-    height: 204px !important;
+    height: 180px !important;
   }
   .product-share img,
   .product-hover-share img {
