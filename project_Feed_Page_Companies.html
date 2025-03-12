@@ -259,7 +259,7 @@
             <div class="container">
                 <div class="row" id="dashboard-row">
                     <!-- user profile  -->
-                    <div class="col-lg-4 col-xl-3">
+                    <div class="col-lg-4 col-xl-3 d-none d-lg-block">
                         <div class="sideBar-wraper hide-scrollbar">
                             <div class="user-profile">
                                 <!-- profile card  -->
@@ -1046,16 +1046,17 @@
 <div class="stb-container stb-bar fixed-bottom">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-            <button class="btn cst-mobile-menus-active" data-bs-toggle="offcanvas" data-bs-target="#stbOffcanvas">
+            <button class="btn cst-mobile-menus-active" onclick="window.location.href='./feed-sponser-post.html';">
                 <img src="./img/home-mobile.svg" alt="Home" class="cst-mobile-menus-img">
             </button>
-            <button class="btn cst-mobile-menus" data-bs-toggle="offcanvas" data-bs-target="#stbOffcanvas">
+            <button class="btn cst-mobile-menus" onclick="window.location.href='./project_Feed_Page_Companies.html';">
                 <img src="./img/dashboard-mobile.svg" alt="Dashboard" class="cst-mobile-menus-img">
             </button>
             <button class="btn cst-mobile-menus" data-bs-toggle="offcanvas" data-bs-target="#stbOffcanvas">
                 <img src="./img/added-mobile.svg" alt="Added" class="cst-mobile-menus-img">
             </button>
-            <button class="btn cst-mobile-menus" data-bs-toggle="offcanvas" data-bs-target="#stbOffcanvas">
+            <button class="btn cst-mobile-menus" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#notificationOffcanvas" aria-controls="notificationOffcanvas">
                 <img src="./img/notification-mobile.svg" alt="Notification" class="cst-mobile-menus-img">
             </button>
             <button class="btn cst-mobile-menus" data-bs-toggle="offcanvas" data-bs-target="#stbOffcanvas">
@@ -1066,187 +1067,229 @@
 </div>
 
 <!-- Custom Offcanvas -->
-<div class="offcanvas offcanvas-bottom stb-offcanvas" tabindex="-1" id="stbOffcanvas" aria-labelledby="stbOffcanvasLabel">
+<div class="offcanvas offcanvas-bottom stb-offcanvas" tabindex="-1" id="stbOffcanvas"
+    aria-labelledby="stbOffcanvasLabel">
     <div class="offcanvas-header justify-content-end align-items-end">
-        
-         <button type="button" class="btn-closex" data-bs-dismiss="offcanvas" aria-label="Close">
+
+        <button type="button" class="btn-closex" data-bs-dismiss="offcanvas" aria-label="Close">
             <img src="./img/iconamoon_close-light.svg" alt="">
-         </button>
+        </button>
     </div>
     <div class="offcanvas-body">
-       <div>
-       <!-- Scrollable Menu List -->
-        <ul class="dropdown-menux thin-scrollbar" aria-labelledby="profileOptions">
-            <!-- item 1 -->
-                        <li>
-                            <a class="dropdown-item profile-single" href="#">
-                                <span class="profile-single-left">
-                                    <img src="./img/clarity_building-line.png" alt="">
-                                    <span>Setup Company Profile</span>
-                                </span>
-                                <span class="profile-single-right">
-                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
-                                </span>
+        <div>
+            <div class="sideBar-wraper hide-scrollbar">
+                <div class="user-profile">
+                    <!-- profile card  -->
+                    <div class="profile-card">
+                        <div class="profile-img">
+                            </span> <img src="./img/seirra.png" class="img-fluid" alt="">
+                            <a href="#" class="edit-icon">
+                                <img src="./img/edit.png" alt="">
                             </a>
-                        </li>
-                        <!-- item 2 -->
-                        <li>
-                            <a class="dropdown-item profile-single" href="#">
-                                <span class="profile-single-left">
-                                    <img src="./img/i2.png" alt="">
-                                    <span>My Ads</span>
-                                </span>
-                                <span class="profile-single-right">
-                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
-                                </span>
+                        </div>
+                        <!-- profile details -->
+                        <h2>Sierra Ferguson</h2>
+                        <a href="#" class="profile-usernamer">@sierraferguson</a>
+                        <a href="./my-profile-sponsor.html" class="profile-link">
+                            <img src="./img/link.png" alt="">
+                        </a>
+                    </div>
+
+                    <!-- profile-stats  -->
+                    <div class="profile-stats mb-4">
+                        <a data-bs-toggle="offcanvas" data-bs-target="#connectionOffcanvas"
+                            aria-controls="connectionOffcanvas" class="left-stats-box" data-tab="all">
+                            <p>Connections</p>
+                            <h3>270</h3>
+                        </a>
+                        <div class="right-stats-box">
+                            <a data-bs-toggle="offcanvas" data-bs-target="#connectionOffcanvas"
+                                aria-controls="connectionOffcanvas" class="stats-info" data-tab="in">
+                                <img src="./img/connect-right.png" alt="">
+                                <span class="connect-num">8</span>
                             </a>
-                        </li>
-                        <!-- item 3 -->
-                        <li>
-                            <a class="dropdown-item profile-single" href="#">
-                                <span class="profile-single-left">
-                                    <img src="./img/i3.png" alt="">
-                                    <span>My Communities</span>
-                                </span>
-                                <span class="profile-single-right">
-                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
-                                </span>
+                            <a data-bs-toggle="offcanvas" data-bs-target="#connectionOffcanvas"
+                                aria-controls="connectionOffcanvas" class="stats-info" data-tab="out">
+                                <img src="./img/connect.png" alt="">
+                                <span class="connect-num">8</span>
                             </a>
-                        </li>
-                        <!-- item 4 -->
-                        <li>
-                            <a class="dropdown-item profile-single" href="#">
-                                <span class="profile-single-left">
-                                    <img src="./img/i4.png" alt="">
-                                    <span>Services</span>
-                                </span>
-                                <span class="profile-single-right">
-                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
-                                </span>
-                            </a>
-                        </li>
-                        <!-- item 5 -->
-                        <li>
-                            <a class="dropdown-item profile-single" href="#">
-                                <span class="profile-single-left">
-                                    <img src="./img/i5.png" alt="">
-                                    <span>Chats</span>
-                                </span>
-                                <span class="profile-single-right">
-                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
-                                </span>
-                            </a>
-                        </li>
-                        <!-- item 6 -->
-                        <li>
-                            <a class="dropdown-item profile-single" href="#">
-                                <span class="profile-single-left">
-                                    <img src="./img/i6.png" alt="">
-                                    <span>Wallet <span class="text-blue">$89.00</span></span>
-                                </span>
-                                <span class="profile-single-right">
-                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
-                                </span>
-                            </a>
-                        </li>
-                        <!-- item 7 -->
-                        <li>
-                            <a class="dropdown-item profile-single" href="#">
-                                <span class="profile-single-left">
-                                    <img src="./img/i7.png" alt="">
-                                    <span>Invite Friends</span>
-                                </span>
-                                <span class="profile-single-right">
-                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
-                                </span>
-                            </a>
-                        </li>
-                        <!-- item 8 -->
-                        <li>
-                            <a class="dropdown-item profile-single" href="#">
-                                <span class="profile-single-left">
-                                    <img src="./img/i8.png" alt="">
-                                    <span>Faqs</span>
-                                </span>
-                                <span class="profile-single-right">
-                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
-                                </span>
-                            </a>
-                        </li>
-                        <!-- item 9 -->
-                        <li>
-                            <a class="dropdown-item profile-single" href="#">
-                                <span class="profile-single-left">
-                                    <img src="./img/i9.png" alt="">
-                                    <span>Privacy Policy</span>
-                                </span>
-                                <span class="profile-single-right">
-                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
-                                </span>
-                            </a>
-                        </li>
-                        <!-- item 10 -->
-                        <li>
-                            <a class="dropdown-item profile-single" href="#">
-                                <span class="profile-single-left">
-                                    <img src="./img/i10.png" alt="">
-                                    <span>Terms & Condition</span>
-                                </span>
-                                <span class="profile-single-right">
-                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
-                                </span>
-                            </a>
-                        </li>
-                        <!-- item 11 -->
-                        <li>
-                            <a class="dropdown-item profile-single" href="#">
-                                <span class="profile-single-left">
-                                    <img src="./img/i11.png" alt="">
-                                    <span>Contact Us</span>
-                                </span>
-                                <span class="profile-single-right">
-                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
-                                </span>
-                            </a>
-                        </li>
-                        <!-- item 12 -->
-                        <li>
-                            <a class="dropdown-item profile-single" href="#">
-                                <span class="profile-single-left">
-                                    <img src="./img/i12.png" alt="">
-                                    <span>Rate Us</span>
-                                </span>
-                                <span class="profile-single-right">
-                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
-                                </span>
-                            </a>
-                        </li>
-                        <!-- item 13 -->
-                        <li>
-                            <a class="dropdown-item profile-single" href="#">
-                                <span class="profile-single-left">
-                                    <img src="./img/i13.png" alt="">
-                                    <span>Logout</span>
-                                </span>
-                                <span class="profile-single-right">
-                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
-                                </span>
-                            </a>
-                        </li>
-                        <!-- item 14 -->
-                        <li>
-                            <a class="dropdown-item profile-single" href="#">
-                                <span class="profile-single-left">
-                                    <img src="./img/i14.png" alt="">
-                                    <span class="text-reprt">Delete Account</span>
-                                </span>
-                                <span class="profile-single-right">
-                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
-                                </span>
-                            </a>
-                        </li>
-        </ul>
-       </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Scrollable Menu List -->
+            <ul class="dropdown-menux" aria-labelledby="profileOptions">
+                <!-- item 1 -->
+                <li>
+                    <a class="dropdown-item profile-single" href="#">
+                        <span class="profile-single-left">
+                            <img src="./img/clarity_building-line.png" alt="">
+                            <span>Setup Company Profile</span>
+                        </span>
+                        <span class="profile-single-right">
+                            <img src="./img/right-arr.png" class="img-fluid" alt="">
+                        </span>
+                    </a>
+                </li>
+                <!-- item 2 -->
+                <li>
+                    <a class="dropdown-item profile-single" href="#">
+                        <span class="profile-single-left">
+                            <img src="./img/i2.png" alt="">
+                            <span>My Ads</span>
+                        </span>
+                        <span class="profile-single-right">
+                            <img src="./img/right-arr.png" class="img-fluid" alt="">
+                        </span>
+                    </a>
+                </li>
+                <!-- item 3 -->
+                <li>
+                    <a class="dropdown-item profile-single" href="#">
+                        <span class="profile-single-left">
+                            <img src="./img/i3.png" alt="">
+                            <span>My Communities</span>
+                        </span>
+                        <span class="profile-single-right">
+                            <img src="./img/right-arr.png" class="img-fluid" alt="">
+                        </span>
+                    </a>
+                </li>
+                <!-- item 4 -->
+                <li>
+                    <a class="dropdown-item profile-single" href="#">
+                        <span class="profile-single-left">
+                            <img src="./img/i4.png" alt="">
+                            <span>Services</span>
+                        </span>
+                        <span class="profile-single-right">
+                            <img src="./img/right-arr.png" class="img-fluid" alt="">
+                        </span>
+                    </a>
+                </li>
+                <!-- item 5 -->
+                <li>
+                    <a class="dropdown-item profile-single" href="#">
+                        <span class="profile-single-left">
+                            <img src="./img/i5.png" alt="">
+                            <span>Chats</span>
+                        </span>
+                        <span class="profile-single-right">
+                            <img src="./img/right-arr.png" class="img-fluid" alt="">
+                        </span>
+                    </a>
+                </li>
+                <!-- item 6 -->
+                <li>
+                    <a class="dropdown-item profile-single" href="#">
+                        <span class="profile-single-left">
+                            <img src="./img/i6.png" alt="">
+                            <span>Wallet <span class="text-blue">$89.00</span></span>
+                        </span>
+                        <span class="profile-single-right">
+                            <img src="./img/right-arr.png" class="img-fluid" alt="">
+                        </span>
+                    </a>
+                </li>
+                <!-- item 7 -->
+                <li>
+                    <a class="dropdown-item profile-single" href="#">
+                        <span class="profile-single-left">
+                            <img src="./img/i7.png" alt="">
+                            <span>Invite Friends</span>
+                        </span>
+                        <span class="profile-single-right">
+                            <img src="./img/right-arr.png" class="img-fluid" alt="">
+                        </span>
+                    </a>
+                </li>
+                <!-- item 8 -->
+                <li>
+                    <a class="dropdown-item profile-single" href="#">
+                        <span class="profile-single-left">
+                            <img src="./img/i8.png" alt="">
+                            <span>Faqs</span>
+                        </span>
+                        <span class="profile-single-right">
+                            <img src="./img/right-arr.png" class="img-fluid" alt="">
+                        </span>
+                    </a>
+                </li>
+                <!-- item 9 -->
+                <li>
+                    <a class="dropdown-item profile-single" href="#">
+                        <span class="profile-single-left">
+                            <img src="./img/i9.png" alt="">
+                            <span>Privacy Policy</span>
+                        </span>
+                        <span class="profile-single-right">
+                            <img src="./img/right-arr.png" class="img-fluid" alt="">
+                        </span>
+                    </a>
+                </li>
+                <!-- item 10 -->
+                <li>
+                    <a class="dropdown-item profile-single" href="#">
+                        <span class="profile-single-left">
+                            <img src="./img/i10.png" alt="">
+                            <span>Terms & Condition</span>
+                        </span>
+                        <span class="profile-single-right">
+                            <img src="./img/right-arr.png" class="img-fluid" alt="">
+                        </span>
+                    </a>
+                </li>
+                <!-- item 11 -->
+                <li>
+                    <a class="dropdown-item profile-single" href="#">
+                        <span class="profile-single-left">
+                            <img src="./img/i11.png" alt="">
+                            <span>Contact Us</span>
+                        </span>
+                        <span class="profile-single-right">
+                            <img src="./img/right-arr.png" class="img-fluid" alt="">
+                        </span>
+                    </a>
+                </li>
+                <!-- item 12 -->
+                <li>
+                    <a class="dropdown-item profile-single" href="#">
+                        <span class="profile-single-left">
+                            <img src="./img/i12.png" alt="">
+                            <span>Rate Us</span>
+                        </span>
+                        <span class="profile-single-right">
+                            <img src="./img/right-arr.png" class="img-fluid" alt="">
+                        </span>
+                    </a>
+                </li>
+                <!-- item 13 -->
+                <li>
+                    <a class="dropdown-item profile-single" href="#">
+                        <span class="profile-single-left">
+                            <img src="./img/i13.png" alt="">
+                            <span>Logout</span>
+                        </span>
+                        <span class="profile-single-right">
+                            <img src="./img/right-arr.png" class="img-fluid" alt="">
+                        </span>
+                    </a>
+                </li>
+                <!-- item 14 -->
+                <li>
+                    <a class="dropdown-item profile-single" href="#">
+                        <span class="profile-single-left">
+                            <img src="./img/i14.png" alt="">
+                            <span class="text-reprt">Delete Account</span>
+                        </span>
+                        <span class="profile-single-right">
+                            <img src="./img/right-arr.png" class="img-fluid" alt="">
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 

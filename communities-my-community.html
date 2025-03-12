@@ -30,7 +30,7 @@
     <header id="headerFlow" class="shadow-sm sticky-top">
       <div class="container-fluid">
         <div
-          class="row header-flow-row align-items-center justify-content-between gap-3 gap-sm-0"
+          class="row header-flow-row align-items-center justify-content-between py-2 gap-sm-0"
         >
           <div class="col-12 col-sm-5 col-lg-4">
             <div class="header-flow-left mx-auto mx-md-0">
@@ -73,7 +73,7 @@
               <div class="comunity-boxes comunity-boxes-my thin-scrollbar">
                 <!-- single item  -->
                 <div class="single-com-box new-single-com-box">
-                  <div class="custom-checkbox">
+                  <label class="custom-checkbox">
                     <a href="./community-profile-member-active.html" class="com-img position-relative"
                       ><div>
                         <img src="./img/Builders.png" alt=""
@@ -86,8 +86,8 @@ Pending</p>
   </div>
                       </div><span class="position-absolute private-tag com-hidden">private</span>
                   </a>
+                  <input type="checkbox" class="checkbox-input" />
                     <span class="com-body">
-                      <!-- titless -->
                       <span class="com-title">Builders</span>
                       <span class="com-text"
                         >Connect with other professionals
@@ -107,7 +107,7 @@ Pending</p>
                               alt=""
                               class="image-fluid"
                             />
-                            <img
+                            <!-- <img
                               src="./img/avatar.png"
                               alt=""
                               class="image-fluid"
@@ -116,7 +116,7 @@ Pending</p>
                               src="./img/avatar.png"
                               alt=""
                               class="image-fluid"
-                            />
+                            /> -->
                           </div>
                           <div class="user-comm-count-item-left-text">
                             +<span>0k</span>
@@ -131,7 +131,7 @@ Pending</p>
                         </div>
                       </div>
                     </span>
-                  </div>
+                  </label>
                   <!-- top -->
                   <div class="com-top">
                     <div class="com-top-left">
@@ -156,7 +156,7 @@ Pending</p>
                     </div>
                   </div>
                 </div>
-                <!-- single item  -->
+                                <!-- single item  -->
                 <div class="single-com-box new-single-com-box">
                   <label class="custom-checkbox">
                     <a href="./community-profile-member-active.html" class="com-img position-relative"
@@ -197,11 +197,11 @@ Pending</p>
                               alt=""
                               class="image-fluid"
                             />
-                            <img
+                            <!-- <img
                               src="./img/avatar.png"
                               alt=""
                               class="image-fluid"
-                            />
+                            /> -->
                           </div>
                           <div class="user-comm-count-item-left-text">
                             +<span>0k</span>
@@ -955,12 +955,12 @@ Approval By Postersz</p>
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body">
-                    <div class="post-log-wraper leave-post-log-wraper">
-                        <div class="leave-post-top-wrapper">
+                    <div class="post-log-wraper leave-post-log-wraper parent-modal-leve">
+                        <div class="leave-post-top-wrapper ">
                           <p>Leaving Postersz Default Community</p>
                         <span>if you are not a member of any community, Posts, Ads, Deals and Listings, will be not be visible.</span>
                         </div>
-                        <div class="d-flex justify-content-center align-items-center">
+                        <div class="d-flex justify-content-center align-items-center ">
                             <button data-bs-dismiss="modal" aria-label="Close" class="modal-button close-button">Cancel</button>
                             <button onclick="window.location.href='./login.html'" class="modal-button leave-button">OK</button>
                         </div>
@@ -986,11 +986,13 @@ Approval By Postersz</p>
               "linear-gradient(90deg, rgba(70, 20, 202, 1) 0%, rgba(149, 77, 225, 1) 100%)";
             parentBox.querySelector(".com-title").style.color = "#fff";
             parentBox.querySelector(".com-text").style.color = "#fff";
+             parentBox.querySelector(".user-comm-count-item-left-text").style.color = "#fff";
             parentBox.querySelector(".check-white").style.opacity = "1";
           } else {
             parentBox.style.background = "#f1f5f9";
             parentBox.querySelector(".com-title").style.color = "#222";
             parentBox.querySelector(".com-text").style.color = "#484848";
+            parentBox.querySelector(".user-comm-count-item-left-text").style.color = "#4a17cb";
             parentBox.querySelector(".check-white").style.opacity = "0";
           }
         });
@@ -1053,6 +1055,25 @@ Approval By Postersz</p>
           });
         });
       });
+    </script>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll(".user-comm-count").forEach(card => {
+        const avatars = card.querySelectorAll(".user-comm-count-item-left-inner img:not(.hidden)").length;
+        const countText = card.querySelector(".user-comm-count-item-left-text");
+
+        if (countText) {
+            // Reset margin to default for single avatars
+            if (avatars <= 1) {
+                countText.style.marginLeft = "10px"; // Default spacing
+            } else {
+                let marginLeftValue = avatars * -10 + 15;
+                countText.style.marginLeft = `${Math.max(marginLeftValue, 0)}px`; // Prevent extreme negative values
+            }
+        }
+    });
+});
+
     </script>
   </body>
 </html>

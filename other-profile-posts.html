@@ -308,7 +308,7 @@
           </div>
           <div class="row dashboardx-tabs align-items-center">
             <div class="col-xl-4">
-              <div class="d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center justify-content-between .edit-btns-groups-parent">
                 <div class="profile-img profile-img-new z-10">
                   <img
                     src="./img/updated-profice-image.svg"
@@ -330,7 +330,7 @@
             </div>
             <div class="col-xl-8">
               <!-- tab button  -->
-              <ul class="nav nav-pillsx" id="pills-tab" role="tablist">
+              <ul class="nav nav-pillsx d-none d-xl-flex ms-0 ps-4" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
                   <button
                     class="nav-linkx active"
@@ -366,7 +366,7 @@
             <!-- user profile  -->
             <div class="col-xl-4">
               <div class="sideBar-wrapers hide-scrollbar">
-                <div class="user-profile">
+                <div class="user-profile parent-user-profile">
                   <!-- profile card  -->
                   <div class="profile-card profile-cardx">
                     <!-- profile details -->
@@ -389,8 +389,38 @@
             </div>
             <!-- content tab  -->
             <div class="col-xl-6">
+              <ul class="nav nav-pillsx new-nav-pillsx-parent d-flex d-xl-none ms-0 pt-3 ps-2" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-linkx active"
+                    id="pills-myposts-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-myposts"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-myposts"
+                    aria-selected="true"
+                  >
+                    Posts
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-linkx"
+                    id="pills-recommends-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-recommends"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-recommends"
+                    aria-selected="false"
+                  >
+                    Recommends
+                  </button>
+                </li>
+              </ul>
               <div
-                class="main-content sideBar-wraper hide-scrollbar main-content-new"
+                class="main-content sideBar-wraper hide-scrollbar main-content-new mb-md-5"
               >
                 <div class="posts-feedx">
                   <!-- tab content  -->

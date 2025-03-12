@@ -22,16 +22,26 @@
 
 <body class="flow-body">
   <!-- header start -->
-  <header class="post-upload-header">
-    <div class="post-upload">
-      <div class="header-left">
-        <a href="./feed-sponser-post.html" class="back-arr">
-          <img src="./img/left-arr.png" alt="">
-        </a>
-        <h3>I'm Looking For</h3>
+    <header id="headerFlowNew" class="shadow-sm">
+      <div class="container-fluid">
+        <div class="row header-flow-row align-items-center">
+          <div class="col ps-0 ps-xl-auto">
+            <div class="header-flow-left">
+              <div class="header-flow-left-inner">
+                <button class="header-flow-left-inner-button">
+                  <img src="./img/left-arrow.svg" alt="left-arrow" />
+                </button>
+                <span class="mx-auto d-xl-none d-block">I’m Looking For</span>
+                <span class="me-auto d-xl-block d-none">I’m Looking For</span>
+              </div>
+            </div>
+          </div>
+          <div class="col d-xl-block d-none">
+            <div class="header-flow-right"></div>
+          </div>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
   <!-- header end -->
   <!-- main start -->
   <main>
@@ -48,7 +58,7 @@
               </div>
               <form class="create-wrapper mx-auto">
                 <!-- What you are looking for -->
-                <div class="lookingFor-input-wraper mb-3">
+                <div class="lookingFor-input-wraper lookingFor-input-wraper-newss mb-3">
                   <div class="boots-input-title">
                     <label for="whats">What you are looking for</label>
                   </div>
@@ -72,7 +82,7 @@
                   </div>
                 </div>
                 <!-- info -->
-                <div class="lookingFor-input-wraper">
+                <div class="lookingFor-input-wraper lookingFor-input-wraper-newss">
                   <div class="boots-input-title">
                     <label for="infos-textarea">Info</label>
                   </div>
@@ -111,39 +121,55 @@
                       <form class="">
                         <div class="row">
                           <!-- lcoation -->
-                          <div class="col-12 col-md-3 mt-3">
-                            <div class="boots-input-title">
-                              <label for="loaction">Location</label>
+                         <div class="col-12 col-sm-3 mt-3">
+                              <div class="boots-input-title">
+                                <label for="loaction">Location</label>
+                              </div>
                             </div>
-                          </div>
-                          <div class="col-12 col-md-6 mt-3">
-                            <div class="input-group boots-input w-full">
-                              <span class="input-group-icon">
-                                <img src="./img/location-new.svg" alt="calendar icon" />
-                              </span>
-                              <div class="divider-input"></div>
-                              <input type="text" class="form-control" id="loaction" placeholder="Location" />
+                            <div class="col-8 col-sm-6 mt-3">
+                              <div class="input-group boots-input w-full">
+                                <span class="input-group-icon">
+                                  <img
+                                    src="./img/location-new.svg"
+                                    alt="calendar icon"
+                                  />
+                                </span>
+                                <div class="divider-input"></div>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="loaction"
+                                  placeholder="Location"
+                                />
+                              </div>
                             </div>
-                          </div>
-                          <div class="col-12 col-md-3 mt-3">
-                            <div class="dropdown">
-                              <button class="btn btn-secondary dropdown-toggle boots-select" type="button"
-                                id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                5 MI
-                              </button>
-                              <ul class="boots-dropdown-menu dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <li>
-                                  <a class="dropdown-item" href="#">5 MI</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">10 MI</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">15 MI</a>
-                                </li>
-                              </ul>
+                            <div class="col-4 col-sm-3 mt-3">
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-secondary dropdown-toggle boots-select"
+                                  type="button"
+                                  id="dropdownMenuButton"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  5 MI
+                                </button>
+                                <ul
+                                  class="boots-dropdown-menu dropdown-menu"
+                                  aria-labelledby="dropdownMenuButton"
+                                >
+                                  <li>
+                                    <a class="dropdown-item" href="#">5 MI</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">10 MI</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">15 MI</a>
+                                  </li>
+                                </ul>
+                              </div>
                             </div>
-                          </div>
                         </div>
                       </form>
                     </div>

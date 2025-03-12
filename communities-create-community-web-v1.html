@@ -139,7 +139,7 @@ Pending</p>
                               alt=""
                               class="image-fluid"
                             />
-                            <img
+                            <!-- <img
                               src="./img/avatar.png"
                               alt=""
                               class="image-fluid"
@@ -148,7 +148,7 @@ Pending</p>
                               src="./img/avatar.png"
                               alt=""
                               class="image-fluid"
-                            />
+                            /> -->
                           </div>
                           <div class="user-comm-count-item-left-text">
                             +<span>0k</span>
@@ -832,11 +832,13 @@ Approval By Postersz</p>
               "linear-gradient(90deg, rgba(70, 20, 202, 1) 0%, rgba(149, 77, 225, 1) 100%)";
             parentBox.querySelector(".com-title").style.color = "#fff";
             parentBox.querySelector(".com-text").style.color = "#fff";
+             parentBox.querySelector(".user-comm-count-item-left-text").style.color = "#fff";
             parentBox.querySelector(".check-white").style.opacity = "1";
           } else {
             parentBox.style.background = "#f1f5f9";
             parentBox.querySelector(".com-title").style.color = "#222";
             parentBox.querySelector(".com-text").style.color = "#484848";
+            parentBox.querySelector(".user-comm-count-item-left-text").style.color = "#4a17cb";
             parentBox.querySelector(".check-white").style.opacity = "0";
           }
         });
@@ -921,6 +923,25 @@ Approval By Postersz</p>
           });
         });
       });
+    </script>
+        <script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll(".user-comm-count").forEach(card => {
+        const avatars = card.querySelectorAll(".user-comm-count-item-left-inner img:not(.hidden)").length;
+        const countText = card.querySelector(".user-comm-count-item-left-text");
+
+        if (countText) {
+            // Reset margin to default for single avatars
+            if (avatars <= 1) {
+                countText.style.marginLeft = "10px"; // Default spacing
+            } else {
+                let marginLeftValue = avatars * -10 + 15;
+                countText.style.marginLeft = `${Math.max(marginLeftValue, 0)}px`; // Prevent extreme negative values
+            }
+        }
+    });
+});
+
     </script>
   </body>
 </html>

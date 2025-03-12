@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon  -->
+    <link rel="icon" href="./img/favicon.png">
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>My Profile_Sponsored</title>
+</head>
+
+<body class="flow-body">
+    <header class="feed-header">
+        <div class="destop-nav d-none d-lg-flex justify-content-between align-items-center">
+            <div class="header-left">
+                <div class="logo">
+                    <img src="./img/logo.png" class="img-fluid" alt="Logo">
+                </div>
+                 <a href="#" class="nav-location">
+                    <img src="./img/location.png" class="img-fluid" alt="Menu">
+                    <span>New York, NY</span>
+                </a>
+            </div>
+            <div class="header-right">
+                <div class="seach">
+                    <form action="" class="navSearch">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <button type="submit" class="search-icon"><img src="./img/search.png" class="img-fluid"
+                                alt="Search"></button>
+                    </form>
+                </div>
+                <div>
+                    <button class="nav-btn active-btn">
+                        <img src="./img/home.png" class="img-fluid" alt="Home">
+                    </button>
+                </div>
+                <div>
+                   <button onclick="window.location.href='./project_Feed_Page_Companies.html';" class="nav-btn dashboard-btn">
+                        <img src="./img/dashboard.png" class="img-fluid" alt="Dashboard">
+                    </button>
+                </div>
+                <div>
+                    <button class="nav-btn notification-btn" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#notificationOffcanvas" aria-controls="notificationOffcanvas">
+                        <img src="./img/notification-fill.png" class="img-fluid" alt="notification">
+                    </button>
+                </div>
+                <!-- nav profile img  -->
+                <div class="nav-profile">
+                    <button class="profile-btn" id="profileOptions" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./img/avatar.png" class="img-fluid" alt="Profile">
+                    </button>
+                    <ul class="dropdown-menu thin-scrollbar" aria-labelledby="profileOptions">
+                        <!-- item 1 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/clarity_building-line.png" alt="">
+                                    <span>Setup Company Profile</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 2 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i2.png" alt="">
+                                    <span>My Ads</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 3 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i3.png" alt="">
+                                    <span>My Communities</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 4 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i4.png" alt="">
+                                    <span>Services</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 5 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i5.png" alt="">
+                                    <span>Chats</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 6 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i6.png" alt="">
+                                    <span>Wallet <span class="text-blue">$89.00</span></span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 7 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i7.png" alt="">
+                                    <span>Invite Friends</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 8 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i8.png" alt="">
+                                    <span>Faqs</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 9 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i9.png" alt="">
+                                    <span>Privacy Policy</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 10 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i10.png" alt="">
+                                    <span>Terms & Condition</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 11 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i11.png" alt="">
+                                    <span>Contact Us</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 12 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i12.png" alt="">
+                                    <span>Rate Us</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 13 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i13.png" alt="">
+                                    <span>Logout</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 14 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i14.png" alt="">
+                                    <span class="text-reprt">Delete Account</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li></span></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-nav d-flex d-lg-none justify-content-between align-items-center">
+    <a href="index.html" class="d-block mobile-logo">
+        <img src="./img/favicon.png" alt="logo" class="img-fluid">
+    </a>
+    <a href="index.html" class="d-block mobile-logo2">
+        <img src="./img/m-logo-2.png" alt="logo" class="img-fluid">
+    </a>
+
+    <!-- Search Button -->
+    <button class="d-block mobile-search" id="mobileSearchButton">
+        <img src="./img/search2.png" alt="search" class="img-fluid">
+    </button>
+
+    <!-- Search Box (Initially Hidden) -->
+    <div class="mobile-nav-search-box" id="mobileNavSearchBox">
+        <input type="text" class="mobile-nav-search-input" placeholder="Search...">
+    </div>
+</div>
+
+    </header>
+    <main>
+        <section class="header-profile-sponsor">
+            <div class="container">
+                <div class="row header-flow-row align-items-center">
+                    <div class="col ps-0 ps-xl-auto">
+                        <div class="header-flow-left ps-3">
+                            <div class="header-flow-left-inner">
+                                <button class="header-flow-left-inner-button">
+                                    <img src="./img/left-arrow.svg" alt="left-arrow" />
+                                </button>
+                                <span class="mx-auto d-xl-none d-block">User Profile</span>
+                                <span class="me-auto d-xl-block d-none">User Profile</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-xl-block d-none">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="dashboardx">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="dashboard-cover">
+
+                        </div>
+                    </div>
+                </div>
+             <div class="row dashboardx-tabs align-items-center">
+          <div class="col-lg-4">
+            <div class="d-flex align-items-center justify-content-end profile-img-new-parent">
+              <div class="profile-img profile-img-new z-10">
+                <img src="./img/updated-profice-image.svg" class="img-fluid" alt="" />
+              </div>
+              <button class="edit-btns morphisum-inner">
+                <img src="./img/Edit.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <!-- tab button  -->
+            <ul class="nav nav-pillsx d-none d-lg-flex ms-0" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx active" id="pills-myposts-tab" data-bs-toggle="pill" data-bs-target="#pills-myposts"
+                  type="button" role="tab" aria-controls="pills-myposts" aria-selected="false">
+                  My Posts
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx" id="pills-saved-tab" data-bs-toggle="pill" data-bs-target="#pills-saved"
+                  type="button" role="tab" aria-controls="pills-saved" aria-selected="false">
+                  Saved
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx " id="pills-drafts-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-drafts" type="button" role="tab" aria-controls="pills-drafts"
+                  aria-selected="true">
+                  Drafts
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx" id="pills-recommends-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-recommends" type="button" role="tab" aria-controls="pills-recommends"
+                  aria-selected="false">
+                  Recommends
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+                <div class="row" id="dashboard-row">
+                    <!-- user profile  -->
+                    <div class="col-lg-4">
+                        <div class="sideBar-wrapers hide-scrollbar">
+                            <div class="user-profile parent-user-profile">
+                                <!-- profile card  -->
+                                <div class="profile-card profile-cardx">
+                                   
+                                    <!-- profile details -->
+                                    <h2>Sierra Ferguson</h2>
+                                    <p>@sierraferguson</p>
+                                </div>
+                                <div class="profile-divider"></div>
+                                <div class="profile-stats-community">
+                                    <div class="profile-stats-names d-flex align-items-center">
+                                        <h3 class="profile-stats-names-h3">Community</h3>
+                                        <span>2</span>
+                                    </div>
+                                    <div class="refferance-tagss refferance-tagss-parent">
+                                        <button>Conference</button>
+                                        <button>Network Engineer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content tab  -->
+                    <div class="col-lg-8 col-xl-6">
+                          <ul class="nav nav-pillsx new-nav-pillsx-parent d-flex d-lg-none ms-0 pt-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx active" id="pills-myposts-tab" data-bs-toggle="pill" data-bs-target="#pills-myposts"
+                  type="button" role="tab" aria-controls="pills-myposts" aria-selected="false">
+                  My Posts
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx" id="pills-saved-tab" data-bs-toggle="pill" data-bs-target="#pills-saved"
+                  type="button" role="tab" aria-controls="pills-saved" aria-selected="false">
+                  Saved
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx" id="pills-drafts-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-drafts" type="button" role="tab" aria-controls="pills-drafts"
+                  aria-selected="true">
+                  Drafts
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx" id="pills-recommends-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-recommends" type="button" role="tab" aria-controls="pills-recommends"
+                  aria-selected="false">
+                  Recommends
+                </button>
+              </li>
+            </ul>
+                        <div class="main-content sideBar-wraper hide-scrollbar main-content-new mb-md-5">
+                            <div class="posts-feedx">
+                                
+                                <!-- tab content  -->
+                                <div class="tab-content" id="pills-tabContent">
+                                    <!-- My post tab content  -->
+                                    <div class="tab-pane fade show active" id="pills-myposts" role="tabpanel"
+                                        aria-labelledby="pills-myposts-tab">
+                                          <div class="post-cards">
+                                            <div>
+                                                <!-- post list  -->
+                                                <div class="post-card-litss d-flex align-items-center">
+                                                    <button class="post-card-litss-buttons-active">
+                                                        Posts (1)
+                                                    </button>
+                                                    <button class="post-card-litss-buttons">
+                                                        Companies (1)
+                                                    </button>
+                                                    <button class="post-card-litss-buttons">
+                                                      Listing (2)
+                                                    </button>
+                                                    <button class="post-card-litss-buttons">
+                                                      Deals (2)
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- single post card  -->
+                                            <div class="post-card">
+                                                <!-- author  -->
+                                                <div class="post-author">
+                                                    <div class="author-img">
+                                                        <img src="./img/mail.png"  class="mail-img" alt="">
+                                                        <img src="./img/mail-avatar.png" class="mail-avatar" alt="">
+                                                    </div>
+                                                    <div class="author-info">
+                                                        <h3><a href="">Mail On Broadway</a><span><img src="./img/checkwhiteblue.png" alt=""></span></h3>
+                                                        <div class="author-loc">
+                                                            <img src="./img/ion_location.png" alt="">
+                                                            <span>New York, NY <span class="post-time">1hr</span></span>
+                                                        </div>
+                                                        <ul class="posted-by">
+                                                            <li>Posted by: <span>Oscar Novelli</span></li>
+                                                            <li>Claimed by: <span>Owner</span></li>
+                                                        </ul>
+                                                        <p class="post-text">Quality from Start to Finish... American Windows and Glass</p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- post img  -->
+                                                <div class="post-img">
+                                                    <img src="./img/p1.png" class="img-fluid mx-auto" alt="">
+                                                    <div class="ribbon">
+                                                        For Sale                                                    </div>
+                                                </div>
+                                                <!-- post footer  -->
+                                                <div class="post-footer">
+                                                    <!-- Post Tags -->
+                                                    <div class="post-tags hide-scrollbar">
+                                                        <a href="#">Window Replacement</a>
+                                                        <a href="#">Glass Repair</a>
+                                                        <a href="#">Home Improvement</a>
+                                                        <a href="#">Window Install</a>
+                                                        <a href="#">Glazing</a>
+                                                    </div>
+                                                    <!-- Post Interactions -->
+                                                    <div class="post-interactions">
+                                                        <div class="post-actions-left">
+                                                            <a href="#" class="interaction-item">
+                                                                <img src="./img/love.png" alt="Like">
+                                                                <span>100</span>
+                                                            </a>
+                                                            <a href="#" class="interaction-item">
+                                                                <img src="./img/cmnt.png" alt="Comment">
+                                                                <span>100</span>
+                                                            </a>
+                                                            <a href="#" class="interaction-item">
+                                                                <img src="./img/share.png" alt="Share">
+                                                            </a>
+                                                        </div>
+                                                        <div class="post-actions-right">
+                                                        <button
+                                  href="#"
+                                  class="ads-radio-bottom-btn-email radio-btn-clr-one"
+                                >
+   
+                                  <span>Boost</span>
+                                </button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- post play  -->
+                                                    <button class=" postplay-new-feed-color">
+                                                        <div class="postplay-count-wraper">
+                                                            <img src="./img/added-circle.svg" alt="">
+                                                            
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <!-- Post Actions -->
+                                                <div class="post-actions post-actions-parent d-flex align-items-start justify-content-between">
+                                                    <!-- View Action -->
+                                                    <a href="#" class="action-item">
+                                                        <img src="./img/eye.png" alt="View">
+                                                        <span class="action-item-count">641</span>
+                                                    </a>
+                                                    <!-- Like Action -->
+                                                    <a href="#" class="action-item">
+                                                        <img src="./img/like.png" alt="Like">
+                                                        <span class="action-item-count">35</span>
+                                                    </a>
+                                                    <!-- More Options Dropdown -->
+                                                    <div class="dropdown action-item">
+                                                        <button class="btn btn-link p-0 dropdown-toggle" type="button" id="postActionsDropdown1"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <img src="./img/dots.png" alt="More Options">
+                                                        </button>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="postActionsDropdown1">
+                                                            <li><a class="dropdown-item dltbbttnn" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+  <path d="M13.5 14.25C13.5 14.8467 13.2629 15.419 12.841 15.841C12.419 16.2629 11.8467 16.5 11.25 16.5H6C5.40326 16.5 4.83097 16.2629 4.40901 15.841C3.98705 15.419 3.75 14.8467 3.75 14.25V5.25H3V3H6.375L7.125 2.25H10.125L10.875 3H14.25V5.25H13.5V14.25ZM4.5 5.25V14.25C4.5 14.6478 4.65804 15.0294 4.93934 15.3107C5.22064 15.592 5.60218 15.75 6 15.75H11.25C11.6478 15.75 12.0294 15.592 12.3107 15.3107C12.592 15.0294 12.75 14.6478 12.75 14.25V5.25H4.5ZM13.5 4.5V3.75H10.5L9.75 3H7.5L6.75 3.75H3.75V4.5H13.5ZM6 6.75H6.75V14.25H6V6.75ZM10.5 6.75H11.25V14.25H10.5V6.75Z" fill="#FF2828" stroke="#FF2828" stroke-width="0.2"/>
+</svg> <span class="dltbbttnn">Delete</span></a></li>
+                                                            <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5629 15.3297C15.8734 15.3297 16.1254 15.5817 16.1254 15.8922C16.1254 16.2027 15.8734 16.4547 15.5629 16.4547H10.1231C9.81261 16.4547 9.56061 16.2027 9.56061 15.8922C9.56061 15.5817 9.81261 15.3297 10.1231 15.3297H15.5629ZM12.0872 2.74023C12.1247 2.76948 13.3795 3.74448 13.3795 3.74448C13.8355 4.01598 14.1917 4.50123 14.3267 5.07573C14.461 5.64423 14.3635 6.23073 14.0507 6.72648C14.0486 6.72979 14.0465 6.73305 14.0393 6.74277L14.0337 6.75028C13.9829 6.81719 13.7622 7.09623 12.6484 8.49167C12.6381 8.50996 12.6264 8.52709 12.6136 8.54373C12.5948 8.56826 12.5743 8.59082 12.5525 8.61135C12.4765 8.707 12.3963 8.80751 12.3119 8.91318L12.141 9.12728C11.7883 9.56901 11.3699 10.0928 10.8735 10.7141L10.6188 11.0329C9.66056 12.2323 8.43333 13.7679 6.86121 15.7347C6.51696 16.1637 6.00096 16.4135 5.44671 16.4202L2.71746 16.4547H2.70996C2.44971 16.4547 2.22321 16.2762 2.16246 16.022L1.54821 13.4187C1.42146 12.8795 1.54746 12.323 1.89321 11.891L8.95821 3.05448C8.96121 3.05148 8.96346 3.04773 8.96646 3.04473C9.74121 2.11848 11.1422 1.98198 12.0872 2.74023ZM8.1705 5.84025L2.77146 12.5937C2.64321 12.7542 2.59596 12.9612 2.64321 13.16L3.15396 15.3237L5.43321 15.2952C5.64996 15.293 5.85021 15.1962 5.98296 15.0312C6.66657 14.1759 7.52575 13.1009 8.4091 11.9955L8.72162 11.6044L9.03468 11.2127C9.86312 10.1759 10.6815 9.15155 11.3663 8.29415L8.1705 5.84025ZM9.83271 3.76248L8.87325 4.96125L12.0688 7.41445C12.6839 6.64402 13.0885 6.1366 13.126 6.08823C13.249 5.88873 13.297 5.60673 13.2325 5.33523C13.1665 5.05698 12.9932 4.82073 12.7435 4.66998C12.6902 4.63323 11.4265 3.65223 11.3875 3.62148C10.912 3.24048 10.2182 3.30648 9.83271 3.76248Z" fill="black"/>
+</svg> Edit</a></li>
+                                                           
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- single post card  -->
+                                            <div class="post-card">
+                                                <!-- author  -->
+                                                <div class="post-author">
+                                                    <div class="author-img">
+                                                        <img src="./img/mail.png"  class="mail-img" alt="">
+                                                        <img src="./img/mail-avatar.png" class="mail-avatar" alt="">
+                                                    </div>
+                                                    <div class="author-info">
+                                                        <h3><a href="">Mail On Broadway</a><span><img src="./img/checkwhiteblue.png" alt=""></span></h3>
+                                                        <div class="author-loc">
+                                                            <img src="./img/ion_location.png" alt="">
+                                                            <span>New York, NY <span class="post-time">1hr</span></span>
+                                                        </div>
+                                                        <ul class="posted-by">
+                                                            <li>Posted by: <span>Oscar Novelli</span></li>
+                                                            <li>Claimed by: <span>Owner</span></li>
+                                                        </ul>
+                                                        <p class="post-text">Protect your greatest Investment. Your Home</p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- post img  -->
+                                                <div class="post-img">
+                                                    <img src="./img/protect.png" class="img-fluid mx-auto" alt="">
+                                                    <div class="ribbon">
+                                                        For Sale                                                    </div>
+                                                </div>
+                                                <!-- post footer  -->
+                                                <div class="post-footer">
+                                                    <!-- Post Tags -->
+                                                    <div class="post-tags hide-scrollbar">
+                                                        <a href="#">Window Replacement</a>
+                                                        <a href="#">Glass Repair</a>
+                                                        <a href="#">Home Improvement</a>
+                                                        <a href="#">Window Install</a>
+                                                        <a href="#">Glazing</a>
+                                                    </div>
+                                                    <!-- Post Interactions -->
+                                                    <div class="post-interactions">
+                                                        <div class="post-actions-left">
+                                                            <a href="#" class="interaction-item">
+                                                                <img src="./img/love.png" alt="Like">
+                                                                <span>100</span>
+                                                            </a>
+                                                            <a href="#" class="interaction-item">
+                                                                <img src="./img/cmnt.png" alt="Comment">
+                                                                <span>100</span>
+                                                            </a>
+                                                            <a href="#" class="interaction-item">
+                                                                <img src="./img/share.png" alt="Share">
+                                                            </a>
+                                                        </div>
+                                                        <div class="post-actions-right">
+                                                          <button
+                                  href="#"
+                                  class="ads-radio-bottom-btn-email radio-btn-clr-one"
+                                >
+   
+                                  <span>Boost</span>
+                                </button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- post play  -->
+                                                    <button class=" postplay-new-feed-color">
+                                                        <div class="postplay-count-wraper">
+                                                            <img src="./img/added-circle.svg" alt="">
+                                                            
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <!-- Post Actions -->
+                                                <div class="post-actions post-actions-parent d-flex align-items-start justify-content-between">
+                                                    <!-- View Action -->
+                                                    <a href="#" class="action-item">
+                                                        <img src="./img/eye.png" alt="View">
+                                                        <span class="action-item-count">641</span>
+                                                    </a>
+                                                    <!-- Like Action -->
+                                                    <a href="#" class="action-item">
+                                                        <img src="./img/like.png" alt="Like">
+                                                        <span class="action-item-count">35</span>
+                                                    </a>
+                                                    <!-- More Options Dropdown -->
+                                                    <div class="dropdown action-item">
+                                                        <button class="btn btn-link p-0 dropdown-toggle" type="button" id="postActionsDropdown1"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <img src="./img/dots.png" alt="More Options">
+                                                        </button>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="postActionsDropdown1">
+                                                            <li><a class="dropdown-item dltbbttnn" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+  <path d="M13.5 14.25C13.5 14.8467 13.2629 15.419 12.841 15.841C12.419 16.2629 11.8467 16.5 11.25 16.5H6C5.40326 16.5 4.83097 16.2629 4.40901 15.841C3.98705 15.419 3.75 14.8467 3.75 14.25V5.25H3V3H6.375L7.125 2.25H10.125L10.875 3H14.25V5.25H13.5V14.25ZM4.5 5.25V14.25C4.5 14.6478 4.65804 15.0294 4.93934 15.3107C5.22064 15.592 5.60218 15.75 6 15.75H11.25C11.6478 15.75 12.0294 15.592 12.3107 15.3107C12.592 15.0294 12.75 14.6478 12.75 14.25V5.25H4.5ZM13.5 4.5V3.75H10.5L9.75 3H7.5L6.75 3.75H3.75V4.5H13.5ZM6 6.75H6.75V14.25H6V6.75ZM10.5 6.75H11.25V14.25H10.5V6.75Z" fill="#FF2828" stroke="#FF2828" stroke-width="0.2"/>
+</svg> <span class="dltbbttnn">Delete</span></a></li>
+                                                            <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5629 15.3297C15.8734 15.3297 16.1254 15.5817 16.1254 15.8922C16.1254 16.2027 15.8734 16.4547 15.5629 16.4547H10.1231C9.81261 16.4547 9.56061 16.2027 9.56061 15.8922C9.56061 15.5817 9.81261 15.3297 10.1231 15.3297H15.5629ZM12.0872 2.74023C12.1247 2.76948 13.3795 3.74448 13.3795 3.74448C13.8355 4.01598 14.1917 4.50123 14.3267 5.07573C14.461 5.64423 14.3635 6.23073 14.0507 6.72648C14.0486 6.72979 14.0465 6.73305 14.0393 6.74277L14.0337 6.75028C13.9829 6.81719 13.7622 7.09623 12.6484 8.49167C12.6381 8.50996 12.6264 8.52709 12.6136 8.54373C12.5948 8.56826 12.5743 8.59082 12.5525 8.61135C12.4765 8.707 12.3963 8.80751 12.3119 8.91318L12.141 9.12728C11.7883 9.56901 11.3699 10.0928 10.8735 10.7141L10.6188 11.0329C9.66056 12.2323 8.43333 13.7679 6.86121 15.7347C6.51696 16.1637 6.00096 16.4135 5.44671 16.4202L2.71746 16.4547H2.70996C2.44971 16.4547 2.22321 16.2762 2.16246 16.022L1.54821 13.4187C1.42146 12.8795 1.54746 12.323 1.89321 11.891L8.95821 3.05448C8.96121 3.05148 8.96346 3.04773 8.96646 3.04473C9.74121 2.11848 11.1422 1.98198 12.0872 2.74023ZM8.1705 5.84025L2.77146 12.5937C2.64321 12.7542 2.59596 12.9612 2.64321 13.16L3.15396 15.3237L5.43321 15.2952C5.64996 15.293 5.85021 15.1962 5.98296 15.0312C6.66657 14.1759 7.52575 13.1009 8.4091 11.9955L8.72162 11.6044L9.03468 11.2127C9.86312 10.1759 10.6815 9.15155 11.3663 8.29415L8.1705 5.84025ZM9.83271 3.76248L8.87325 4.96125L12.0688 7.41445C12.6839 6.64402 13.0885 6.1366 13.126 6.08823C13.249 5.88873 13.297 5.60673 13.2325 5.33523C13.1665 5.05698 12.9932 4.82073 12.7435 4.66998C12.6902 4.63323 11.4265 3.65223 11.3875 3.62148C10.912 3.24048 10.2182 3.30648 9.83271 3.76248Z" fill="black"/>
+</svg> Edit</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Saved tab content  -->
+                                    <div class="tab-pane fade" id="pills-saved" role="tabpanel"
+                                        aria-labelledby="pills-saved-tab">
+                                       <div class="post-cards">
+                                            <div>
+                                                <!-- post list  -->
+                                                <div class="post-card-litss d-flex align-items-center">
+                                                    <button class="post-card-litss-buttons-active">
+                                                        Posts (1)
+                                                    </button>
+                                                    <button class="post-card-litss-buttons">
+                                                        Companies (1)
+                                                    </button>
+                                                    <button class="post-card-litss-buttons">
+                                                      Listing (2)
+                                                    </button>
+                                                    <button class="post-card-litss-buttons">
+                                                      Deals (2)
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- single post card  -->
+                                            <div class="post-card">
+                                                <!-- author  -->
+                                                <div class="post-author">
+                                                    <div class="author-img">
+                                                        <img src="./img/mail.png"  class="mail-img" alt="">
+                                                        <img src="./img/mail-avatar.png" class="mail-avatar" alt="">
+                                                    </div>
+                                                    <div class="author-info">
+                                                        <h3><a href="">Mail On Broadway</a><span><img src="./img/checkwhiteblue.png" alt=""></span></h3>
+                                                        <div class="author-loc">
+                                                            <img src="./img/ion_location.png" alt="">
+                                                            <span>New York, NY <span class="post-time">1hr</span></span>
+                                                        </div>
+                                                        <ul class="posted-by">
+                                                            <li>Posted by: <span>Oscar Novelli</span></li>
+                                                            <li>Claimed by: <span>Owner</span></li>
+                                                        </ul>
+                                                        <p class="post-text">Quality from Start to Finish... American Windows and Glass</p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- post img  -->
+                                                <div class="post-img">
+                                                    <img src="./img/p1.png" class="img-fluid mx-auto" alt="">
+                                                    <div class="ribbon">
+                                                        For Sale                                                    </div>
+                                                </div>
+                                                <!-- post footer  -->
+                                                <div class="post-footer">
+                                                    <!-- Post Tags -->
+                                                    <div class="post-tags hide-scrollbar">
+                                                        <a href="#">Window Replacement</a>
+                                                        <a href="#">Glass Repair</a>
+                                                        <a href="#">Home Improvement</a>
+                                                        <a href="#">Window Install</a>
+                                                        <a href="#">Glazing</a>
+                                                    </div>
+                                                    <!-- Post Interactions -->
+                                                    <div class="post-interactions">
+                                                        <div class="post-actions-left">
+                                                            <a href="#" class="interaction-item">
+                                                                <img src="./img/love.png" alt="Like">
+                                                                <span>100</span>
+                                                            </a>
+                                                            <a href="#" class="interaction-item">
+                                                                <img src="./img/cmnt.png" alt="Comment">
+                                                                <span>100</span>
+                                                            </a>
+                                                            <a href="#" class="interaction-item">
+                                                                <img src="./img/share.png" alt="Share">
+                                                            </a>
+                                                        </div>
+                                                        <div class="post-actions-right">
+                                                        <button
+                                  href="#"
+                                  class="ads-radio-bottom-btn-email radio-btn-clr-one"
+                                >
+   
+                                  <span>Boost</span>
+                                </button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- post play  -->
+                                                    <button class=" postplay-new-feed-color">
+                                                        <div class="postplay-count-wraper">
+                                                            <img src="./img/added-circle.svg" alt="">
+                                                            
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <!-- Post Actions -->
+                                                <div class="post-actions post-actions-parent d-flex align-items-start justify-content-between">
+                                                    <!-- View Action -->
+                                                    <a href="#" class="action-item">
+                                                        <img src="./img/eye.png" alt="View">
+                                                        <span class="action-item-count">641</span>
+                                                    </a>
+                                                    <!-- Like Action -->
+                                                    <a href="#" class="action-item">
+                                                        <img src="./img/like.png" alt="Like">
+                                                        <span class="action-item-count">35</span>
+                                                    </a>
+                                                    <!-- More Options Dropdown -->
+                                                    <div class="dropdown action-item">
+                                                        <button class="btn btn-link p-0 dropdown-toggle" type="button" id="postActionsDropdown1"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <img src="./img/dots.png" alt="More Options">
+                                                        </button>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="postActionsDropdown1">
+                                                            <li><a class="dropdown-item dltbbttnn" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+  <path d="M13.5 14.25C13.5 14.8467 13.2629 15.419 12.841 15.841C12.419 16.2629 11.8467 16.5 11.25 16.5H6C5.40326 16.5 4.83097 16.2629 4.40901 15.841C3.98705 15.419 3.75 14.8467 3.75 14.25V5.25H3V3H6.375L7.125 2.25H10.125L10.875 3H14.25V5.25H13.5V14.25ZM4.5 5.25V14.25C4.5 14.6478 4.65804 15.0294 4.93934 15.3107C5.22064 15.592 5.60218 15.75 6 15.75H11.25C11.6478 15.75 12.0294 15.592 12.3107 15.3107C12.592 15.0294 12.75 14.6478 12.75 14.25V5.25H4.5ZM13.5 4.5V3.75H10.5L9.75 3H7.5L6.75 3.75H3.75V4.5H13.5ZM6 6.75H6.75V14.25H6V6.75ZM10.5 6.75H11.25V14.25H10.5V6.75Z" fill="#FF2828" stroke="#FF2828" stroke-width="0.2"/>
+</svg> <span class="dltbbttnn">Delete</span></a></li>
+                                                            <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5629 15.3297C15.8734 15.3297 16.1254 15.5817 16.1254 15.8922C16.1254 16.2027 15.8734 16.4547 15.5629 16.4547H10.1231C9.81261 16.4547 9.56061 16.2027 9.56061 15.8922C9.56061 15.5817 9.81261 15.3297 10.1231 15.3297H15.5629ZM12.0872 2.74023C12.1247 2.76948 13.3795 3.74448 13.3795 3.74448C13.8355 4.01598 14.1917 4.50123 14.3267 5.07573C14.461 5.64423 14.3635 6.23073 14.0507 6.72648C14.0486 6.72979 14.0465 6.73305 14.0393 6.74277L14.0337 6.75028C13.9829 6.81719 13.7622 7.09623 12.6484 8.49167C12.6381 8.50996 12.6264 8.52709 12.6136 8.54373C12.5948 8.56826 12.5743 8.59082 12.5525 8.61135C12.4765 8.707 12.3963 8.80751 12.3119 8.91318L12.141 9.12728C11.7883 9.56901 11.3699 10.0928 10.8735 10.7141L10.6188 11.0329C9.66056 12.2323 8.43333 13.7679 6.86121 15.7347C6.51696 16.1637 6.00096 16.4135 5.44671 16.4202L2.71746 16.4547H2.70996C2.44971 16.4547 2.22321 16.2762 2.16246 16.022L1.54821 13.4187C1.42146 12.8795 1.54746 12.323 1.89321 11.891L8.95821 3.05448C8.96121 3.05148 8.96346 3.04773 8.96646 3.04473C9.74121 2.11848 11.1422 1.98198 12.0872 2.74023ZM8.1705 5.84025L2.77146 12.5937C2.64321 12.7542 2.59596 12.9612 2.64321 13.16L3.15396 15.3237L5.43321 15.2952C5.64996 15.293 5.85021 15.1962 5.98296 15.0312C6.66657 14.1759 7.52575 13.1009 8.4091 11.9955L8.72162 11.6044L9.03468 11.2127C9.86312 10.1759 10.6815 9.15155 11.3663 8.29415L8.1705 5.84025ZM9.83271 3.76248L8.87325 4.96125L12.0688 7.41445C12.6839 6.64402 13.0885 6.1366 13.126 6.08823C13.249 5.88873 13.297 5.60673 13.2325 5.33523C13.1665 5.05698 12.9932 4.82073 12.7435 4.66998C12.6902 4.63323 11.4265 3.65223 11.3875 3.62148C10.912 3.24048 10.2182 3.30648 9.83271 3.76248Z" fill="black"/>
+</svg> Edit</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- single post card  -->
+                                            <div class="post-card">
+                                                <!-- author  -->
+                                                <div class="post-author">
+                                                    <div class="author-img">
+                                                        <img src="./img/mail.png"  class="mail-img" alt="">
+                                                        <img src="./img/mail-avatar.png" class="mail-avatar" alt="">
+                                                    </div>
+                                                    <div class="author-info">
+                                                        <h3><a href="">Mail On Broadway</a><span><img src="./img/checkwhiteblue.png" alt=""></span></h3>
+                                                        <div class="author-loc">
+                                                            <img src="./img/ion_location.png" alt="">
+                                                            <span>New York, NY <span class="post-time">1hr</span></span>
+                                                        </div>
+                                                        <ul class="posted-by">
+                                                            <li>Posted by: <span>Oscar Novelli</span></li>
+                                                            <li>Claimed by: <span>Owner</span></li>
+                                                        </ul>
+                                                        <p class="post-text">Protect your greatest Investment. Your Home</p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- post img  -->
+                                                <div class="post-img">
+                                                    <img src="./img/protect.png" class="img-fluid mx-auto" alt="">
+                                                    <div class="ribbon">
+                                                        For Sale                                                    </div>
+                                                </div>
+                                                <!-- post footer  -->
+                                                <div class="post-footer">
+                                                    <!-- Post Tags -->
+                                                    <div class="post-tags hide-scrollbar">
+                                                        <a href="#">Window Replacement</a>
+                                                        <a href="#">Glass Repair</a>
+                                                        <a href="#">Home Improvement</a>
+                                                        <a href="#">Window Install</a>
+                                                        <a href="#">Glazing</a>
+                                                    </div>
+                                                    <!-- Post Interactions -->
+                                                    <div class="post-interactions">
+                                                        <div class="post-actions-left">
+                                                            <a href="#" class="interaction-item">
+                                                                <img src="./img/love.png" alt="Like">
+                                                                <span>100</span>
+                                                            </a>
+                                                            <a href="#" class="interaction-item">
+                                                                <img src="./img/cmnt.png" alt="Comment">
+                                                                <span>100</span>
+                                                            </a>
+                                                            <a href="#" class="interaction-item">
+                                                                <img src="./img/share.png" alt="Share">
+                                                            </a>
+                                                        </div>
+                                                        <div class="post-actions-right">
+                                                          <button
+                                  href="#"
+                                  class="ads-radio-bottom-btn-email radio-btn-clr-one"
+                                >
+   
+                                  <span>Boost</span>
+                                </button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- post play  -->
+                                                    <button class=" postplay-new-feed-color">
+                                                        <div class="postplay-count-wraper">
+                                                            <img src="./img/added-circle.svg" alt="">
+                                                            
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <!-- Post Actions -->
+                                                <div class="post-actions post-actions-parent d-flex align-items-start justify-content-between">
+                                                    <!-- View Action -->
+                                                    <a href="#" class="action-item">
+                                                        <img src="./img/eye.png" alt="View">
+                                                        <span class="action-item-count">641</span>
+                                                    </a>
+                                                    <!-- Like Action -->
+                                                    <a href="#" class="action-item">
+                                                        <img src="./img/like.png" alt="Like">
+                                                        <span class="action-item-count">35</span>
+                                                    </a>
+                                                    <!-- More Options Dropdown -->
+                                                    <div class="dropdown action-item">
+                                                        <button class="btn btn-link p-0 dropdown-toggle" type="button" id="postActionsDropdown1"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <img src="./img/dots.png" alt="More Options">
+                                                        </button>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="postActionsDropdown1">
+                                                           <li><a class="dropdown-item dltbbttnn" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+  <path d="M13.5 14.25C13.5 14.8467 13.2629 15.419 12.841 15.841C12.419 16.2629 11.8467 16.5 11.25 16.5H6C5.40326 16.5 4.83097 16.2629 4.40901 15.841C3.98705 15.419 3.75 14.8467 3.75 14.25V5.25H3V3H6.375L7.125 2.25H10.125L10.875 3H14.25V5.25H13.5V14.25ZM4.5 5.25V14.25C4.5 14.6478 4.65804 15.0294 4.93934 15.3107C5.22064 15.592 5.60218 15.75 6 15.75H11.25C11.6478 15.75 12.0294 15.592 12.3107 15.3107C12.592 15.0294 12.75 14.6478 12.75 14.25V5.25H4.5ZM13.5 4.5V3.75H10.5L9.75 3H7.5L6.75 3.75H3.75V4.5H13.5ZM6 6.75H6.75V14.25H6V6.75ZM10.5 6.75H11.25V14.25H10.5V6.75Z" fill="#FF2828" stroke="#FF2828" stroke-width="0.2"/>
+</svg> <span class="dltbbttnn">Delete</span></a></li>
+                                                            <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5629 15.3297C15.8734 15.3297 16.1254 15.5817 16.1254 15.8922C16.1254 16.2027 15.8734 16.4547 15.5629 16.4547H10.1231C9.81261 16.4547 9.56061 16.2027 9.56061 15.8922C9.56061 15.5817 9.81261 15.3297 10.1231 15.3297H15.5629ZM12.0872 2.74023C12.1247 2.76948 13.3795 3.74448 13.3795 3.74448C13.8355 4.01598 14.1917 4.50123 14.3267 5.07573C14.461 5.64423 14.3635 6.23073 14.0507 6.72648C14.0486 6.72979 14.0465 6.73305 14.0393 6.74277L14.0337 6.75028C13.9829 6.81719 13.7622 7.09623 12.6484 8.49167C12.6381 8.50996 12.6264 8.52709 12.6136 8.54373C12.5948 8.56826 12.5743 8.59082 12.5525 8.61135C12.4765 8.707 12.3963 8.80751 12.3119 8.91318L12.141 9.12728C11.7883 9.56901 11.3699 10.0928 10.8735 10.7141L10.6188 11.0329C9.66056 12.2323 8.43333 13.7679 6.86121 15.7347C6.51696 16.1637 6.00096 16.4135 5.44671 16.4202L2.71746 16.4547H2.70996C2.44971 16.4547 2.22321 16.2762 2.16246 16.022L1.54821 13.4187C1.42146 12.8795 1.54746 12.323 1.89321 11.891L8.95821 3.05448C8.96121 3.05148 8.96346 3.04773 8.96646 3.04473C9.74121 2.11848 11.1422 1.98198 12.0872 2.74023ZM8.1705 5.84025L2.77146 12.5937C2.64321 12.7542 2.59596 12.9612 2.64321 13.16L3.15396 15.3237L5.43321 15.2952C5.64996 15.293 5.85021 15.1962 5.98296 15.0312C6.66657 14.1759 7.52575 13.1009 8.4091 11.9955L8.72162 11.6044L9.03468 11.2127C9.86312 10.1759 10.6815 9.15155 11.3663 8.29415L8.1705 5.84025ZM9.83271 3.76248L8.87325 4.96125L12.0688 7.41445C12.6839 6.64402 13.0885 6.1366 13.126 6.08823C13.249 5.88873 13.297 5.60673 13.2325 5.33523C13.1665 5.05698 12.9932 4.82073 12.7435 4.66998C12.6902 4.63323 11.4265 3.65223 11.3875 3.62148C10.912 3.24048 10.2182 3.30648 9.83271 3.76248Z" fill="black"/>
+</svg> Edit</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Draft tab content  -->
+                                    <div class="tab-pane fade" id="pills-drafts" role="tabpanel"
+                                        aria-labelledby="pills-drafts-tab">
+                                      <div class="post-cards">
+                                            <div>
+                                                <!-- post list  -->
+                                                <div class="post-card-litss d-flex align-items-center">
+                                                    <button class="post-card-litss-buttons-active">
+                                                        Posts (1)
+                                                    </button>
+                                                    <button class="post-card-litss-buttons">
+                                                        Ads (1)
+                                                    </button>
+                                                    <button class="post-card-litss-buttons">
+                                                      Listing (2)
+                                                    </button>
+                                                    <button class="post-card-litss-buttons">
+                                                      Deals (2)
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- single post card  -->
+                                            <div class="post-card">
+                                                <!-- author  -->
+                                                <div class="post-author">
+                                                    <div class="author-img">
+                                                        <img src="./img/mail.png"  class="mail-img" alt="">
+                                                        <img src="./img/mail-avatar.png" class="mail-avatar" alt="">
+                                                    </div>
+                                                    <div class="author-info">
+                                                        <h3><a href="">Mail On Broadway</a><span><img src="./img/checkwhiteblue.png" alt=""></span></h3>
+                                                        <div class="author-loc">
+                                                            <img src="./img/ion_location.png" alt="">
+                                                            <span>New York, NY <span class="post-time">1hr</span></span>
+                                                        </div>
+                                                        <ul class="posted-by">
+                                                            <li>Posted by: <span>Oscar Novelli</span></li>
+                                                            <li>Claimed by: <span>Owner</span></li>
+                                                        </ul>
+                                                        <p class="post-text">Quality from Start to Finish... American Windows and Glass</p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- post img  -->
+                                                <div class="post-img">
+                                                    <img src="./img/p1.png" class="img-fluid mx-auto" alt="">
+                                                    <div class="ribbon">
+                                                        For Sale                                                    </div>
+                                                </div>
+                                                <!-- post footer  -->
+                                                <div class="post-footer">
+                                                    <!-- Post Interactions -->
+                                                    <div class="post-interactions">
+                                                     
+                                                        <div class=" d-flex justify-content-center align-items-center mx-auto continued-adds-create">
+                                                         <button class="upload-buttom-top sk-gradint-button-one">
+              Continue Creating Ad <img src="./img/Arrow Forward.svg" alt="Arrow" />
+            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Post Actions -->
+                                                <div class="post-actions d-flex align-items-start justify-content-end">
+                                                    <!-- View Action -->
+                                                    <div class="action-item action-item-new">
+                                                        <img src="./img/delete-trash-bin.svg" alt="View">
+                                                        
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <!-- single post card  -->
+                                            <div class="post-card">
+                                                <!-- author  -->
+                                                <div class="post-author">
+                                                    <div class="author-img">
+                                                        <img src="./img/mail.png"  class="mail-img" alt="">
+                                                        <img src="./img/mail-avatar.png" class="mail-avatar" alt="">
+                                                    </div>
+                                                    <div class="author-info">
+                                                        <h3><a href="">Mail On Broadway</a><span><img src="./img/checkwhiteblue.png" alt=""></span></h3>
+                                                        <div class="author-loc">
+                                                            <img src="./img/ion_location.png" alt="">
+                                                            <span>New York, NY <span class="post-time">1hr</span></span>
+                                                        </div>
+                                                        <ul class="posted-by">
+                                                            <li>Posted by: <span>Oscar Novelli</span></li>
+                                                            <li>Claimed by: <span>Owner</span></li>
+                                                        </ul>
+                                                        <p class="post-text">Protect your greatest Investment. Your Home</p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- post img  -->
+                                                <div class="post-img">
+                                                    <img src="./img/protect.png" class="img-fluid mx-auto" alt="">
+                                                    <div class="ribbon">
+                                                        For Sale                                                    </div>
+                                                </div>
+                                               <!-- post footer  -->
+                                                <div class="post-footer">
+                                                    <!-- Post Interactions -->
+                                                    <div class="post-interactions">
+                                                     
+                                                        <div class=" d-flex justify-content-center align-items-center mx-auto continued-adds-create">
+                                                         <button class="upload-buttom-top sk-gradint-button-one">
+              Continue Creating Ad <img src="./img/Arrow Forward.svg" alt="Arrow" />
+            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Post Actions -->
+                                                <div class="post-actions d-flex align-items-start justify-content-end">
+                                                    <!-- View Action -->
+                                                    <div class="action-item action-item-new">
+                                                        <img src="./img/delete-trash-bin.svg" alt="View">
+                                                        
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- recommends tab content  -->
+                                    <div class="tab-pane fade" id="pills-recommends" role="tabpanel"
+                                        aria-labelledby="pills-recommends-tab">
+                                        
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- offcanvas notification  -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="notificationOffcanvas"
+        aria-labelledby="notificationOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 id="notificationOffcanvasLabel">Notifications <span>2 New</span></h5>
+            <button type="button" class="modal-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                <img src="./img/cross.png" alt="">
+            </button>
+        </div>
+        <div class="notification-bar"></div>
+        <div class="offcanvas-body">
+            <div class="notification-lists">
+                <!-- single item  -->
+                <div class="notification-box">
+                    <div class="notification-left">
+                        <div class="unread-notification">
+                            <img src="./img/unred.png" class="w-100 img-fluid" alt="">
+                        </div>
+                        <div class="notification-imgBox">
+                            <div class="notification-img">
+                                <img src="./img/noti-avatar.png" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="notification-content">
+                                <h3>Connection request from John Doe <span class="notification-date">Now</span></h3>
+                                <div class="notification-btns">
+                                    <button class="cancel-btn">Reject</button>
+                                    <button class="accept-btn">Accept</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single item  -->
+                <div class="notification-box">
+                    <div class="notification-left">
+                        <div class="unread-notification">
+                            <img src="./img/unred.png" class="w-100 img-fluid" alt="">
+                        </div>
+                        <div class="notification-imgBox">
+                            <div class="notification-img">
+                                <img src="./img/noti-avatar.png" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="notification-content">
+                                <h3>New message from Sierra <span class="notification-date">Now</span></h3>
+                                <p>Bethany was running in a half marathon when she began .</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single item  -->
+                <div class="notification-box">
+                    <div class="notification-left">
+                        <div class="unread-notification">
+                        </div>
+                        <div class="notification-imgBox">
+                            <div class="notification-img">
+                                <img src="./img/noti-avatar.png" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="notification-content">
+                                <h3 class="read-title">New post from Sierra Ferguson <span
+                                        class="notification-date">1h</span></h3>
+                                <p class="read-msg">Bethany was running in a half marathon when she began .</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- offcanvas report  -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="createComunityOffcanvas"
+        aria-labelledby="createComunityLabel">
+        <div class="offcanvas-header createComunityoffcanvas-header">
+            <div class="createComunityLabel">
+                <h5>Report</h5>
+                <p style="font-style: italic;">Why you want to report this?</p>
+            </div>
+            <button type="button" class="modal-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                <img src="./img/cross.png" alt="">
+            </button>
+        </div>
+        <div class="offcanvas-body addComunityOffcanvas-body">
+            <div class="createComunityForm">
+                <div class="notification-bar"></div>
+                <form action="">
+
+                    <!-- pick an option -->
+                    <div class="description-input-wrapper">
+                        <select class="form-input" name="reason-type" id="reason-type">
+                            <option value="" disabled selected>Pick an Option</option>
+                            <option value="spam">It's spam</option>
+                            <option value="inappropriate">It's inappropriate</option>
+                        </select>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="description-input-wrapper">
+                        <textarea name="" id="" placeholder="Please describe you reason." class="form-input"></textarea>
+                    </div>
+                    <!-- submit  -->
+                    <div class="mt-3">
+                        <button class="register-submit" type="submit">
+                            <span class="saveBtnTxt">Save</span>
+                            <span class="saveBtnImg"><img src="./img/forward.png" class="img-fluid w-100" alt=""></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade web-two-modal" id="deleteModal" tabindex="-1" aria-labelledby="succesModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="post-log-wraper">
+                        <p>Do you really want to delete your post?</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <button data-bs-dismiss="modal" aria-label="Close"
+                                class="modal-button close-button">No</button>
+                            <button onclick="window.location.href='./login.html'"
+                                class="modal-button logout-button">Delete Post</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Sticky Bottom Bar -->
+<div class="stb-container stb-bar fixed-bottom">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <button class="btn cst-mobile-menus-active" data-bs-toggle="offcanvas" data-bs-target="#stbOffcanvas">
+                <img src="./img/home-mobile.svg" alt="Home" class="cst-mobile-menus-img">
+            </button>
+            <button class="btn cst-mobile-menus" data-bs-toggle="offcanvas" data-bs-target="#stbOffcanvas">
+                <img src="./img/dashboard-mobile.svg" alt="Dashboard" class="cst-mobile-menus-img">
+            </button>
+            <button class="btn cst-mobile-menus" data-bs-toggle="offcanvas" data-bs-target="#stbOffcanvas">
+                <img src="./img/added-mobile.svg" alt="Added" class="cst-mobile-menus-img">
+            </button>
+            <button class="btn cst-mobile-menus" data-bs-toggle="offcanvas" data-bs-target="#stbOffcanvas">
+                <img src="./img/notification-mobile.svg" alt="Notification" class="cst-mobile-menus-img">
+            </button>
+            <button class="btn cst-mobile-menus" data-bs-toggle="offcanvas" data-bs-target="#stbOffcanvas">
+                <img src="./img/profile-circle-mobile.svg" alt="Profile" class="cst-mobile-menus-img">
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Custom Offcanvas -->
+<div class="offcanvas offcanvas-bottom stb-offcanvas" tabindex="-1" id="stbOffcanvas" aria-labelledby="stbOffcanvasLabel">
+    <div class="offcanvas-header justify-content-end align-items-end">
+        
+         <button type="button" class="btn-closex" data-bs-dismiss="offcanvas" aria-label="Close">
+            <img src="./img/iconamoon_close-light.svg" alt="">
+         </button>
+    </div>
+    <div class="offcanvas-body">
+       <div>
+       <!-- Scrollable Menu List -->
+        <ul class="dropdown-menux thin-scrollbar" aria-labelledby="profileOptions">
+            <!-- item 1 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/clarity_building-line.png" alt="">
+                                    <span>Setup Company Profile</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 2 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i2.png" alt="">
+                                    <span>My Ads</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 3 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i3.png" alt="">
+                                    <span>My Communities</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 4 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i4.png" alt="">
+                                    <span>Services</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 5 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i5.png" alt="">
+                                    <span>Chats</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 6 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i6.png" alt="">
+                                    <span>Wallet <span class="text-blue">$89.00</span></span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 7 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i7.png" alt="">
+                                    <span>Invite Friends</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 8 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i8.png" alt="">
+                                    <span>Faqs</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 9 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i9.png" alt="">
+                                    <span>Privacy Policy</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 10 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i10.png" alt="">
+                                    <span>Terms & Condition</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 11 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i11.png" alt="">
+                                    <span>Contact Us</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 12 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i12.png" alt="">
+                                    <span>Rate Us</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 13 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i13.png" alt="">
+                                    <span>Logout</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <!-- item 14 -->
+                        <li>
+                            <a class="dropdown-item profile-single" href="#">
+                                <span class="profile-single-left">
+                                    <img src="./img/i14.png" alt="">
+                                    <span class="text-reprt">Delete Account</span>
+                                </span>
+                                <span class="profile-single-right">
+                                    <img src="./img/right-arr.png" class="img-fluid" alt="">
+                                </span>
+                            </a>
+                        </li>
+        </ul>
+       </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- custom js  -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const searchButton = document.getElementById("mobileSearchButton");
+    const searchBox = document.getElementById("mobileNavSearchBox");
+
+    searchButton.addEventListener("click", function() {
+        if (searchBox.style.display === "none" || searchBox.style.display === "") {
+            searchBox.style.display = "block";
+        } else {
+            searchBox.style.display = "none";
+        }
+    });
+});
+    </script>
+</body>
+
+</html>

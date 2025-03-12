@@ -306,88 +306,54 @@
               <div class="dashboard-cover"></div>
             </div>
           </div>
-          <div class="row dashboardx-tabs align-items-center">
-            <div class="col-xl-4">
-              <div class="d-flex align-items-center justify-content-end">
-                <div class="profile-img profile-img-new z-10">
-                  <img
-                    src="./img/updated-profice-image.svg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <button class="edit-btns morphisum-inner">
-                  <img src="./img/Edit.svg" alt="" />
-                </button>
+      <div class="row dashboardx-tabs align-items-center">
+          <div class="col-lg-4">
+            <div class="d-flex align-items-center justify-content-end profile-img-new-parent">
+              <div class="profile-img profile-img-new z-10">
+                <img src="./img/updated-profice-image.svg" class="img-fluid" alt="" />
               </div>
-            </div>
-            <div class="col-xl-8">
-              <!-- tab button  -->
-              <ul class="nav nav-pillsx" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-linkx"
-                    id="pills-myposts-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-myposts"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-myposts"
-                    aria-selected="false"
-                  >
-                    My Posts
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-linkx"
-                    id="pills-saved-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-saved"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-saved"
-                    aria-selected="false"
-                  >
-                    Saved
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-linkx"
-                    id="pills-drafts-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-drafts"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-drafts"
-                    aria-selected="false"
-                  >
-                    Drafts
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-linkx active"
-                    id="pills-recommends-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-recommends"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-recommends"
-                    aria-selected="true"
-                  >
-                    Recommends
-                  </button>
-                </li>
-              </ul>
+              <button class="edit-btns morphisum-inner">
+                <img src="./img/Edit.svg" alt="" />
+              </button>
             </div>
           </div>
+          <div class="col-lg-8">
+            <!-- tab button  -->
+            <ul class="nav nav-pillsx d-none d-lg-flex ms-0" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx" id="pills-myposts-tab" data-bs-toggle="pill" data-bs-target="#pills-myposts"
+                  type="button" role="tab" aria-controls="pills-myposts" aria-selected="false">
+                  My Posts
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx" id="pills-saved-tab" data-bs-toggle="pill" data-bs-target="#pills-saved"
+                  type="button" role="tab" aria-controls="pills-saved" aria-selected="false">
+                  Saved
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx " id="pills-drafts-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-drafts" type="button" role="tab" aria-controls="pills-drafts"
+                  aria-selected="true">
+                  Drafts
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx active" id="pills-recommends-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-recommends" type="button" role="tab" aria-controls="pills-recommends"
+                  aria-selected="false">
+                  Recommends
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
           <div class="row" id="dashboard-row">
             <!-- user profile  -->
-            <div class="col-xl-4">
+            <div class="col-lg-4">
               <div class="sideBar-wrapers hide-scrollbar">
-                <div class="user-profile">
+                <div class="user-profile parent-user-profile">
                   <!-- profile card  -->
                   <div class="profile-card profile-cardx">
                     <!-- profile details -->
@@ -400,7 +366,7 @@
                       <h3 class="profile-stats-names-h3">Community</h3>
                       <span>2</span>
                     </div>
-                    <div class="refferance-tagss">
+                    <div class="refferance-tagss refferance-tagss-parent">
                       <button>Conference</button>
                       <button>Network Engineer</button>
                     </div>
@@ -409,9 +375,37 @@
               </div>
             </div>
             <!-- content tab  -->
-            <div class="col-xl-6">
+            <div class="col-lg-8 col-xl-6">
+                <ul class="nav nav-pillsx new-nav-pillsx-parent d-flex d-lg-none ms-0 pt-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx" id="pills-myposts-tab" data-bs-toggle="pill" data-bs-target="#pills-myposts"
+                  type="button" role="tab" aria-controls="pills-myposts" aria-selected="false">
+                  My Posts
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx" id="pills-saved-tab" data-bs-toggle="pill" data-bs-target="#pills-saved"
+                  type="button" role="tab" aria-controls="pills-saved" aria-selected="false">
+                  Saved
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx " id="pills-drafts-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-drafts" type="button" role="tab" aria-controls="pills-drafts"
+                  aria-selected="true">
+                  Drafts
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx active" id="pills-recommends-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-recommends" type="button" role="tab" aria-controls="pills-recommends"
+                  aria-selected="false">
+                  Recommends
+                </button>
+              </li>
+            </ul>
               <div
-                class="main-content sideBar-wraper hide-scrollbar main-content-new"
+                class="main-content sideBar-wraper hide-scrollbar main-content-new mb-md-5"
               >
                 <div class="posts-feedx">
                   <!-- tab content  -->
@@ -678,7 +672,7 @@
                           </div>
                           <!-- Post Actions -->
                           <div
-                            class="post-actions d-flex align-items-start justify-content-between"
+                            class="post-actions post-actions-parent d-flex align-items-start justify-content-between"
                           >
                             <!-- View Action -->
                             <a href="#" class="action-item">
@@ -850,7 +844,7 @@
                           </div>
                           <!-- Post Actions -->
                           <div
-                            class="post-actions d-flex align-items-start justify-content-between"
+                            class="post-actions post-actions-parent d-flex align-items-start justify-content-between"
                           >
                             <!-- View Action -->
                             <a href="#" class="action-item">
@@ -992,7 +986,7 @@
                           </div>
                           <!-- Post Actions -->
                           <div
-                            class="post-actions d-flex align-items-start justify-content-between"
+                            class="post-actions post-actions-parent d-flex align-items-start justify-content-between"
                           >
                             <!-- View Action -->
                             <a href="#" class="action-item">
@@ -1072,30 +1066,23 @@
                           </div>
                         </div>
                         <div class="deals-content">
-                          <div class="sort-by">
-                            <label for="sort-options">Sort By:</label>
-                            <select
-                              name="sort-options"
-                              id="sort-options"
-                              class=""
-                            >
-                              <option value="new">New</option>
-                              <option value="popular" selected>Popular</option>
-                              <option value="price-low-high">
-                                Price - Low to High
-                              </option>
-                              <option value="price-high-low">
-                                Price - High to Low
-                              </option>
-                              <option value="avg-reviews">
-                                Avg. Customer Reviews
-                              </option>
-                              <option value="deals-top">Deals on Top</option>
-                              <option value="deal-share-top">
-                                Deal Share on Top
-                              </option>
-                            </select>
-                          </div>
+<div class="sort-by">
+                                                <p for="sort-options">Sort By:</p>
+                                                <div class="dropdownFilter">
+                                                    <button class="p-0 dropdown-toggle" type="button" id="postActionsFilter" data-bs-toggle="dropdown" aria-expanded="true">
+                                                        Popular
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="postActionsFilter" data-popper-placement="bottom-start">
+                                                        <li>New</li>
+                                                        <li class="active">Popular</li>
+                                                        <li>Price - Low to High</li>
+                                                        <li>Price - High to Low</li>
+                                                        <li>Avg. Customer Reviews</li>
+                                                        <li>Deals on Top</li>
+                                                        <li>Deal Share on Top</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                           <div class="product-list">
                             <!-- single product  -->
                             <div class="product-container">
@@ -1122,7 +1109,7 @@
                                   </p>
                                 </div>
                                 <div class="product-pricing">
-                                  <div class="buy-button">
+                                  <div class="buy-button new-buy-parent">
                                     <button
                                       class="sold-out-continued sk-gradint-button-one"
                                     >
@@ -1161,7 +1148,7 @@
                                   </p>
                                 </div>
                                 <div class="product-pricing">
-                                  <div class="buy-button">
+                                  <div class="buy-button new-buy-parent">
                                     <button
                                       class="sold-out-continued sk-gradint-button-one"
                                     >
@@ -1199,7 +1186,7 @@
                                   </p>
                                 </div>
                                 <div class="product-pricing">
-                                  <div class="buy-button">
+                                  <div class="buy-button new-buy-parent">
                                     <button
                                       class="sold-out-continued sk-gradint-button-one"
                                     >
@@ -1244,7 +1231,7 @@
                                   </p>
                                 </div>
                                 <div class="product-pricing">
-                                  <div class="buy-button">
+                                  <div class="buy-button new-buy-parent">
                                     <button
                                       class="sold-out-continued sk-gradint-button-one"
                                     >
@@ -1283,7 +1270,7 @@
                                   </p>
                                 </div>
                                 <div class="product-pricing">
-                                  <div class="buy-button">
+                                  <div class="buy-button new-buy-parent">
                                     <button
                                       class="sold-out-continued sk-gradint-button-one"
                                     >
@@ -1353,7 +1340,7 @@
                                   </p>
                                 </div>
                                 <div class="product-pricing">
-                                  <div class="buy-button">
+                                  <div class="buy-button new-buy-parent">
                                     <button
                                       class="sold-out-continued sk-gradint-button-one"
                                     >
@@ -1392,7 +1379,7 @@
                                   </p>
                                 </div>
                                 <div class="product-pricing">
-                                  <div class="buy-button">
+                                  <div class="buy-button new-buy-parent">
                                     <button
                                       class="sold-out-continued sk-gradint-button-one"
                                     >
@@ -1431,7 +1418,7 @@
                                   </p>
                                 </div>
                                 <div class="product-pricing">
-                                  <div class="buy-button">
+                                  <div class="buy-button new-buy-parent">
                                     <button
                                       class="sold-out-continued sk-gradint-button-one"
                                     >
@@ -1470,7 +1457,7 @@
                                   </p>
                                 </div>
                                 <div class="product-pricing">
-                                  <div class="buy-button">
+                                  <div class="buy-button new-buy-parent">
                                     <button
                                       class="sold-out-continued sk-gradint-button-one"
                                     >
@@ -1509,7 +1496,7 @@
                                   </p>
                                 </div>
                                 <div class="product-pricing">
-                                  <div class="buy-button">
+                                  <div class="buy-button new-buy-parent">
                                     <button
                                       class="sold-out-continued sk-gradint-button-one"
                                     >
@@ -1548,7 +1535,7 @@
                                   </p>
                                 </div>
                                 <div class="product-pricing">
-                                  <div class="buy-button">
+                                  <div class="buy-button new-buy-parent">
                                     <button
                                       class="sold-out-continued sk-gradint-button-one"
                                     >

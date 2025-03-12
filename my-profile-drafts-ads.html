@@ -283,48 +283,54 @@
                         </div>
                     </div>
                 </div>
-                <div class="row dashboardx-tabs align-items-center">
-                    <div class="col-xl-4">
-                        <div class="d-flex align-items-center justify-content-end">
-                             <div class="profile-img profile-img-new z-10">
-                                        </span> <img src="./img/updated-profice-image.svg" class="img-fluid" alt="">
-                            </div>
-                            <button class="edit-btns morphisum-inner">
-                                <img src="./img/Edit.svg" alt="">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col-xl-8">
-                        <!-- tab button  -->
-                        <ul class="nav nav-pillsx" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-linkx " id="pills-myposts-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-myposts" type="button" role="tab" aria-controls="pills-myposts"
-                                    aria-selected="false">My Posts</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-linkx " id="pills-saved-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-saved" type="button" role="tab"
-                                    aria-controls="pills-saved" aria-selected="false">Saved</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-linkx active" id="pills-drafts-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-drafts" type="button" role="tab" aria-controls="pills-drafts"
-                                    aria-selected="true">Drafts</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-linkx" id="pills-recommends-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-recommends" type="button" role="tab" aria-controls="pills-recommends"
-                                    aria-selected="false">Recommends</button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+<div class="row dashboardx-tabs align-items-center">
+          <div class="col-lg-4">
+            <div class="d-flex align-items-center justify-content-end profile-img-new-parent">
+              <div class="profile-img profile-img-new z-10">
+                <img src="./img/updated-profice-image.svg" class="img-fluid" alt="" />
+              </div>
+              <button class="edit-btns morphisum-inner">
+                <img src="./img/Edit.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <!-- tab button  -->
+            <ul class="nav nav-pillsx d-none d-lg-flex ms-0" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx" id="pills-myposts-tab" data-bs-toggle="pill" data-bs-target="#pills-myposts"
+                  type="button" role="tab" aria-controls="pills-myposts" aria-selected="false">
+                  My Posts
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx" id="pills-saved-tab" data-bs-toggle="pill" data-bs-target="#pills-saved"
+                  type="button" role="tab" aria-controls="pills-saved" aria-selected="false">
+                  Saved
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx active" id="pills-drafts-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-drafts" type="button" role="tab" aria-controls="pills-drafts"
+                  aria-selected="true">
+                  Drafts
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx" id="pills-recommends-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-recommends" type="button" role="tab" aria-controls="pills-recommends"
+                  aria-selected="false">
+                  Recommends
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
                 <div class="row" id="dashboard-row">
                     <!-- user profile  -->
-                    <div class="col-xl-4">
+                    <div class="col-lg-4">
                         <div class="sideBar-wrapers hide-scrollbar">
-                            <div class="user-profile">
+                            <div class="user-profile parent-user-profile ">
                                 <!-- profile card  -->
                                 <div class="profile-card profile-cardx">
                                    
@@ -338,7 +344,7 @@
                                         <h3 class="profile-stats-names-h3">Community</h3>
                                         <span>2</span>
                                     </div>
-                                    <div class="refferance-tagss">
+                                    <div class="refferance-tagss refferance-tagss-parent">
                                         <button>Conference</button>
                                         <button>Network Engineer</button>
                                     </div>
@@ -348,7 +354,35 @@
                     </div>
                     <!-- content tab  -->
                     <div class="col-lg-8 col-xl-6">
-                        <div class="main-content sideBar-wraper hide-scrollbar main-content-new">
+                          <ul class="nav nav-pillsx new-nav-pillsx-parent d-flex d-lg-none ms-0 pt-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx" id="pills-myposts-tab" data-bs-toggle="pill" data-bs-target="#pills-myposts"
+                  type="button" role="tab" aria-controls="pills-myposts" aria-selected="false">
+                  My Posts
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx" id="pills-saved-tab" data-bs-toggle="pill" data-bs-target="#pills-saved"
+                  type="button" role="tab" aria-controls="pills-saved" aria-selected="false">
+                  Saved
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx active" id="pills-drafts-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-drafts" type="button" role="tab" aria-controls="pills-drafts"
+                  aria-selected="true">
+                  Drafts
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx" id="pills-recommends-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-recommends" type="button" role="tab" aria-controls="pills-recommends"
+                  aria-selected="false">
+                  Recommends
+                </button>
+              </li>
+            </ul>
+                        <div class="main-content sideBar-wraper hide-scrollbar main-content-new mb-md-5">
                             <div class="posts-feedx">
                                 
                                 <!-- tab content  -->
@@ -360,10 +394,10 @@
                                             <div>
                                                 <!-- post list  -->
                                                 <div class="post-card-litss d-flex align-items-center">
-                                                    <button class="post-card-litss-buttons-active">
+                                                    <button class="post-card-litss-buttons">
                                                         Posts (1)
                                                     </button>
-                                                    <button class="post-card-litss-buttons">
+                                                    <button class="post-card-litss-buttons-active">
                                                         Ads (1)
                                                     </button>
                                                     <button class="post-card-litss-buttons">
@@ -404,73 +438,24 @@
                                                 </div>
                                                 <!-- post footer  -->
                                                 <div class="post-footer">
-                                                    <!-- Post Tags -->
-                                                    <div class="post-tags hide-scrollbar">
-                                                        <a href="#">Window Replacement</a>
-                                                        <a href="#">Glass Repair</a>
-                                                        <a href="#">Home Improvement</a>
-                                                        <a href="#">Window Install</a>
-                                                        <a href="#">Glazing</a>
-                                                    </div>
                                                     <!-- Post Interactions -->
                                                     <div class="post-interactions">
-                                                        <div class="post-actions-left">
-                                                            <a href="#" class="interaction-item">
-                                                                <img src="./img/love.png" alt="Like">
-                                                                <span>100</span>
-                                                            </a>
-                                                            <a href="#" class="interaction-item">
-                                                                <img src="./img/cmnt.png" alt="Comment">
-                                                                <span>100</span>
-                                                            </a>
-                                                            <a href="#" class="interaction-item">
-                                                                <img src="./img/share.png" alt="Share">
-                                                            </a>
-                                                        </div>
-                                                        <div class="post-actions-right">
-                                                        <button
-                                  href="#"
-                                  class="ads-radio-bottom-btn-email radio-btn-clr-one"
-                                >
-   
-                                  <span>Boost</span>
-                                </button>
+                                                     
+                                                        <div class=" d-flex justify-content-center align-items-center mx-auto continued-adds-create">
+                                                         <button class="upload-buttom-top sk-gradint-button-one">
+              Continue Creating Ad <img src="./img/Arrow Forward.svg" alt="Arrow" />
+            </button>
                                                         </div>
                                                     </div>
-                                                    <!-- post play  -->
-                                                    <button class=" postplay-new-feed-color">
-                                                        <div class="postplay-count-wraper">
-                                                            <img src="./img/added-circle.svg" alt="">
-                                                            
-                                                        </div>
-                                                    </button>
                                                 </div>
                                                 <!-- Post Actions -->
-                                                <div class="post-actions d-flex align-items-start justify-content-between">
+                                                <div class="post-actions   d-flex align-items-start justify-content-end">
                                                     <!-- View Action -->
-                                                    <a href="#" class="action-item">
-                                                        <img src="./img/eye.png" alt="View">
-                                                        <span class="action-item-count">641</span>
+                                                    <a data-bs-toggle="modal" data-bs-target="#deleteModal" class="action-item action-item-new">
+                                                        <img src="./img/delete-trash-bin.svg" alt="View">
+                                                        
                                                     </a>
-                                                    <!-- Like Action -->
-                                                    <a href="#" class="action-item">
-                                                        <img src="./img/like.png" alt="Like">
-                                                        <span class="action-item-count">35</span>
-                                                    </a>
-                                                    <!-- More Options Dropdown -->
-                                                    <div class="dropdown action-item">
-                                                        <button class="btn btn-link p-0 dropdown-toggle" type="button" id="postActionsDropdown1"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <img src="./img/dots.png" alt="More Options">
-                                                        </button>
-                                                        </button>
-                                                        <ul class="dropdown-menu" aria-labelledby="postActionsDropdown1">
-                                                            <li><a class="dropdown-item" href="#">Connect</a></li>
-                                                            <li><a class="dropdown-item" href="#">Claim This Post</a></li>
-                                                            <li><p class="dropdown-item" data-bs-toggle="offcanvas"
-                                                            data-bs-target="#createComunityOffcanvas" aria-controls="createComunityOffcanvas">Report Post</p></li>
-                                                        </ul>
-                                                    </div>
+
                                                 </div>
                                             </div>
                                             <!-- single post card  -->
@@ -501,76 +486,27 @@
                                                     <div class="ribbon">
                                                         For Sale                                                    </div>
                                                 </div>
-                                                <!-- post footer  -->
+                                               <!-- post footer  -->
                                                 <div class="post-footer">
-                                                    <!-- Post Tags -->
-                                                    <div class="post-tags hide-scrollbar">
-                                                        <a href="#">Window Replacement</a>
-                                                        <a href="#">Glass Repair</a>
-                                                        <a href="#">Home Improvement</a>
-                                                        <a href="#">Window Install</a>
-                                                        <a href="#">Glazing</a>
-                                                    </div>
                                                     <!-- Post Interactions -->
                                                     <div class="post-interactions">
-                                                        <div class="post-actions-left">
-                                                            <a href="#" class="interaction-item">
-                                                                <img src="./img/love.png" alt="Like">
-                                                                <span>100</span>
-                                                            </a>
-                                                            <a href="#" class="interaction-item">
-                                                                <img src="./img/cmnt.png" alt="Comment">
-                                                                <span>100</span>
-                                                            </a>
-                                                            <a href="#" class="interaction-item">
-                                                                <img src="./img/share.png" alt="Share">
-                                                            </a>
-                                                        </div>
-                                                        <div class="post-actions-right">
-                                                          <button
-                                  href="#"
-                                  class="ads-radio-bottom-btn-email radio-btn-clr-one"
-                                >
-   
-                                  <span>Boost</span>
-                                </button>
+                                                     
+                                                        <div class=" d-flex justify-content-center align-items-center mx-auto continued-adds-create">
+                                                         <button class="upload-buttom-top sk-gradint-button-one">
+              Continue Creating Ad <img src="./img/Arrow Forward.svg" alt="Arrow" />
+            </button>
                                                         </div>
                                                     </div>
-                                                    <!-- post play  -->
-                                                    <button class=" postplay-new-feed-color">
-                                                        <div class="postplay-count-wraper">
-                                                            <img src="./img/added-circle.svg" alt="">
-                                                            
-                                                        </div>
-                                                    </button>
                                                 </div>
                                                 <!-- Post Actions -->
-                                                <div class="post-actions d-flex align-items-start justify-content-between">
+                                                <a data-bs-toggle="modal" data-bs-target="#deleteModal" class="post-actions d-flex align-items-start justify-content-end">
                                                     <!-- View Action -->
-                                                    <a href="#" class="action-item">
-                                                        <img src="./img/eye.png" alt="View">
-                                                        <span class="action-item-count">641</span>
-                                                    </a>
-                                                    <!-- Like Action -->
-                                                    <a href="#" class="action-item">
-                                                        <img src="./img/like.png" alt="Like">
-                                                        <span class="action-item-count">35</span>
-                                                    </a>
-                                                    <!-- More Options Dropdown -->
-                                                    <div class="dropdown action-item">
-                                                        <button class="btn btn-link p-0 dropdown-toggle" type="button" id="postActionsDropdown1"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <img src="./img/dots.png" alt="More Options">
-                                                        </button>
-                                                        </button>
-                                                        <ul class="dropdown-menu" aria-labelledby="postActionsDropdown1">
-                                                            <li><a class="dropdown-item" href="#">Connect</a></li>
-                                                            <li><a class="dropdown-item" href="#">Claim This Post</a></li>
-                                                            <li><p class="dropdown-item" data-bs-toggle="offcanvas"
-                                                            data-bs-target="#createComunityOffcanvas" aria-controls="createComunityOffcanvas">Report Post</p></li>
-                                                        </ul>
+                                                    <div class="action-item action-item-new">
+                                                        <img src="./img/delete-trash-bin.svg" alt="View">
+                                                        
                                                     </div>
-                                                </div>
+
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -667,7 +603,7 @@
                                                     </button>
                                                 </div>
                                                 <!-- Post Actions -->
-                                                <div class="post-actions d-flex align-items-start justify-content-between">
+                                                <div class="post-actions post-actions-parent d-flex align-items-start justify-content-between">
                                                     <!-- View Action -->
                                                     <a href="#" class="action-item">
                                                         <img src="./img/eye.png" alt="View">
@@ -766,7 +702,7 @@
                                                     </button>
                                                 </div>
                                                 <!-- Post Actions -->
-                                                <div class="post-actions d-flex align-items-start justify-content-between">
+                                                <div class="post-actions post-actions-parent d-flex align-items-start justify-content-between">
                                                     <!-- View Action -->
                                                     <a href="#" class="action-item">
                                                         <img src="./img/eye.png" alt="View">
@@ -1248,7 +1184,25 @@
        </div>
     </div>
 </div>
-
+   <!-- Modal -->
+    <div class="modal fade web-two-modal" id="deleteModal" tabindex="-1" aria-labelledby="succesModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="post-log-wraper">
+                        <p>Do you really want to delete your post?</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <button data-bs-dismiss="modal" aria-label="Close"
+                                class="modal-button close-button">No</button>
+                            <button onclick="window.location.href='./login.html'"
+                                class="modal-button logout-button">Delete Post</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

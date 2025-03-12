@@ -167,7 +167,7 @@
                       <div class="accordion-body">
                         <form class="">
                           <div class="row">
-                            <div class="col-6 col-md-4">
+                            <div class="col-7 col-sm-6 col-md-4">
                               <div class="input-group" style="max-width: 200px">
                                 <button
                                   class="btn btn-outline-secondary"
@@ -194,7 +194,7 @@
                                 </button>
                               </div>
                             </div>
-                            <div class="col-6 col-md-8">
+                            <div class="col-5 col-sm-6 col-md-8">
                               <div class="dropdown">
                                 <button
                                   class="btn btn-secondary dropdown-toggle boots-select"
@@ -224,7 +224,7 @@
                             <!-- money -->
 
                             <div class="col-7 col-md-7 mt-3">
-                              <div class="input-group boots-input w-full">
+                              <div class="input-group boots-input w-full ">
                                 <span class="input-group-icon">
                                   <img
                                     src="./img/solar_dollar-linear.svg"
@@ -241,12 +241,12 @@
                               </div>
                             </div>
                             <div
-                              class="col-1 col-md-1 mt-3 d-flex align-items-center justify-content-center"
+                              class="col-1 col-md-1 mt-3 d-flex align-items-center justify-content-center "
                             >
                               <div class="boots-input-title-new">=</div>
                             </div>
-                            <div class="col-4 col-md-4 mt-3">
-                              <div class="input-group boots-input w-full">
+                            <div class="col-4 col-md-4 mt-3 ">
+                              <div class="input-group boots-input w-full " id="total-sum">
                                 <input
                                   type="number"
                                   class="form-control"
@@ -358,45 +358,8 @@
       });
     });
   </script>
-      <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Select every input that has a placeholder attribute
-        const inputs = document.querySelectorAll("input[placeholder]");
+  
 
-        inputs.forEach(function (input) {
-          // Get the placeholder text and remove it from the input
-          const placeholderText = input.getAttribute("placeholder");
-          input.removeAttribute("placeholder");
-
-          // Create a label element and add a custom class
-          const label = document.createElement("label");
-          label.classList.add("floating-placeholder");
-          label.innerText = placeholderText;
-
-          // Position the label relative to the input.
-          // Here we insert the label right after the input.
-          // You can adjust this depending on your HTML structure.
-          input.parentNode.insertBefore(label, input);
-
-          // If the input already has a value, mark the label as active
-          if (input.value.trim() !== "") {
-            label.classList.add("active");
-          }
-
-          // When the input gains focus, add the "active" class to the label
-          input.addEventListener("focus", function () {
-            label.classList.add("active");
-          });
-
-          // When the input loses focus, remove the "active" class if the input is empty
-          input.addEventListener("blur", function () {
-            if (input.value.trim() === "") {
-              label.classList.remove("active");
-            }
-          });
-        });
-      });
-    </script>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       crossorigin="anonymous"

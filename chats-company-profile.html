@@ -282,7 +282,7 @@
         </button>
 
         <!-- Search Box (Initially Hidden) -->
-        <div class="mobile-nav-search-box" id="mobileNavSearchBox">
+        <div class="mobile-nav-search-box mobile-nav-search-box-parent" id="mobileNavSearchBox">
           <input
             type="text"
             class="mobile-nav-search-input"
@@ -404,7 +404,7 @@
             </div>
             <div class="col-12 col-lg-8">
               <div class="chatss-right">
-                <div class="chatss-right-top">
+                <div class="chatss-right-top mb-2">
                   <div class="company-item new-company-item-ss">
                     <!-- Company Image Carousel -->
                     <div class="company-carousel">
@@ -849,7 +849,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="chatss-right-input">
+                <div class="chatss-right-input parent-chatss-right-input">
                   <div class="input-right location-wraper new-location-wraper">
                     <div class="input-wrapper input-wrapper-chat">
                       <input
@@ -1496,75 +1496,7 @@
         secondCom.style.display = "none";
       });
     </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const inputs = document.querySelectorAll("input[placeholder]");
 
-        inputs.forEach(function (input) {
-          // Store the placeholder text and then remove the attribute.
-          const placeholderText = input.getAttribute("placeholder");
-          input.removeAttribute("placeholder");
-
-          // Create the floating label element.
-          const label = document.createElement("label");
-          label.classList.add("floating-placeholder");
-          label.textContent = placeholderText;
-          input.parentNode.insertBefore(label, input);
-
-          if (input.type === "date") {
-            const secondaryPlaceholder = "Begin On";
-
-            // Set the initial label text.
-            label.textContent = input.value
-              ? secondaryPlaceholder
-              : placeholderText;
-
-            // Date input specific event listeners.
-            input.addEventListener("focus", () => {
-              label.textContent = secondaryPlaceholder;
-              label.classList.add("active");
-            });
-
-            input.addEventListener("blur", () => {
-              label.textContent = input.value
-                ? secondaryPlaceholder
-                : placeholderText;
-            });
-
-            input.addEventListener("change", () => {
-              label.textContent = input.value
-                ? secondaryPlaceholder
-                : placeholderText;
-              label.classList.toggle("active", !!input.value);
-            });
-
-            // Add a click event to trigger the date picker popup.
-            input.addEventListener("click", () => {
-              // If the experimental showPicker() API is supported, use it.
-              if (typeof input.showPicker === "function") {
-                input.showPicker();
-              } else {
-                // Otherwise, focus the input so the native date picker may appear.
-                input.focus();
-              }
-            });
-          } else {
-            // Standard input handling for non-date inputs.
-            if (input.value) label.classList.add("active");
-
-            input.addEventListener("focus", () =>
-              label.classList.add("active")
-            );
-            input.addEventListener("blur", () => {
-              if (!input.value) label.classList.remove("active");
-            });
-            input.addEventListener("input", () => {
-              label.classList.toggle("active", !!input.value);
-            });
-          }
-        });
-      });
-    </script>
     <script>
       document
         .querySelector(".input-icon-chat")

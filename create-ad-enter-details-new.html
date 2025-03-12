@@ -1,723 +1,591 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Create Ad_Enter Details</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="" />
-    <!-- font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      crossorigin="anonymous"
-    />
-    <!-- custom css -->
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <link rel="icon" href="./img/favicon.ico" />
-  </head>
 
-  <body class="flow-body">
-    <!-- header start -->
-    <header id="headerFlow" class="shadow-sm sticky-top">
-      <div class="container-fluid">
-        <div
-          class="row header-flow-row align-items-center justify-content-between gap-3 gap-sm-0"
-        >
-          <div class="col-12 col-sm-5 col-lg-4">
-            <div class="header-flow-left mx-auto mx-md-0">
-              <div class="header-flow-left-inner">
-                <a href="#" class="back-arr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Create Ad_Enter Details</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous" />
+  <!-- custom css -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <link rel="icon" href="./img/favicon.ico" />
+</head>
+
+<body class="flow-body">
+  <!-- header start -->
+  <header id="headerFlow" class="shadow-sm sticky-top">
+    <div class="container-fluid">
+      <div class="row header-flow-row align-items-center justify-content-between gap-3 gap-sm-0">
+        <div class="col-12 col-sm-5 col-lg-4">
+          <div class="header-flow-left mx-auto mx-md-0">
+            <div class="header-flow-left-inner">
+              <a href="#" class="back-arr">
                 <img src="./img/left-arr.png" alt="" />
               </a>
-                <span class="me-auto">Create Ad</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-8">
-            <div class="header-flow-right mx-auto">
-              <div
-                class="progress-wrapper d-flex justify-content-between align-items-center"
-              >
-                <!-- step - 1 -->
-                <div
-                  class="steps d-flex flex-column justify-content-center align-items-center"
-                >
-                  <div
-                    class="step-circle d-flex justify-content-center align-items-center"
-                  >
-                    <div
-                      class="step-circle-inner-active d-flex justify-content-center align-items-center"
-                    >
-                      <span class="actives">1</span>
-                    </div>
-                  </div>
-                  <div class="step-title">
-                    <span class="active">Upload Photo</span>
-                  </div>
-                </div>
-                <!-- step - 2 -->
-                <div
-                  class="steps d-flex flex-column justify-content-center align-items-center"
-                >
-                  <div
-                    class="step-circle d-flex justify-content-center align-items-center"
-                  >
-                    <div
-                      class="step-circle-inner-active d-flex justify-content-center align-items-center"
-                    >
-                      <span class="actives">2</span>
-                    </div>
-                  </div>
-                  <div class="step-title">
-                    <span class="active">Enter Details</span>
-                  </div>
-                </div>
-                <!-- step - 3 -->
-                <div
-                  class="steps d-flex flex-column justify-content-center align-items-center"
-                >
-                  <div
-                    class="step-circle d-flex justify-content-center align-items-center"
-                  >
-                    <div
-                      class="step-circle-inner d-flex justify-content-center align-items-center"
-                    >
-                      <span>3</span>
-                    </div>
-                  </div>
-                  <div class="step-title">
-                    <span>Set CTA & Pay</span>
-                  </div>
-                </div>
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    style="width: 50%"
-                    aria-valuenow="100"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
+              <span class="me-auto">Create Ad</span>
             </div>
           </div>
         </div>
-      </div>
-    </header>
-    <!-- header end -->
-    <!-- main start -->
-    <main>
-      <!-- title start -->
-      <section class="flow detailss" id="titleDetails">
-        <div class="upload-container">
-          <div class="details-communities">
-            <div class="row flow-row">
-              <div class="col-12">
-                <div class="d-flex justify-content-center">
-                  <h2 class="flow-location-title details-title-space">
-                    Enter Details
-                  </h2>
-                </div>
-                <form class="create-wrapper mx-auto">
-                  <div class="row">
-                    <!-- Date Input -->
-                    <div class="col-3 d-md-block d-none">
-                      <div class="boots-input-title">
-                        <label for="titles">Ad Title</label>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-9">
-                      <div class="input-group boots-input w-full">
-                        <span class="input-group-icon">
-                          <img
-                            src="./img/subway_title.svg"
-                            alt="calendar icon"
-                          />
-                        </span>
-                        <div class="divider-input"></div>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="titles"
-                          placeholder="Title"
-                        />
-                      </div>
-                    </div>
+        <div class="col-12 col-sm-6 col-lg-8">
+          <div class="header-flow-right mx-auto">
+            <div class="progress-wrapper d-flex justify-content-between align-items-center">
+              <!-- step - 1 -->
+              <div class="steps d-flex flex-column justify-content-center align-items-center">
+                <div class="step-circle d-flex justify-content-center align-items-center">
+                  <div class="step-circle-inner-active d-flex justify-content-center align-items-center">
+                    <span class="actives">1</span>
                   </div>
-                </form>
+                </div>
+                <div class="step-title">
+                  <span class="active">Upload Photo</span>
+                </div>
+              </div>
+              <!-- step - 2 -->
+              <div class="steps d-flex flex-column justify-content-center align-items-center">
+                <div class="step-circle d-flex justify-content-center align-items-center">
+                  <div class="step-circle-inner-active d-flex justify-content-center align-items-center">
+                    <span class="actives">2</span>
+                  </div>
+                </div>
+                <div class="step-title">
+                  <span class="active">Enter Details</span>
+                </div>
+              </div>
+              <!-- step - 3 -->
+              <div class="steps d-flex flex-column justify-content-center align-items-center">
+                <div class="step-circle d-flex justify-content-center align-items-center">
+                  <div class="step-circle-inner d-flex justify-content-center align-items-center">
+                    <span>3</span>
+                  </div>
+                </div>
+                <div class="step-title">
+                  <span>Set CTA & Pay</span>
+                </div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0"
+                  aria-valuemax="100"></div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- company start -->
-      <section class="flow detailssTwo" id="companys">
-        <div class="upload-container">
-          <div class="details-communities-two">
-            <div class="row flow-row">
-              <div class="col-12">
-                <form class="create-wrapper mx-auto">
-                  <div class="row">
-                    <!-- Date Input -->
-                    <div class="col-3 d-md-block d-none">
-                      <div class="boots-input-title"></div>
-                    </div>
-                    <div class="col-12 col-md-9">
-                      <div class="input-group w-full d-flex align-items-center">
-                        <span class="input-group-icon">
-                          <img
-                            src="./img/bi_building-fill.svg"
-                            alt="calendar icon"
-                          />
-                        </span>
-                        <div class="divider-input"></div>
-                        <span class="company-name">ABC Company</span>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Communities start -->
-      <section class="flow detailssTwo" id="communitiess">
-        <div class="upload-container">
-          <div class="details-communities">
-            <div class="row communities-row">
-              <div class="col-12">
-                <div class="communites-contentss">
-                  <div class="row justify-content-between align-items-start">
-                    <div class="col-8">
-                      <div class="communites-contentss-title-left">
-                        <h3>Communities</h3>
-                        <p>Only user from same community will see this post</p>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="communites-contentss-title-right text-end">
-                        <p>Selected <span>2</span></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="communites-contentsx">
-                  <button
-                    class="communites-contentsx-item d-flex align-items-center justify-content-center"
-                  >
-                    <span>My Community</span>
-                  </button>
-                  <button
-                    class="communites-contentsx-item d-flex align-items-center justify-content-center"
-                  >
-                    <span>All Communities</span>
-                  </button>
-                  <button data-bs-toggle="modal" data-bs-target="#selecComunityDetailsModal"
-                    class="communites-contentsx-item d-flex align-items-center justify-content-center"
-                  >
-                    <span>Choose Communities</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- runads start -->
-             <section class="flow detailssTwo" id="runads">
-        <div class="upload-container">
-          <div class="details-communities">
-            <div class="row communities-row">
-              <div class="col-12">
-                <div class="communites-contentss">
-                  <div class="row justify-content-between align-items-start">
-                    <div class="col-8">
-                      <div class="communites-contentss-title-left">
-                        <h3><span class=""
-                            >Run Ad
-                            <div
-                              class="tt-wrapper run-ads-gaps"
-                              data-tt-pos="top"
-                              id="price-tooltip"
-                            >
-                              <img
-                                src="./img/fluent_info-32-regular.svg"
-                                alt="fluent_info"
-                              />
-                              <div class="tt-content">
-                                <h5>Price</h5>
-                                $15.00/ day<br />
-                                $75.00/ week<br />
-                                $225.00/ month
-                              </div>
-                            </div></span</h3>
-                        
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                 <form class="">
-                           <div class="row">
-                            <div class="col-6 col-md-4">
-                              <div class="input-group" style="max-width: 200px">
-                                <button
-                                  class="btn btn-outline-secondary"
-                                  type="button"
-                                  id="decreaseBtn"
-                                >
-                                  <img src="./img/minus-bold.svg" alt="" />
-                                </button>
-                                <input
-                                  type="text"
-                                  class="form-control text-center quantity-input"
-                                  value="0"
-                                  id="quantityInput"
-                                  min="0"
-                                  max="10"
-                                  aria-label="Quantity"
-                                />
-                                <button
-                                  class="btn btn-outline-secondary"
-                                  type="button"
-                                  id="increaseBtn"
-                                >
-                                  <img src="./img/plus-bold.svg" alt="" />
-                                </button>
-                              </div>
-                            </div>
-                            <div class="col-6 col-md-8">
-                              <div class="dropdown">
-                                <button
-                                  class="btn btn-secondary dropdown-toggle boots-select"
-                                  type="button"
-                                  id="dropdownMenuButton"
-                                  data-bs-toggle="dropdown"
-                                  aria-expanded="false"
-                                >
-                                  Days
-                                </button>
-                                <ul
-                                  class="boots-dropdown-menu dropdown-menu"
-                                  aria-labelledby="dropdownMenuButton"
-                                >
-                                  <li>
-                                    <a class="dropdown-item" href="#">Days</a>
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#">Weeks</a>
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#">Months</a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <!-- money -->
-
-                            <div class="col-7 col-md-7 mt-3">
-                              <div class="input-group boots-input w-full">
-                                <span class="input-group-icon">
-                                  <img
-                                    src="./img/solar_dollar-linear.svg"
-                                    alt="calendar icon"
-                                  />
-                                </span>
-                                <div class="divider-input"></div>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="titles"
-                                  placeholder="Amount"
-                                />
-                              </div>
-                            </div>
-                            <div
-                              class="col-1 col-md-1 mt-3 d-flex align-items-center justify-content-center"
-                            >
-                              <div class="boots-input-title-new">=</div>
-                            </div>
-                            <div class="col-4 col-md-4 mt-3">
-                              <div class="input-group boots-input w-full">
-                                <input
-                                  type="number"
-                                  class="form-control"
-                                  id="titles"
-                                  placeholder="$"
-                                />
-                              </div>
-                            </div>
-                            <!-- Date Input -->
-                            <div class="col-12 mt-3">
-                              <div class="input-group date-wrapper boots-input">
-                                <span class="input-group-icon">
-                                  <img
-                                    src="./img/simple-line-icons_calender.svg"
-                                    alt="calendar icon"
-                                  />
-                                </span>
-                                <div class="divider-input"></div>
-                                <input
-                                  type="date"
-                                  class="form-control"
-                                  id="datepicker"
-                                  placeholder="Begin On"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- keyword start -->
-      <section class="flow detailssTwo detailssTwo-keyword" id="communitiess">
-        <div class="upload-container">
-          <div class="details-communities">
-            <div class="row communities-row">
-              <div class="col-12">
-                <div class="communites-contentss">
-                  <div
-                    class="row justify-content-between align-items-start communities-row"
-                  >
-                    <div class="col-12">
-                      <div class="communites-contentss-title-left">
-                        <h3>Keywords</h3>
-                        <p>Only user from same community will see this post</p>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <form class="">
-                        <div class="input-group search-wrapper flow-input">
-                          <label class="input-group-icon-search"
-                            ><img src="./img/search-line.svg" alt="search"
-                          /></label>
-                          <input
-                            type="search"
-                            class="form-control"
-                            placeholder="Search Tags"
-                            aria-label="search"
-                            aria-describedby="basic-addon1"
-                          />
-                        </div>
-                      </form>
-                    </div>
-                    <div class="col-12">
-                      <p class="mb-0 small-text-form">
-                        Only user from same community will see this post
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="communites-contentsx-tag mt-4">
-                  <div
-                    class="communites-contentsx-tag-item d-flex align-items-center justify-content-center"
-                  >
-                    <span>Air Conditioners</span>
-                    <button
-                      class="communites-contentsx-tag-item-close d-flex align-items-center justify-content-center"
-                    >
-                      <img src="./img/delete-tags.svg" alt="" />
-                    </button>
-                  </div>
-                  <div
-                    class="communites-contentsx-tag-item d-flex align-items-center justify-content-center"
-                  >
-                    <span>Package Discounts</span>
-                    <button
-                      class="communites-contentsx-tag-item-close d-flex align-items-center justify-content-center"
-                    >
-                      <img src="./img/delete-tags.svg" alt="" />
-                    </button>
-                  </div>
-                  <div
-                    class="communites-contentsx-tag-item d-flex align-items-center justify-content-center"
-                  >
-                    <span>GE Ovens</span>
-                    <button
-                      class="communites-contentsx-tag-item-close d-flex align-items-center justify-content-center"
-                    >
-                      <img src="./img/delete-tags.svg" alt="" />
-                    </button>
-                  </div>
-                  <div
-                    class="communites-contentsx-tag-item d-flex align-items-center justify-content-center"
-                  >
-                    <span>Electric Ovens</span>
-                    <button
-                      class="communites-contentsx-tag-item-close d-flex align-items-center justify-content-center"
-                    >
-                      <img src="./img/delete-tags.svg" alt="" />
-                    </button>
-                  </div>
-                  <div
-                    class="communites-contentsx-tag-item d-flex align-items-center justify-content-center"
-                  >
-                    <span>Electric Ovens</span>
-                    <button
-                      class="communites-contentsx-tag-item-close d-flex align-items-center justify-content-center"
-                    >
-                      <img src="./img/delete-tags.svg" alt="" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="button-location-container button-upload-container">
-          <div
-            class="upload-button-wrapper d-flex justify-content-center flex-column"
-          >
-            <button onclick="window.location.href='./Create-ad-more-2-2-scenario-one.html';"
- class="upload-buttom-top sk-gradint-button-one">
-              Save & Next <img src="./img/Arrow Forward.svg" alt="Arrow" />
-            </button>
-            <button class="upload-buttom-bottom">Cancel</button>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!-- main end -->
-
-
-    <!-- choose comunity Modal -->
-    <div class="modal fade" id="selecComunityDetailsModal" tabindex="-1" aria-labelledby="selecComunityDetailsModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body">
-            <section class="select-community-container">
-              <div class="comunity-container">
-                <div class="comunity-title">
-                  <h2>Choose Communities</h2>
-                </div>
-                <!-- comunity select  -->
-                <div class="comunity-select">
-                  <div class="comunity-search">
-                    <div class="comunity-search-input">
-                      <input type="text" placeholder="Search Community" class="form-control" />
-                      <img src="./img/searchform.png" alt="" />
-                    </div>
-                  </div>
-                  <div class="community-summary">
-                    <div class="community-stats">
-                      <div class="stat-item">
-                        <p>Communities</p>
-                        <h4>178</h4>
-                      </div>
-                      <div class="stat-item-2">
-                        <p>Selected</p>
-                        <h4>2</h4>
-                      </div>
-                    </div>
-                    <div class="community-action-buttons">
-                      <button class="btn-unselect-all">Unselect All</button>
-                    </div>
-                  </div>
-    
-                  <!-- comunity boxes  -->
-                  <div class="comunity-boxes thin-scrollbar">
-                    <!-- single item  -->
-                    <div class="single-com-box">
-                      <label class="custom-checkbox">
-                        <input type="checkbox" class="checkbox-input" />
-                        <span class="com-img"><img src="./img/Builders.png" alt="" /></span>
-                        <span class="com-body">
-                          <span class="com-title">Builders</span>
-                          <span class="com-text">Connect with other professionals
-                          </span>
-                          <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
-                        </span>
-                      </label>
-                    </div>
-                    <!-- single item  -->
-                    <div class="single-com-box">
-                      <label class="custom-checkbox">
-                        <input type="checkbox" class="checkbox-input" />
-                        <span class="com-img"><img src="./img/Cars.png" alt="" /></span>
-                        <span class="com-body">
-                          <span class="com-title">Cars</span>
-                          <span class="com-text">Lease, rent, services, exchange</span>
-                          <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
-                        </span>
-                      </label>
-                    </div>
-                    <!-- single item  -->
-                    <div class="single-com-box">
-                      <label class="custom-checkbox">
-                        <input type="checkbox" class="checkbox-input" />
-                        <span class="com-img"><img src="./img/Chinuch.png" alt="" /></span>
-                        <span class="com-body">
-                          <span class="com-title">Chinuch</span>
-                          <span class="com-text">Connect with other professionals</span>
-                          <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
-                        </span>
-                      </label>
-                    </div>
-                    <!-- single item  -->
-                    <div class="single-com-box hidden">
-                      <label class="custom-checkbox">
-                        <input type="checkbox" class="checkbox-input" />
-                        <span class="com-img"><img src="./img/Diet.png" alt="" /></span>
-                        <span class="com-body">
-                          <span class="com-title">Diet / Fitness</span>
-                          <span class="com-text">Connect with other professionals
-                          </span>
-                          <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
-                        </span>
-                      </label>
-                    </div>
-                    <!-- single item  -->
-                    <div class="single-com-box hidden">
-                      <label class="custom-checkbox">
-                        <input type="checkbox" class="checkbox-input" />
-                        <span class="com-img"><img src="./img/Electricians.png" alt="" /></span>
-                        <span class="com-body">
-                          <span class="com-title">Electricians</span>
-                          <span class="com-text">Connect with other professionals
-                          </span>
-                          <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
-                        </span>
-                      </label>
-                    </div>
-                    <!-- single item  -->
-                    <div class="single-com-box hidden">
-                      <label class="custom-checkbox">
-                        <input type="checkbox" class="checkbox-input" />
-                        <span class="com-img"><img src="./img/Food.png" alt="" /></span>
-                        <span class="com-body">
-                          <span class="com-title">Food Industry</span>
-                          <span class="com-text">Connect with other professionals
-                          </span>
-                          <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
-                        </span>
-                      </label>
-                    </div>
-                    <!-- single item  -->
-                    <div class="single-com-box hidden">
-                      <label class="custom-checkbox">
-                        <input type="checkbox" class="checkbox-input" />
-                        <span class="com-img"><img src="./img/Diet.png" alt="" /></span>
-                        <span class="com-body">
-                          <span class="com-title">Diet / Fitness</span>
-                          <span class="com-text">Connect with other professionals
-                          </span>
-                          <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
-                        </span>
-                      </label>
-                    </div>
-                    <!-- single item  -->
-                    <div class="single-com-box hidden">
-                      <label class="custom-checkbox">
-                        <input type="checkbox" class="checkbox-input" />
-                        <span class="com-img"><img src="./img/Electricians.png" alt="" /></span>
-                        <span class="com-body">
-                          <span class="com-title">Electricians</span>
-                          <span class="com-text">Connect with other professionals
-                          </span>
-                          <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
-                        </span>
-                      </label>
-                    </div>
-                    <!-- single item  -->
-                    <div class="single-com-box hidden">
-                      <label class="custom-checkbox">
-                        <input type="checkbox" class="checkbox-input" />
-                        <span class="com-img"><img src="./img/Food.png" alt="" /></span>
-                        <span class="com-body">
-                          <span class="com-title">Food Industry</span>
-                          <span class="com-text">Connect with other professionals
-                          </span>
-                          <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
-                        </span>
-                      </label>
-                    </div>
-                    <!-- single item  -->
-                    <div class="single-com-box hidden">
-                      <label class="custom-checkbox">
-                        <input type="checkbox" class="checkbox-input" />
-                        <span class="com-img"><img src="./img/Diet.png" alt="" /></span>
-                        <span class="com-body">
-                          <span class="com-title">Diet / Fitness</span>
-                          <span class="com-text">Connect with other professionals
-                          </span>
-                          <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
-                        </span>
-                      </label>
-                    </div>
-                    <!-- single item  -->
-                    <div class="single-com-box hidden">
-                      <label class="custom-checkbox">
-                        <input type="checkbox" class="checkbox-input" />
-                        <span class="com-img"><img src="./img/Electricians.png" alt="" /></span>
-                        <span class="com-body">
-                          <span class="com-title">Electricians</span>
-                          <span class="com-text">Connect with other professionals
-                          </span>
-                          <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
-                        </span>
-                      </label>
-                    </div>
-                    <!-- single item  -->
-                    <div class="single-com-box hidden">
-                      <label class="custom-checkbox">
-                        <input type="checkbox" class="checkbox-input" />
-                        <span class="com-img"><img src="./img/Food.png" alt="" /></span>
-                        <span class="com-body">
-                          <span class="com-title">Food Industry</span>
-                          <span class="com-text">Connect with other professionals
-                          </span>
-                          <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="seeMore">
-                    <button class="saveBtn" id="seeMoreBtn">
-                      <span class="saveBtnTxt">See More</span>
-                      <span class="saveBtnImg"><img src="./img/forward.png" class="img-fluid w-100" alt="" /></span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="not-find">
-                <button onclick="window.location.href='./Create-ad-more-2-2-scenario-one.html';" class="saveBtn"
-                  data-bs-dismiss="modal" aria-label="Close">
-                  <span class="saveBtnTxt">Save & Back to Post Details</span>
-                  <span class="saveBtnImg"><img src="./img/forward.png" class="img-fluid w-100" alt="" /></span>
-                </button>
-              </div>
-              <button class="comunityDetailsmodal-close-btn" data-bs-dismiss="modal" aria-label="Close">
-                <img src="./img/cross.png" class="img-fluid" alt="" />
-              </button>
-            </section>
           </div>
         </div>
       </div>
     </div>
+  </header>
+  <!-- header end -->
+  <!-- main start -->
+  <main>
+    <!-- title start -->
+    <section class="flow detailss" id="titleDetails">
+      <div class="upload-container">
+        <div class="details-communities">
+          <div class="row flow-row">
+            <div class="col-12">
+              <div class="d-flex justify-content-center">
+                <h2 class="flow-location-title details-title-space">
+                  Enter Details
+                </h2>
+              </div>
+              <form class="create-wrapper mx-auto">
+                <div class="row">
+                  <!-- Date Input -->
+                  <div class="col-3 d-md-block d-none">
+                    <div class="boots-input-title">
+                      <label for="titles">Ad Title</label>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-9">
+                    <div class="input-group boots-input w-full">
+                      <span class="input-group-icon">
+                        <img src="./img/subway_title.svg" alt="calendar icon" />
+                      </span>
+                      <div class="divider-input"></div>
+                      <input type="text" class="form-control" id="titles" placeholder="Title" />
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- company start -->
+    <section class="flow detailssTwo" id="companys">
+      <div class="upload-container">
+        <div class="details-communities-two">
+          <div class="row flow-row g-0">
+            <div class="col-12 ">
+              <form class="create-wrapper mx-auto">
+                <div class="row w-100">
+                  <!-- Date Input -->
+                  <div class="col-3 d-md-block d-none">
+                    <div class="boots-input-title"></div>
+                  </div>
+                  <div class="col-12 col-md-9">
+                    <div class="input-group w-full d-flex align-items-center">
+                      <span class="input-group-icon">
+                        <img src="./img/bi_building-fill.svg" alt="calendar icon" />
+                      </span>
+                      <div class="divider-input"></div>
+                      <span class="company-name">ABC Company</span>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Communities start -->
+    <section class="flow detailssTwo" id="communitiess">
+      <div class="upload-container">
+        <div class="details-communities">
+          <div class="row communities-row">
+            <div class="col-12">
+              <div class="communites-contentss">
+                <div class="row justify-content-between align-items-start">
+                  <div class="col-8">
+                    <div class="communites-contentss-title-left">
+                      <h3>Communities</h3>
+                      <p>Only user from same community will see this post</p>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="communites-contentss-title-right text-end">
+                      <p>Selected <span>2</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="communites-contentsx">
+                <button class="communites-contentsx-item d-flex align-items-center justify-content-center">
+                  <span>My Community</span>
+                </button>
+                <button class="communites-contentsx-item d-flex align-items-center justify-content-center">
+                  <span>All Communities</span>
+                </button>
+                <button data-bs-toggle="modal" data-bs-target="#selecComunityDetailsModal"
+                  class="communites-contentsx-item d-flex align-items-center justify-content-center">
+                  <span>Choose Communities</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- runads start -->
+    <section class="flow detailssTwo" id="runads">
+      <div class="upload-container">
+        <div class="details-communities">
+          <div class="row communities-row">
+            <div class="col-12">
+              <div class="communites-contentss">
+                <div class="row justify-content-between align-items-start">
+                  <div class="col-8">
+                    <div class="communites-contentss-title-left">
+                      <h3><span class="">Run Ad
+                          <div class="tt-wrapper run-ads-gaps" data-tt-pos="top" id="price-tooltip">
+                            <img src="./img/fluent_info-32-regular.svg" alt="fluent_info" />
+                            <div class="tt-content">
+                              <h5>Price</h5>
+                              $15.00/ day<br />
+                              $75.00/ week<br />
+                              $225.00/ month
+                            </div>
+                          </div>
+                          </span< /h3>
+
+                    </div>
+                  </div>
+                  <div class="col-4">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <form class="">
+                <div class="row">
+                  <div class="col-sm-6 col-md-4">
+                    <div class="input-group" id="quantity">
+                      <button class="btn btn-outline-secondary" type="button" id="decreaseBtn">
+                        <img src="./img/minus-bold.svg" alt="" />
+                      </button>
+                      <input type="text" class="form-control text-center quantity-input" value="0" id="quantityInput"
+                        min="0" max="10" aria-label="Quantity" />
+                      <button class="btn btn-outline-secondary" type="button" id="increaseBtn">
+                        <img src="./img/plus-bold.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-8 mt-3 mt-sm-0">
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle boots-select" type="button"
+                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Days
+                      </button>
+                      <ul class="boots-dropdown-menu dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li>
+                          <a class="dropdown-item" href="#">Days</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Weeks</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Months</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- money -->
+
+                  <div class="col-7 col-md-7 mt-3">
+                    <div class="input-group boots-input w-full">
+                      <span class="input-group-icon">
+                        <img src="./img/solar_dollar-linear.svg" alt="calendar icon" />
+                      </span>
+                      <div class="divider-input"></div>
+                      <input type="text" class="form-control" id="titles" placeholder="Amount" />
+                    </div>
+                  </div>
+                  <div class="col-1 col-md-1 mt-3 d-flex align-items-center justify-content-center">
+                    <div class="boots-input-title-new">=</div>
+                  </div>
+                  <div class="col-4 col-md-4 mt-3">
+                    <div class="input-group boots-input w-full" id="total-cash">
+                      <input type="number" class="form-control" id="titles" placeholder="$" />
+                    </div>
+                  </div>
+                  <!-- Date Input -->
+                  <div class="col-12 mt-3">
+                    <div class="input-group date-wrapper boots-input">
+                      <span class="input-group-icon">
+                        <img src="./img/simple-line-icons_calender.svg" alt="calendar icon" />
+                      </span>
+                      <div class="divider-input"></div>
+                      <input type="date" class="form-control" id="datepicker" placeholder="Begin On" />
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- keyword start -->
+    <section class="flow detailssTwo detailssTwo-keyword" id="communitiess">
+      <div class="upload-container">
+        <div class="details-communities">
+          <div class="row communities-row">
+            <div class="col-12">
+              <div class="communites-contentss">
+                <div class="row justify-content-between align-items-start communities-row">
+                  <div class="col-12">
+                    <div class="communites-contentss-title-left">
+                      <h3>Keywords</h3>
+                      <p>Only user from same community will see this post</p>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <form class="">
+                      <div class="input-group search-wrapper flow-input">
+                        <label class="input-group-icon-search"><img src="./img/search-line.svg" alt="search" /></label>
+                        <input type="search" class="form-control" placeholder="Search Tags" aria-label="search"
+                          aria-describedby="basic-addon1" />
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-12">
+                    <p class="mb-0 small-text-form">
+                      Only user from same community will see this post
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="communites-contentsx-tag mt-4">
+                <div class="communites-contentsx-tag-item d-flex align-items-center justify-content-center">
+                  <span>Air Conditioners</span>
+                  <button class="communites-contentsx-tag-item-close d-flex align-items-center justify-content-center">
+                    <img src="./img/delete-tags.svg" alt="" />
+                  </button>
+                </div>
+                <div class="communites-contentsx-tag-item d-flex align-items-center justify-content-center">
+                  <span>Package Discounts</span>
+                  <button class="communites-contentsx-tag-item-close d-flex align-items-center justify-content-center">
+                    <img src="./img/delete-tags.svg" alt="" />
+                  </button>
+                </div>
+                <div class="communites-contentsx-tag-item d-flex align-items-center justify-content-center">
+                  <span>GE Ovens</span>
+                  <button class="communites-contentsx-tag-item-close d-flex align-items-center justify-content-center">
+                    <img src="./img/delete-tags.svg" alt="" />
+                  </button>
+                </div>
+                <div class="communites-contentsx-tag-item d-flex align-items-center justify-content-center">
+                  <span>Electric Ovens</span>
+                  <button class="communites-contentsx-tag-item-close d-flex align-items-center justify-content-center">
+                    <img src="./img/delete-tags.svg" alt="" />
+                  </button>
+                </div>
+                <div class="communites-contentsx-tag-item d-flex align-items-center justify-content-center">
+                  <span>Electric Ovens</span>
+                  <button class="communites-contentsx-tag-item-close d-flex align-items-center justify-content-center">
+                    <img src="./img/delete-tags.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="button-location-container button-upload-container">
+        <div class="upload-button-wrapper d-flex justify-content-center flex-column">
+          <button onclick="window.location.href='./Create-ad-more-2-2-scenario-one.html';"
+            class="upload-buttom-top sk-gradint-button-one">
+            Save & Next <img src="./img/Arrow Forward.svg" alt="Arrow" />
+          </button>
+          <button class="upload-buttom-bottom">Cancel</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- main end -->
+
+
+  <!-- choose comunity Modal -->
+  <div class="modal fade" id="selecComunityDetailsModal" tabindex="-1" aria-labelledby="selecComunityDetailsModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <section class="select-community-container">
+            <div class="comunity-container">
+              <div class="comunity-title">
+                <h2>Choose Communities</h2>
+              </div>
+              <!-- comunity select  -->
+              <div class="comunity-select">
+                <div class="comunity-search">
+                  <div class="comunity-search-input">
+                    <input type="text" placeholder="Search Community" class="form-control" />
+                    <img src="./img/searchform.png" alt="" />
+                  </div>
+                </div>
+                <div class="community-summary">
+                  <div class="community-stats">
+                    <div class="stat-item">
+                      <p>Communities</p>
+                      <h4>178</h4>
+                    </div>
+                    <div class="stat-item-2">
+                      <p>Selected</p>
+                      <h4>2</h4>
+                    </div>
+                  </div>
+                  <div class="community-action-buttons">
+                    <button class="btn-unselect-all">Unselect All</button>
+                  </div>
+                </div>
+
+                <!-- comunity boxes  -->
+                <div class="comunity-boxes thin-scrollbar">
+                  <!-- single item  -->
+                  <div class="single-com-box">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="checkbox-input" />
+                      <span class="com-img"><img src="./img/Builders.png" alt="" /></span>
+                      <span class="com-body">
+                        <span class="com-title">Builders</span>
+                        <span class="com-text">Connect with other professionals
+                        </span>
+                        <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
+                      </span>
+                    </label>
+                  </div>
+                  <!-- single item  -->
+                  <div class="single-com-box">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="checkbox-input" />
+                      <span class="com-img"><img src="./img/Cars.png" alt="" /></span>
+                      <span class="com-body">
+                        <span class="com-title">Cars</span>
+                        <span class="com-text">Lease, rent, services, exchange</span>
+                        <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
+                      </span>
+                    </label>
+                  </div>
+                  <!-- single item  -->
+                  <div class="single-com-box">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="checkbox-input" />
+                      <span class="com-img"><img src="./img/Chinuch.png" alt="" /></span>
+                      <span class="com-body">
+                        <span class="com-title">Chinuch</span>
+                        <span class="com-text">Connect with other professionals</span>
+                        <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
+                      </span>
+                    </label>
+                  </div>
+                  <!-- single item  -->
+                  <div class="single-com-box hidden">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="checkbox-input" />
+                      <span class="com-img"><img src="./img/Diet.png" alt="" /></span>
+                      <span class="com-body">
+                        <span class="com-title">Diet / Fitness</span>
+                        <span class="com-text">Connect with other professionals
+                        </span>
+                        <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
+                      </span>
+                    </label>
+                  </div>
+                  <!-- single item  -->
+                  <div class="single-com-box hidden">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="checkbox-input" />
+                      <span class="com-img"><img src="./img/Electricians.png" alt="" /></span>
+                      <span class="com-body">
+                        <span class="com-title">Electricians</span>
+                        <span class="com-text">Connect with other professionals
+                        </span>
+                        <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
+                      </span>
+                    </label>
+                  </div>
+                  <!-- single item  -->
+                  <div class="single-com-box hidden">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="checkbox-input" />
+                      <span class="com-img"><img src="./img/Food.png" alt="" /></span>
+                      <span class="com-body">
+                        <span class="com-title">Food Industry</span>
+                        <span class="com-text">Connect with other professionals
+                        </span>
+                        <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
+                      </span>
+                    </label>
+                  </div>
+                  <!-- single item  -->
+                  <div class="single-com-box hidden">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="checkbox-input" />
+                      <span class="com-img"><img src="./img/Diet.png" alt="" /></span>
+                      <span class="com-body">
+                        <span class="com-title">Diet / Fitness</span>
+                        <span class="com-text">Connect with other professionals
+                        </span>
+                        <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
+                      </span>
+                    </label>
+                  </div>
+                  <!-- single item  -->
+                  <div class="single-com-box hidden">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="checkbox-input" />
+                      <span class="com-img"><img src="./img/Electricians.png" alt="" /></span>
+                      <span class="com-body">
+                        <span class="com-title">Electricians</span>
+                        <span class="com-text">Connect with other professionals
+                        </span>
+                        <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
+                      </span>
+                    </label>
+                  </div>
+                  <!-- single item  -->
+                  <div class="single-com-box hidden">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="checkbox-input" />
+                      <span class="com-img"><img src="./img/Food.png" alt="" /></span>
+                      <span class="com-body">
+                        <span class="com-title">Food Industry</span>
+                        <span class="com-text">Connect with other professionals
+                        </span>
+                        <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
+                      </span>
+                    </label>
+                  </div>
+                  <!-- single item  -->
+                  <div class="single-com-box hidden">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="checkbox-input" />
+                      <span class="com-img"><img src="./img/Diet.png" alt="" /></span>
+                      <span class="com-body">
+                        <span class="com-title">Diet / Fitness</span>
+                        <span class="com-text">Connect with other professionals
+                        </span>
+                        <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
+                      </span>
+                    </label>
+                  </div>
+                  <!-- single item  -->
+                  <div class="single-com-box hidden">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="checkbox-input" />
+                      <span class="com-img"><img src="./img/Electricians.png" alt="" /></span>
+                      <span class="com-body">
+                        <span class="com-title">Electricians</span>
+                        <span class="com-text">Connect with other professionals
+                        </span>
+                        <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
+                      </span>
+                    </label>
+                  </div>
+                  <!-- single item  -->
+                  <div class="single-com-box hidden">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="checkbox-input" />
+                      <span class="com-img"><img src="./img/Food.png" alt="" /></span>
+                      <span class="com-body">
+                        <span class="com-title">Food Industry</span>
+                        <span class="com-text">Connect with other professionals
+                        </span>
+                        <span class="check-white"><img src="./img/checkwhite.png" class="img-fluid" alt="" /></span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="seeMore">
+                  <button class="saveBtn" id="seeMoreBtn">
+                    <span class="saveBtnTxt">See More</span>
+                    <span class="saveBtnImg"><img src="./img/forward.png" class="img-fluid w-100" alt="" /></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="not-find">
+              <button onclick="window.location.href='./Create-ad-more-2-2-scenario-one.html';" class="saveBtn"
+                data-bs-dismiss="modal" aria-label="Close">
+                <span class="saveBtnTxt">Save & Back to Post Details</span>
+                <span class="saveBtnImg"><img src="./img/forward.png" class="img-fluid w-100" alt="" /></span>
+              </button>
+            </div>
+            <button class="comunityDetailsmodal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+              <img src="./img/cross.png" class="img-fluid" alt="" />
+            </button>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
-    <!-- javascript -->
-    <!-- javascript -->
+  <!-- javascript -->
+  <!-- javascript -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const inputs = document.querySelectorAll("input[placeholder]");
@@ -735,10 +603,10 @@
 
         if (input.type === "date") {
           const secondaryPlaceholder = "Begin On";
-          
+
           // Set the initial label text.
           label.textContent = input.value ? secondaryPlaceholder : placeholderText;
-          
+
           // Date input specific event listeners.
           input.addEventListener("focus", () => {
             label.textContent = secondaryPlaceholder;
@@ -779,13 +647,9 @@
       });
     });
   </script>
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

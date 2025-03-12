@@ -262,7 +262,7 @@
             <div class="container">
                 <div class="row" id="dashboard-row">
                     <!-- user profile  -->
-                    <div class="col-lg-4 col-xl-3">
+                    <div class="col-lg-4 col-xl-3 d-none d-lg-block">
                         <div class="sideBar-wraper hide-scrollbar">
                             <div class="user-profile">
                                 <!-- profile card  -->
@@ -811,7 +811,7 @@
                                                             <img src="./img/avatar1.png" class="img-fluid" alt="">
                                                         </div>
                                                         <div class="sale-author-info">
-                                                            <h3><a href="">Sierrrra Ferguson</a><a href="#"><img
+                                                            <h3><a href="">Sierrrra Ferguson</a><a href="./chats-direct.html"><img
                                                                         src="./img/chat1.png" alt=""></a></h3>
                                                             <div class="author-loc">
                                                                 <img src="./img/sale-loc.png" alt="">
@@ -1403,14 +1403,14 @@
                                                     </div>
                                                 </div>
                                                 <!-- single product hover -->
-                                                <div class="product-hover-container">
+                                                <div class="product-hover-container parent-deal-deatils-container">
                                                     <div class="product-hover-image">
                                                         <img src="./img/pro-hover.png" alt="">
                                                         <div class="hover-product-title">
                                                             Amazing Deal at the Home Depot in Montville, NC
                                                         </div>
                                                     </div>
-                                                    <div class="product-hover-interactions">
+                                                    <div class="product-hover-interactions" id="product-hover-interactions">
                                                         <a href="#" class="product-hover-share">
                                                             <img src="./img/share.png" alt="">
                                                             <span>100</span>
@@ -3092,16 +3092,16 @@
     <div class="stb-container stb-bar fixed-bottom">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-                <button class="btn cst-mobile-menus-active" data-bs-toggle="offcanvas" data-bs-target="#stbOffcanvas">
+                <button class="btn cst-mobile-menus-active" onclick="window.location.href='./feed-sponser-post.html';">
                     <img src="./img/home-mobile.svg" alt="Home" class="cst-mobile-menus-img">
                 </button>
-                <button class="btn cst-mobile-menus" data-bs-toggle="offcanvas" data-bs-target="#stbOffcanvas">
+                <button class="btn cst-mobile-menus" onclick="window.location.href='./project_Feed_Page_Companies.html';">
                     <img src="./img/dashboard-mobile.svg" alt="Dashboard" class="cst-mobile-menus-img">
                 </button>
                 <button class="btn cst-mobile-menus" data-bs-toggle="offcanvas" data-bs-target="#stbOffcanvas">
                     <img src="./img/added-mobile.svg" alt="Added" class="cst-mobile-menus-img">
                 </button>
-                <button class="btn cst-mobile-menus" data-bs-toggle="offcanvas" data-bs-target="#stbOffcanvas">
+                <button class="btn cst-mobile-menus" type="button" data-bs-toggle="offcanvas" data-bs-target="#notificationOffcanvas" aria-controls="notificationOffcanvas">
                     <img src="./img/notification-mobile.svg" alt="Notification" class="cst-mobile-menus-img">
                 </button>
                 <button class="btn cst-mobile-menus" data-bs-toggle="offcanvas" data-bs-target="#stbOffcanvas">
@@ -3122,8 +3122,49 @@
         </div>
         <div class="offcanvas-body">
             <div>
+                <div class="sideBar-wraper hide-scrollbar">
+                    <div class="user-profile">
+                        <!-- profile card  -->
+                        <div class="profile-card">
+                            <div class="profile-img">
+                                </span> <img src="./img/seirra.png" class="img-fluid" alt="">
+                                <a href="#" class="edit-icon">
+                                    <img src="./img/edit.png" alt="">
+                                </a>
+                            </div>
+                            <!-- profile details -->
+                            <h2>Sierra Ferguson</h2>
+                            <a href="#" class="profile-usernamer">@sierraferguson</a>
+                            <a href="./my-profile-sponsor.html" class="profile-link">
+                                <img src="./img/link.png" alt="">
+                            </a>
+                        </div>
+                
+                        <!-- profile-stats  -->
+                        <div class="profile-stats mb-4">
+                            <a data-bs-toggle="offcanvas" data-bs-target="#connectionOffcanvas" aria-controls="connectionOffcanvas"
+                                class="left-stats-box" data-tab="all">
+                                <p>Connections</p>
+                                <h3>270</h3>
+                            </a>
+                            <div class="right-stats-box">
+                                <a data-bs-toggle="offcanvas" data-bs-target="#connectionOffcanvas" aria-controls="connectionOffcanvas"
+                                    class="stats-info" data-tab="in">
+                                    <img src="./img/connect-right.png" alt="">
+                                    <span class="connect-num">8</span>
+                                </a>
+                                <a data-bs-toggle="offcanvas" data-bs-target="#connectionOffcanvas" aria-controls="connectionOffcanvas"
+                                    class="stats-info" data-tab="out">
+                                    <img src="./img/connect.png" alt="">
+                                    <span class="connect-num">8</span>
+                                </a>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
                 <!-- Scrollable Menu List -->
-                <ul class="dropdown-menux thin-scrollbar" aria-labelledby="profileOptions">
+                <ul class="dropdown-menux" aria-labelledby="profileOptions">
                     <!-- item 1 -->
                     <li>
                         <a class="dropdown-item profile-single" href="#">

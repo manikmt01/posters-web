@@ -283,48 +283,54 @@
                         </div>
                     </div>
                 </div>
-                <div class="row dashboardx-tabs align-items-center">
-                    <div class="col-xl-4">
-                        <div class="d-flex align-items-center justify-content-end">
-                             <div class="profile-img profile-img-new z-10">
-                                        </span> <img src="./img/updated-profice-image.svg" class="img-fluid" alt="">
-                            </div>
-                            <button class="edit-btns morphisum-inner">
-                                <img src="./img/Edit.svg" alt="">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col-xl-8">
-                        <!-- tab button  -->
-                        <ul class="nav nav-pillsx" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-linkx active" id="pills-myposts-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-myposts" type="button" role="tab" aria-controls="pills-myposts"
-                                    aria-selected="true">My Posts</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-linkx" id="pills-saved-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-saved" type="button" role="tab"
-                                    aria-controls="pills-saved" aria-selected="false">Saved</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-linkx" id="pills-drafts-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-drafts" type="button" role="tab" aria-controls="pills-drafts"
-                                    aria-selected="false">Drafts</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-linkx" id="pills-recommends-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-recommends" type="button" role="tab" aria-controls="pills-recommends"
-                                    aria-selected="false">Recommends</button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="row dashboardx-tabs align-items-center">
+          <div class="col-lg-4">
+            <div class="d-flex align-items-center justify-content-end profile-img-new-parent">
+              <div class="profile-img profile-img-new z-10">
+                <img src="./img/updated-profice-image.svg" class="img-fluid" alt="" />
+              </div>
+              <button class="edit-btns morphisum-inner">
+                <img src="./img/Edit.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <!-- tab button  -->
+            <ul class="nav nav-pillsx d-none d-lg-flex ms-0" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx" id="pills-myposts-tab" data-bs-toggle="pill" data-bs-target="#pills-myposts"
+                  type="button" role="tab" aria-controls="pills-myposts" aria-selected="false">
+                  My Posts
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx" id="pills-saved-tab" data-bs-toggle="pill" data-bs-target="#pills-saved"
+                  type="button" role="tab" aria-controls="pills-saved" aria-selected="false">
+                  Saved
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx active" id="pills-drafts-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-drafts" type="button" role="tab" aria-controls="pills-drafts"
+                  aria-selected="true">
+                  Drafts
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx" id="pills-recommends-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-recommends" type="button" role="tab" aria-controls="pills-recommends"
+                  aria-selected="false">
+                  Recommends
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
                 <div class="row" id="dashboard-row">
                     <!-- user profile  -->
-                    <div class="col-xl-4">
+                    <div class="col-lg-4">
                         <div class="sideBar-wrapers hide-scrollbar">
-                            <div class="user-profile">
+                            <div class="user-profile parent-user-profile">
                                 <!-- profile card  -->
                                 <div class="profile-card profile-cardx">
                                    
@@ -338,7 +344,7 @@
                                         <h3 class="profile-stats-names-h3">Community</h3>
                                         <span>2</span>
                                     </div>
-                                    <div class="refferance-tagss">
+                                    <div class="refferance-tagss refferance-tagss-parent">
                                         <button>Conference</button>
                                         <button>Network Engineer</button>
                                     </div>
@@ -348,7 +354,36 @@
                     </div>
                     <!-- content tab  -->
                     <div class="col-lg-8 col-xl-7">
-                        <div class="main-content sideBar-wraper hide-scrollbar main-content-new">
+                        <!-- tab button  -->
+            <ul class="nav nav-pillsx new-nav-pillsx-parent d-flex d-lg-none ms-0 pt-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx" id="pills-myposts-tab" data-bs-toggle="pill" data-bs-target="#pills-myposts"
+                  type="button" role="tab" aria-controls="pills-myposts" aria-selected="false">
+                  My Posts
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx" id="pills-saved-tab" data-bs-toggle="pill" data-bs-target="#pills-saved"
+                  type="button" role="tab" aria-controls="pills-saved" aria-selected="false">
+                  Saved
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx active" id="pills-drafts-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-drafts" type="button" role="tab" aria-controls="pills-drafts"
+                  aria-selected="true">
+                  Drafts
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-linkx" id="pills-recommends-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-recommends" type="button" role="tab" aria-controls="pills-recommends"
+                  aria-selected="false">
+                  Recommends
+                </button>
+              </li>
+            </ul>
+                        <div class="main-content sideBar-wraper hide-scrollbar main-content-new mb-md-5">
                             <div class="posts-feedx">
                                 
                                 <!-- tab content  -->
@@ -446,7 +481,7 @@
                                                     </button>
                                                 </div>
                                                 <!-- Post Actions -->
-                                                <div class="post-actions d-flex align-items-start justify-content-between">
+                                                <div class="post-actions post-actions-parent d-flex align-items-start justify-content-between">
                                                     <!-- View Action -->
                                                     <a href="#" class="action-item">
                                                         <img src="./img/eye.png" alt="View">
@@ -545,7 +580,7 @@
                                                     </button>
                                                 </div>
                                                 <!-- Post Actions -->
-                                                <div class="post-actions d-flex align-items-start justify-content-between">
+                                                <div class="post-actions post-actions-parent d-flex align-items-start justify-content-between">
                                                     <!-- View Action -->
                                                     <a href="#" class="action-item">
                                                         <img src="./img/eye.png" alt="View">
@@ -667,7 +702,7 @@
                                                     </button>
                                                 </div>
                                                 <!-- Post Actions -->
-                                                <div class="post-actions d-flex align-items-start justify-content-between">
+                                                <div class="post-actions post-actions-parent d-flex align-items-start justify-content-between">
                                                     <!-- View Action -->
                                                     <a href="#" class="action-item">
                                                         <img src="./img/eye.png" alt="View">
@@ -766,7 +801,7 @@
                                                     </button>
                                                 </div>
                                                 <!-- Post Actions -->
-                                                <div class="post-actions d-flex align-items-start justify-content-between">
+                                                <div class="post-actions post-actions-parent d-flex align-items-start justify-content-between">
                                                     <!-- View Action -->
                                                     <a href="#" class="action-item">
                                                         <img src="./img/eye.png" alt="View">
@@ -833,7 +868,7 @@
                                                         </div>
                                                         </div>
                                                         <div>
-                                                            <a href="#">
+                                                            <a data-bs-toggle="modal" data-bs-target="#deleteModal" class="cursor-pointer">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="26" height="32" viewBox="0 0 26 32" fill="none">
   <path d="M23.6333 26.8667C23.6333 28.153 23.1224 29.3866 22.2128 30.2961C21.3032 31.2057 20.0696 31.7167 18.7833 31.7167H7.46667C6.18037 31.7167 4.94675 31.2057 4.0372 30.2961C3.12765 29.3866 2.61667 28.153 2.61667 26.8667V7.46667H1V2.61667H8.275L9.89167 1H16.3583L17.975 2.61667H25.25V7.46667H23.6333V26.8667ZM4.23333 7.46667V26.8667C4.23333 27.7242 4.57399 28.5466 5.18035 29.153C5.78672 29.7593 6.60913 30.1 7.46667 30.1H18.7833C19.6409 30.1 20.4633 29.7593 21.0696 29.153C21.676 28.5466 22.0167 27.7242 22.0167 26.8667V7.46667H4.23333ZM23.6333 5.85V4.23333H17.1667L15.55 2.61667H10.7L9.08333 4.23333H2.61667V5.85H23.6333ZM7.46667 10.7H9.08333V26.8667H7.46667V10.7ZM17.1667 10.7H18.7833V26.8667H17.1667V10.7Z" fill="#979797" stroke="#979797" stroke-width="0.2"/>
 </svg>
@@ -921,7 +956,7 @@
                                                         </div>
                                                         </div>
                                                         <div>
-                                                            <a href="#">
+                                                            <a data-bs-toggle="modal" data-bs-target="#deleteModal" class="cursor-pointer">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="26" height="32" viewBox="0 0 26 32" fill="none">
   <path d="M23.6333 26.8667C23.6333 28.153 23.1224 29.3866 22.2128 30.2961C21.3032 31.2057 20.0696 31.7167 18.7833 31.7167H7.46667C6.18037 31.7167 4.94675 31.2057 4.0372 30.2961C3.12765 29.3866 2.61667 28.153 2.61667 26.8667V7.46667H1V2.61667H8.275L9.89167 1H16.3583L17.975 2.61667H25.25V7.46667H23.6333V26.8667ZM4.23333 7.46667V26.8667C4.23333 27.7242 4.57399 28.5466 5.18035 29.153C5.78672 29.7593 6.60913 30.1 7.46667 30.1H18.7833C19.6409 30.1 20.4633 29.7593 21.0696 29.153C21.676 28.5466 22.0167 27.7242 22.0167 26.8667V7.46667H4.23333ZM23.6333 5.85V4.23333H17.1667L15.55 2.61667H10.7L9.08333 4.23333H2.61667V5.85H23.6333ZM7.46667 10.7H9.08333V26.8667H7.46667V10.7ZM17.1667 10.7H18.7833V26.8667H17.1667V10.7Z" fill="#979797" stroke="#979797" stroke-width="0.2"/>
 </svg>
@@ -1331,6 +1366,25 @@
        </div>
     </div>
 </div>
+   <!-- Modal -->
+    <div class="modal fade web-two-modal" id="deleteModal" tabindex="-1" aria-labelledby="succesModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="post-log-wraper">
+                        <p>Do you really want to delete your post?</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <button data-bs-dismiss="modal" aria-label="Close"
+                                class="modal-button close-button">No</button>
+                            <button onclick="window.location.href='./login.html'"
+                                class="modal-button logout-button">Delete Post</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
